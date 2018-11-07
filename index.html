@@ -13,7 +13,7 @@
 <body>
 
 <div class="container">
-	<div style="background-color:DodgerBlue;"  class="jumbotron">
+	<div class="jumbotron">
     <h1>Web Accesible - WEB PARA TODOS</h1>      
     <p><font size="4">La accesibilidad en las p&aacute;ginas web es un problema que nos concierne a todos y debemos ser conscientes<br>
     El objetivo de esta p&aacute;gina web es informar y, a su vez, dar pautas y ejemplos para facilitar el acceso a la web a personas con cualquier tipo de discapacidad</font>
@@ -22,7 +22,7 @@
 	
 	<div class="topnav">
 		<ul>
-		<li><a href="#contenido" class="cabeceras"><b>Contenido</b></a></li>
+		<li><a href="#contenido" class="cabeceras"><strong>Contenido</strong></a></li>
 		<li><a href="#" class="cabeceras">Inicio</a></li>
 		<li><a href="plantilla.html" class="cabeceras">Introducci&oacute;n</a></li>
 		<li><a href="" class="cabeceras">Motivaci&oacute;n</a></li>
@@ -32,7 +32,7 @@
 	
 	<br>
 	<div id="contenido" class="principal">
-		<h1>¿Qu&eacute; es la accesibilidad web?</h1>
+		<h2>¿Qu&eacute; es la accesibilidad web?</h2>
 		<p><font size="4">
 			Cuando una página web está diseñada adecuadamente, de manera que personas con discapacidades puedan acceder a ella sin problemas, hablamos de accesibilidad web.
 		La accesibilidad web indica la capacidad de acceso a la web y a sus contenidos por todas las personas, independientemente de su discapacidad o contexto de uso.
@@ -73,11 +73,11 @@
         </div>
         
         <div class="modal-body">
-          <b>Principio de Operabilidad, gu&iacute;a de navegaci&oacute;n, criterio: <i>Evitar Bloques</i></b><br>
+          <strong>Principio de Operabilidad, gu&iacute;a de navegaci&oacute;n, criterio: <em>Evitar Bloques</em></strong><br>
           Debe haber medios para saltar bloques de contenido repetidos en una p&aacute;gina web.<br>
           Nivel A: ⭐<br>
-          <font color="blue"><xmp><li><a href="#contenido" class="cabeceras"><b>Contenido</b></a></li></xmp></font>
-          <a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+          <font color="blue"><xmp><li><a href="#contenido" class="cabeceras"><strong>Contenido</strong></a></li></xmp></font>
+          <a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG (Nueva ventana)</a>
         </div>
         
         <div class="modal-footer">
@@ -94,24 +94,28 @@
 
 <style>
 	
-	.topnav {
-  position: relative;
-  overflow: hidden;
-  background-color: #1e90ff;
+.jumbotron{
+	background-color:DodgerBlue;	
+}
+	
+.topnav {
+	position: relative;
+	overflow: hidden;
+	background-color: #1e90ff;
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 .topnav a.cabeceras {
-  background-color: #1e90ff;
-  color: black;
+	background-color: #1e90ff;
+	color: black;
 }
 
 .topnav ul {
@@ -133,7 +137,7 @@ body  {
 
 .principal {
     border: 5px solid black;
-    background-color: #D3D3D3;
+    background-color: #F5F6CE;
     padding: 25px;
     margin: 25px;
 }
