@@ -167,3 +167,21 @@ a:hover, h1 a:hover {
 	width: 100%;
 }
 
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  }
+  
+ blockquote {
+  border: 2px solid #003366;
+  background-color: #F5F5F5;
+  padding: 10px;
+}
+hr{
+	border-top: 1px solid black;
+}
+
