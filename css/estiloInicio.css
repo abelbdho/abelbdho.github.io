@@ -170,7 +170,6 @@ a:hover, h1 a:hover {
 table, th, td {
   border: 2px solid black;
   border-collapse: collapse;
-  overflow-x: auto;
 }
 th, td {
   padding: 15px;
@@ -184,5 +183,8 @@ th, td {
 }
 hr{
 	border-top: 1px solid black;
+}
+#tablas{
+	overflow-x:auto;
 }
 
