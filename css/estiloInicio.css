@@ -163,7 +163,7 @@ a:hover, h1 a:hover {
 	--device-height: 100%;
 	--min-width: 60%;
 	--device-width: 100%;
-	width: 60%
+	width: 60%;
 	padding: 40px;
 	margin: auto;
 }
