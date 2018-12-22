@@ -160,8 +160,10 @@ a:hover, h1 a:hover {
 
 .contentImage{
 	min-height: 70%;
+	min-height: 100%;
 	--device-height: 100%;
 	min-width: 60%;
+	max-width: 100%;
 	--device-width: 100%;
 	--width: 60%;
 	padding: 40px;
