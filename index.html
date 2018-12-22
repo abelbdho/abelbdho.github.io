@@ -73,9 +73,17 @@
 			oculta, desde la cual se puede saltar al menú o contenido. Mediante este primer elemento las personas con dificultades visuales que usen un lector web pueden usar
 			ese enlace para saltar directamente al contenido y no volver a repetir el &iacute;ndice en caso de que ya lo hayan hecho. Estas etiquetas aparecer&aacute;n junto al criterio/infracci&oacute;n,
 			son de color azul y estarán numeradas en cada página.</p>
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalEj">
-			1
-			</button>
+			<a href="#ejemploCollap" class="btn btn-primary" data-toggle="collapse">1</a>
+			<div id="ejemploCollap" class="collapse">
+			<h4 class="collapseTitulo">Saltar contenido repetido</h4>
+			<div><strong>Principio de Operabilidad, gu&iacute;a de navegaci&oacute;n, criterio: <em>Evitar Bloques</em></strong><br>
+			Debe haber medios para saltar bloques de contenido repetidos en una p&aacute;gina web.<br>
+			Nivel A,<br>
+			<strong><xmp><div id="enlaces"><ul><li><a href="#menu">Saltar al menú principal</a></li></xmp>
+			<xmp>#enlaces { overflow: hidden;</xmp></strong>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG (Nueva ventana)</a>
+			</div>
+			</div>
 			<br><br>
 			<p>Conforme se navega por la página se encuentran este tipo de referencias a la vez que se informa sobre distintos aspectos de la accesibilidad.</p>
 		</p>
@@ -90,33 +98,6 @@ REAVAI: Recursos web multi-p&aacute;gina para el Estudio de la Accesibilidad med
 <span lang="en">Multipage web resource for the study of accesibility through accesible and inaccesible versions</span>
 </div>
 	<!--Fin PIE-->
-	
-	
-	<!-- MODAL -->
-  <div class="modal fade" id="ModalEj">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <div class="modal-header">
-          <h4 class="modal-title">Saltar contenido repetido</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <div class="modal-body">
-          <strong>Principio de Operabilidad, gu&iacute;a de navegaci&oacute;n, criterio: <em>Evitar Bloques</em></strong><br>
-          Debe haber medios para saltar bloques de contenido repetidos en una p&aacute;gina web.<br>
-          Nivel A: ⭐<br>
-          <strong><xmp><div id="enlaces"><ul><li><a href="#menu">Saltar al menú principal</a></li></xmp>
-          <xmp>#enlaces { overflow: hidden;</xmp></strong>
-          <a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG (Nueva ventana)</a>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        </div>
-        <!-- MODAL -->
-        
-        
 	
 </body>
 
