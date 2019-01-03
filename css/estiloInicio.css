@@ -40,21 +40,24 @@ body {
 
 /* ENLACES */
 /* Por defecto están ocultos */
-#enlaces {
-  overflow: hidden;
-  width: 0;
-  height: 0;
-}
 
 #enlaces ul {
+  opacity:0;
+  width: 0;
+  height: 0;
+  white-space: nowrap ;
   margin: 0;
   padding: 0;
 }
 
 #enlaces li {
   display: inline;
-  list-style-type: none;
   margin-right: 10px;
+}
+
+#enlaces #listaCambiante:hover, #enlaces #listaCambiante:focus-within  {
+	opacity:1;
+	white-space: nowrap;
 }
 
 /*BARRA DE MENU*/
@@ -190,4 +193,27 @@ hr{
 #tablas{
 	overflow-x:auto;
 }
+
+.btn-success{
+	background-color: white;
+ color: black;
+	border:0px;
+}
+
+.btn-danger{
+ background-color: white;
+ color: black;
+ border:0px;
+}
+
+#seleccionadoAccesible {
+  background-color: #005C00;
+  color: white;
+}
+
+#seleccionadoInaccesible {
+  background-color: #AD0000;
+  color: white;
+}
+
 
