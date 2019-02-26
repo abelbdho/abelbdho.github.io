@@ -8,6 +8,8 @@ html {
   overflow: scroll;
 }
 
+/*BODY*/
+
 body {
   background: #FFFFFF;
   padding-top: 25px;
@@ -17,6 +19,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*************/
 
 /* CABECERA */  
 #cabecera img {
@@ -37,6 +41,43 @@ body {
   overflow: hidden;
 }
 
+/*ENLACE EXTERNO*/
+a[href^="http://"]:after, 
+a[href^="https://"]:after {
+	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
+	margin: 0 0 0 5px;
+}
+/**/
+
+/*MENU VERTICAL*/
+.menu {
+  width: 190px;
+  position: relative;
+  top: 86px;
+  right: 122px;
+}
+
+.menu a {
+  --border: 2px solid #ADC6FF;
+  border-radius: 5px;
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #ccc;
+}
+
+.menu a.active {
+  background-color: #380B61;
+  --font-size: 26px;
+  font-size: 1.75em;
+  color: white;
+}
+/**/
 
 /* ENLACES */
 /* Por defecto están ocultos */
@@ -60,41 +101,7 @@ body {
 	white-space: nowrap;
 }
 
-/*BARRA DE MENU*/
-
-#menu {
-  overflow:visible; /* 18/7/2015: necesario para Mozilla Firefox */
-  padding-top: 25px;
-}
-
-#menu ul {
-  margin: 0;
-  padding: 0;
-  background-color: #003366;
-  border: 6px solid #003366;
-}
-
-#menu li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline;
-}
-
-#menu a {
-  margin: 5px;
-  padding: 0;
-  background-color: #003366;
-  border: 3px solid #003366;
-  color: #FFFFFF;
-  font-size: 80%;
-}
-
-#menu a.seleccionado {
-  background-color: #426B94;
-}
-
-/*COllapse*/
+/*Collapse*/
 .collapse{
 	background-color: #E3E3E3;
 	overflow-x:auto;
@@ -109,8 +116,11 @@ body {
   clear: right;
   margin: 0;
   padding: 0;
+  width: 1000px;
+  position: relative;
+  top: -220px;
+  left: 90px;
 
-  border-left: 2px solid #003366;
   padding-top: 25px;
   margin-left: 10px;
   padding-left: 10px;
@@ -122,23 +132,28 @@ h1 {
 
 h2, h3, h4, h5 {
   margin: 0;
-  background-color: #BDCED6;
+  font-weight: bold;
+}
+
+#tituloCollapse{
+	font-weight: normal;
+	font-size: 1.92em;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 2.38em;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 2.10em;
 }
 
 h4{
-  font-size: 32px;
+  font-size: 1.92em;
 }
 
 h5{
-  font-size: 29px;
+  font-size: 1.74em;
 }
 
 h1 a {

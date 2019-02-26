@@ -14,8 +14,13 @@
 </head>
 
 <body>
-
-		<!-- Saltar -->
+	
+	<div id="englobador">
+	
+	
+	<div id="realBody">
+	
+	<!-- Saltar -->
 <div id="enlaces" role="navegacion">
 <ul id="listaCambiante">
 <li><a href="#menu">Saltar al menú principal</a></li>
@@ -32,19 +37,23 @@
 </div>
 	<!-- Fin Cabecera -->
 	
-	<!--MENU VERTICAL-->
-	
-	<div class="menu">
-	<a href="#" class="active">Inicio</a>
-	<a href="#">Link 1</a>
-	<a href="#">Link 2</a>
-	<a href="#">Link 3</a>
-	<a href="#">Link 4</a>
-	</div>
-	
-	<!--FIN MENU VERTICAL-->
-	
-	<!-- Contenido -->
+	<!-- Menú -->
+<div id="menu">
+<h2 class="screen-reader-text">Menú principal</h2>
+<ul>
+<li><a href="#" class="seleccionado">Inicio</a></li>
+<li><a href="intro.html">Introducci&oacute;n</a></li>
+<li><a href="#">Motivaci&oacute;n</a></li>
+<li><a href="#">...</a></li>
+<li><a href="#">...</a></li>
+<li><a href="#">...</a></li>
+<li><a href="#">...</a></li>
+<li><a href="#">Estructura</a></li>
+</ul>
+</div>
+<!-- Fin Menú -->
+
+<!-- Contenido -->
 
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
@@ -72,13 +81,13 @@
 			son de color azul y estarán numeradas en cada página.</p>
 			<a href="#ejemploCollap" class="btn btn-primary" data-toggle="collapse">1</a>
 			<div id="ejemploCollap" class="collapse">
-			<span class="collapseTitulo" id="tituloCollapse">Saltar contenido repetido</span>
+			<h4 class="collapseTitulo">Saltar contenido repetido</h4>
 			<div><strong>Principio de Operabilidad, gu&iacute;a de navegaci&oacute;n, criterio: <em>Evitar Bloques</em></strong><br>
 			Debe haber medios para saltar bloques de contenido repetidos en una p&aacute;gina web.<br>
 			Nivel A,<br>
 			<strong><xmp><div id="enlaces"><ul><li><a href="#menu">Saltar al menú principal</a></li></xmp>
 			<xmp>#enlaces { overflow: hidden;</xmp></strong>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG (Nueva ventana)</a>
 			</div>
 			</div>
 			<br><br>
@@ -89,4 +98,29 @@
 
 <!-- Fin Contenido -->
 
+<!-- Pie -->
+<div id="pie">
+<h2 class="screen-reader-text">Nombre y TFG</h2>
+REAVAI: Recursos web multi-p&aacute;gina para el Estudio de la Accesibilidad mediante Versiones Accesibles e Inaccesibles<br>
+<span lang="en">Multipage web resource for the study of accesibility through accesible and inaccesible versions</span><br>
+ Abel Jiménez Urbaneja, 2018-2019
+</div>
+	<!--Fin PIE-->
+	
+	</div>
+	<div id="fueraContenido">
+	<ul id="listaAlt">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+	</ul>
+	</div>
+	</div>
 </body>
+
+</html>
+
+
+
+
