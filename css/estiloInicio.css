@@ -8,8 +8,6 @@ html {
   overflow: scroll;
 }
 
-/*BODY*/
-
 body {
   background: #FFFFFF;
   padding-top: 25px;
@@ -19,8 +17,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-/*************/
 
 /* CABECERA */  
 #cabecera img {
@@ -51,10 +47,14 @@ a[href^="https://"]:after {
 
 /*MENU VERTICAL*/
 .menu {
+  margin: 0;
+  padding: 0;
   width: 190px;
-  position: relative;
-  top: 86px;
-  right: 122px;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 196px;
+  left: 252px;
+  overflow: auto;
 }
 
 .menu a {
@@ -76,6 +76,24 @@ a[href^="https://"]:after {
   --font-size: 26px;
   font-size: 1.75em;
   color: white;
+}
+
+@media screen and (max-width: 1800px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0px;
+	left: 0px;
+  }
+  .menu a {float: left;}
+}
+
+@media screen and (max-width: 400px) {
+  .menu a {
+    text-align: center;
+    float: none;
+  }
 }
 /**/
 
@@ -101,7 +119,7 @@ a[href^="https://"]:after {
 	white-space: nowrap;
 }
 
-/*Collapse*/
+/*COllapse*/
 .collapse{
 	background-color: #E3E3E3;
 	overflow-x:auto;
@@ -114,16 +132,20 @@ a[href^="https://"]:after {
 /* CONTENIDO */
 #contenido {
   clear: right;
-  margin: 0;
-  padding: 0;
   width: 1000px;
-  position: relative;
-  top: -220px;
-  left: 90px;
+  position: absolute;
+  top: 180px; 
+  left: 490px;
+}
 
-  padding-top: 25px;
-  margin-left: 10px;
-  padding-left: 10px;
+@media screen and (max-width: 1800px) {
+  #contenido {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0px;
+	left: 0px;
+  }
 }
 
 h1 {
