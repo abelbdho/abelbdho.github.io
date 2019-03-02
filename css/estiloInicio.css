@@ -38,8 +38,8 @@ body {
 }
 
 /*ENLACE EXTERNO*/
-a[href^="http://"]:after, 
-a[href^="https://"]:after {
+a[href^="http://www.w3.org/"]:after, 
+a[href^="https://www.w3.org/"]:after {
 	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
 	margin: 0 0 0 5px;
 }
@@ -49,7 +49,7 @@ a[href^="https://"]:after {
 .menu {
   margin: 0;
   padding: 0;
-  width: 190px;
+  width: 210px;
   background-color: #f1f1f1;
   position: fixed;
   top: 196px;
@@ -69,12 +69,16 @@ a[href^="https://"]:after {
 
 .menu a:hover {
   background-color: #ccc;
+  font-weight: bold;
 }
 
 .menu a.active {
   background-color: #380B61;
+  display: list-item; 
+  list-style-type: disc;
+   list-style-position: inside;
   --font-size: 26px;
-  font-size: 1.75em;
+  font-size: 1.52em;
   color: white;
 }
 
