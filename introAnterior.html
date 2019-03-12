@@ -14,8 +14,8 @@
 </head>
 
 <body>
-	
-	<!-- Saltar -->
+
+		<!-- Saltar -->
 <div id="enlaces" role="navegacion">
 <ul id="listaCambiante">
 <li><a href="#menu">Saltar al menú principal</a></li>
@@ -32,24 +32,21 @@
 </div>
 	<!-- Fin Cabecera -->
 	
-	<!-- Menú -->
-<div id="menu">
-<h2 class="screen-reader-text">Menú principal</h2>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="#" class="seleccionado">Introducci&oacute;n</a></li>
-<li><a href="#">Motivaci&oacute;n</a></li>
-<li><a href="#">...</a></li>
-<li><a href="#">...</a></li>
-<li><a href="#">...</a></li>
-<li><a href="#">...</a></li>
-<li><a href="#">Estructura</a></li>
-</ul>
-</div>
-<!-- Fin Menú -->
+	<!--MENU VERTICAL-->
+	
+	<div class="menu">
+	<a href="index.html">Inicio</a>
+	<a href="#" class="active">Introducci&oacute;n</a>
+	<a href="#">Link 2</a>
+	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!-- Contenido -->
 
-<!-- Contenido -->
-</main>
+<main>
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
@@ -189,44 +186,7 @@
 
 </div>
 </main>
+
 <!-- Fin Contenido -->
 
-<!-- Pie -->
-<div id="pie">
-<h2 class="screen-reader-text">Nombre y TFG</h2>
-REAVAI: Recursos web multi-p&aacute;gina para el Estudio de la Accesibilidad mediante Versiones Accesibles e Inaccesibles<br>
-<span lang="en">Multipage web resource for the study of accesibility through accesible and inaccesible versions</span><br>
- Abel Jiménez Urbaneja, 2018-2019
-</div>
-	<!--Fin PIE-->
-	
-	
-	<!-- MODAL -->
-  <div class="modal fade" id="Modal1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <div class="modal-header">
-          <h4 class="modal-title">Saltar contenido repetido</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <div class="modal-body">
-          <strong>Principio de Operabilidad, gu&iacute;a de navegaci&oacute;n, criterio: <em>Evitar Bloques</em></strong><br>
-          Debe haber medios para saltar bloques de contenido repetidos en una p&aacute;gina web.<br>
-          Nivel A: ⭐<br>
-          <strong><xmp><div id="enlaces"><ul><li><a href="#menu">Saltar al menú principal</a></li></xmp>
-          <xmp>#enlaces { overflow: hidden;</xmp></strong>
-          <a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG (Nueva ventana)</a>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        </div>
-        <!-- MODAL -->
-	
 </body>
-
-</html>
-
-

@@ -1,0 +1,90 @@
+<html lang="es">
+<head>
+  <title>Percepci&oacute;n - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navegacion">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+<div id="logo1">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga" /></a>
+</div>
+<h1><a href="#">REAVAI: Accesibilidad Web</a></h1>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu">
+	<a href="index.html">Inicio</a>
+	<a href="#" class="active">Percepci&oacute;n</a>
+	<a href="#">Link 2</a>
+	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!-- Contenido -->
+
+<main>
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a>
+	<a href="introB.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><br><br>
+	
+	<h2>Directriz 1.1 - Alternativas textuales</h2>
+	<p>
+		Proporcionar alternativas textuales para cualquier contenido que no lo sea, de modo que cualquier persona pueda cambiar a otras formas si lo necesitan (letra m&aacute;s grande, braille, audio...)
+	</p>
+	
+	<h3>1.1.1 Contenido no textual - Nivel A</h3>
+	<p>
+		Todo contenido no textual presentado al usuario tiene su alternatica textual, equivalente, a excepci&oacute;n de estos casos:
+		<ul>
+			<li><b>Controles y entrada de usuario</b>: en este caso, deben tener un nombre identificativo</li>
+			<li><b>Contenido basados en tiempo</b>: el contenido basado en tiempo debe, al menos, ir acompañado de una identificaci&oacute;n descriptiva del contenido no textual</li>
+			<li><b>Test</b>: Si un test o ejercicio no puede ser en texto, debe tener su identificaci&oacute;n descriptiva.</li>
+			<li><b>Sensorial</b>: si el contenido est&aacute; pensado para crear una experiencia sensorial espec&iacute;fica, debe tener una identificaci&oacute;n descriptiva del contenido no textual</li>
+		</ul>
+	</p>
+	
+	<picture>
+		<img class="contentImage" src="img/uma.png" alt="Logo Universidad de Málaga"></img>
+	</picture> <br><br>
+	<a href="#ejemploCollap" class="btn btn-primary" data-toggle="collapse">Criterio de &eacute;xito</a>
+	<div id="ejemploCollap" class="collapse">
+			<div>
+				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
+			</div>
+			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
+			</div>
+			</div>
+
+</div>
+</main>
+
+<!-- Fin Contenido -->
+
+</body>
