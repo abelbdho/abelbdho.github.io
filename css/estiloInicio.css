@@ -296,6 +296,7 @@ hr{
 
 .popup h2 {
   margin-top: 0;
+  font-size: 1.52em;
   border: 2px solid black;
   --color: white;color: black;
   font-family: Tahoma, Arial, sans-serif;
@@ -335,6 +336,7 @@ hr{
 }
 
 .botonVentanita {
+  color: black;
   font-size: 1.2em;
   padding: 10px;
   color: #0B5DC1;
@@ -345,22 +347,40 @@ hr{
   transition: all 0.3s ease-out;
 }
 .botonVentanita:hover {
+  color: black;
   background: #06D85F;
   text-decoration: none;
 }
 
+.botonVentanita2 {
+  color: black;
+  font-size: 1.2em;
+  padding: 10px;
+  color: #0B5DC1;
+  border: 2px solid #FC5F5F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.botonVentanita2:hover {
+  color: black;
+  background: #FC5F5F;
+  text-decoration: none;
+}
+
 #parrafoBueno{
-	--background-color: white;background-color: #19610F;
-	--color: black;color:white;
-	--border: 4px solid #19610F;border: 2px solid black;
+	--background-color: white;background-color: #D9F4C3;
+	--color: black;color:black;
+	--border: 4px solid #19610F;
 	padding: 10px;
     margin: 10px;
 }
 
 #parrafoMalo{
-	--background-color: white;background-color:#AB1111;
-	--color: black;color:white;
-	--border: 4px solid #AB1111;border: 2px solid black;
+	--background-color: white;background-color:#F4AEAE;
+	--color: black;color:black;
+	--border: 4px solid #AB1111;
 	padding: 10px;
     margin: 10px;
 }
