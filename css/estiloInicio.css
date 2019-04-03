@@ -134,6 +134,7 @@ a[href^="https://www.w3.org/"]:after {
 }
 
 /* CONTENIDO */
+
 #contenido {
   clear: right;
   width: 1000px;
@@ -392,6 +393,12 @@ hr{
   top: 6px;
   left: 1452px;
   overflow: auto;
+}
+@media screen and (min-width: 2500px) {
+  #sol {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
