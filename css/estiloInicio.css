@@ -24,10 +24,6 @@ body {
   vertical-align: middle;
 }
 
-#logo1 {
-  float: left;
-}
-
 .screen-reader-text {
   position: absolute;
   left: -10000px;
@@ -52,13 +48,12 @@ a[href^="https://www.w3.org/"]:after {
   width: 210px;
   background-color: #f1f1f1;
   position: fixed;
-  top: 196px;
+  top: 220px;
   left: 252px;
   overflow: auto;
 }
 
 .menu a {
-  --border: 2px solid #ADC6FF;
   border-radius: 5px;
   background-color: #eee;
   color: black;
@@ -77,12 +72,32 @@ a[href^="https://www.w3.org/"]:after {
   display: list-item; 
   list-style-type: disc;
    list-style-position: inside;
-  --font-size: 26px;
   font-size: 1.52em;
   color: white;
 }
 
 @media screen and (max-width: 1800px) {
+  .menu {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 300px;
+  left: 52px;
+  overflow: auto;
+  }
+  .menu a {
+	border-radius: 5px;
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   .menu {
     width: 100%;
     height: auto;
@@ -92,6 +107,7 @@ a[href^="https://www.w3.org/"]:after {
   }
   .menu a {float: left;}
 }
+
 
 @media screen and (max-width: 400px) {
   .menu a {
@@ -139,7 +155,7 @@ a[href^="https://www.w3.org/"]:after {
   clear: right;
   width: 1000px;
   position: absolute;
-  top: 180px; 
+  top: 215px; 
   left: 490px;
 }
 
@@ -153,13 +169,13 @@ a[href^="https://www.w3.org/"]:after {
   }
 }
 
+/*TITULOS EN GENERAL*/
+
 h1 {
   text-align: center;
 }
 
 h2, h3, h4, h5 {
-  --color: #380B61;
-  color: #0B5DC1;
   margin: 0;
   font-weight: bold;
 }
@@ -170,19 +186,23 @@ h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 2.38em;
+  color: #042249;
+  font-size: 1.88em;
 }
 
 h3 {
-  font-size: 2.10em;
+  color: #650620;
+  font-size: 1.61em;
 }
 
 h4{
-  font-size: 1.92em;
+  color: #AF080B;
+  font-size: 1.48em;
 }
 
 h5{
-  font-size: 1.74em;
+  color: #953235;
+  font-size: 1.40em;
 }
 
 h1 a {
@@ -193,6 +213,7 @@ a:hover, h1 a:hover {
   background-color: #D8E5EA;
 }
 
+
 /* PIE */
 #pie {
   clear: both;
@@ -201,6 +222,8 @@ a:hover, h1 a:hover {
   text-align: center;
 }
 
+/*IMAGENES*/
+
 #imagen {
 	width: 100%;
 }
@@ -208,13 +231,100 @@ a:hover, h1 a:hover {
 .contentImage{
 	min-height: 70%;
 	min-height: 100%;
-	--device-height: 100%;
 	min-width: 60%;
 	max-width: 100%;
-	--device-width: 100%;
-	--width: 60%;
 	padding: 40px;
 	margin: auto;
+}
+
+
+/*LOGOS*/
+
+#logo1{
+  float: left;
+  position: relative;
+  left: 18px;
+  bottom: 68px;
+  width: 36%;
+  height: 18%;
+}
+
+
+
+#logo2{
+	position: relative;
+	left: 680px;
+	bottom: 130px;
+	width: 25%;
+	height: 25%;
+}
+
+@media screen and (max-width: 1800px) {
+	#logo2{
+	text-align: center;
+    float: none;
+    left: 518px;
+    bottom: 98px;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	#logo2{
+	text-align: center;
+    float: none;
+    left: 518px;
+    bottom: 68px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#logo1{
+	bottom: 82px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#logo1{
+	bottom: 82px;
+	width: 45%;
+	height: 28%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#logo1{
+	bottom: 52px;
+	width: 45%;
+	height: 18%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#logo2{
+	display: none;
+	}
+}
+
+
+/*SOL*/
+
+#sol{
+  position: fixed;
+  top: 6px;
+  left: 1452px;
+  overflow: auto;
+}
+@media screen and (min-width: 2500px) {
+  #sol {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*TABLAS*/
+
+#tablas{
+	overflow-x:auto;
 }
 
 table, th, td {
@@ -225,18 +335,8 @@ th, td {
   padding: 15px;
   text-align: left;
   }
-  
- blockquote {
-  border: 2px solid #003366;
-  background-color: #F5F5F5;
-  padding: 10px;
-}
-hr{
-	border-top: 1px solid black;
-}
-#tablas{
-	overflow-x:auto;
-}
+
+/*BOTONES VERSION*/
 
 .btn-success{
 	background-color: white;
@@ -260,11 +360,7 @@ hr{
   color: white;
 }
 
-#arrow{
-	font-size: 90px;
-	position: relative;
-	top : 20px;
-}
+/*POPUP*/
 
 .overlay {
   position: fixed;
@@ -285,10 +381,8 @@ hr{
 .popup {
   margin: 70px auto;
   padding: 20px;
-  --background: #014A8E;
   background: white;
   color: black;
-  --color: white;
   border-radius: 5px;
   width: 30%;
   position: relative;
@@ -298,13 +392,12 @@ hr{
 .popup h2 {
   margin-top: 0;
   font-size: 1.52em;
-  border: 2px solid black;
-  --color: white;color: black;
+  border: 2px solid black;color: black;
   font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
   position: absolute;
-  --color: white;color: black;
+  color: black;
   top: 20px;
   right: 30px;
   transition: all 200ms;
@@ -313,28 +406,34 @@ hr{
   text-decoration: none;
 }
 .popup .close:hover {
-  --color: white;color: black;
+	color: black;
 }
 .popup .ventanita {
-  max-height: 30%;
   overflow: auto;
-  --color: white;color: black;
+  color: black;
 }
 
 .close{
-	--color: white;color: black;
+	color: black;
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
+@media screen and (max-width: 900px){
+	.popup{
+    width: 100%;
     color: white;
+    bottom: 96px;
   }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
   .popup{
-    width: 70%;
+    width: 90%;
+    bottom: 96px;
+    overflow: auto;
     color: white;
   }
 }
+
 
 .botonVentanita {
   color: black;
@@ -371,35 +470,17 @@ hr{
 }
 
 #parrafoBueno{
-	--background-color: white;background-color: #D9F4C3;
-	--color: black;color:black;
-	--border: 4px solid #19610F;
+	background-color: #D9F4C3;
+	color:black;
 	padding: 10px;
     margin: 10px;
 }
 
 #parrafoMalo{
-	--background-color: white;background-color:#F4AEAE;
-	--color: black;color:black;
-	--border: 4px solid #AB1111;
+	background-color:#F4AEAE;
+	color:black;
 	padding: 10px;
     margin: 10px;
 }
-
-/*SOL*/
-
-#sol{
-  position: fixed;
-  top: 6px;
-  left: 1452px;
-  overflow: auto;
-}
-@media screen and (min-width: 2500px) {
-  #sol {
-    width: 100%;
-    height: auto;
-  }
-}
-
 
 
