@@ -80,7 +80,7 @@ a[href^="https://www.w3.org/"]:after {
   .menu {
   margin: 0;
   padding: 0;
-  width: 210px;
+  width: 170px;
   background-color: #f1f1f1;
   position: fixed;
   top: 300px;
@@ -273,7 +273,7 @@ a:hover, h1 a:hover {
 	text-align: center;
     float: none;
     left: 518px;
-    bottom: 68px;
+    bottom: 60px;
 	}
 }
 

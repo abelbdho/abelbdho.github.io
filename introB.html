@@ -49,7 +49,7 @@
 	
 	<picture id="sol">
 	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
-	<img class="contentImage" src="img/solFeliz.png" alt="Un teclado Braille para leer páginas web"></img>
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
 	</picture>
 	
 	<!--FIN SOL-->
@@ -57,27 +57,30 @@
 	<!-- Contenido -->
 
 <main>
+	
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="introA.html" class="btn btn-success btn-sm" role="button" >Versi&oacute;n accesible</a>
+	<a href="introA.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><br><br>
 	
 	<h2>Percepci&oacute;n - Primer Principio</h2>
 	<p>
 		Los usuarios deben poder distinguir tanto la informaci&oacute;n presentada como los componentes de la interfaz
 	</p>
-	
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
 	<h3>1.1.1 Contenido no textual - Nivel A</h3>
 	<p>
-		Todo contenido no textual presentado al usuario tiene su alternativa textual, totalmente equivalente (por ejemplo: una imagen).
-	</p>
-	
-	<picture>
-		<img class="contentImage" src="img/uma.png" alt="Logo Universidad de Málaga"></img>
+		Todo contenido no textual presentado al usuario tiene su alternativa textual, totalmente equivalente. Excepciones:
+		
+		</p>	
+		<picture>
+		<img class="contentImage" src="img/criterio1.1.1.png" alt="Excepciones del criterio 1.1.1"></img>
 		
 		
-		<a class="botonVentanita2" href="#popup1">PISTA</a>
+		<a class="botonVentanita" href="#popup1">PISTA</a>
 		<div id="popup1" class="overlay">
 		<div class="popup">
 			<a class="close" href="#">&times;</a><br><br>
@@ -97,17 +100,68 @@
 		</div>
 		
 	</picture> <br><br>
-	<a href="#ejemploCollap" class="btn btn-primary" data-toggle="collapse">1.1.1 Contenido no textual</a>
-	<div id="ejemploCollap" class="collapse">
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<h3>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h3>
+	<p>
+		A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe cumplirse lo que sigue:
+	</p>	
+		<ul>
+			<li><strong>Audios pregrabados</strong>: alternativa textual equivalente a la informaci&oacute;n proporcionada en el audio</li>
+			<li><strong>V&iacute;deos pregrabados</strong>: alternativa textual equivalente a la informaci&oacute;n proporcionada en el v&iacute;deo</li>
+		</ul>
+			
+		<picture>
+		<img class="contentImage" src="img/enterREAVAI.gif" alt="Gif ejemplo del criterio 1.2.1"></img>
+		
+		
+		<a class="botonVentanita" href="#popup2">PISTA</a>
+		<div id="popup2" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a><br><br>
+		<h2>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h2>
+		<div class="ventanita">
+			A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe haber alternativa textual.
+			<div id="parrafoBueno">
+				Aqui va lo que esta bien del criterio<br>
+				Ta bien aplicado
+			</div>
+			<div id="parrafoMalo">
+				Aqui va lo que esta mal del criterio<br>
+				Muy mal muy mal ejemplo codigo fataaaal
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	</picture> <br><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse">1.1.1 Contenido no textual</a>
+	<div id="Collap" class="collapse">
 			<div>
 				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
 			</div>
 			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
 			<a href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse">1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</a>
+	<div id="Collap2" class="collapse">
+			<div>
+				A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe haber alternativa textual.
 			</div>
+			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded" target=”_blank”>Criterio~WCAG</a>
 			</div>
 
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
 </div>
+
+
 </main>
 
 <!-- Fin Contenido -->

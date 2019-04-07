@@ -51,7 +51,7 @@
 	
 	<picture id="sol">
 	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
-	<img class="contentImage" src="img/solFeliz.png" alt="Dibujo de un simpático sol"></img>
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
 	</picture>
 	
 	<!--FIN SOL-->
@@ -63,25 +63,45 @@
 <h2>¿Qué es la accesibilidad web?</h2>
 
 <p>
-	Cuando una página web está diseñada adecuadamente, de manera que personas con discapacidades puedan acceder a ella sin problemas, hablamos de <strong>accesibilidad web</strong>.
-		La accesibilidad web indica la capacidad de acceso a la web y a sus contenidos por todas las personas, independientemente de su discapacidad o contexto de uso.
-		En concreto, se hace referencia al diseño web que permite que estas personas puedan percibir, entender, navegar e interactuar con la web.
-		Así, es posible proporcionar un <strong>acceso equitativo e igualdad de oportunidades</strong> a las personas con dificultades, una oportunidad de acceder a la información y de interactuar
-		en los distintos aspectos de la vida: educación, empleo, sanidad...
+	La <strong>accesibilidad</strong> web tiene como objetivo lograr que las p&aacute;ginas web sean utilizables por el m&aacute;ximo número de personas, independientemente de sus conocimientos o capacidades personales,
+	 e independientemente de las caracter&iacute;sticas t&eacute;cnicas del equipo utilizado para acceder a la Web.
+	 </p>
+	  <p>La necesidad de que la Web sea universal y accesible por cualquier persona est&aacute; presente desde el principio de la Web, ya que era un requisito contemplado en su diseño por su creador Tim Berners-Lee.
+	   De hecho, la Web ofrece oportunidades sin precedentes a las personas con discapacidad, si bien, la falta de accesibilidad les crear&aacute; graves barreras que impedir&aacute;n su uso.
 </p> <br>
 
 <h2>Objetivo de esta web</h2>
 		<p>
-			El principal objetivo de esta p&aacute;gina web es el de concienciar y dar visibilidad a la importancia de la accesibilidad desde un punto de vista did&aacute;ctivo e instructivo.
-			Se proporciona información sobre la accesibilidad web: su motivaci&oacute;n, beneficios, etc, así como ejemplos de buena o mala accesibilidad.
+			El objetivo de este proyecto es el desarrollo de un <strong>recurso web multi-p&aacute;gina</strong> que ofrezca <strong>dos versiones</strong> distintas para cada una de ellas: la <strong>inaccesible</strong> y la <strong>accesible</strong> correspondiente,
+			 <strong>de acuerdo</strong> con las <strong>Pautas de Accesibilidad del Contenido Web</strong> del W3C.
 		</p><br>
 
 <h3>Ejemplo</h3>
 		<p>
-			<p>Aqu&iacute; se muestra como ejemplo una de las etiquetas que pueden aparecer más adelante. En este caso, hace referencia a la barra de navegación que encabeza el contenido de la p&aacute;gina,
+			<p>Aqu&iacute; se muestra como ejemplo dos de las etiquetas que pueden aparecer más adelante. En este caso, hace referencia a la barra de navegación que encabeza el contenido de la p&aacute;gina,
 			oculta, desde la cual se puede saltar al menú o contenido. Mediante este primer elemento las personas con dificultades visuales que usen un lector web pueden usar
-			ese enlace para saltar directamente al contenido y no volver a repetir el &iacute;ndice en caso de que ya lo hayan hecho. Estas etiquetas aparecer&aacute;n junto al criterio/infracci&oacute;n,
-			son de color azul y estarán numeradas en cada página.</p>
+			ese enlace para saltar directamente al contenido y no volver a repetir el &iacute;ndice en caso de que ya lo hayan hecho. Estas etiquetas aparecer&aacute;n junto al criterio/infracci&oacute;n.
+			</p>
+			
+			<a class="botonVentanita" href="#popup1">PISTA</a>
+		<div id="popup1" class="overlay">
+		<div class="popup">
+			<a class="close" href="#">&times;</a><br><br>
+		<h2>1.1.1 Contenido no textual - Nivel A</h2>
+		<div class="ventanita">
+			Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
+			<div id="parrafoBueno">
+				Aqui va lo que esta bien del criterio<br>
+				Ta bien aplicado
+			</div>
+			<div id="parrafoMalo">
+				Aqui va lo que esta mal del criterio<br>
+				Muy mal muy mal ejemplo codigo fataaaal
+			</div>
+		</div>
+		</div>
+		</div>&nbsp;
+			
 			<a href="#ejemploCollap" class="btn btn-primary" data-toggle="collapse">1</a>
 			<div id="ejemploCollap" class="collapse">
 			<span class="collapseTitulo" id="tituloCollapse">Saltar contenido repetido</span>
