@@ -80,11 +80,11 @@ a[href^="https://www.w3.org/"]:after {
   .menu {
   margin: 0;
   padding: 0;
-  width: 170px;
+  width: 210px;--170
   background-color: #f1f1f1;
   position: fixed;
   top: 300px;
-  left: 52px;
+  left: 7px;--52
   overflow: auto;
   }
   .menu a {
