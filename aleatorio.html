@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-  <title>Percepci&oacute;n - REAVAI: Accesibilidad Web</title>
+  <title>Aleatorio - REAVAI: Accesibilidad Web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Abel Jiménez Urbaneja" />
@@ -31,16 +31,18 @@
 <div id="logo2">
 <a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
 </div>
+<!--<h1><a href="#">REAVAI: Accesibilidad Web</a></h1>-->
+</div>
 	<!-- Fin Cabecera -->
 	
 	<!--MENU VERTICAL-->
 	
 	<div class="menu">
 	<a href="index.html">Inicio</a>
-	<a href="#" class="active">Percepci&oacute;n</a>
+	<a href="introA.html">Percepci&oacute;n</a>
 	<a href="#">Link 2</a>
 	<a href="#">Link 3</a>
-	<a href="aleatorio.html">Aleatorio</a>
+	<a href="#" class="active">Aleatorio</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -56,25 +58,30 @@
 	
 	<!-- Contenido -->
 
-<main>
-	
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="introA.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><br><br>
-	
-	<h2>Percepci&oacute;n - Primer Principio</h2>
+	<h2>Desaf&iacute;o</h2>
 	<p>
-		Los usuarios deben poder distinguir tanto la informaci&oacute;n presentada como los componentes de la interfaz
+		En esta p&aacute;gina aparecen distintos ejemplos de situaciones en las que no se han tomado medidas para la accesibilidad. ¿Descubrir&aacute;s estos fallos sin necesidad de recurrir a las pistas?
 	</p>
+	
+	<h2>Test</h2><br>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+	<div id="targetElement0"><h3>1</h3><br></div>
+	
+	<div id="targetElement1"><h3>2</h3><br></div>
+	
+	<div id="targetElement2"><h3>3</h3><br></div>
 
-	<h3>1.1.1 Contenido no textual - Nivel A</h3>
-	<p>
-		Todo contenido no textual presentado al usuario tiene su alternativa textual, totalmente equivalente. Excepciones:
-		
+</div>
+
+<!-- Fin Contenido -->
+
+
+<!--SCRIPT-->
+	
+	<script id="blockOfStuff0" type="text/html">
 		</p>	
 		<picture>
 		<img class="contentImage" src="img/criterio1_1_1.png" alt="Excepciones del criterio 1.1.1"></img>
@@ -100,17 +107,9 @@
 		</div>
 		
 	 <br><br>
-			
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+	</script>
 
-<h3>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h3>
-	<p>
-		A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe cumplirse lo que sigue:
-	</p>	
-		<ul>
-			<li><strong>Audios pregrabados</strong>: alternativa textual equivalente a la informaci&oacute;n proporcionada en el audio</li>
-			<li><strong>V&iacute;deos pregrabados</strong>: alternativa textual equivalente a la informaci&oacute;n proporcionada en el v&iacute;deo</li>
-		</ul>
+	<script id="blockOfStuff1" type="text/html">
 			
 		<picture>
 		<img class="contentImage" src="img/enterREAVAI.gif" alt="Gif ejemplo del criterio 1.2.1"></img>
@@ -136,13 +135,9 @@
 		</div>
 		
 	 <br><br>
+	</script>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-<h3>1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h3>
-	<p>
-		Para todo contenido que contenga un componente auditivo se proporcionan subt&iacute;tulos, excepto cuando este contenido sea alternativa a un texto.
-	</p>
+	<script id="blockOfStuff2" type="text/html">
 			
 		<iframe class="iframe" src="https://player.vimeo.com/video/100071875" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<br><br>
@@ -166,45 +161,28 @@
 		</div>
 		</div>
 		<br><br>
+	</script>
 	
-	<br><br>
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
-
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse">1.1.1 Contenido no textual</a>
-	<div id="Collap" class="collapse">
-			<div>
-				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
-			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>
-
-<a href="#Collap2" class="btn btn-primary" data-toggle="collapse">1.2.1 Audio &uacute;nico y v&iacute;deo</a>
-	<div id="Collap2" class="collapse">
-			<div>
-				A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe haber alternativa textual.
-			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
-			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse">1.2.2 Subt&iacute;tulos</a>
-	<div id="Collap3" class="collapse">
-			<div>
-				Para todo contenido que contenga un componente auditivo se proporcionan subt&iacute;tulos, excepto cuando este contenido sea alternativa a un texto.
-			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>				
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-</div>
-
-
-</main>
-
-<!-- Fin Contenido -->
+	<script>
+	
+		function getRandom()
+		{
+			return (Math.floor(Math.random()*3))
+		}
+		
+		var array = [];
+		for(i = 0; i < 3; i++){
+		var div = document.createElement('div');
+		div.setAttribute('class', 'bloquesAleatorios');
+		var numeroRandom = getRandom();
+		while(array.includes(numeroRandom)){
+			numeroRandom = getRandom();
+		}
+		array.push(numeroRandom);
+		div.innerHTML = document.getElementById("blockOfStuff" + numeroRandom).innerHTML;
+		document.getElementById("targetElement" + i).appendChild(div);
+	}
+		
+	</script>
 
 </body>

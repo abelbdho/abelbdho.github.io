@@ -483,4 +483,18 @@ th, td {
     margin: 10px;
 }
 
+/*YOUTUBE VIDEO*/
+
+.iframe{
+	width:893px;
+	height:502px;
+}
+
+@media screen and (max-width: 900px){
+	.iframe{
+    width:453px;
+	height:222px;
+  }
+}
+
 
