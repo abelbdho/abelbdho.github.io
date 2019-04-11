@@ -492,6 +492,13 @@ th, td {
 
 @media screen and (max-width: 900px){
 	.iframe{
+    width:353px;
+	height:182px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  .popup{
     width:453px;
 	height:222px;
   }
