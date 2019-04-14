@@ -68,11 +68,15 @@
 	
 	<h2>Test</h2><br>
 
-	<div id="targetElement0"><h3>1</h3><br></div>
+	<div id="targetElement0"><h3>1</h3><br></div><br>
 	
-	<div id="targetElement1"><h3>2</h3><br></div>
+	<div id="targetElement1"><h3>2</h3><br></div><br>
 	
-	<div id="targetElement2"><h3>3</h3><br></div>
+	<div id="targetElement2"><h3>3</h3><br></div><br>
+	
+	<div id="targetElement3"><h3>4</h3><br></div><br>
+	
+	<div id="targetElement4"><h3>5</h3><br></div><br>
 
 </div>
 
@@ -163,15 +167,74 @@
 		<br><br>
 	</script>
 	
+	<script id="blockOfStuff3" type="text/html">
+		<p class="textoEspecial">
+			Cuando queremos enfatizar la importancia de la <b>accesibilidad web</b> en esta p&aacute;gina, usamos las etiquetas correctas. Esto facilita
+			la experiencia en la web a personas con <b>diversidad funcional</b> o incluso <b>sin ella</b>.
+		</p>
+		<br><br>
+		
+		<a class="botonVentanita" href="#popup4">PISTA</a>
+		<div id="popup4" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio4">&times;</a><br><br>
+		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
+		<div class="ventanita">
+			Toda informaci&oacute;n, estructura o relaci&oacute;n expresada a trav&eacute;s de una interfaz, debe poder ser determinada por dispositivos de asistencia.
+			<div id="parrafoBueno">
+				Aqui va lo que esta bien del criterio<br>
+				Ta bien aplicado
+			</div>
+			<div id="parrafoMalo">
+				Aqui va lo que esta mal del criterio<br>
+				Muy mal muy mal ejemplo codigo fataaaal
+			</div>
+		</div>
+		</div>
+		</div>
+		<br><br>
+	</script>
+	
+	<script id="blockOfStuff4" type="text/html">
+		<p>
+			<h1>Dando significado al contenido</h1>
+			<h5>Dando significado al contenido</h5>
+			<h5>Dando significado al contenido</h5>
+			<h3>Dando significado al contenido</h3>
+			<font size="6"><b>Dando significado al contenido</b></font>
+		</p>
+		<br><br>
+		
+		<a class="botonVentanita" href="#popup5">PISTA</a>
+		<div id="popup5" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio5">&times;</a><br><br>
+		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
+		<div class="ventanita">
+			Si la secuencia en la que est&aacute; presentado el contenido es significativa, los dispositivos de asistencia deben poder seguir esa secuencia.
+			<div id="parrafoBueno">
+				Aqui va lo que esta bien del criterio<br>
+				Ta bien aplicado
+			</div>
+			<div id="parrafoMalo">
+				Aqui va lo que esta mal del criterio<br>
+				Muy mal muy mal ejemplo codigo fataaaal
+			</div>
+		</div>
+		</div>
+		</div>
+		<br><br>
+	</script>
+	
 	<script>
 	
 		function getRandom()
 		{
-			return (Math.floor(Math.random()*3))
+			return (Math.floor(Math.random()*5))
 		}
 		
 		var array = [];
-		for(i = 0; i < 3; i++){
+		for(i = 0; i < 5; i++){
 		var div = document.createElement('div');
 		div.setAttribute('class', 'bloquesAleatorios');
 		var numeroRandom = getRandom();

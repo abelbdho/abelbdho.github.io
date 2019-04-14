@@ -392,7 +392,8 @@ th, td {
 .popup h2 {
   margin-top: 0;
   font-size: 1.52em;
-  border: 2px solid black;color: black;
+  border: 2px solid black;
+  color: black;
   font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
@@ -429,7 +430,6 @@ th, td {
   .popup{
     width: 90%;
     bottom: 96px;
-    overflow: auto;
     color: white;
   }
 }
@@ -504,4 +504,7 @@ th, td {
   }
 }
 
-
+.textoEspecial{
+	border-left: 6px solid red;
+    background-color: #D4D4D4;
+}
