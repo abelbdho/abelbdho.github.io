@@ -40,6 +40,7 @@
 	<a href="#" class="active">Percepci&oacute;n</a>
 	<a href="#">Link 2</a>
 	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>
 	<a href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
@@ -88,12 +89,10 @@
 		<div class="ventanita">
 			Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
 			<div id="parrafoBueno">
-				Aqui va lo que esta bien del criterio<br>
-				Ta bien aplicado
+				En este caso, la buena pr&aacute;ctica es la de reproducir el contenido textual de la imagen a continuaci&oacute;n de esta.
 			</div>
 			<div id="parrafoMalo">
-				Aqui va lo que esta mal del criterio<br>
-				Muy mal muy mal ejemplo codigo fataaaal
+				No proporcionar la transcripci&oacute;n del texto de la imagen.
 			</div>
 		</div>
 		</div>
@@ -124,12 +123,10 @@
 		<div class="ventanita">
 			A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe haber alternativa textual.
 			<div id="parrafoBueno">
-				Aqui va lo que esta bien del criterio<br>
-				Ta bien aplicado
+				A continuaci&oacute;m del contenido, audio o v&iacute;deo, aparece su transcripci&oacute;n o pequeña descripci&oacute;n.
 			</div>
 			<div id="parrafoMalo">
-				Aqui va lo que esta mal del criterio<br>
-				Muy mal muy mal ejemplo codigo fataaaal
+				Aparece el contenido, audio o v&iacute;deo, sin ning&uacute;n tipo de alternativa textual.
 			</div>
 		</div>
 		</div>
@@ -155,12 +152,10 @@
 		<div class="ventanita">
 			Para todo contenido que contenga un componente auditivo se proporcionan subt&iacute;tulos, excepto cuando este contenido sea alternativa a un texto.
 			<div id="parrafoBueno">
-				Aqui va lo que esta bien del criterio<br>
-				Ta bien aplicado
+				En el v&iacute;deo hay una opci&oacute;n para habilitar subt&iacute;tulos. Adem&aacute;s, en varios idiomas.
 			</div>
 			<div id="parrafoMalo">
-				Aqui va lo que esta mal del criterio<br>
-				Muy mal muy mal ejemplo codigo fataaaal
+				No se presentan subt&iacute;tulos de ning&uacute;n tipo en el v&iacute;deo.
 			</div>
 		</div>
 		</div>
@@ -190,12 +185,12 @@
 		<div class="ventanita">
 			Toda informaci&oacute;n, estructura o relaci&oacute;n expresada a trav&eacute;s de una interfaz, debe poder ser determinada por dispositivos de asistencia.
 			<div id="parrafoBueno">
-				Aqui va lo que esta bien del criterio<br>
-				Ta bien aplicado
+				Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
+				<xmp><strong>accesibilidad web</strong></xmp>
 			</div>
 			<div id="parrafoMalo">
-				Aqui va lo que esta mal del criterio<br>
-				Muy mal muy mal ejemplo codigo fataaaal
+				La etiqueta <xmp><b></xmp> solo tiene significado visual.<br>
+				<xmp><b>accesibilidad web</b></xmp>	
 			</div>
 		</div>
 		</div>
@@ -228,12 +223,12 @@
 		<div class="ventanita">
 			Si la secuencia en la que est&aacute; presentado el contenido es significativa, los dispositivos de asistencia deben poder seguir esa secuencia.
 			<div id="parrafoBueno">
-				Aqui va lo que esta bien del criterio<br>
-				Ta bien aplicado
+				Un buen uso de las etiquetas para t&iacute;tulos, usarlas en orden.<br>
+				<xmp><h1><h2><h3><h4><h5></xmp>
 			</div>
 			<div id="parrafoMalo">
-				Aqui va lo que esta mal del criterio<br>
-				Muy mal muy mal ejemplo codigo fataaaal
+				No se mantiene el orden en las etiquetas y se usa otra etiqueta que no corresponde a un t&iacute;tulo.<br>
+				<xmp><h1><h5><h5><h3><font><b></xmp>
 			</div>
 		</div>
 		</div>
@@ -244,12 +239,90 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
 
+<h3 id="principio6">1.3.3 Caracter&iacute;sticas Sensoriales - Nivel A</h3>
+	<p>
+		No se conf&iacute;a &uacute;nicamente en el tamaño, forma, localizaci&oacute;, orientaci&oacute;n o sonido de un componente para indicar el uso o comprensi&oacute;n de un componente.
+	</p>
+			
+		<p>
+			Esto ocurre cuando a nuestros botones de versiones les quitamos todo lo añadido.
+		</p>
+		
+		<a href="#principio6" role="button">Versi&oacute;n accesible</a>
+		<a href="#principio6" role="button">Versi&oacute;n inaccesible</a><br><br>
+		
+		<br><br>
+		
+		<a class="botonVentanita" href="#popup6">PISTA</a>
+		<div id="popup6" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio6">&times;</a><br><br>
+		<h2>1.3.3 Caracter&iacute;sticas Sensoriales - Nivel A</h2>
+		<div class="ventanita">
+			No se conf&iacute;a &uacute;nicamente en el tamaño, forma, localizaci&oacute;, orientaci&oacute;n o sonido de un componente para indicar el uso o comprensi&oacute;n de un componente.
+			<div id="parrafoBueno">
+				Usar m&aacute;s de una caracter&iacute;stica para definir o hacer entender el uso de un componente.<br>
+				<xmp>#seleccionadoAccesible {
+		background-color: #005C00;
+		color: white;
+		font-size: 1.2em;
+		}</xmp>
+			</div>
+			<div id="parrafoMalo">
+				Usar una &uacute;nica caracter&iacute;stica para definir o hacer entender el uso de un componente.
+			</div>
+		</div>
+		</div>
+		</div>
+		<br><br>
+	
+	<br><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
+
+<h3 id="principio7">1.4.1 Uso de color - Nivel A</h3>
+	<p>
+		El color no es el &uacute;nico medio por el que se expresa informaci&oacute;n, indican acciones o se hacen distinciones.
+	</p>
+			
+		<p>
+			Si usasemos el color rojo en el texto incorrecto sin dar ning&uacute;n tipo de indicaci&oacute;n. 
+		</p>
+		
+		<div id="textoRojo">
+				No indicar lo que significa el color en el contexto.
+		</div>
+		
+		<br><br>
+		
+		<a class="botonVentanita" href="#popup7">PISTA</a>
+		<div id="popup7" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio7">&times;</a><br><br>
+		<h2>1.4.1 Uso de color - Nivel A</h2>
+		<div class="ventanita">
+			El color no es el &uacute;nico medio por el que se expresa informaci&oacute;n, indican acciones o se hacen distinciones.
+			<div id="parrafoBueno">
+				Adem&aacute;s del color, indicamos de manera textual el significado del color en el contexto.
+			</div>
+			<div id="parrafoMalo">
+				Basarse &uacute;nicamente en el color para expresar el sentido del contenido.
+			</div>
+		</div>
+		</div>
+		</div>
+		<br><br>
+	
+	<br><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
+
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse">1.1.1 Contenido no textual</a>
 	<div id="Collap" class="collapse">
 			<div>
 				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
 			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
+			<strong>En este caso, la buena pr&aacute;ctica es la de reproducir el contenido textual de la imagen a continuaci&oacute;n de esta.</strong><br>
 			<a href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 
@@ -258,16 +331,16 @@
 			<div>
 				A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe haber alternativa textual.
 			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
+			<strong>A continuaci&oacute;m del contenido, audio o v&iacute;deo, aparece su transcripci&oacute;n o pequeña descripci&oacute;n.</strong><br>
 			<a href="https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
+			</div><br><br>
 			
 <a href="#Collap3" class="btn btn-primary" data-toggle="collapse">1.2.2 Subt&iacute;tulos</a>
 	<div id="Collap3" class="collapse">
 			<div>
 				Para todo contenido que contenga un componente auditivo se proporcionan subt&iacute;tulos, excepto cuando este contenido sea alternativa a un texto.
 			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
+			<strong>En el v&iacute;deo hay una opci&oacute;n para habilitar subt&iacute;tulos. Adem&aacute;s, en varios idiomas.</strong><br>
 			<a href="https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
@@ -276,7 +349,7 @@
 			<div>
 				Toda informaci&oacute;n, estructura o relaci&oacute;n expresada a trav&eacute;s de una interfaz, debe poder ser determinada por dispositivos de asistencia.
 			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
+			<strong>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<xmp><strong>accesibilidad web</strong></xmp></strong>
 			<a href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
@@ -285,9 +358,33 @@
 			<div>
 				Si la secuencia en la que est&aacute; presentado el contenido es significativa, los dispositivos de asistencia deben poder seguir esa secuencia.
 			</div>
-			<strong><xmp><img id="imagen" src="img/uma.png" alt="Logo Universidad de Málaga" /></xmp></strong>
+			<strong>Un buen uso de las etiquetas para t&iacute;tulos, usarlas en orden.<xmp><br><h1><h2><h3><h4><h5></xmp></strong>
 			<a href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>					
+			</div><br><br>	
+			
+<a href="#Collap6" class="btn btn-primary" data-toggle="collapse">1.3.3 Caracter&iacute;sticas Sensoriales</a>
+	<div id="Collap6" class="collapse">
+			<div>
+				No se conf&iacute;a &uacute;nicamente en el tamaño, forma, localizaci&oacute;, orientaci&oacute;n o sonido de un componente para indicar el uso o
+				 comprensi&oacute;n de un componente.
+			</div>
+			<strong>Usar m&aacute;s de una caracter&iacute;stica para definir o hacer entender el uso de un componente.<br>
+				<xmp>#seleccionadoAccesible {
+		background-color: #005C00;
+		color: white;
+		font-size: 1.2em;
+		}</xmp></strong>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+		
+<a href="#Collap7" class="btn btn-primary" data-toggle="collapse">1.4.1 Uso de color</a>
+	<div id="Collap7" class="collapse">
+			<div>
+				El color no es el &uacute;nico medio por el que se expresa informaci&oacute;n, indican acciones o se hacen distinciones.
+			</div>
+			<strong>Adem&aacute;s del color, indicamos de manera textual el significado del color en el contexto.</strong><br>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>								
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 

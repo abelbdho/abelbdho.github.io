@@ -434,6 +434,14 @@ th, td {
   }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1700px){
+  .popup{
+    width: 80%;
+    bottom: 96px;
+    color: white;
+  }
+}
+
 
 .botonVentanita {
   color: black;
@@ -507,4 +515,10 @@ th, td {
 .textoEspecial{
 	border-left: 6px solid red;
     background-color: #D4D4D4;
+}
+
+/*TEXTO ROJO EJEMPLO*/
+
+#textoRojo{
+	color: red;
 }
