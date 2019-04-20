@@ -2,6 +2,10 @@
 * {
   color: #003366;
   font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  -- Especificaciones del criterio 1.4.12 Text Spacing
+  --line-height: 1.5;
+  --letter-spacing: 1.92px;
+  --word-spacing: 1px;
 }
 
 html {
@@ -34,6 +38,7 @@ body {
 }
 
 /*ENLACE EXTERNO*/
+a[href^="https://webaim.org/"]:after,
 a[href^="http://www.w3.org/"]:after, 
 a[href^="https://www.w3.org/"]:after {
 	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
@@ -521,4 +526,30 @@ th, td {
 
 #textoRojo{
 	color: red;
+}
+
+/*Texto de Contraste*/
+
+#contrasteEj1{
+	color: #6161FF;
+}
+
+#contrasteEj1Mal{
+	color: #C7C7FF;
+}
+
+#contrasteEj2{
+	color: #000000;
+}
+
+/*LISTA CAMBIANTE FALSA*/
+
+
+
+a.waa {
+    opacity:0;
+}
+
+a.woo {
+    opacity:1;
 }
