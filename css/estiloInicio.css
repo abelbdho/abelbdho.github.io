@@ -553,3 +553,11 @@ a.waa {
 a.woo {
     opacity:1;
 }
+
+/*CONTADOR OPERABILIDAD*/
+
+#contador{
+	border: 2px solid black;
+	box-sizing: content-box;  
+	width:260px;
+}

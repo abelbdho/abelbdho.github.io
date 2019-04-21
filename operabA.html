@@ -1,0 +1,166 @@
+<html lang="es">
+<head>
+  <title>Operabilidad - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navegacion">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu">
+	<a href="index.html">Inicio</a>
+	<a href="percepA.html">Percepci&oacute;n</a>
+	<a href="#" class="active">Operabilidad</a>
+	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>
+	<a href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a>
+	<a href="operabB.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><br><br>
+	
+	<h2>Operabilidad - Segundo Principio</h2>
+	<p>
+		Toda funcionalidad estar&aacute; disponible a trav&eacute;s del teclado.
+	</p>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h3 id="principio1">2.2.1 Cron&oacute;metro ajustable - Nivel A</h3>
+	<p>
+		Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta:
+		
+		<p>
+			<ul>
+			<li><strong>Apagado</strong>: el usuario puede apagarlo antes de que empiece.</li>
+			<li><strong>Adjustable</strong>:  el usuario puede ajustarlo antes de que empiece.</li>
+			<li><strong>Extensible</strong>: el usuario es advertido antes de que acabe el tiempo y se le dan 20 segundos para ampliar ese tiempo de manera simple.</li>
+			<li><strong>Excepci&oacute;n de tiempo real</strong>: el l&iacute;mite de tiempo es esencial en un evento de tiempo real y no tiene alternativa.</li>
+			<li><strong>Excepci&oacute;n esencial</strong>: el l&iacute;mite de tiempo es esencial y extenderlo invalidar&iacute;a la actividad..</li>
+			<li><strong>Excepci&oacute;de 20 horas</strong>: el l&iacute;mite de tiempo es mayor de 20 horas.</li>
+		</ul>
+		</p>
+		
+		<p>
+			Aqu&iacute; tenemos un contador que permanece inm&oacute;vil hasta que el usuario pulsa el bot&oacute;n.
+		</p>
+		
+		<div id="contador">Est&aacute; p&aacute;gina dejar&aacute; de ser accesible en: ¡<span id="time">05:00</span> minutos!</div><br>
+		
+		<button onclick="activar()">Comenzar</button><br><br>
+		
+		<a class="botonVentanita2" href="#popup1">PISTA</a>
+		<div id="popup1" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio1">&times;</a><br><br>
+		<h2>2.2.1 Cron&oacute;metro ajustable - Nivel A</h2>
+		<div class="ventanita">
+			Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta: apagado, ajustable, extensible, es tiempo real,
+			 es esencial o dura m&aacute;s de 20 horas.
+			<div id="parrafoBueno">
+				El contador tiene un bot&oacute;n para parar la cuenta. No empieza al cargar, debe ser activado.
+			</div>
+			<div id="parrafoMalo">
+				Al cargar la p&aacute;gina el contador empieza la cuenta atr&aacute;s.
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	 <br><br>
+			
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse">2.2.1 Cron&oacute;metro ajustable</a>
+	<div id="Collap" class="collapse">
+			<div>
+				Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta: apagado, ajustable, extensible, es tiempo real,
+			 es esencial o dura m&aacute;s de 20 horas.
+			</div>
+			<strong>El contador tiene un bot&oacute;n para parar la cuenta. No empieza al cargar, debe ser activado.</strong><br>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+															
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+function activar() {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
+
+</body>
