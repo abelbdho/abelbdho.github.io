@@ -116,6 +116,67 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
+	<h3 id="principio2">2.2.4 Interrupciones - Nivel AAA</h3>
+	<p>
+		Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
+		</p>
+		<p>
+			En este caso, tenemos una interrupci&oacute;n cada 5 minutos que no podemos eliminar.
+		</p>
+		
+		<a class="botonVentanita2" href="#popup2">PISTA</a>
+		<div id="popup2" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio2">&times;</a><br><br>
+		<h2>2.2.4 Interrupciones - Nivel AAA</h2>
+		<div class="ventanita">
+			Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
+			<div id="parrafoBueno">
+				Existe un bot&oacute;n que permite cesar est&aacute;s interrupciones.
+			</div>
+			<div id="parrafoMalo">
+				La p&aacute;gina no tiene ning&uacute;n mecanismo para parar las interrupciones.
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	 <br><br>
+			
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h3 id="principio3">2.3.2 Tres parpadeos - Nivel AAA</h3>
+	<p>
+		Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
+		</p>
+		<p>
+			<blink id="parpadeo">Para destacar este texto usamos un parpadeo bastante molesto</blink>
+		</p>
+		<button id="botonParpadeo" onclick="pararParpadeo()">Parar</button><br><br>
+		
+		<a class="botonVentanita2" href="#popup3">PISTA</a>
+		<div id="popup3" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio3">&times;</a><br><br>
+		<h2>2.3.2 Tres parpadeos - Nivel AAA</h2>
+		<div class="ventanita">
+			Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
+			<div id="parrafoBueno">
+				Se presenta un texto destacado sin ning&uacute;n elemento parpadeante
+			</div>
+			<div id="parrafoMalo">
+				Se muestra un texto que parpadea m&aacute;s de tres veces por segundo.
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	 <br><br>
+			
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse">2.2.1 Cron&oacute;metro ajustable</a>
 	<div id="Collap" class="collapse">
 			<div>
@@ -125,6 +186,24 @@
 			<strong>El contador tiene un bot&oacute;n para parar la cuenta. No empieza al cargar, debe ser activado.</strong><br>
 			<a href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse">2.2.4 Interrupciones</a>
+	<div id="Collap2" class="collapse">
+			<div>
+				Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
+			</div>
+			<strong>Existe un bot&oacute;n que permite cesar est&aacute;s interrupciones.</strong><br>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#interruptions" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse">2.3.2 Tres parpadeos</a>
+	<div id="Collap3" class="collapse">
+			<div>
+				Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
+			</div>
+			<strong>Se presenta un texto destacado sin ning&uacute;n elemento parpadeante</strong><br>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#three-flashes" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>				
 															
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
@@ -159,6 +238,16 @@ window.onload = function () {
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
+
+
+var timer = null;
+window.onload = function empezar() {
+  timer = setInterval(function(){ alert("Alerta cada 5 MINUTOS. DESACTIVAR en Criterio 2.2.4 Interrupciones"); }, 300000);
+};
+
+function pararParpadeo(){
+	document.getElementById('parpadeo').className = 'woo';
+	};
 </script>
 
 </body>

@@ -561,3 +561,21 @@ a.woo {
 	box-sizing: content-box;  
 	width:260px;
 }
+
+/*ELEMENTO PARPADEANTE*/
+
+blink {
+        animation: blinker 0.2s linear infinite;
+        color: black;
+       }
+      @keyframes blinker {  
+        50% { opacity: 0; }
+       }
+
+blink.woo{
+	animation: none;
+}
+
+#botonParpadeo{
+	font-size: 1.5em;
+}
