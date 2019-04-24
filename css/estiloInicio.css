@@ -401,27 +401,18 @@ th, td {
   color: black;
   font-family: Tahoma, Arial, sans-serif;
 }
-.popup .close {
-  position: absolute;
-  color: black;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-}
-.popup .close:hover {
-	color: black;
-}
+
 .popup .ventanita {
   overflow: auto;
   color: black;
 }
 
-.close{
-	color: black;
+#close{
+	position: relative;
+	bottom: 7px;
+	left: 400px
 }
+
 
 @media screen and (max-width: 900px){
 	.popup{
@@ -452,16 +443,15 @@ th, td {
   color: black;
   font-size: 1.2em;
   padding: 10px;
-  color: #0B5DC1;
-  border: 2px solid #06D85F;
+  border: 2px solid #005C00;
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .botonVentanita:hover {
-  color: black;
-  background: #06D85F;
+  color: white;
+  background: #005C00;
   text-decoration: none;
 }
 
@@ -469,16 +459,15 @@ th, td {
   color: black;
   font-size: 1.2em;
   padding: 10px;
-  color: #0B5DC1;
-  border: 2px solid #FC5F5F;
+  border: 2px solid #AD0000;
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .botonVentanita2:hover {
-  color: black;
-  background: #FC5F5F;
+  color: white;
+  background: #AD0000;
   text-decoration: none;
 }
 
@@ -578,4 +567,20 @@ blink.woo{
 
 #botonParpadeo{
 	font-size: 1.5em;
+}
+
+/*Enlaces oscuros de los desplegables*/
+
+#enlacesOscuros{
+	color: #0000EB;
+}
+
+/*Indicativo bien*/
+
+#flechaBien{
+	color: #005C00;
+}
+
+#flechaMal{
+	color: #AD0000;
 }

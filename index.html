@@ -85,19 +85,21 @@
 			</p>
 			
 			<a class="botonVentanita" href="#popup1">PISTA</a>
-		<div id="popup1" class="overlay">
+		<div id="popup1" class="overlay" role="Ventana emergente">
 		<div class="popup">
-			<a class="close" href="#">&times;</a><br><br>
 		<h2>2.4.1 Saltar Bloques - Nivel A</h2>
 		<div class="ventanita">
 			Se dispone de un mecanismo para saltar bloques de contenido repetidos.
-			<div id="parrafoBueno">
-				Aqu&iacute; aparecer&aacute; una forma correcta de aplicarlo.<br>
+			<div id="parrafoBueno" role="Recuadro positiva">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003</span>Aqu&iacute; aparecer&aacute; una forma correcta de aplicarlo.<br>
 				[C&Oacute;DIGO]
 			</div>
-			<div id="parrafoMalo">
-				Aqu&iacute; aparecer&aacute; una forma incorrecta de aplicarlo.<br>
+			<div id="parrafoMalo" role="Recuadro positivo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Aqu&iacute; aparecer&aacute; una forma incorrecta de aplicarlo.<br>
 				[C&Oacute;DIGO]
+			</div>
+			<div>
+				<a id="close" href="#" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -115,7 +117,7 @@
 				<li><a href="#contenido">Saltar al contenido</a></li>
 				</ul></div><br>
 			</xmp></strong>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			<p>Conforme se navega por la página se encuentran este tipo de referencias a la vez que se informa sobre distintos aspectos de la accesibilidad.</p>
 		</p><br>
