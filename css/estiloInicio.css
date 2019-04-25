@@ -81,6 +81,16 @@ a[href^="https://www.w3.org/"]:after {
   color: white;
 }
 
+#principio{
+	background-color: #595959;
+	color: white;
+}
+
+#submenu{
+  font-size: 0.89em;
+}
+
+
 @media screen and (max-width: 1800px) {
   .menu {
   margin: 0;
@@ -181,6 +191,7 @@ h1 {
 }
 
 h2, h3, h4, h5 {
+  padding-bottom: 6px;
   margin: 0;
   font-weight: bold;
 }
@@ -584,3 +595,4 @@ blink.woo{
 #flechaMal{
 	color: #AD0000;
 }
+
