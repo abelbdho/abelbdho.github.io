@@ -39,7 +39,7 @@
 	<a href="index.html">Inicio</a>
 	<a id="principio" href="#">Percepci&oacute;n</a>
 	<a id="submenu" href="#" class="active">Alternativas textuales y Medios tempodependientes</a>
-	<a id="submenu" href="#">Adaptable y Distinguible</a>
+	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
 	<a id="principio" href="operabA.html">Operabilidad</a>
 	<a href="#">Link 3</a>
 	<a href="#">Link 4</a>
@@ -83,10 +83,31 @@
 	<h4 id="principio1">1.1.1 Contenido no textual - Nivel A</h4>
 	<p>
 		Todo contenido no textual presentado al usuario tiene su alternativa textual, totalmente equivalente. Excepciones:
+		</p>
 		
-		</p>	
+		<ul>
+			<li><strong>Controles o entrada</strong>: en este caso tienen un nombre describiendo su prop&oacute;sito.</li>
+			<li><strong>Contenido basado en tiempo</strong>: tienen alternativa textual que proporcione al menos una identificaci&oacute;n descriptiva.</li>
+			<li><strong>Test</strong>: test o ejercicios que no deber&iacute;an ser presentados en texto, tienen su alternativa textual identificativa.</li>
+			<li><strong>Sensorial</strong>: para contenido pensados para crear una experiencia sensorial, se proporcionar&aacute; una identificaci&oacute;n
+			 descriptiva</li>
+			<li><strong>CAPTCHA</strong>: si el prop&oacute; del contenido es asegurar la identidad humana de quien accede a &eacute;l, se proporciona identificaci&oacute;
+			y distintas formas sensoriales de superar el CAPTCHA.</li>
+			<li><strong>Decoraci&oacute;n, formateo y elementos invisibles</strong>: se omiten descripciones para que sean ignorados por la tecnología de asistencia.</li>
+		</ul>	
+		<p>
+		En este primer ejemplo mostramos un logo. En la alternativa se expresa de manera corta y precisa qu&eacute; es.
+		</p>
 		<picture>
-		<img class="contentImage" src="img/criterio1_1_1.png" alt="Excepciones del criterio 1.1.1"></img>
+		<img id="logoCriterio" class="contentImage" src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png" alt="Logo World Wide Web Consortium"></img>
+		</picture>
+		
+		<p>
+		En este segundo ejemplo mostramos la imagen de un chico sordo en clase con su profesora. La alternativa sirve para complementar esta informaci&oacute;n.
+		</p>
+		
+		<picture>
+		<img id="imgCriterio" class="contentImage" src="https://amp.thisisinsider.com/images/5865384055b10620008b4aa4-750-563.jpg" alt="Chico con audífono atendiendo a su profesora"></img>
 		</picture>
 		
 		<a class="botonVentanita" href="#popup1">PISTA</a>
@@ -97,10 +118,13 @@
 			Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>En este caso, la buena pr&aacute;ctica es la de reproducir el contenido textual de la imagen a continuaci&oacute;n de esta.
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>En este caso, se proporcionan alternativas textuales claras y precisas a la imag&eacute;nes<br>
+				<pre><code>&lt;img id="logoCriterio" class="contentImage"
+src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
+ alt="Logo World Wide Web Consortium"&gt;</code></pre>
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>No proporcionar la transcripci&oacute;n del texto de la imagen.
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se proporcionan unas alternativas textuales difusas y poco concretas.
 			</div>
 			<div>
 				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -109,17 +133,6 @@
 		</div>
 		</div>
 		
-	 <br><br>
-		<ul>
-			<li><strong>Controles o entrada</strong>: en este caso tienen un nombre describiendo su prop&oacute;sito.</li>
-			<li><strong>Contenido basado en tiempo</strong>: tienen alternativa textual que proporcione al menos una identificaci&oacute;n descriptiva.</li>
-			<li><strong>Test</strong>: test o ejercicios que no deber&iacute;an ser presentados en texto, tienen su alternativa textual identificativa.</li>
-			<li><strong>Sensorial</strong>: para contenido pensados para crear una experiencia sensorial, se proporcionar&aacute; una identificaci&oacute;n
-			 descriptiva</li>
-			<li><strong>CAPTCHA</strong>: si el prop&oacute; del contenido es asegurar la identidad humana de quien accede a &eacute;l, se proporciona identificaci&oacute;
-			y distintas formas sensoriales de superar el CAPTCHA.</li>
-			<li><strong>Decoraci&oacute;n, formateo y elementos invisibles</strong>: se omiten descripciones para que sean ignorados por la tecnología de asistencia.</li>
-		</ul>
 	
 			<br><br>
 			
@@ -291,12 +304,56 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
+<h4 id="principio6">1.2.5 Audiodescripción (grabada) - Nivel AA</h4>
+	<p>
+		Proporcionar a las personas ciegas o con dificultades visuales acceso a la informaci&oacute;n visual de una presentaci&oacute;n multimedia sincronizada. La audiodescripci&oacute;n se agrega
+		 al audio de la presentaci&oacute;n e incluye toda la informaci&oacute;n sobre el v&iacute;deo que no est&aacute; disponible en forma auditiva.
+	</p>
+	
+		<p>
+			Se proporciona un fragmento de audiodescripci&oacute;n del v&iacute;deo proporcionado a continuaci&oacute;n.
+		</p>
+	
+		<iframe class="iframe" src="https://www.youtube.com/embed/Hrgqs4MmK3U" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		
+		<audio controls>
+		<source src="sound/audiodescripcion1_2_5.wav" type="audio/wav">
+		</audio><br><br>
+		
+		<a class="botonVentanita" href="#popup6">PISTA</a>
+		<div id="popup6" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.2.5 Audiodescripción (grabada) - Nivel AA</h2>
+		<div class="ventanita">
+			Proporcionar a las personas ciegas o con dificultades visuales acceso a la informaci&oacute;n visual de una presentaci&oacute;n multimedia sincronizada.
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Se proporciona como alternativa al v&iacute;deo un fragmento de audiodescripci&oacute;n.
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>No se proporciona alternativa para las personas ciegas.
+			</div>
+			<div>
+				<a id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		<br><br>
+	
+	<br><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.1.1 Contenido no textual</a>
 	<div id="Collap" class="collapse">
 			<div>
 				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
 			</div>
-			<strong>En este caso, la buena pr&aacute;ctica es la de reproducir el contenido textual de la imagen a continuaci&oacute;n de esta.</strong><br>
+			<strong>En este caso, se proporciona una alternativa textual clara y precisa a la imagen. <pre><code>&lt;img id="logoCriterio" class="contentImage"
+src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
+ alt="Logo World Wide Web Consortium"&gt;</code></pre></strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 
@@ -334,7 +391,16 @@
 			</div>
 			<strong>Se proporciona un v&iacute;deo con opci&oacute;n de subt&iacute;los autom&aacute;ticos, gener&aacute;ndolos a tiempo real.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#captions-live" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>				
+			</div><br><br>	
+			
+<a href="#Collap6" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.2.5 Audiodescripción (grabada)</a>
+	<div id="Collap6" class="collapse">
+			<div>
+				Proporcionar a las personas ciegas o con dificultades visuales acceso a la informaci&oacute;n visual de una presentaci&oacute;n multimedia sincronizada.
+			</div>
+			<strong>Se proporciona como alternativa al v&iacute;deo un fragmento de audiodescripci&oacute;n.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>							
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 

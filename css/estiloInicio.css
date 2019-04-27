@@ -596,3 +596,33 @@ blink.woo{
 	color: #AD0000;
 }
 
+#logoCriterio{
+	width: 100px;
+	height: 180px;
+}
+
+#imgCriterio{
+	width: 400px;
+	height: 480px;
+}
+
+#textoSecuencia2{
+	position: relative;
+	top: 100px;
+}
+
+#textoSecuencia1{
+	position: relative;
+	bottom: 90px;
+}
+
+#campoCopiar{
+	width: 600px;
+}
+
+#botonCopiar{
+	border: 1px solid black;
+	font-size: 1.2em;
+	color: black;
+	background-color: #AFFFFF;
+}

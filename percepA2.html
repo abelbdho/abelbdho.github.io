@@ -1,0 +1,256 @@
+<html lang="es">
+<head>
+  <title>Percepci&oacute;n, segunda parte - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navegacion">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu">
+	<a href="index.html">Inicio</a>
+	<a id="principio" href="#">Percepci&oacute;n</a>
+	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
+	<a id="submenu" href="#" class="active">Adaptable y Distinguible</a>
+	<a id="principio" href="operabA.html">Operabilidad</a>
+	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>
+	<a href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a>
+	<a href="percepB2.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><br><br>
+	
+	<h2>1. Percepci&oacute;n - Primer Principio</h2>
+	<p>
+		La informaci&oacute;n y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos. No puede ser invisible a ninguno de sus sentidos.
+	</p><br>
+	
+	<h3>1.3 Adaptable</h3>
+	<p>
+		Asegurar que toda la informaci&oacute;n se encuentre disponible de forma que pueda ser percibida por todos los usuarios, por ejemplo, que pueda ser le&iacute;da por un lector de pantalla o presentada
+		 con una disposici&oacute;n m&aacute;s simple.
+	</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio1">1.3.1 Informaci&oacute;n y relaciones - Nivel A</h4>
+	<p>
+		Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n. Por ejemplo, el formato de la presentaci&oacute;n cambia
+		 cuando un lector de pantalla lee el contenido o cuando se sustituye la hoja de estilo proporcionada por el autor.
+		</p>
+			
+		<p class="textoEspecial">
+			Cuando queremos enfatizar la importancia de la <strong>accesibilidad web</strong> en esta p&aacute;gina, usamos las etiquetas correctas. Esto facilita
+			la experiencia en la web a personas con <strong>diversidad funcional</strong> o incluso <strong>sin ella</strong>.
+		</p>
+		<br>
+		
+		<a class="botonVentanita" href="#popup1">PISTA</a>
+		<div id="popup1" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
+		<div class="ventanita">
+			Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
+				<pre><code>&lt;strong>accesibilidad web&lt;strong&gt;</code></pre>
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
+				<pre><code>&lt;b>accesibilidad web&lt;b&gt;</code></pre>
+			</div>
+			<div>
+				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio2">1.3.2 Secuencia significativa - Nivel A</h4>
+	<p>
+		Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.
+		</p>
+		
+		<p>
+			Aqu&iacute; tenemos dos p&aacute;rrafos que guardan una secuencia visualmente, pero que respetan esa secuencia en el &oacute;digo. De esta manera, para una persona que use, por ejemplo, un lector de pantalla, la informaci&oacute;
+			ser&aacute; presentada en ese mismo orden.
+		</p><br>
+			
+		<p class="textoEspecial" id="textoSecuencia">
+			Una secuencia es significativa si el orden del contenido no se puede cambiar sin alterar su significado. Por ejemplo, si la p&aacute;gina contiene dos art&iacute;culos independientes, el orden relativo de los art&iacute;culos puede
+			 no afectar su significado siempre y cuando no se los intercale. En tal situaci&oacute;n, cada art&iacute;culo puede contar con una secuencia significativa, pero el contenedor de los art&iacute;culos puede no tener una secuencia
+			 con sentido.
+		</p>
+		<p class="textoEspecial" id="textoSecuencia">
+			La sem&aacute;ntica de algunos elementos define si su contenido es una secuencia significativa o no. Por ejemplo, en HTML, los textos son siempre una secuencia con sentido. Las tablas y las listas ordenadas son secuencias con sentido,
+			 pero las listas no ordenadas no lo son.
+		</p>
+		<br>
+		
+		<a class="botonVentanita" href="#popup2">PISTA</a>
+		<div id="popup2" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
+		<div class="ventanita">
+			Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
+			</div>
+			<div>
+				<a id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio3">1.3.3 Caracter&iacute;sticas sensoriales - Nivel A</h4>
+	<p>
+		Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
+		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.
+		</p>
+		
+		<p>
+			Pulse el bot&oacute;n cuadrado de color azul claro justo debajo, que dice <em>copiar texto</em>, para copiar el contenido dentro del campo de texto que est&aacute; a la derecha de este bot&oacute;n.
+		</p>
+		
+		<button id="botonCopiar" onclick="funcionCopiar()">Copiar texto</button>
+		<input type="text" value="No deben usarse solo colores o formas para identificar elementos" id="campoCopiar">
+		<br><br>
+		
+		<a class="botonVentanita" href="#popup3">PISTA</a>
+		<div id="popup3" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
+		<div class="ventanita">
+			Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
+		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
+			</div>
+			<div>
+				<a id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.1 Informaci&oacute;n y relaciones</a>
+	<div id="Collap" class="collapse">
+			<div>
+				Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.
+			</div>
+			<strong>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n. <br>
+			<pre><code>&lt;strong>accesibilidad web&lt;/strong&gt;</code></pre></strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.2 Secuencia significativa</a>
+	<div id="Collap2" class="collapse">
+			<div>
+				Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.
+			</div>
+			<strong>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.3 Caracter&iacute;sticas sensoriales</a>
+	<div id="Collap3" class="collapse">
+			<div>
+				Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
+		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.
+			</div>
+			<strong>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>						
+					
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+function funcionCopiar() {
+  var copyText = document.getElementById("campoCopiar");
+  copyText.select();
+  document.execCommand("copy");
+}
+</script>
+
+</body>
