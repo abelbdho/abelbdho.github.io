@@ -378,6 +378,19 @@ th, td {
 
 /*POPUP*/
 
+/*PRUEBA PARA NOSCROLL*/
+
+.noscroll { overflow: hidden; }
+
+.overlay { 
+   position: fixed; 
+   overflow-y: scroll;
+   top: 0; right: 0; bottom: 0; left: 0; }
+
+[aria-hidden="true"] { display: none; }
+[aria-hidden="false"] { display: block; }
+
+/*AAAAAAAAAAAAAAAAA*/
 .overlay {
   position: fixed;
   top: 0;
@@ -424,6 +437,19 @@ th, td {
 	left: 400px
 }
 
+@media screen and (min-width: 900px) and (max-width: 1200px){
+  #close{
+    left: 200px
+  }
+}
+
+@media screen and (max-width: 500px){
+	.popup{
+    width: 100%;
+    color: white;
+    bottom: 96px;
+  }
+}
 
 @media screen and (max-width: 900px){
 	.popup{
@@ -625,4 +651,16 @@ blink.woo{
 	font-size: 1.2em;
 	color: black;
 	background-color: #AFFFFF;
+}
+
+#obligatorio{
+	color: #AD0000;
+}
+
+#inputObligatorio{
+	border: 1px solid #AD0000;
+}
+
+#asterisco{
+	font-size: 1.7em;
 }

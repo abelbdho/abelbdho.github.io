@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
 </head>
 
-<body>
+<body id="body">
 
 		<!-- Saltar -->
 <div id="enlaces" role="navegacion">
@@ -205,6 +205,60 @@
 			<br><br><br><br>
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+	
+	<h3>1.3 Distinguible</h3>
+	<p>
+		Facilitar a los usuarios el ver y o&iacute;r contenido, pudiendo distinguir entre fondo y primer plano.
+	</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio4">1.4.1 Uso del Color - Nivel A</h4>
+	<p>
+		Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores para asegurar que usuarios con problemas visuales puedan percibirlo tambi&eacute;n.
+		</p>
+		
+		<p>
+			<em>Los campos con etiqueta y bordes en rojo y marcados con un asterisco son obligatorios.</em>
+		</p>
+		
+		<form>
+		<span id="obligatorio">Nombre</span>:<br>
+		<input id="inputObligatorio" type="text" name="nombre"><span id="asterisco">*</span>
+		<br>
+		Apellido:<br>
+		<input type="text" name="apellido">
+		</form>
+		
+		<a class="botonVentanita" href="#popup4">PISTA</a>
+		<div id="popup4" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.4.1 Uso del Color - Nivel A</h2>
+		<div class="ventanita">
+			Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
+				 un asterisco. El asterisco es de mayor tamaño para que sea realmente perceptible.
+				 <pre><code>#obligatorio{ color: #AD0000; }
+#inputObligatorio{ border: 1px solid #AD0000; }
+#asterisco{ font-size: 1.7em; }
+				</code></pre>
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
+			</div>
+			<div>
+				<a id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.1 Informaci&oacute;n y relaciones</a>
 	<div id="Collap" class="collapse">
@@ -233,7 +287,21 @@
 			</div>
 			<strong>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>						
+			</div><br><br>	
+			
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.1 Uso del Color</a>
+	<div id="Collap4" class="collapse">
+			<div>
+				Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.
+			</div>
+			<strong>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
+				 un asterisco. El asterisco es de mayor tamaño para que sea realmente perceptible.
+				 <br><pre><code>#obligatorio{ color: #AD0000; }
+#inputObligatorio{ border: 1px solid #AD0000; }
+#asterisco{ font-size: 1.7em; }
+				</code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>									
 					
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
@@ -251,6 +319,32 @@ function funcionCopiar() {
   copyText.select();
   document.execCommand("copy");
 }
+
+var body = document.body,
+        overlay = document.querySelector('.overlay'),
+        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
+        
+    [].forEach.call(overlayBtts, function(btt) {
+
+      btt.addEventListener('click', function() { 
+         
+         /* Detect the button class name */
+         var overlayOpen = this.className === 'botonVentanita';
+         
+         /* Toggle the aria-hidden state on the overlay and the 
+            no-scroll class on the body */
+         overlay.setAttribute('aria-hidden', !overlayOpen);
+         body.classList.toggle('noscroll', overlayOpen);
+         
+         /* On some mobile browser when the overlay was previously
+            opened and scrolled, if you open it again it doesn't 
+            reset its scrollTop property */
+         overlay.scrollTop = 0;
+
+      }, false);
+
+    });
+
 </script>
 
 </body>
