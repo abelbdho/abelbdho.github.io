@@ -437,17 +437,9 @@ th, td {
 	left: 400px
 }
 
-@media screen and (min-width: 900px) and (max-width: 1200px){
-  #close{
+@media screen and (max-width: 1200px){
+	#close{
     left: 200px
-  }
-}
-
-@media screen and (max-width: 500px){
-	.popup{
-    width: 100%;
-    color: white;
-    bottom: 96px;
   }
 }
 
