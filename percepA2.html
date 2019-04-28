@@ -177,7 +177,7 @@
 		</p>
 		
 		<button id="botonCopiar" onclick="funcionCopiar()">Copiar texto</button>
-		<input type="text" value="No deben usarse solo colores o formas para identificar elementos" id="campoCopiar">
+		<input type="text" value="No deben usarse solo colores" id="campoCopiar">
 		<br><br>
 		
 		<a class="botonVentanita" href="#popup3">PISTA</a>
@@ -260,6 +260,88 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
+	<h4 id="principio5">1.4.2 Control de Audio - Nivel A</h4>
+	<p>
+		Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
+		 su volumen independientemente del volumen del sistema.
+		</p>
+		
+		<a href="#CollapC" id="activador" class="btn btn-info" data-toggle="collapse" role="Desplegable de ejemplo del criterio" onclick="playPause()">Bot&oacute;n inofensivo</a>
+	<div id="CollapC" class="collapse"><br>
+			<audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg"></audio>
+			<a class="btn btn-dark" id="nyan-btn">Activar/Silenciar</a><br><br>
+			</div><br><br>
+		
+		<a class="botonVentanita" href="#popup5">PISTA</a>
+		<div id="popup5" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.4.2 Control de Audio - Nivel A</h2>
+		<div class="ventanita">
+			Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
+		 su volumen independientemente del volumen del sistema.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
+			</div>
+			<div>
+				<a id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio6">1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h4>
+	<p>
+		Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo, a excepci&oacute;n de:
+		</p>
+		<p>
+			<ul>
+			<li id="contrasteEj1">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
+			<li id="contrasteEj1">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
+			 no se requiere constraste.</li>
+			<li id="contrasteEj1">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
+			 </ul>
+		</p>
+		
+		<p>
+			En este caso, acabamos de usar un color con el m&iacute;nimo contraste de 4.5:1 con el fondo blanco.
+		</p>
+		
+		<a class="botonVentanita" href="#popup6">PISTA</a>
+		<div id="popup6" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h2>
+		<div class="ventanita">
+			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
+				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
+			</div>
+			<div>
+				<a id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.1 Informaci&oacute;n y relaciones</a>
 	<div id="Collap" class="collapse">
 			<div>
@@ -301,8 +383,27 @@
 #asterisco{ font-size: 1.7em; }
 				</code></pre></strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>									
-					
+			</div><br><br>	
+											
+<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.2 Control de Audio</a>
+	<div id="Collap5" class="collapse">
+			<div>
+				Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
+		 su volumen independientemente del volumen del sistema.
+			</div>
+			<strong>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+			
+<a href="#Collap6" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.3 Contraste (m&iacute;nimo)</a>
+	<div id="Collap6" class="collapse">
+			<div>
+				Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).
+			</div>
+			<strong>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
+				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a></strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>								
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
@@ -344,6 +445,54 @@ var body = document.body,
       }, false);
 
     });
+    
+   /*Mecanismo de boton automatico*/
+   var nyan = document.getElementById('nyan');
+var nyanBtn = document.getElementById('nyan-btn');
+
+function playPause(song){
+   if (song.paused && song.currentTime >= 0 && !song.ended) {
+      song.play();
+   } else {
+      song.pause();
+   }
+}
+
+function reset(btn, song){
+   if(btn.classList.contains('playing')){
+      btn.classList.toggle('playing');
+   }
+   song.pause();
+   song.currentTime = 0;
+}
+
+function progress(btn, song){
+   setTimeout(function(){
+      var end = song.duration; 
+      var current = song.currentTime;
+      var percent = current/(end/100);
+      //check if song is at the end
+      if(current==end){
+         reset(btn, song);
+      }
+      //set inset box shadow
+      btn.style.boxShadow = "inset " + btn.offsetWidth * (percent/100) + "px 0px 0px 0px rgba(0,0,0,0.125)"
+      //call function again
+      progress(btn, song);     
+   }, 1000);
+}
+
+activador.addEventListener('click', function(){
+	playPause(nyan);
+	});
+
+nyanBtn.addEventListener('click', function(){
+   nyanBtn.classList.toggle('playing');
+   playPause(nyan);
+   progress(nyanBtn, nyan);
+});
+
+
 
 </script>
 

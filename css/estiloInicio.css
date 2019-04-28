@@ -664,3 +664,11 @@ blink.woo{
 #asterisco{
 	font-size: 1.7em;
 }
+
+/*Boton inofensivo*/
+
+#nyan-btn{
+	position: relative;
+	left: 392px;
+	color:white;
+}
