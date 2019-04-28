@@ -91,45 +91,6 @@ a[href^="https://www.w3.org/"]:after {
 }
 
 
-@media screen and (max-width: 1800px) {
-  .menu {
-  margin: 0;
-  padding: 0;
-  width: 210px;--170
-  background-color: #f1f1f1;
-  position: fixed;
-  top: 300px;
-  left: 7px;--52
-  overflow: auto;
-  }
-  .menu a {
-	border-radius: 5px;
-  background-color: #eee;
-  color: black;
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .menu {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0px;
-	left: 0px;
-  }
-  .menu a {float: left;}
-}
-
-
-@media screen and (max-width: 400px) {
-  .menu a {
-    text-align: center;
-    float: none;
-  }
-}
 /**/
 
 /* ENLACES */
@@ -174,15 +135,6 @@ a[href^="https://www.w3.org/"]:after {
   left: 490px;
 }
 
-@media screen and (max-width: 1800px) {
-  #contenido {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0px;
-	left: 0px;
-  }
-}
 
 /*TITULOS EN GENERAL*/
 
@@ -275,53 +227,6 @@ a:hover, h1 a:hover {
 	height: 25%;
 }
 
-@media screen and (max-width: 1800px) {
-	#logo2{
-	text-align: center;
-    float: none;
-    left: 518px;
-    bottom: 98px;
-	}
-}
-
-@media screen and (max-width: 1400px) {
-	#logo2{
-	text-align: center;
-    float: none;
-    left: 518px;
-    bottom: 60px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	#logo1{
-	bottom: 82px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	#logo1{
-	bottom: 82px;
-	width: 45%;
-	height: 28%;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	#logo1{
-	bottom: 52px;
-	width: 45%;
-	height: 18%;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	#logo2{
-	display: none;
-	}
-}
-
-
 /*SOL*/
 
 #sol{
@@ -330,13 +235,6 @@ a:hover, h1 a:hover {
   left: 1452px;
   overflow: auto;
 }
-@media screen and (min-width: 2500px) {
-  #sol {
-    width: 100%;
-    height: auto;
-  }
-}
-
 /*TABLAS*/
 
 #tablas{
@@ -437,37 +335,6 @@ th, td {
 	left: 400px
 }
 
-@media screen and (max-width: 1200px){
-	#close{
-    left: 200px
-  }
-}
-
-@media screen and (max-width: 900px){
-	.popup{
-    width: 100%;
-    color: white;
-    bottom: 96px;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1200px){
-  .popup{
-    width: 90%;
-    bottom: 96px;
-    color: white;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1700px){
-  .popup{
-    width: 80%;
-    bottom: 96px;
-    color: white;
-  }
-}
-
-
 .botonVentanita {
   color: black;
   font-size: 1.2em;
@@ -519,20 +386,6 @@ th, td {
 .iframe{
 	width:893px;
 	height:502px;
-}
-
-@media screen and (max-width: 900px){
-	.iframe{
-    width:353px;
-	height:182px;
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1200px){
-  .popup{
-    width:453px;
-	height:222px;
-  }
 }
 
 .textoEspecial{
@@ -663,17 +516,4 @@ blink.woo{
 	position: relative;
 	left: 10px;
 	color:white;
-}
-
-/*FUENTE de TEXTO*/
-
-@font-face {
-  font-family: 'fuenteCola';
-  src: url('../font/LOKICOLA.ttf');
-  src: url('../font/LOKICOLA.ttf') format('truetype');
-}
-
-#cocaCola{
-	font-family: 'fuenteCola';
-	font-size: 2em;
 }

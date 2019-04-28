@@ -346,19 +346,11 @@
 
 	<h4 id="principio7">1.4.4 Cambio del tamaño de texto - Nivel AA</h4>
 	<p>
-		Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo, a excepci&oacute;n de:
+		A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
+		 200% sin p&eacute;rdida de contenido o funcionalidad.
 		</p>
 		<p>
-			<ul>
-			<li id="contrasteEj1">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
-			<li id="contrasteEj1">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
-			 no se requiere constraste.</li>
-			<li id="contrasteEj1">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
-			 </ul>
-		</p>
-		
-		<p>
-			En este caso, acabamos de usar un color con el m&iacute;nimo contraste de 4.5:1 con el fondo blanco.
+			En este caso, invitamos a probar libremente con nuestra p&aacute;gina (usando <strong>Ctrl + (+)</strong> o <strong>Ctrl + bot&oacute;n central del rat&oacute;n</strong>).
 		</p>
 		
 		<a class="botonVentanita" href="#popup7">PISTA</a>
@@ -366,17 +358,73 @@
 		<div class="popup">
 		<h2>1.4.4 Cambio del tamaño de texto - Nivel AA</h2>
 		<div class="ventanita">
-			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
+			A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
+		 200% sin p&eacute;rdida de contenido o funcionalidad.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
-				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas.
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio8">1.4.5 Im&aacute;genes de texto - Nivel AA</h4>
+	<p>
+		Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
+		 en lugar de im&aacute;genes, a excepci&oacute;n de estos casos:
+		</p>
+		<p>
+			<ul>
+			<li><strong>Personalizable</strong>: la imagen de texto puede ser personalizada a gusto del usuario.</li>
+			<li><strong>Esencial</strong>: una presentaci&oacute;n particular del texto es esencial para expresar informaci&oacute;n.</li>
+			 </ul>
+		</p>
+		
+		<p>
+			Nosotros personalmente queremos convertir los dos puntos de arriba y usar la fuente de las letras de una conocida marca de refrescos. En vez de usar cualquier m&eacute;todo
+			 de la web y usar una imagen, usamos CSS y presentamos un texto.
+		</p>
+		
+		<p>
+			<ul>
+			<li id="cocaCola">Personalizable, la imagen de texto puede ser personalizada a gusto del usuario.</li>
+			<li id="cocaCola">Esencial, una presentaci&oacute;n particular del texto es esencial para expresar informaci&oacute;n.</li>
+			 </ul>
+		</p>
+		
+		<a class="botonVentanita" href="#popup8">PISTA</a>
+		<div id="popup8" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>1.4.5 Im&aacute;genes de texto - Nivel AA</h2>
+		<div class="ventanita">
+			Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
+		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
+				 im&aacute;genes de texto.
+				 <pre><code>#cocaCola{
+	font-family: 'fuenteCola';
+	font-size: 2em;}
+				</code></pre>
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
+			</div>
+			<div>
+				<a id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -448,7 +496,32 @@
 			<strong>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
 				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a></strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>								
+			</div><br><br>	
+			
+<a href="#Collap7" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.4 Cambio del tamaño de texto</a>
+	<div id="Collap7" class="collapse">
+			<div>
+				A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
+		 200% sin p&eacute;rdida de contenido o funcionalidad.
+			</div>
+			<strong>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap8" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.5 Im&aacute;genes de texto</a>
+	<div id="Collap8" class="collapse">
+			<div>
+				Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
+		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.
+			</div>
+			<strong>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
+				 im&aacute;genes de texto.
+				 <pre><code>#cocaCola{
+	font-family: 'fuenteCola';
+	font-size: 2em;}
+				</code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>														
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
