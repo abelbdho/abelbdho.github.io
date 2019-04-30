@@ -1,354 +1,258 @@
-/*LO QUE SOBRO DEL B PERCEPTIBLE*/
+<html lang="es">
+<head>
+  <title>Operabilidad - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+</head>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<body>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
-
-<h3 id="principio6">1.3.3 Caracter&iacute;sticas Sensoriales - Nivel A</h3>
-	<p>
-		No se conf&iacute;a &uacute;nicamente en el tamaño, forma, localizaci&oacute;, orientaci&oacute;n o sonido de un componente para indicar el uso o comprensi&oacute;n de un componente.
-	</p>
-			
-		<p>
-			Esto ocurre cuando a nuestros botones de versiones les quitamos todo lo añadido.
-		</p>
-		
-		<a href="#principio6" role="button">Versi&oacute;n accesible</a>
-		<a href="#principio6" role="button">Versi&oacute;n inaccesible</a><br><br>
-		
-		<br><br>
-		
-		<a class="botonVentanita2" href="#popup6">PISTA</a>
-		<div id="popup6" class="overlay">
-		<div class="popup">
-		<h2>1.3.3 Caracter&iacute;sticas Sensoriales - Nivel A</h2>
-		<div class="ventanita">
-			No se conf&iacute;a &uacute;nicamente en el tamaño, forma, localizaci&oacute;, orientaci&oacute;n o sonido de un componente para indicar el uso o comprensi&oacute;n de un componente.
-			<div id="parrafoBueno">
-				Usar m&aacute;s de una caracter&iacute;stica para definir o hacer entender el uso de un componente.<br>
-				<xmp>#seleccionadoAccesible {
-		background-color: #005C00;
-		color: white;
-		font-size: 1.2em;
-		}</xmp>
-			</div>
-			<div id="parrafoMalo">
-				Usar una &uacute;nica caracter&iacute;stica para definir o hacer entender el uso de un componente.
-			</div>
-			<div>
-				<a id="close" href="#" type="button" class="btn btn-dark">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		<br><br>
+		<!-- Saltar -->
+<div id="enlaces" role="navegacion">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
 	
-	<br><br>
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
-
-<h3 id="principio7">1.4.1 Uso de color - Nivel A</h3>
-	<p>
-		El color no es el &uacute;nico medio por el que se expresa informaci&oacute;n, indican acciones o se hacen distinciones.
-	</p>
-			
-		<p>
-			Si usasemos el color rojo en el texto incorrecto sin dar ning&uacute;n tipo de indicaci&oacute;n. 
-		</p>
-		
-		<div id="textoRojo">
-				No indicar lo que significa el color en el contexto.
-		</div>
-		
-		<br><br>
-		
-		<a class="botonVentanita2" href="#popup7">PISTA</a>
-		<div id="popup7" class="overlay">
-		<div class="popup">
-		<h2>1.4.1 Uso de color - Nivel A</h2>
-		<div class="ventanita">
-			El color no es el &uacute;nico medio por el que se expresa informaci&oacute;n, indican acciones o se hacen distinciones.
-			<div id="parrafoBueno">
-				Adem&aacute;s del color, indicamos de manera textual el significado del color en el contexto.
-			</div>
-			<div id="parrafoMalo">
-				Basarse &uacute;nicamente en el color para expresar el sentido del contenido.
-			</div>
-			<div>
-				<a id="close" href="#" type="button" class="btn btn-dark">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		<br><br>
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
 	
-	<br><br>
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
-
-<h3 id="principio8">1.4.3 Contraste (M&iacute;nimo) - Nivel AA</h3>
-	<p>
-		Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo, a excepci&oacute;n de:
-	</p>
-		<p>
-			<ul>
-			<li id="contrasteEj1Mal">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
-			<li id="contrasteEj1Mal">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
-			 no se requiere constraste.</li>
-			<li id="contrasteEj1Mal">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
-			 </ul>
-		</p>
-		
-		<p>
-			En este caso, acabamos de usar un color que no cumple con el m&iacute;nimo y costará leer el texto incluso sin problemas de visión.
-		</p>
-		
-		<br><br>
-		
-		<a class="botonVentanita2" href="#popup8">PISTA</a>
-		<div id="popup8" class="overlay">
-		<div class="popup">
-		<h2>1.4.3 Contraste (M&iacute;nimo) - Nivel AA</h2>
-		<div class="ventanita">
-			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones).
-			<div id="parrafoBueno">
-				El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #C7C7FF<br>
-				<a href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
-			</div>
-			<div id="parrafoMalo">
-				Se ha escogido un color al azar por debajo del umbral.
-			</div>
-			<div>
-				<a id="close" href="#" type="button" class="btn btn-dark">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		<br><br>
+	<!--MENU VERTICAL-->
 	
-	<br><br>
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-<h3 id="principio9">1.4.6 Contraste (Mejorado) - Nivel AAA</h3>
-	<p>
-		Todo texto debe mantener un ratio de contraste de m&iacute;nimo 7:1 con el fondo, a excepci&oacute;n de:
-	</p>
-		<p>
-			<ul>
-			<li id="contrasteEj1Mal">Texto grande: el contraste se reduce a 4.5:1 para textos de mayor tamaño.</li>
-			<li id="contrasteEj2">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
-			 no se requiere constraste.</li>
-			<li id="contrasteEj1Mal">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
-			 </ul>
-		</p>
-		
-		<p>
-			En este caso, acabamos de usar un color con contraste 21:1 y otro sin el m&iacute;nimo para comprobar la diferencia.
-		</p>
-		
-		<br><br>
-		
-		<a class="botonVentanita2" href="#popup9">PISTA</a>
-		<div id="popup9" class="overlay">
-		<div class="popup">
-		<h2>1.4.6 Contraste (Mejorado) - Nivel AAA</h2>
-		<div class="ventanita">
-			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 7:1 con el fondo (con excepciones).
-			<div id="parrafoBueno">
-				El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #C7C7FF<br>
-				<a href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
-			</div>
-			<div id="parrafoMalo">
-				Se ha escogido un color al azar por debajo del umbral.
-			</div>
-			<div>
-				<a id="close" href="#" type="button" class="btn btn-dark">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		<br><br>
+	<div class="menu">
+	<a href="index.html">Inicio</a>
+	<a href="percepA.html">Percepci&oacute;n</a>
+	<a href="#" class="active">Operabilidad</a>
+	<a href="#">Link 3</a>
+	<a href="#">Link 4</a>
+	<a href="aleatorio.html">Aleatorio</a>
+	</div><br>
 	
-	<br><br>
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="operabA.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><br><br>
+	
+	<h2>Operabilidad - Segundo Principio</h2>
+	<p>
+		Toda funcionalidad estar&aacute; disponible a trav&eacute;s del teclado.
+	</p>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h3 id="principio10">1.4.7 Bajo o inexistente ruido de fondo - Nivel AAA</h3>
+	<h3 id="principio1">2.2.1 Cron&oacute;metro ajustable - Nivel A</h3>
 	<p>
-		Para contenido auditivo pregrabado que contenga principalmente discurso en primer plano y no sea parte de un CAPTCHA, logo o hilo musical,
-		 al menos se cumple una de estas condiciones:
-	</p>
+		Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta:
+		
 		<p>
 			<ul>
-			<li><strong>Sin ruido de fondo</strong>: el audio no contiene ruido de fondo.</li>
-			<li><strong>Apagado</strong>: tenga ruido de fondo pero pueda desactivarse.</li>
-			<li><strong>20 decibelios</strong>: a excepción de sonidos de uno o dos segundos, debe haber una diferencia de 20 decibelios entre
-			 voz y fondo.</li>
-			 </ul>
+			<li><strong>Apagado</strong>: el usuario puede apagarlo antes de que empiece.</li>
+			<li><strong>Adjustable</strong>:  el usuario puede ajustarlo antes de que empiece.</li>
+			<li><strong>Extensible</strong>: el usuario es advertido antes de que acabe el tiempo y se le dan 20 segundos para ampliar ese tiempo de manera simple.</li>
+			<li><strong>Excepci&oacute;n de tiempo real</strong>: el l&iacute;mite de tiempo es esencial en un evento de tiempo real y no tiene alternativa.</li>
+			<li><strong>Excepci&oacute;n esencial</strong>: el l&iacute;mite de tiempo es esencial y extenderlo invalidar&iacute;a la actividad..</li>
+			<li><strong>Excepci&oacute;de 20 horas</strong>: el l&iacute;mite de tiempo es mayor de 20 horas.</li>
+		</ul>
 		</p>
 		
 		<p>
-			<audio controls>
-			<source src="sound/criterio1_4_7Mal.wav" type="audio/wav">
-			</audio><br>
-			El contenido solo auditivo no debe tener ruido de fondo para facilitar la audici&oacute;n del mensaje principal
-		</p>
-		<p>
-			En este caso tenemos un mensaje de voz con mucho ruido de fondo, d&iacute;ficil de percibir.
+			Aqu&iacute; tenemos un contador que empieza nada más cargar la p&aacute;gina y no da posibilidad de parar ese tiempo.
 		</p>
 		
-		<br><br>
+		<div id="contador">Esta; p&aacute;gina dejar&aacute; de ser accesible en: ¡<span id="time">05:00</span> minutos!</div><br>
 		
-		<a class="botonVentanita2" href="#popup10">PISTA</a>
-		<div id="popup10" class="overlay">
+		<a class="botonVentanita2" href="#popup1">PISTA</a>
+		<div id="popup1" class="overlay">
 		<div class="popup">
-		<h2>1.4.7 Bajo o inexistente ruido de fondo - Nivel AAA</h2>
+			<a class="close" href="#principio1">&times;</a><br><br>
+		<h2>2.2.1 Cron&oacute;metro ajustable - Nivel A</h2>
 		<div class="ventanita">
-			Para contenido auditivo pregrabado que contenga principalmente discurso en primer plano cumple que:
-				 no tenga ruido de fondo, se pueda desactivar o su diferencia con la voz sea de 20 decibelios.
+			Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta: apagado, ajustable, extensible, es tiempo real,
+			 es esencial o dura m&aacute;s de 20 horas.
 			<div id="parrafoBueno">
-				El audio no tiene ning&uacute;n ruido de fondo y se puede oir de manera clara.
+				El contador tiene un bot&oacute;n para parar la cuenta. No empieza al cargar, debe ser activado.
 			</div>
 			<div id="parrafoMalo">
-				El audio tiene un ruido de fondo que dificulta la audici&oacute;n del mensaje.
-			</div>
-			<div>
-				<a id="close" href="#" type="button" class="btn btn-dark">Cerrar</a>
+				Al cargar la p&aacute;gina el contador empieza la cuenta atr&aacute;s.
 			</div>
 		</div>
 		</div>
 		</div>
-		<br><br>
-	
-	<br><br>
+		
+	 <br><br>
+			
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h3 id="principio11">1.4.13 Contenido bajo cursor o foco - Nivel AA</h3>
+	<h3 id="principio2">2.2.4 Interrupciones - Nivel AAA</h3>
 	<p>
-		Cuando el foco o el puntero se coloca y retira sobre una zona y hace visible contenido escondido, se cumplen lo siguiente:
-	</p>
+		Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
+		</p>
 		<p>
-			<ul>
-			<li><strong>Desechable</strong>: excepto en casos de error o en los que no se oculte nada, un mecanismo permitir&aacute; volver
-			 a esconder este contenido sin mover el puntero o foco.</li>
-			<li><strong>Planeable</strong>: si al pasar sobre el contenido se hace visible, se puede interactuar con el sin que desaparezca.</li>
-			<li><strong>Persistente</strong>: el contenido permanece hasta movimiento del cursor o foco, que el usuario lo deseche o que no
-			 sea &uacute;til.</li>
-			 </ul>
+			En este caso, tenemos una interrupci&oacute;n cada 5 minutos que no podemos eliminar.
 		</p>
 		
-		<p>
-			En este caso vamos a tener un enlace que aparece al hacer foco o usar el cursor pero que al segundo desaparece hasta volver a hacerlo
-		</p>
-		
-		<a href="#principio11" onmouseover="over()" id="a" class="waa">Saltar al contenido</a><br><br>
-		
-		<p>
-			Pasa el cursor o foco justo encima de este texto.
-		</p>
-		
-		<br><br>
-		
-		<a class="botonVentanita2" href="#popup11">PISTA</a>
-		<div id="popup11" class="overlay">
+		<a class="botonVentanita2" href="#popup2">PISTA</a>
+		<div id="popup2" class="overlay">
 		<div class="popup">
-		<h2>1.4.13 Contenido bajo cursor o foco - Nivel AA</h2>
+			<a class="close" href="#principio2">&times;</a><br><br>
+		<h2>2.2.4 Interrupciones - Nivel AAA</h2>
 		<div class="ventanita">
-			Cuando el foco o el puntero se coloca y retira sobre una zona y hace visible contenido escondido, se cumplen que es desechable,
-			planeable y persistente.
+			Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
 			<div id="parrafoBueno">
-				Los enlaces est&aacute;n diseñados para no ocultar informaci&oacute;n debajo, ser planeables y persistentes.
+				Existe un bot&oacute;n que permite cesar est&aacute;s interrupciones.
 			</div>
 			<div id="parrafoMalo">
-				El contenido desaparece al segundo
-			</div>
-			<div>
-				<a id="close" href="#" type="button" class="btn btn-dark">Cerrar</a>
+				La p&aacute;gina no tiene ning&uacute;n mecanismo para parar las interrupciones.
 			</div>
 		</div>
 		</div>
 		</div>
-		<br><br>
-	
-	<br><br>
+		
+	 <br><br>
+			
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-			
-<a href="#Collap6" class="btn btn-primary" data-toggle="collapse">1.3.3 Caracter&iacute;sticas Sensoriales</a>
-	<div id="Collap6" class="collapse">
-			<div>
-				No se conf&iacute;a &uacute;nicamente en el tamaño, forma, localizaci&oacute;, orientaci&oacute;n o sonido de un componente para indicar el uso o
-				 comprensi&oacute;n de un componente.
-			</div>
-			<strong>Usar m&aacute;s de una caracter&iacute;stica para definir o hacer entender el uso de un componente.<br>
-				<xmp>#seleccionadoAccesible {
-		background-color: #005C00;
-		color: white;
-		font-size: 1.2em;
-		}</xmp></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
+	<h3 id="principio3">2.3.2 Tres parpadeos - Nivel AAA</h3>
+	<p>
+		Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
+		</p>
+		<p>
+			<blink id="parpadeo">Para destacar este texto usamos un parpadeo bastante molesto</blink>
+		</p>
+		<button id="botonParpadeo" onclick="pararParpadeo()">Parar</button><br><br>
 		
-<a href="#Collap7" class="btn btn-primary" data-toggle="collapse">1.4.1 Uso de color</a>
-	<div id="Collap7" class="collapse">
-			<div>
-				El color no es el &uacute;nico medio por el que se expresa informaci&oacute;n, indican acciones o se hacen distinciones.
+		<a class="botonVentanita2" href="#popup3">PISTA</a>
+		<div id="popup3" class="overlay">
+		<div class="popup">
+			<a class="close" href="#principio3">&times;</a><br><br>
+		<h2>2.3.2 Tres parpadeos - Nivel AAA</h2>
+		<div class="ventanita">
+			Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
+			<div id="parrafoBueno">
+				Se presenta un texto destacado sin ning&uacute;n elemento parpadeante
 			</div>
-			<strong>Adem&aacute;s del color, indicamos de manera textual el significado del color en el contexto.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>		
+			<div id="parrafoMalo">
+				Se muestra un texto que parpadea m&aacute;s de tres veces por segundo.
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	 <br><br>
 			
-<a href="#Collap8" class="btn btn-primary" data-toggle="collapse">1.4.3 Contraste (M&iacute;nimo)</a>
-	<div id="Collap8" class="collapse">
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse">2.2.1 Cron&oacute;metro ajustable</a>
+	<div id="Collap" class="collapse">
 			<div>
-				Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones).
+				Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta: apagado, ajustable, extensible, es tiempo real,
+			 es esencial o dura m&aacute;s de 20 horas.
 			</div>
-			<strong>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF</strong><br>
-			<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
+			<strong>El contador tiene un bot&oacute;n para parar la cuenta. No empieza al cargar, debe ser activado.</strong><br>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse">2.2.4 Interrupciones</a>
+	<div id="Collap2" class="collapse">
+			<div>
+				Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
+			</div>
+			<strong>Existe un bot&oacute;n que permite cesar est&aacute;s interrupciones.</strong><br>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#interruptions" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap9" class="btn btn-primary" data-toggle="collapse">1.4.6 Contraste (Mejorado)</a>
-	<div id="Collap9" class="collapse">
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse">2.3.2 Tres parpadeos</a>
+	<div id="Collap3" class="collapse">
 			<div>
-				Todo texto debe mantener un ratio de contraste de m&iacute;nimo 7:1 con el fondo (con excepciones).
+				Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
 			</div>
-			<strong>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #000000</strong><br>
-			<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-enhanced" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
-			
-<a href="#Collap10" class="btn btn-primary" data-toggle="collapse">1.4.7 Bajo o inexistente ruido de fondo</a>
-	<div id="Collap10" class="collapse">
-			<div>
-				Para contenido auditivo pregrabado que contenga principalmente discurso en primer plano cumple que:
-				 no tenga ruido de fondo, se pueda desactivar o su diferencia con la voz sea de 20 decibelios.
-			</div>
-			<strong>El audio no tiene ning&uacute;n ruido de fondo y se puede oir de manera clara.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#low-or-no-background-audio" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
-			
-<a href="#Collap11" class="btn btn-primary" data-toggle="collapse">1.4.13 Contenido bajo cursor o foco</a>
-	<div id="Collap11" class="collapse">
-			<div>
-				Cuando el foco o el puntero se coloca y retira sobre una zona y hace visible contenido escondido, se cumplen que es desechable,
-			planeable y persistente.
-			</div>
-			<strong>Los enlaces est&aacute;n diseñados para no ocultar informaci&oacute;n debajo, ser planeables y persistentes.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#content-on-hover-or-focus" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>															
-			
-			<script>
-	function over() {
-               document.getElementById('a').className = 'woo';
-               setTimeout(function esconder() {
-  				document.getElementById('a').className = 'waa';
-				}, 1000);
-            }
+			<strong>Se presenta un texto destacado sin ning&uacute;n elemento parpadeante</strong><br>
+			<a href="https://www.w3.org/WAI/WCAG21/quickref/#three-flashes" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>				
+															
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+	function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+};
+
+function contador() {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+
+
+var timer = null;
+function empezar() {
+  timer = setInterval(function(){ alert("Alerta cada 5 MINUTOS. DESACTIVAR en Criterio 2.2.4 Interrupciones"); }, 300000);
+};
+
+function pararParpadeo(){
+	document.getElementById('parpadeo').className = 'woo';
+	};
+	
+window.onload = function start(){
+    contador();
+    empezar();
+}
 </script>
 
-
-
+</body>

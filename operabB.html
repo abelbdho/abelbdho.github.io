@@ -37,9 +37,11 @@
 	
 	<div class="menu">
 	<a href="index.html">Inicio</a>
-	<a href="percepA.html">Percepci&oacute;n</a>
-	<a href="#" class="active">Operabilidad</a>
-	<a href="#">Link 3</a>
+	<a id="principio" href="percepA.html">Percepci&oacute;n</a>
+	<a id="submenu" href="percepA.html" class="active">Alternativas textuales y Medios tempodependientes</a>
+	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
+	<a id="principio" href="#">Operabilidad</a>
+	<a href="#">Accesible por teclado, tiempo sufiente y convulsiones</a>
 	<a href="#">Link 4</a>
 	<a href="aleatorio.html">Aleatorio</a>
 	</div><br>
@@ -65,148 +67,75 @@
 	<a href="operabA.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><br><br>
 	
-	<h2>Operabilidad - Segundo Principio</h2>
+	<h2>2. Operabilidad - Segundo Principio</h2>
 	<p>
-		Toda funcionalidad estar&aacute; disponible a trav&eacute;s del teclado.
-	</p>
+		Todas las funcionalidades ser&aacute;n accesibles mediante el teclado.
+	</p><br>
+	
+	<h3>2.1 Accesible por teclado</h3>
+	<p>
+		Si toda la funcionalidad est&aacute; disponible para el uso de teclado, todas las alternativas que lo simulan podr&aacute;n acceder tambi&eacute;n (por ejemplo, ingreso por voz).
+	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h3 id="principio1">2.2.1 Cron&oacute;metro ajustable - Nivel A</h3>
+	<h4 id="principio1">2.1.1 Teclado - Nivel A</h4>
 	<p>
-		Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta:
-		
-		<p>
-			<ul>
-			<li><strong>Apagado</strong>: el usuario puede apagarlo antes de que empiece.</li>
-			<li><strong>Adjustable</strong>:  el usuario puede ajustarlo antes de que empiece.</li>
-			<li><strong>Extensible</strong>: el usuario es advertido antes de que acabe el tiempo y se le dan 20 segundos para ampliar ese tiempo de manera simple.</li>
-			<li><strong>Excepci&oacute;n de tiempo real</strong>: el l&iacute;mite de tiempo es esencial en un evento de tiempo real y no tiene alternativa.</li>
-			<li><strong>Excepci&oacute;n esencial</strong>: el l&iacute;mite de tiempo es esencial y extenderlo invalidar&iacute;a la actividad..</li>
-			<li><strong>Excepci&oacute;de 20 horas</strong>: el l&iacute;mite de tiempo es mayor de 20 horas.</li>
-		</ul>
+		A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
+		 de movimientos del usuario (por ejemplo, pinceladas).
 		</p>
 		
 		<p>
-			Aqu&iacute; tenemos un contador que empieza nada más cargar la p&aacute;gina y no da posibilidad de parar ese tiempo.
+		Al pasar el rat&oacute;n sobre una imagen, esta cambia durante unos segundos. Se adapta para ofrecer una experiencia similar a personas que accedan con el teclado, para el que inicialmente 
+		la imagen no captar&iacute;a el foco.
 		</p>
-		
-		<div id="contador">Esta; p&aacute;gina dejar&aacute; de ser accesible en: ¡<span id="time">05:00</span> minutos!</div><br>
-		
+		<picture>
+		<img onmouseover="accion()" id="imagenFoco" src="https://www.w3schools.com/js/pic_bulboff.gif">
+		</picture><br><br>
+
 		<a class="botonVentanita2" href="#popup1">PISTA</a>
-		<div id="popup1" class="overlay">
+		<div id="popup1" class="overlay" role="Ventana emergente">
 		<div class="popup">
-			<a class="close" href="#principio1">&times;</a><br><br>
-		<h2>2.2.1 Cron&oacute;metro ajustable - Nivel A</h2>
+		<h2>2.1.1 Teclado - Nivel A</h2>
 		<div class="ventanita">
-			Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta: apagado, ajustable, extensible, es tiempo real,
-			 es esencial o dura m&aacute;s de 20 horas.
-			<div id="parrafoBueno">
-				El contador tiene un bot&oacute;n para parar la cuenta. No empieza al cargar, debe ser activado.
+			A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
+		 de movimientos del usuario (por ejemplo, pinceladas).<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
+				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n.<br>
+				<pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
+&lt;img onmouseover="accion()" src="..."&gt;</code></pre>
 			</div>
-			<div id="parrafoMalo">
-				Al cargar la p&aacute;gina el contador empieza la cuenta atr&aacute;s.
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
+			</div>
+			<div>
+				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
 		</div>
 		
-	 <br><br>
+	
+			<br><br>
 			
-
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h3 id="principio2">2.2.4 Interrupciones - Nivel AAA</h3>
-	<p>
-		Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
-		</p>
-		<p>
-			En este caso, tenemos una interrupci&oacute;n cada 5 minutos que no podemos eliminar.
-		</p>
-		
-		<a class="botonVentanita2" href="#popup2">PISTA</a>
-		<div id="popup2" class="overlay">
-		<div class="popup">
-			<a class="close" href="#principio2">&times;</a><br><br>
-		<h2>2.2.4 Interrupciones - Nivel AAA</h2>
-		<div class="ventanita">
-			Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
-			<div id="parrafoBueno">
-				Existe un bot&oacute;n que permite cesar est&aacute;s interrupciones.
-			</div>
-			<div id="parrafoMalo">
-				La p&aacute;gina no tiene ning&uacute;n mecanismo para parar las interrupciones.
-			</div>
-		</div>
-		</div>
-		</div>
-		
-	 <br><br>
-			
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-	<h3 id="principio3">2.3.2 Tres parpadeos - Nivel AAA</h3>
-	<p>
-		Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
-		</p>
-		<p>
-			<blink id="parpadeo">Para destacar este texto usamos un parpadeo bastante molesto</blink>
-		</p>
-		<button id="botonParpadeo" onclick="pararParpadeo()">Parar</button><br><br>
-		
-		<a class="botonVentanita2" href="#popup3">PISTA</a>
-		<div id="popup3" class="overlay">
-		<div class="popup">
-			<a class="close" href="#principio3">&times;</a><br><br>
-		<h2>2.3.2 Tres parpadeos - Nivel AAA</h2>
-		<div class="ventanita">
-			Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
-			<div id="parrafoBueno">
-				Se presenta un texto destacado sin ning&uacute;n elemento parpadeante
-			</div>
-			<div id="parrafoMalo">
-				Se muestra un texto que parpadea m&aacute;s de tres veces por segundo.
-			</div>
-		</div>
-		</div>
-		</div>
-		
-	 <br><br>
-			
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse">2.2.1 Cron&oacute;metro ajustable</a>
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.1 Teclado</a>
 	<div id="Collap" class="collapse">
 			<div>
-				Para todo l&iacute;mite de tiempo en el contenido, al menos una es cierta: apagado, ajustable, extensible, es tiempo real,
-			 es esencial o dura m&aacute;s de 20 horas.
+				A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
+		 de movimientos del usuario (por ejemplo, pinceladas).
 			</div>
-			<strong>El contador tiene un bot&oacute;n para parar la cuenta. No empieza al cargar, debe ser activado.</strong><br>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			<strong>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
+				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n. <pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
+&lt;img onmouseover="accion()" src="..."&gt;</code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
-			
-<a href="#Collap2" class="btn btn-primary" data-toggle="collapse">2.2.4 Interrupciones</a>
-	<div id="Collap2" class="collapse">
-			<div>
-				Interrupciones pueden ser pospuestas o eliminadas por el usuario, a excepci&oacute;n de casos de emergencia.
-			</div>
-			<strong>Existe un bot&oacute;n que permite cesar est&aacute;s interrupciones.</strong><br>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#interruptions" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
-			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse">2.3.2 Tres parpadeos</a>
-	<div id="Collap3" class="collapse">
-			<div>
-				Las p&aacute;ginas web no contienen nada que parpadee m&aacute;s de tres veces por segundo.
-			</div>
-			<strong>Se presenta un texto destacado sin ning&uacute;n elemento parpadeante</strong><br>
-			<a href="https://www.w3.org/WAI/WCAG21/quickref/#three-flashes" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>				
-															
+						
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
 </div>
 
@@ -216,43 +145,11 @@
 <!-- Fin Contenido -->
 
 <script>
-	function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
+function accion(){
+document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulbon.gif';
+setTimeout(function(){ document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulboff.gif'; }, 1000);
 };
-
-function contador() {
-    var fiveMinutes = 60 * 5,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
-
-
-var timer = null;
-function empezar() {
-  timer = setInterval(function(){ alert("Alerta cada 5 MINUTOS. DESACTIVAR en Criterio 2.2.4 Interrupciones"); }, 300000);
-};
-
-function pararParpadeo(){
-	document.getElementById('parpadeo').className = 'woo';
-	};
-	
-window.onload = function start(){
-    contador();
-    empezar();
-}
 </script>
 
 </body>
