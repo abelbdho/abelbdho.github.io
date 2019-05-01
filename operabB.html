@@ -38,11 +38,11 @@
 	<div class="menu">
 	<a href="index.html">Inicio</a>
 	<a id="principio" href="percepA.html">Percepci&oacute;n</a>
-	<a id="submenu" href="percepA.html" class="active">Alternativas textuales y Medios tempodependientes</a>
+	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
 	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
 	<a id="principio" href="#">Operabilidad</a>
-	<a href="#">Accesible por teclado, tiempo sufiente y convulsiones</a>
-	<a href="#">Link 4</a>
+	<a id="submenu" href="#" class="active">Accesible por teclado, tiempo sufiente y convulsiones</a>
+	<a id="submenu" href="#">Link 4</a>
 	<a href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
@@ -122,6 +122,65 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
+
+	<h4 id="principio2">2.1.2 Sin trampas para el foco del teclado - Nivel A</h4>
+	<p>
+		No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.
+		</p>
+		
+		<p>
+			En este ejemplo, capturamos el foco dentro de la ventana emergente en bucle pero puede volver a la p&aacute;gina principal y no querdar&iacute;a atrapado.
+		</p>
+		
+		<a class="btn btn-info" href="#popupX">EJEMPLO</a>
+		<div id="popupX" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>2.1.1 Ejemplo</h2>
+		<div class="ventanita" id="M">
+			Comprobamos que se realiza el foco sobre el enlace, despu&eacute;s sobre el bot&oacute;n y as&iacute; en bucle.<br>
+		 <input name="loop" style="opacity:0;" onfocus="loop()">
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi maecenas parturient dui per hac lectus aliquam natoque aenean, fusce libero malesuada vivamus
+				 nunc eleifend ultrices platea iaculis faucibus a sodales nec morbi diam. Cubilia libero imperdiet natoque lectus euismod congue urna et tortor mus nisl,
+				  ultrices orci etiam vulputate velit taciti pretium odio habitasse duis. Quam dictum tempor congue ultrices erat pretium accumsan himenaeos malesuada,
+				   aliquet lectus nulla mattis porttitor ligula justo fermentum pulvinar, tincidunt enim cubilia neque praesent facilisis placerat vivamus.
+			</p>
+			<div>
+				<a tabIndex="-1" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+			<input style="opacity:0;" onfocus="loop()">
+		</div>
+		</div>
+		</div>
+		
+
+		<a class="botonVentanita2" href="#popup2">PISTA</a>
+		<div id="popup2" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>2.1.2 Sin trampas para el foco del teclado - Nivel A</h2>
+		<div class="ventanita">
+			No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El foco est&aacute; capturado en la ventana en la que se encuentra
+				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n<br>
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
+			</div>
+			<div>
+				<a id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.1 Teclado</a>
 	<div id="Collap" class="collapse">
 			<div>
@@ -133,7 +192,16 @@
 &lt;img onmouseover="accion()" src="..."&gt;</code></pre></strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
-						
+									
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.2 Sin trampas para el foco del teclado</a>
+	<div id="Collap2" class="collapse">
+			<div>
+				No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.
+			</div>
+			<strong>El foco est&aacute; capturado en la ventana en la que se encuentra
+				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n</strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
@@ -145,6 +213,14 @@
 <!-- Fin Contenido -->
 
 <script>
+	
+	
+/*ATRAPAR FOCUS*/
+function loop(){
+	M.querySelector("input[name='loop']").focus();
+};
+/*-----------------------------------*/
+
 
 function accion(){
 document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulbon.gif';
