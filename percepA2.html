@@ -36,7 +36,7 @@
 	<!--MENU VERTICAL-->
 	
 	<div class="menu">
-	<a href="index.html">Inicio</a>
+	<a href="index.html" id="inicio">Inicio</a>
 	<a id="principio" href="#">Percepci&oacute;n</a>
 	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
 	<a id="submenu" href="#" class="active">Adaptable y Distinguible</a>
@@ -64,35 +64,68 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a>
-	<a href="percepB2.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><br><br>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="percepB2.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<h2>1. Percepci&oacute;n - Primer Principio</h2>
 	<p>
-		La informaci&oacute;n y los componentes de la interfaz de usuario deben ser presentados a los usuarios de modo que ellos puedan percibirlos. No puede ser invisible a ninguno de sus sentidos.
-	</p><br>
+		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
+		 manera que puedan percibirlos, no pueden ser invisibles a todos sus sentidos.
+		 </p><br>
 	
 	<h3>1.3 Adaptable</h3>
 	<p>
-		Asegurar que toda la informaci&oacute;n se encuentre disponible de forma que pueda ser percibida por todos los usuarios, por ejemplo, que pueda ser le&iacute;da por un lector de pantalla o presentada
-		 con una disposici&oacute;n m&aacute;s simple.
+		 Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposici&oacute;n m&aacute;s simple) sin perder
+		  informaci&oacute;n o estructura.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 	<h4 id="principio1">1.3.1 Informaci&oacute;n y relaciones - Nivel A</h4>
 	<p>
-		Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n. Por ejemplo, el formato de la presentaci&oacute;n cambia
-		 cuando un lector de pantalla lee el contenido o cuando se sustituye la hoja de estilo proporcionada por el autor.
+		La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto. 
 		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
 			
 		<p class="textoEspecial">
 			Cuando queremos enfatizar la importancia de la <strong>accesibilidad web</strong> en esta p&aacute;gina, usamos las etiquetas correctas. Esto facilita
 			la experiencia en la web a personas con <strong>diversidad funcional</strong> o incluso <strong>sin ella</strong>.
 		</p>
-		<br>
 		
-		<a class="botonVentanita" href="#popup1">PISTA</a>
+		<p>
+			Otro ejemplo puede darse con respecto al aspecto y la personalizaci&oacute;n de elementos. Las tablas tienen sus propias etiquetas html y se debe hacer un uso apropiado de
+			 estos <em><span lang="en">tags</span></em>.
+		</p>
+		
+		<table>
+			<tr>
+				<th>Discapacidad</th>
+				<th>Condici&oacute;n normal</th>
+			</tr>
+			<tr>
+				<td>Ceguera</td>
+				<td>Situaci&oacute;n nocturna</td>
+			</tr>
+			<tr>
+				<td>Sordera</td>
+				<td>Ambiente ruidoso</td>
+			</tr>
+		</table><br>
+		
+		<p>
+			Es com&uacute;n encontrar t&iacute;tulos en p&aacute;ginas web que realmente no utilizan las etiquetas creadas para ello (son solo aspecto CSS). Mostramos el equivalente a nuestro &lt;h3&gt;.
+		</p>
+		
+		<h3>1. Un t&iacute;tulo con su etiqueta correspondiente</h3>
+		
+		<p>
+		Las caracter&iacute;sticas como el color o tamaño se editan respecto a la etiqueta del t&iacute;tulo.
+		</p><br>
+		
+		
+		<a class="botonVentanita" href="#popup1" alt="Pista 1.3.1 Información y relaciones">PISTA 1.3.1</a>
 		<div id="popup1" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
@@ -100,11 +133,11 @@
 			Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
+				<span id="flechaBien" role="Marca positiva">&#10003</span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
 				<pre><code>&lt;strong>accesibilidad web&lt;strong&gt;</code></pre>
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
 				<pre><code>&lt;b>accesibilidad web&lt;b&gt;</code></pre>
 			</div>
 			<div>
@@ -121,26 +154,29 @@
 
 	<h4 id="principio2">1.3.2 Secuencia significativa - Nivel A</h4>
 	<p>
-		Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.
-		</p>
-		
+		Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.</p>
 		<p>
-			Aqu&iacute; tenemos dos p&aacute;rrafos que guardan una secuencia visualmente, pero que respetan esa secuencia en el &oacute;digo. De esta manera, para una persona que use, por ejemplo, un lector de pantalla, la informaci&oacute;
+			
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+			
+			Aqu&iacute; tenemos dos p&aacute;rrafos que guardan una secuencia visualmente, pero que respetan esa secuencia en el c&oacute;digo. De esta manera, para una persona que use, por ejemplo, un lector de pantalla, la informaci&oacute;
 			ser&aacute; presentada en ese mismo orden.
 		</p><br>
 			
 		<p class="textoEspecial" id="textoSecuencia">
-			Una secuencia es significativa si el orden del contenido no se puede cambiar sin alterar su significado. Por ejemplo, si la p&aacute;gina contiene dos art&iacute;culos independientes, el orden relativo de los art&iacute;culos puede
-			 no afectar su significado siempre y cuando no se los intercale. En tal situaci&oacute;n, cada art&iacute;culo puede contar con una secuencia significativa, pero el contenedor de los art&iacute;culos puede no tener una secuencia
-			 con sentido.
+			Para lograr la accesibilidad web hay que ser conscientes de que no todos los usuarios acceden a la Web con los mismos medios t&eacute;cnicos y que no todos los usuarios son capaces de percibir correctamente todos los contenidos publicados
+			 en la Web. Esta idea se resume en los dos principios b&aacute;sicos del diseño web accesible:
 		</p>
-		<p class="textoEspecial" id="textoSecuencia">
-			La sem&aacute;ntica de algunos elementos define si su contenido es una secuencia significativa o no. Por ejemplo, en HTML, los textos son siempre una secuencia con sentido. Las tablas y las listas ordenadas son secuencias con sentido,
-			 pero las listas no ordenadas no lo son.
+		<p id="textoSecuencia">
+			<ul class="textoEspecial">
+				<li><strong>Crea p&aacute;ginas que se transformen correctamente.</strong></li>
+				<li><strong>Ofrece el contenido de manera comprensible para facilitar la navegaci&oacute;n por el sitio web.</strong></li>
+			</ul>
 		</p>
 		<br>
 		
-		<a class="botonVentanita" href="#popup2">PISTA</a>
+		<a class="botonVentanita" href="#popup2" alt="Pista 1.3.2 Secuencia significativa">PISTA 1.3.2</a>
 		<div id="popup2" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
@@ -148,10 +184,10 @@
 			Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
+				<span id="flechaBien" role="Marca positiva">&#10003</span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -168,9 +204,12 @@
 
 	<h4 id="principio3">1.3.3 Caracter&iacute;sticas sensoriales - Nivel A</h4>
 	<p>
-		Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
-		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.
-		</p>
+		Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente de las caracter&iacute;sticas sensoriales de los componentes como su forma,
+		 tamaño, ubicaci&oacute;n visual, orientaci&oacute;n o sonido.
+		 </p>
+		 
+		 <h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
 		
 		<p>
 			Pulse el bot&oacute;n cuadrado de color azul claro justo debajo, que dice <em>copiar texto</em>, para copiar el contenido dentro del campo de texto que est&aacute; a la derecha de este bot&oacute;n.
@@ -180,7 +219,24 @@
 		<input type="text" value="No deben usarse solo colores" id="campoCopiar">
 		<br><br>
 		
-		<a class="botonVentanita" href="#popup3">PISTA</a>
+		<p>
+		Aqu&iacute; otro ejemplo que podr&iacute;a ser confuso:
+		</p>
+		
+		<p>
+			<em>Seleccione los tri&aacute;ngulos rectos</em>
+		</p>
+		
+		<p>
+			<form>
+		<span>1. Tri&aacute;ngulo verdoso, dos &aacute;ngulos menores de 90 grados.</span><input alt="figura triangular" type="radio" id="radio1"><div class="triangulo1"></div>
+		<span id="invertida">2. Tri&aacute;ngulo gris&aacute;ceo, un &aacute;ngulo de 90 grados <input alt="figura triangular" type="radio" id="radio2"></span><div class="triangulo2"></div>
+		<span>3. Tri&aacute;ngulo rosado, un &aacute;ngulo de m&aacute;s de 90 grados.</span><input alt="figura triangular" type="radio" id="radio3"><div class="triangulo3"></div>
+			</form>
+		</p>
+		<br>
+		
+		<a class="botonVentanita" href="#popup3" alt="Pista 1.3.3 Características sensoriales">PISTA 1.3.3</a>
 		<div id="popup3" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
@@ -189,10 +245,10 @@
 		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
+				<span id="flechaBien" role="Marca positiva">&#10003</span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -208,29 +264,31 @@
 	
 	<h3>1.3 Distinguible</h3>
 	<p>
-		Facilitar a los usuarios el ver y o&iacute;r contenido, pudiendo distinguir entre fondo y primer plano.
+		Facilitar a los usuarios ver y o&iacute;r el contenido, incluyendo la separaci&oacute;n entre el primer plano y el fondo.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 	<h4 id="principio4">1.4.1 Uso del Color - Nivel A</h4>
 	<p>
-		Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores para asegurar que usuarios con problemas visuales puedan percibirlo tambi&eacute;n.
-		</p>
-		
+		El color no se usa como &uacute;nico medio visual para transmitir la informaci&oacute;n, indicar una acci&oacute;n, solicitar una respuesta o distinguir un elemento visual.</p>
 		<p>
+			
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+			
 			<em>Los campos con etiqueta y bordes en rojo y marcados con un asterisco son obligatorios.</em>
 		</p>
 		
 		<form>
-		<span id="obligatorio">Nombre</span>:<br>
-		<input id="inputObligatorio" type="text" name="nombre"><span id="asterisco">*</span>
+		<span id="obligatorio">Nombre</span><span id="asterisco" alt="Campo obligatorio">*</span>:<br>
+		<input id="inputObligatorio" type="text" name="nombre">
 		<br>
 		Apellido:<br>
 		<input type="text" name="apellido">
 		</form>
 		
-		<a class="botonVentanita" href="#popup4">PISTA</a>
+		<a class="botonVentanita" href="#popup4" alt="Pista 1.4.1 Uso del Color">PISTA 1.4.1</a>
 		<div id="popup4" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.4.1 Uso del Color - Nivel A</h2>
@@ -238,7 +296,7 @@
 			Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
+				<span id="flechaBien" role="Marca positiva">&#10003</span>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
 				 un asterisco. El asterisco es de mayor tamaño para que sea realmente perceptible.
 				 <pre><code>#obligatorio{ color: #AD0000; }
 #inputObligatorio{ border: 1px solid #AD0000; }
@@ -246,7 +304,7 @@
 				</code></pre>
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -262,9 +320,12 @@
 
 	<h4 id="principio5">1.4.2 Control de Audio - Nivel A</h4>
 	<p>
-		Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
-		 su volumen independientemente del volumen del sistema.
-		</p>
+		Si el audio de una p&aacute;gina web suena autom&aacute;ticamente durante m&aacute;s de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo
+		 para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.
+		 </p>
+		 
+		 <h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
 		
 		<a href="#CollapC" id="activador" class="btn btn-info" data-toggle="collapse" role="Desplegable de ejemplo del criterio" onclick="playPause()">Bot&oacute;n inofensivo</a>
 	<div id="CollapC" class="collapse"><br>
@@ -272,7 +333,7 @@
 			<a class="btn btn-dark" id="nyan-btn">Activar/Silenciar</a><br><br>
 			</div><br><br>
 		
-		<a class="botonVentanita" href="#popup5">PISTA</a>
+		<a class="botonVentanita" href="#popup5" alt="Pista 1.4.2 Control de Audio">PISTA 1.4.2</a>
 		<div id="popup5" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.4.2 Control de Audio - Nivel A</h2>
@@ -281,10 +342,10 @@
 		 su volumen independientemente del volumen del sistema.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.
+				<span id="flechaBien" role="Marca positiva">&#10003</span>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -303,6 +364,10 @@
 	<p>
 		Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo, a excepci&oacute;n de:
 		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
 		<p>
 			<ul>
 			<li id="contrasteEj1">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
@@ -316,7 +381,7 @@
 			En este caso, acabamos de usar un color con el m&iacute;nimo contraste de 4.5:1 con el fondo blanco.
 		</p>
 		
-		<a class="botonVentanita" href="#popup6">PISTA</a>
+		<a class="botonVentanita" href="#popup6" alt="Pista 1.4.3 Contraste (mínimo)">PISTA 1.4.3</a>
 		<div id="popup6" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h2>
@@ -324,11 +389,11 @@
 			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
+				<span id="flechaBien" role="Marca positiva">&#10003</span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
 				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -346,14 +411,23 @@
 
 	<h4 id="principio7">1.4.4 Cambio del tamaño de texto - Nivel AA</h4>
 	<p>
-		A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
-		 200% sin p&eacute;rdida de contenido o funcionalidad.
-		</p>
+		A excepci&oacute;n de los subt&iacute;tulos y las im&aacute;genes de texto, todo el texto puede ser ajustado sin ayudas t&eacute;cnicas hasta un 200 por ciento sin que se pierdan el contenido
+		 o la funcionalidad. 
+		 </p>
+		 
+		 <h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		 
 		<p>
-			En este caso, invitamos a probar libremente con nuestra p&aacute;gina (usando <strong>Ctrl + (+)</strong> o <strong>Ctrl + bot&oacute;n central del rat&oacute;n</strong>).
-		</p>
+			En este caso, invitamos a probar libremente con nuestra p&aacute;gina:
+			<ul>
+				<li><strong>Windows/Linux</strong>: <em>Ctrl + (+)</em> o <em>Ctrl + bot&oacute;n central del rat&oacute;n</em></li>
+				<li><strong>Mac</strong>: <em>Cmd + (+)</em> o <em>Cmd + bot&oacute;n central del rat&oacute;n</em></li>
+				<li><strong>En general</strong>: opci&oacute;n de zoom en los navegadores</li>
+			</ul>
+		</p><br>
 		
-		<a class="botonVentanita" href="#popup7">PISTA</a>
+		<a class="botonVentanita" href="#popup7" alt="Pista 1.4.4 Cambio del tamaño de texto">PISTA 1.4.4</a>
 		<div id="popup7" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.4.4 Cambio del tamaño de texto - Nivel AA</h2>
@@ -362,10 +436,10 @@
 		 200% sin p&eacute;rdida de contenido o funcionalidad.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas.
+				<span id="flechaBien" role="Marca positiva">&#10003</span>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas.
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -382,8 +456,8 @@
 
 	<h4 id="principio8">1.4.5 Im&aacute;genes de texto - Nivel AA</h4>
 	<p>
-		Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
-		 en lugar de im&aacute;genes, a excepci&oacute;n de estos casos:
+		Si con las tecnolog&iacute;as que se est&aacute;n utilizando se puede conseguir la presentaci&oacute;n visual deseada, se utiliza texto para transmitir la informaci&oacute;n en vez de im&aacute;genes de texto,
+		 a excepci&oacute;n de estos casos:
 		</p>
 		<p>
 			<ul>
@@ -391,6 +465,9 @@
 			<li><strong>Esencial</strong>: una presentaci&oacute;n particular del texto es esencial para expresar informaci&oacute;n.</li>
 			 </ul>
 		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
 		
 		<p>
 			Nosotros personalmente queremos convertir los dos puntos de arriba y usar la fuente de las letras de una conocida marca de refrescos. En vez de usar cualquier m&eacute;todo
@@ -404,7 +481,7 @@
 			 </ul>
 		</p>
 		
-		<a class="botonVentanita" href="#popup8">PISTA</a>
+		<a class="botonVentanita" href="#popup8" alt="Pista 1.4.5 Imágenes de texto">PISTA 1.4.5</a>
 		<div id="popup8" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>1.4.5 Im&aacute;genes de texto - Nivel AA</h2>
@@ -413,7 +490,7 @@
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
+				<span id="flechaBien" role="Marca positiva">&#10003</span>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
 				 im&aacute;genes de texto.
 				 <pre><code>#cocaCola{
 	font-family: 'fuenteCola';
@@ -421,7 +498,7 @@
 				</code></pre>
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
 			</div>
 			<div>
 				<a id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -438,8 +515,8 @@
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.1 Informaci&oacute;n y relaciones</a>
 	<div id="Collap" class="collapse">
 			<div>
-				Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.
-			</div>
+				La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto. 
+		    </div>
 			<strong>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n. <br>
 			<pre><code>&lt;strong>accesibilidad web&lt;/strong&gt;</code></pre></strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
@@ -448,8 +525,8 @@
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.2 Secuencia significativa</a>
 	<div id="Collap2" class="collapse">
 			<div>
-				Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.
-			</div>
+				Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.</p>
+		    </div>
 			<strong>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
@@ -457,9 +534,9 @@
 <a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.3 Caracter&iacute;sticas sensoriales</a>
 	<div id="Collap3" class="collapse">
 			<div>
-				Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
-		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.
-			</div>
+				Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente de las caracter&iacute;sticas sensoriales de los componentes como su forma,
+		      tamaño, ubicaci&oacute;n visual, orientaci&oacute;n o sonido.
+		    </div>
 			<strong>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
@@ -467,8 +544,8 @@
 <a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.1 Uso del Color</a>
 	<div id="Collap4" class="collapse">
 			<div>
-				Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.
-			</div>
+				El color no se usa como &uacute;nico medio visual para transmitir la informaci&oacute;n, indicar una acci&oacute;n, solicitar una respuesta o distinguir un elemento visual.</p>
+		    </div>
 			<strong>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
 				 un asterisco. El asterisco es de mayor tamaño para que sea realmente perceptible.
 				 <br><pre><code>#obligatorio{ color: #AD0000; }
@@ -481,9 +558,9 @@
 <a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.2 Control de Audio</a>
 	<div id="Collap5" class="collapse">
 			<div>
-				Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
-		 su volumen independientemente del volumen del sistema.
-			</div>
+				Si el audio de una p&aacute;gina web suena autom&aacute;ticamente durante m&aacute;s de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo
+		 para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.
+		 </div>
 			<strong>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
@@ -501,9 +578,9 @@
 <a href="#Collap7" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.4 Cambio del tamaño de texto</a>
 	<div id="Collap7" class="collapse">
 			<div>
-				A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
-		 200% sin p&eacute;rdida de contenido o funcionalidad.
-			</div>
+				A excepci&oacute;n de los subt&iacute;tulos y las im&aacute;genes de texto, todo el texto puede ser ajustado sin ayudas t&eacute;cnicas hasta un 200 por ciento sin que se pierdan el contenido
+		        o la funcionalidad. 
+		    </div>
 			<strong>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
@@ -533,11 +610,14 @@
 <!-- Fin Contenido -->
 
 <script>
+	
+/*COPIAR*/
 function funcionCopiar() {
   var copyText = document.getElementById("campoCopiar");
   copyText.select();
   document.execCommand("copy");
 }
+/*-------------------------------------------------------------*/
 
 var body = document.body,
         overlay = document.querySelector('.overlay'),
@@ -563,6 +643,9 @@ var body = document.body,
       }, false);
 
     });
+    
+
+/*-------------------------------------------------------------*/    
     
    /*Mecanismo de boton automatico*/
    var nyan = document.getElementById('nyan');
@@ -609,6 +692,9 @@ nyanBtn.addEventListener('click', function(){
    playPause(nyan);
    progress(nyanBtn, nyan);
 });
+
+
+/*-------------------------------------------------------------*/
 
 
 

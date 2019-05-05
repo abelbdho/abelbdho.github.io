@@ -36,7 +36,7 @@
 	<!--MENU VERTICAL-->
 	
 	<div class="menu">
-	<a href="index.html">Inicio</a>
+	<a href="index.html" id="inicio">Inicio</a>
 	<a id="principio" href="percepA.html">Percepci&oacute;n</a>
 	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
 	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
@@ -64,26 +64,30 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a>
-	<a href="operabB.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><br><br>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="operabB.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<h2>2. Operabilidad - Segundo Principio</h2>
 	<p>
-		Todas las funcionalidades ser&aacute;n accesibles mediante el teclado.
+		Los componentes de la interfaz de usuario y la navegaci&oacute;n deben ser operables, la interfaz no puede exigir una
+		 interacci&oacute;n al usuario que no puede realizar.
 	</p><br>
 	
 	<h3>2.1 Accesible por teclado</h3>
 	<p>
-		Si toda la funcionalidad est&aacute; disponible para el uso de teclado, todas las alternativas que lo simulan podr&aacute;n acceder tambi&eacute;n (por ejemplo, ingreso por voz).
+		Proporcionar acceso a toda la funcionalidad mediante el teclado.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 	<h4 id="principio1">2.1.1 Teclado - Nivel A</h4>
 	<p>
-		A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
-		 de movimientos del usuario (por ejemplo, pinceladas).
+		Toda la funcionalidad del contenido es operable a trav&eacute;s de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsaci&oacute;n individual de las teclas,
+		 excepto cuando la funci&oacute;n interna requiere de una entrada que depende del trayecto de los movimientos del usuario y no solo de los puntos inicial y final. 
 		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
 		
 		<p>
 		Al pasar el rat&oacute;n sobre una imagen, esta cambia durante unos segundos. Se adapta para ofrecer una experiencia similar a personas que accedan con el teclado, para el que inicialmente 
@@ -96,7 +100,7 @@
 		</picture>
 		</a><br><br>
 
-		<a class="botonVentanita" href="#popup1">PISTA</a>
+		<a class="botonVentanita" href="#popup1" alt="Pista 2.1.1 Teclado">PISTA 2.1.1</a>
 		<div id="popup1" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>2.1.1 Teclado - Nivel A</h2>
@@ -105,13 +109,13 @@
 		 de movimientos del usuario (por ejemplo, pinceladas).<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
+				<span id="flechaBien" role="Marca positiva">&#10003;</span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
 				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n.<br>
 				<pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
 &lt;img onmouseover="accion()" src="..."&gt;</code></pre>
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
 			</div>
 			<div>
 				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -127,9 +131,12 @@
 
 	<h4 id="principio2">2.1.2 Sin trampas para el foco del teclado - Nivel A</h4>
 	<p>
-		No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.
-		</p>
-		
+		Si es posible mover el foco a un componente de la p&aacute;gina usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando solo la interfaz de teclado y,
+		 si se requiere algo m&aacute;s que las teclas de direcci&oacute;n o de tabulaci&oacute;n, se informa al usuario el m&eacute;todo apropiado para mover el foco.</p>
+		 
+		 <h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		 
 		<p>
 			En este ejemplo, capturamos el foco dentro de la ventana emergente en bucle pero puede volver a la p&aacute;gina principal y no querdar&iacute;a atrapado.
 		</p>
@@ -157,7 +164,7 @@
 		</div>
 		
 
-		<a class="botonVentanita" href="#popup2">PISTA</a>
+		<a class="botonVentanita" href="#popup2" alt="Pista 2.1.2 Sin trampas para el foco del teclado">PISTA 2.1.2</a>
 		<div id="popup2" class="overlay" role="Ventana emergente">
 		<div class="popup">
 		<h2>2.1.2 Sin trampas para el foco del teclado - Nivel A</h2>
@@ -165,11 +172,11 @@
 			No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>El foco est&aacute; capturado en la ventana en la que se encuentra
+				<span id="flechaBien" role="Marca positiva">&#10003;</span>El foco est&aacute; capturado en la ventana en la que se encuentra
 				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n<br>
 			</div>
 			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
 			</div>
 			<div>
 				<a id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
@@ -186,9 +193,9 @@
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.1 Teclado</a>
 	<div id="Collap" class="collapse">
 			<div>
-				A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
-		 de movimientos del usuario (por ejemplo, pinceladas).
-			</div>
+			Toda la funcionalidad del contenido es operable a trav&eacute;s de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsaci&oacute;n individual de las teclas,
+		    excepto cuando la funci&oacute;n interna requiere de una entrada que depende del trayecto de los movimientos del usuario y no solo de los puntos inicial y final. 
+		    </div>
 			<strong>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
 				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n. <pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
 &lt;img onmouseover="accion()" src="..."&gt;</code></pre></strong>
@@ -198,8 +205,9 @@
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.2 Sin trampas para el foco del teclado</a>
 	<div id="Collap2" class="collapse">
 			<div>
-				No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.
-			</div>
+			Si es posible mover el foco a un componente de la p&aacute;gina usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando solo la interfaz de teclado y,
+		     si se requiere algo m&aacute;s que las teclas de direcci&oacute;n o de tabulaci&oacute;n, se informa al usuario el m&eacute;todo apropiado para mover el foco.</p>
+		    </div>
 			<strong>El foco est&aacute; capturado en la ventana en la que se encuentra
 				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n</strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
@@ -216,6 +224,35 @@
 <!-- Fin Contenido -->
 
 <script>
+	
+/*DOBLE SCROLL*/
+	
+var body = document.body,
+        overlay = document.querySelector('.overlay'),
+        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
+        
+    [].forEach.call(overlayBtts, function(btt) {
+
+      btt.addEventListener('click', function() { 
+         
+         /* Detect the button class name */
+         var overlayOpen = this.className === 'botonVentanita';
+         
+         /* Toggle the aria-hidden state on the overlay and the 
+            no-scroll class on the body */
+         overlay.setAttribute('aria-hidden', !overlayOpen);
+         body.classList.toggle('noscroll', overlayOpen);
+         
+         /* On some mobile browser when the overlay was previously
+            opened and scrolled, if you open it again it doesn't 
+            reset its scrollTop property */
+         overlay.scrollTop = 0;
+
+      }, false);
+
+    });
+    
+/*---------------------------------------------------------*/	
 	
 /*ATRAPAR FOCUS*/
 function loop(){

@@ -44,6 +44,12 @@ a[href^="https://www.w3.org/"]:after {
 	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
 	margin: 0 0 0 5px;
 }
+
+#internos:after{
+	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
+	margin: 0 0 0 5px;
+	color: #0000EB;
+}
 /**/
 
 /*MENU VERTICAL*/
@@ -73,10 +79,18 @@ a[href^="https://www.w3.org/"]:after {
 }
 
 .menu a.active {
-  background-color: #380B61;
+  font-weight: bold;
+  background-color: #92C3C3;
   display: list-item; 
   list-style-type: disc;
    list-style-position: inside;
+  font-size: 1.52em;
+  color: black;
+}
+
+#inicio {
+  background-color: #595959;
+  border: 1px solid white;
   font-size: 1.52em;
   color: white;
 }
@@ -84,6 +98,7 @@ a[href^="https://www.w3.org/"]:after {
 #principio{
 	background-color: #595959;
 	color: white;
+	border: 1px solid white;
 }
 
 #submenu{
@@ -120,15 +135,9 @@ a[href^="https://www.w3.org/"]:after {
     top: 0px;
 	left: 0px;
   }
-  .menu a {float: left;}
-}
-
-
-@media screen and (max-width: 400px) {
   .menu a {
     text-align: center;
-    float: none;
-  }
+    float: none;}
 }
 /**/
 
@@ -196,19 +205,14 @@ h2, h3, h4, h5 {
   font-weight: bold;
 }
 
-#tituloCollapse{
-	font-weight: normal;
-	font-size: 1.92em;
-}
-
 h2 {
   color: #042249;
-  font-size: 1.88em;
+  font-size: 1.65em;
 }
 
 h3 {
   color: #650620;
-  font-size: 1.61em;
+  font-size: 1.57em;
 }
 
 h4{
@@ -344,11 +348,11 @@ a:hover, h1 a:hover {
 }
 
 table, th, td {
-  border: 2px solid black;
+  border: 1px solid black;
   border-collapse: collapse;
 }
 th, td {
-  padding: 15px;
+  padding: 9px;
   text-align: left;
   }
 
@@ -357,13 +361,13 @@ th, td {
 .btn-success{
 	background-color: white;
  color: black;
-	border:0px;
+	border:2px solid #005C00;
 }
 
 .btn-danger{
  background-color: white;
  color: black;
- border:0px;
+ border:2px solid #AD0000;
 }
 
 #seleccionadoAccesible {
@@ -398,7 +402,6 @@ th, td {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
 }
@@ -415,7 +418,6 @@ th, td {
   border-radius: 5px;
   width: 30%;
   position: relative;
-  transition: all 5s ease-in-out;
 }
 
 .popup h2 {
@@ -477,7 +479,6 @@ th, td {
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease-out;
 }
 .botonVentanita:hover {
   color: white;
@@ -554,7 +555,7 @@ th, td {
 }
 
 #contrasteEj1Mal{
-	color: #C7C7FF;
+	color: #D6D6FF;
 }
 
 #contrasteEj2{
@@ -609,10 +610,14 @@ blink.woo{
 
 #flechaBien{
 	color: #005C00;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 #flechaMal{
 	color: #AD0000;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 #logoCriterio{
@@ -627,12 +632,12 @@ blink.woo{
 
 #textoSecuencia2{
 	position: relative;
-	top: 100px;
+	top: 80px;
 }
 
 #textoSecuencia1{
 	position: relative;
-	bottom: 90px;
+	bottom: 70px;
 }
 
 #campoCopiar{
@@ -683,4 +688,71 @@ blink.woo{
 
 	.imageAnchor:focus img{
     border: 2px solid blue;
+}
+
+/*Boton de audiodescripcion*/
+
+#adBotonAct1:disabled{
+	background: #dddddd;
+}
+
+#adBotonAct2:disabled{
+	background: #dddddd;
+}
+
+/*TITULO FALSO Y TABLA FALSA*/
+
+#tituloFalso{
+	color: #650620;
+    font-size: 1.57em;
+}
+
+#tablaFalsaT{
+    font-weight: bold;
+	float: left;
+	display: block;
+	width: 160px;
+	height: 24px;
+	border: 1px solid black;
+}
+
+#tablaFalsa{
+	float: left;
+	display: block;
+	width: 160px;
+	height: 24px;
+	border: 1px solid black;
+}
+
+/*TRIANGULOS*/
+
+.triangulo1{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 50px solid #495819;
+}
+
+.triangulo2{
+	position: relative;
+	left: 80px;
+	width: 0;
+	height: 0;
+	border-left: 45px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 50px solid #4A5E4A;
+}
+
+.triangulo3{
+	width: 0;
+	height: 0;
+	border-left: 45px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid #911891;
+}
+
+#invertida{
+	position: relative;
+	left: 138px;
 }
