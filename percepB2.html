@@ -124,7 +124,7 @@
 				<pre><code>&lt;b>accesibilidad web&lt;b&gt;</code></pre>
 			</div>
 			<div>
-				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -179,7 +179,7 @@
 				</code></pre>
 			</div>
 			<div>
-				<a id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -209,7 +209,7 @@
 		<br><br>
 		
 		<p>
-			<em>Seleccione los tri&aacute;ngulos rectos</em>
+			<em>Seleccione los tri&aacute;ngulos rect&aacute;ngulos</em>
 		</p>
 		
 		<p>
@@ -236,7 +236,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -271,6 +271,18 @@
 		<input type="text" name="apellido">
 		</form>
 		
+		<div>
+		<label for="username"><strong>OK:</strong> Usuario:</label>
+		<input type="text" name="username" id="username" value="Batman" aria-describedby="userDesc"><span>✓</span>
+		</div>
+		<div>
+		<label for="expire"><strong>Error: </strong>Fecha de expiraci&oacute;n:</label>
+		<input type="text" name="expire" id="expire" value="03.2021" aria-describedby="expDesc"><span>Usar el formato MM/YYYY.</span>
+		</div>
+		<div>
+		<button type="submit">Enviar</button>
+		</div><br><br>
+		
 		<a class="botonVentanita2" href="#popup4" alt="Pista 1.4.1 Uso del Color">PISTA 1.4.1</a>
 		<div id="popup4" class="overlay" role="Ventana emergente">
 		<div class="popup">
@@ -290,7 +302,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -333,7 +345,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -377,7 +389,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -417,7 +429,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -443,6 +455,15 @@
 		<img class="contentImage" src="img/criterio1_4_5.png" alt="Imagen ejemplo del criterio 1.4.5"></img>
 		</picture>
 		
+		<p>
+			Otro caso, nosotros simp&aacute;ticamente queremos hacer referencia a una conocida <img src="img/cola1.png" alt="Imagen ejemplo del criterio 1.4.5"></img>. En vez de usar cualquier conversor
+			 en la web y tomar una imagen, usamos CSS y presentamos un texto.
+		</p>
+		
+		<p>
+			Delicioso refres<img src="img/cola2.png" alt="Imagen ejemplo del criterio 1.4.5"></img>
+		</p>
+		
 		<a class="botonVentanita2" href="#popup8" alt="Pista 1.4.5 Imágenes de texto">PISTA 1.4.5</a>
 		<div id="popup8" class="overlay" role="Ventana emergente">
 		<div class="popup">
@@ -463,7 +484,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -553,7 +574,7 @@
 				Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.
 			</div>
-			<strong>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
+			<strong>Las etiquetas y el uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
 				 im&aacute;genes de texto.
 				 <pre><code>#cocaCola{
 	font-family: 'fuenteCola';
@@ -656,6 +677,14 @@ nyanBtn.addEventListener('click', function(){
    playPause(nyan);
    progress(nyanBtn, nyan);
 });
+
+/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
+
+	function cerrarVentana(boton){
+		boton.click();
+		};
+
+
 </script>
 
 </body>

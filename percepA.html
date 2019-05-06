@@ -146,7 +146,7 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se proporcionan unas alternativas textuales difusas y poco concretas.
 			</div>
 			<div>
-				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -204,7 +204,7 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Aparece el contenido, audio o v&iacute;deo, sin ning&uacute;n tipo de alternativa textual.
 			</div>
 			<div>
-				<a id="close" href="#principio2" type="button" class="btn btn-dark" id="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" id="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -240,7 +240,7 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>No se presentan subt&iacute;tulos de ning&uacute;n tipo en el v&iacute;deo.
 			</div>
 			<div>
-				<a id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -261,17 +261,11 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 		<h5>Ejemplos</h5>
 			
 		<p>
-			En este ejemplo, se va a proporcionar un fragmento de lo que sería una descripci&oacute;n textual del siguiente v&iacute;deo.
+			En este ejemplo, se va a proporcionar una descripci&oacute;n textual del siguiente v&iacute;deo.
 		</p>
-		<iframe class="iframe" src="https://www.youtube.com/embed/sBPhZLTyfzE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
-		<p>
-			<em><div><strong>Sonido de manos.</strong> Francisco Feria, persona sordociega, usando un lenguaje de manos derivado del lenguaje de signos sobre las manos de otra persona.</div>
-			<div>Se oscurece la pantalla. <strong>Ambiente de calle, sigue sonido de piano.</strong> Francisco en la calle, sonriendo.</div>
-			<div>Se oscurece la pantalla. Aparece texto: Francisco Feria lleva toda la vida en silencio y en total oscuridad, desde los diez años.</div>
-			<div>Se intercala otra imagen de Francisco y se oscurece la pantalla. Aparece texto: Como otros aproximadamente 6000 españoles, padece el s&iacute;ndrome de Usher, una rara enfermedad hereditaria que
-			acaba con los sentidos del o&iacute;do y de la vista. <strong>Sonido grave</strong></div></em>
-		</p>
-		<br>
+		<iframe class="iframe" src="https://www.youtube.com/embed/hufMi9LZX2I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+		
+		<a id="internos" href="medioAlternativo1_2_3.html" target=”_blank”>Medio alternativo</a><br><br>
 		
 		<a class="botonVentanita" href="#popup4" alt="Pista 1.2.3 Audiodescripción o Medio Alternativo (grabado)">PISTA 1.2.3.</a>
 		<div id="popup4" class="overlay" role="Ventana emergente">
@@ -288,7 +282,7 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>No se proporciona ning&uacute;n tipo de alternativa.
 			</div>
 			<div>
-				<a id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -339,7 +333,7 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>No se proporciona alternativa para las personas ciegas.
 			</div>
 			<div>
-				<a id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -470,6 +464,13 @@ var body = document.body,
     });
     
 /*---------------------------------------------------------*/
+
+/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
+
+	function cerrarVentana(boton){
+		boton.click();
+		};
+
 
 </script>
 

@@ -89,12 +89,18 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<p>
-		Al pasar el rat&oacute;n sobre una imagen, esta cambia durante unos segundos. Se adapta para ofrecer una experiencia similar a personas que accedan con el teclado, para el que inicialmente 
-		la imagen no captar&iacute;a el foco.
-		</p>
+		<form>
+		Nombre:<br>
+		<input type="text" name="nombre">
+		<br>
+		Apellidos:<br>
+		<input tabIndex="-1" type="text" name="apellidos">
+		</form>
+		
+		<br>
+		
 		<picture>
-		<img onmouseover="accion()" id="imagenFoco" src="https://www.w3schools.com/js/pic_bulboff.gif">
+		<img onmouseover="accion()" id="imagenFoco" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Ejemplo animación de bombilla">
 		</picture><br><br>
 
 		<a class="botonVentanita2" href="#popup1" alt="Pista 2.1.1 Teclado">PISTA 2.1.1</a>
@@ -115,7 +121,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
 			</div>
 			<div>
-				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -174,7 +180,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
 			</div>
 			<div>
-				<a id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -260,6 +266,14 @@ function accion(){
 document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulbon.gif';
 setTimeout(function(){ document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulboff.gif'; }, 1000);
 };
+
+/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
+
+	function cerrarVentana(boton){
+		boton.click();
+		};
+
+
 </script>
 
 </body>

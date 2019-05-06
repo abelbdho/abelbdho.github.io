@@ -126,7 +126,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se proporciona una alternativa textual difusa y poco concreta.
 			</div>
 			<div>
-				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -183,7 +183,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Aparece el contenido, audio o v&iacute;deo, sin ning&uacute;n tipo de alternativa textual.
 			</div>
 			<div>
-				<a id="close" href="#principio2" type="button" class="btn btn-dark" id="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" id="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -219,7 +219,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>No se presentan subt&iacute;tulos de ning&uacute;n tipo en el v&iacute;deo.
 			</div>
 			<div>
-				<a id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -241,7 +241,7 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<iframe class="iframe" src="https://www.youtube.com/embed/sBPhZLTyfzE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe class="iframe" src="https://www.youtube.com/embed/hufMi9LZX2I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<br><br>
 		
 		<a class="botonVentanita2" href="#popup4" alt="Pista 1.2.3 Audiodescripción o Medio Alternativo (grabado)">PISTA 1.2.3</a>
@@ -258,7 +258,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>No se proporciona ning&uacute;n tipo de alternativa.
 			</div>
 			<div>
-				<a id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -296,7 +296,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>No se proporciona alternativa para las personas ciegas.
 			</div>
 			<div>
-				<a id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -392,6 +392,13 @@ var body = document.body,
       }, false);
 
     });
+    
+    /*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
+
+	function cerrarVentana(boton){
+		boton.click();
+		};
+
 
 </script>
 

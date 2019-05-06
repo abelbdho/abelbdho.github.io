@@ -141,7 +141,7 @@
 				<pre><code>&lt;b>accesibilidad web&lt;b&gt;</code></pre>
 			</div>
 			<div>
-				<a id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -190,7 +190,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -224,7 +224,7 @@
 		</p>
 		
 		<p>
-			<em>Seleccione los tri&aacute;ngulos rectos</em>
+			<em>Seleccione los tri&aacute;ngulos rect&aacute;ngulos</em>
 		</p>
 		
 		<p>
@@ -251,7 +251,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -288,6 +288,22 @@
 		<input type="text" name="apellido">
 		</form>
 		
+		<p>
+			Otro ejemplo que puede darse en formularios es a la hora de comunicar si un campo ha sido bien introducido o es err&oacute;neo. 
+		</p>
+		
+		<div id="success">
+		<label id="success" for="username"><strong id="success">OK:</strong> Usuario:</label>
+		<input type="text" name="username" id="username" value="Batman" aria-describedby="userDesc"><span id="success" id="userDesc">✓</span>
+		</div>
+		<div id="error">
+		<label id="error" for="expire"><strong id="error">Error: </strong>Fecha de expiraci&oacute;n:</label>
+		<input type="text" name="expire" id="expire" value="03.2021" aria-describedby="expDesc"><span id="error">Usar el formato MM/YYYY.</span>
+		</div>
+		<div>
+		<button type="submit">Enviar</button>
+		</div><br><br>
+		
 		<a class="botonVentanita" href="#popup4" alt="Pista 1.4.1 Uso del Color">PISTA 1.4.1</a>
 		<div id="popup4" class="overlay" role="Ventana emergente">
 		<div class="popup">
@@ -307,7 +323,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -348,7 +364,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -396,7 +412,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -442,7 +458,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -459,6 +475,14 @@
 		Si con las tecnolog&iacute;as que se est&aacute;n utilizando se puede conseguir la presentaci&oacute;n visual deseada, se utiliza texto para transmitir la informaci&oacute;n en vez de im&aacute;genes de texto,
 		 a excepci&oacute;n de estos casos:
 		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Siempre que sea posible, se presenta la informaci&oacute;n en texto y se le da formato con las distintas etiquetas para cada prop&oacute;sito.
+		</p>
+		
 		<p>
 			<ul>
 			<li><strong>Personalizable</strong>: la imagen de texto puede ser personalizada a gusto del usuario.</li>
@@ -466,19 +490,13 @@
 			 </ul>
 		</p>
 		
-		<h2 class="screen-reader-text">Ejemplos</h2>
-		<h5>Ejemplos</h5>
-		
 		<p>
-			Nosotros personalmente queremos convertir los dos puntos de arriba y usar la fuente de las letras de una conocida marca de refrescos. En vez de usar cualquier m&eacute;todo
-			 de la web y usar una imagen, usamos CSS y presentamos un texto.
+			Otro caso, nosotros simp&aacute;ticamente queremos hacer referencia a una conocida <span id="cocaCola">marca de refrescos</span>. En vez de usar cualquier conversor
+			 en la web y tomar una imagen, usamos CSS y presentamos un texto.
 		</p>
 		
 		<p>
-			<ul>
-			<li id="cocaCola">Personalizable, la imagen de texto puede ser personalizada a gusto del usuario.</li>
-			<li id="cocaCola">Esencial, una presentaci&oacute;n particular del texto es esencial para expresar informaci&oacute;n.</li>
-			 </ul>
+			Delicioso refres<span id="cocaCola">Co</span> azu<span id="cocaCola">ca</span>rado de <span id="cocaCola">Cola</span>
 		</p>
 		
 		<a class="botonVentanita" href="#popup8" alt="Pista 1.4.5 Imágenes de texto">PISTA 1.4.5</a>
@@ -501,7 +519,7 @@
 				<span id="flechaMal" role="Marca negativa">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
 			</div>
 			<div>
-				<a id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -591,7 +609,7 @@
 				Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.
 			</div>
-			<strong>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
+			<strong>Las etiquetas y el uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
 				 im&aacute;genes de texto.
 				 <pre><code>#cocaCola{
 	font-family: 'fuenteCola';
@@ -695,6 +713,13 @@ nyanBtn.addEventListener('click', function(){
 
 
 /*-------------------------------------------------------------*/
+
+
+/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
+
+	function cerrarVentana(boton){
+		boton.click();
+		};
 
 
 

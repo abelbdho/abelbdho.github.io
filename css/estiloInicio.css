@@ -756,3 +756,18 @@ blink.woo{
 	position: relative;
 	left: 38px;
 }
+
+/*FORMULARIO 1.4.1*/
+
+#error{
+ color: #900000; 
+ }
+#success{
+ color: #007a00; 
+ }
+#error input{
+ border: 3px solid #900000; 
+ }
+#success input{
+ border: 3px solid #007a00; 
+ }
