@@ -771,3 +771,9 @@ blink.woo{
 #success input{
  border: 3px solid #007a00; 
  }
+ 
+/*Bucle de 2.2.1*/
+
+#botonBucle{
+	color: white;
+}

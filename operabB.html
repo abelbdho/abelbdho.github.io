@@ -191,6 +191,74 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
+
+
+	<h4 id="principio3">2.2.1 Tiempo ajustable - Nivel A</h4>
+	<p>
+		Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: 
+		 </p>
+		 
+		 <ul>
+			<li><strong>Apagar</strong>: El usuario puede detener el l&iacute;mite de tiempo antes de alcanzar el l&iacute;mite de tiempo.</li>
+			<li><strong>Ajustar</strong>: El usuario puede ajustar el l&iacute;mite de tiempo antes de alcanzar dicho l&iacute;mite en un rango amplio que es, al menos, diez veces mayor al tiempo fijado originalmente.</li>
+			<li><strong>Extender</strong>: Se advierte al usuario antes de que el tiempo expire y se le conceden al menos 20 segundos para extender el l&iacute;mite temporal con una acci&oacute;n simple (por ejemplo, "presione la barra de espacio") y el usuario puede extender ese l&iacute;mite de tiempo al menos diez veces.</li>
+			<li><strong>Excepci&oacute;n de tiempo real</strong>: El l&iacute;mite de tiempo es un requisito que forma parte de un evento en tiempo real (por ejemplo, una subasta) y no resulta posible ofrecer una alternativa al l&iacute;mite de tiempo.</li>
+			<li><strong>Excepci&oacute;n por ser esencial</strong>: El l&iacute;mite de tiempo es esencial y, si se extendiera, invalidar&iacute;a la actividad</li>
+			<li><strong>Excepci&oacute;n de 20 horas</strong>: El l&iacute;mite de tiempo es mayor a 20 horas</li>
+		</ul>	
+		 
+		 <h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<div id="targetElement"></div><br>
+		
+		<script id="blockOfStuff0" type="text/html">
+			<p class="textoEspecial" id="textoTemp1">
+			La Organizaci&oacute;n Mundial de la Salud (OMS) recoge en sus informes un total de 1000 millones de personas con discapacidad. El acceso de estas personas a la tecnolog&iacute;a debe tenerse en cuenta en la construcci&oacute;n de una sociedad igualitaria. (...)
+			<a id="internos" href="https://es.wikipedia.org/wiki/Accesibilidad_web" target=”_blank”>Accesibilidad web, Wikipedia</a>
+			</p>
+		</script>
+		
+		<script id="blockOfStuff1" type="text/html">
+			<p class="textoEspecial" id="textoTemp2">
+			Por <em>accesibilidad web</em> entendemos el conjunto de tecnolog&iacute;as, normas de aplicaci&oacute;n y diseño que facilitan la utilizaci&oacute;n de los sitios Web siguiendo las pautas del <em>diseño para todos</em>. (...)
+			<a id="internos" href="https://www.discapnet.es/areas-tematicas/tecnologia-inclusiva/observatorio-de-accesibilidad-tic/la-accesibilidad-web" target=”_blank”>Accesibilidad web, Discapnet</a>
+		</p>
+		</script>
+		
+		<script id="blockOfStuff2" type="text/html">
+			<p class="textoEspecial" id="textoTemp2">
+			Andaluc&iacute;a Informaci&oacute;n refuerza su apuesta por facilitar el acceso a la informaci&oacute;n. Es por ello que nuestra web se encuentra en continua revisi&oacute;n para desarrollar f&oacute;rmulas que acerquen las noticias a todo tipo de usuarios. (...)
+			<a id="internos" href="https://andaluciainformacion.es/sanlucar/823157/cansado-de-leer-nosotros-leemos-las-noticias-por-ti/" target=”_blank”>¿Cansado de leer? Nosotros leemos las noticias por ti, Andaluc&iacute;a Informaci&oacute;n</a>
+		</p>
+		</script>
+		
+		
+		<a class="botonVentanita" href="#popup3" alt="Pista 2.2.1 Tiempo ajustable">PISTA 2.2.1</a>
+		<div id="popup3" class="overlay" role="Ventana emergente">
+		<div class="popup">
+		<h2>2.2.1 Tiempo ajustable - Nivel A</h2>
+		<div class="ventanita">
+			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="Recuadro positivo">
+				<span id="flechaBien" role="Marca positiva">&#10003;</span>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.<br>
+			</div>
+			<div id="parrafoMalo" role="Recuadro negativo">
+				<span id="flechaMal" role="Marca negativa">&#10007;</span>Tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo sin manera de pararlos.
+			</div>
+			<div>
+				<a onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.1 Teclado</a>
 	<div id="Collap" class="collapse">
 			<div>
@@ -212,7 +280,17 @@
 			<strong>El foco est&aacute; capturado en la ventana en la que se encuentra
 				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n</strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>			
+			</div><br><br>		
+						
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.2.1 Tiempo ajustable</a>
+	<div id="Collap3" class="collapse">
+			<div>
+			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.</p>
+		    </div>
+			<strong>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.</strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>						
+							
 		
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
@@ -273,6 +351,29 @@ setTimeout(function(){ document.getElementById('imagenFoco').src='https://www.w3
 		boton.click();
 		};
 
+
+/*Temporizador noticias mecanismo*/
+	
+	var timer = null;
+	var cont = 0;
+function bucle() {
+  timer = setInterval(function(){
+	  
+	   var div = document.createElement('div');
+		div.innerHTML = document.getElementById("blockOfStuff" + cont).innerHTML;
+		document.getElementById("targetElement").innerHTML = "";
+		document.getElementById("targetElement").appendChild(div);
+		cont++;
+		if(cont==3){
+			cont = 0;
+		}
+	   
+	   }, 2000);
+};
+
+window.onload = function start(){
+    bucle();
+}
 
 </script>
 
