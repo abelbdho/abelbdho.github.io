@@ -585,7 +585,7 @@ a.woo {
 /*ELEMENTO PARPADEANTE*/
 
 blink {
-        animation: blinker 0.2s linear infinite;
+        animation: blinker 0.4s linear infinite;
         color: black;
        }
       @keyframes blinker {  
@@ -776,4 +776,23 @@ blink.woo{
 
 #botonBucle{
 	color: white;
+}
+
+/*CARRUSEL*/
+
+#flcCarrusel{
+	color: black;
+	font-size: 6em;
+	font-weight: bold;
+}
+
+#carouselButtons {
+    margin-left: 200px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#imgCarrusel{
+	width: 1100px;
+	height: 400px;
 }
