@@ -1,0 +1,304 @@
+<html lang="es">
+<head>
+  <title>Operable, segunda parte - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <script src="js/shortcuts.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navigation">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu" role="menu">
+	<a href="index.html" id="inicio">Inicio</a>
+	<a id="principio" href="percepA.html">Perceptible</a>
+	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
+	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
+	<a id="principio" href="operabA.html">Operable</a>
+	<a id="submenu" href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
+	<a id="submenu" href="#" class="active">Navegable</a>
+	<a href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="operabB2.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<h2>2. Operable - Segundo Principio</h2>
+	<p>
+		Los componentes de la interfaz de usuario y la navegaci&oacute;n deben ser operables, la interfaz no puede exigir una
+		 interacci&oacute;n al usuario que no puede realizar.
+	</p><br>
+	
+	<h3>2.4 Navegable</h3>
+	<p>
+		Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar d&oacute;nde se encuentran.
+	</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio1">2.4.1 Evitar Bloques - Nivel A</h4>
+	<p>
+		Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Justo debajo del t&iacute;tulo hay unos enlaces ocultos para saltar contenido, dado que el formulario siguiente se ha rellenado autom&aacute;ticamente. As&iacute;, evitamos tener que pasarlo entero.
+		Es posible comprobarlo usando el tabulador, aunque aparece si se coloca el rat&oacute;n encima.
+		</p>
+		
+		<h6>Registro de datos</h6>
+		
+		<div id="enlaces" role="navegation">
+		<ul id="listaCambiante">
+		<li><a href="#enviarForm">Ir al bot&oacute;n de enviar</a></li>
+		</ul></div><br>
+		
+		<form>
+		Nombre:<br>
+		<input type="text" name="nombre">
+		<br>
+		Apellidos:<br>
+		<input type="text" name="apellidos">
+		<br>
+		Email:<br>
+		<input type="text" name="email">
+		<br>
+		Direcci&oacute;n:<br>
+		<input type="text" name="direccion">
+		<br>
+		Edad:<br>
+		<input type="text" name="edad">
+		<br>
+		Como se definir&iacute;a:<br>
+		<textarea name="comentario" id="comentario">Di algo...</textarea>
+		<br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</form>
+
+		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.4.1 Evitar Bloques - Nivel A</h2>
+		<div class="ventanita">
+			Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Tenemos un formulario que se ha rellenado autom&aacute;ticamente. Podemos saltarlo con una opci&oacute;n oculta.
+				<pre><code>&lt;div id="enlaces" role="navegation">
+&lt;ul id="listaCambiante">
+&lt;li>&lt;a href="#enviarForm">Ir al bot&oacute;n de enviar&lt;/a>&lt;/li>
+&lt;/ul&gt;</code></pre>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Para pulsar el bot&oacute;n enviar del formulario es necesario pasar a trav&eacute;s de &eacute;l.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio2">2.4.3 Orden del foco - Nivel A</h4>
+	<p>
+		Si se puede navegar secuencialmente por una p&aacute;gina web y la secuencia de navegaci&oacute;n afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen
+		 en un orden que preserva su significado y operabilidad.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<h6>Registro de datos</h6>
+		
+		<p>
+		<form>
+		Nombre:<br>
+		<input type="text" name="nombre">
+		<br>
+		Apellidos:<br>
+		<input type="text" name="apellidos">
+		<br>
+		Email:<br>
+		<input type="text" name="email">
+		<br>
+		Direcci&oacute;n:<br>
+		<input type="text" name="direccion">
+		<br>
+		Edad:<br>
+		<input type="text" name="edad">
+		<br>
+		Como se definir&iacute;a:<br>
+		<textarea name="comentario" id="comentario">Di algo...</textarea>
+		<br>
+		</form>
+		
+		<form id="clon">
+		Nº de cuenta:<br>
+		<input type="text" name="cuenta">
+		<br>
+		Aficiones:<br>
+		<textarea name="aficiones" id="comentario">Di algo...</textarea>
+		<br>
+		Empresa:<br>
+		<input type="text" name="emrpesa">
+		<br><br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</form>
+		</p>
+
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 2.4.3 Orden del foco">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.4.3 Orden del foco - Nivel A</h2>
+		<div class="ventanita">
+			Si se puede navegar secuencialmente por una p&aacute;gina web y la secuencia de navegaci&oacute;n afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen
+		 en un orden que preserva su significado y operabilidad.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>En los elementos se mantiene el orden secuencial indicado.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>En los elementos el orden est&aacute; mal predefinido.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">2.4.1 Evitar Bloques</a>
+	<div id="Collap" class="collapse">
+			<div>
+			Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.
+		    </div>
+			<strong>Tenemos un formulario que se ha rellenado autom&aacute;ticamente. Podemos saltarlo con una opci&oacute;n oculta.<pre><code>&lt;div id="enlaces" role="navegation">
+		&lt;ul id="listaCambiante">
+		&lt;li>&lt;a href="#enviarForm">Ir al bot&oacute;n de enviar&lt;/a>&lt;/li>
+		&lt;/ul&gt;</code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+												
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.4.3 Orden del foco</a>
+	<div id="Collap2" class="collapse">
+			<div>
+			Si se puede navegar secuencialmente por una p&aacute;gina web y la secuencia de navegaci&oacute;n afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen
+		 en un orden que preserva su significado y operabilidad.
+		    </div>
+			<strong>En los elementos se mantiene el orden secuencial indicado.</strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>							
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+	
+/*DOBLE SCROLL*/
+	
+var body = document.body,
+        overlay = document.querySelector('.overlay'),
+        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
+        
+    [].forEach.call(overlayBtts, function(btt) {
+
+      btt.addEventListener('click', function() { 
+         
+         /* Detect the button class name */
+         var overlayOpen = this.className === 'botonVentanita';
+         
+         /* Toggle the aria-hidden state on the overlay and the 
+            no-scroll class on the body */
+         overlay.setAttribute('aria-hidden', !overlayOpen);
+         body.classList.toggle('noscroll', overlayOpen);
+         
+         /* On some mobile browser when the overlay was previously
+            opened and scrolled, if you open it again it doesn't 
+            reset its scrollTop property */
+         overlay.scrollTop = 0;
+
+      }, false);
+
+    });
+    
+/*---------------------------------------------------------*/	
+
+
+
+/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
+
+	function cerrarVentana(boton){
+		boton.click();
+		};
+
+
+</script>
+
+</body>

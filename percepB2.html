@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-  <title>Percepci&oacute;n, segunda parte - REAVAI: Accesibilidad Web</title>
+  <title>Perceptible, segunda parte - REAVAI: Accesibilidad Web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Abel Jiménez Urbaneja" />
@@ -16,7 +16,7 @@
 <body>
 
 		<!-- Saltar -->
-<div id="enlaces" role="navegacion">
+<div id="enlaces" role="navigation">
 <ul id="listaCambiante">
 <li><a href="#menu">Saltar al menú principal</a></li>
 <li><a href="#contenido">Saltar al contenido</a></li>
@@ -35,14 +35,14 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu">
+	<div class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a id="principio" href="#">Percepci&oacute;n</a>
+	<a id="principio" href="#">Perceptible</a>
 	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
 	<a id="submenu" href="#" class="active">Adaptable y Distinguible</a>
-	<a id="principio" href="operabA.html">Operabilidad</a>
+	<a id="principio" href="operabA.html">Operable</a>
 	<a href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
-	<a href="#">Link 4</a>
+	<a id="submenu" href="operabA2.html">Navegable</a>
 	<a href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
@@ -67,7 +67,7 @@
 	<a href="percepA2.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
-	<h2>1. Percepci&oacute;n - Primer Principio</h2>
+	<h2>1. Perceptible - Primer Principio</h2>
 	<p>
 		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
 		 manera que puedan percibirlos, no pueden ser invisibles a todos sus sentidos.
@@ -108,23 +108,23 @@
 		<span id="tituloFalso">1. Esto parece un t&iacute;tulo</span>
 		<br><br>
 		
-		<a class="botonVentanita2" href="#popup1" alt="Pista 1.3.1 Información y relaciones">PISTA 1.3.1</a>
-		<div id="popup1" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 1.3.1 Información y relaciones">PISTA 1.3.1</a>
+		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
 		<div class="ventanita">
 			Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
 				<pre><code>&lt;strong>accesibilidad web&lt;strong&gt;</code></pre>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
 				<pre><code>&lt;b>accesibilidad web&lt;b&gt;</code></pre>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -155,18 +155,18 @@
 		</p>
 		<br>
 		
-		<a class="botonVentanita2" href="#popup2" alt="Pista 1.3.2 Secuencia significativa">PISTA 1.3.2</a>
-		<div id="popup2" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 1.3.2 Secuencia significativa">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
 		<div class="ventanita">
 			Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
 				<pre><code>#textoSecuencia2{
 	position: relative;
 	top: 100px;
@@ -179,7 +179,7 @@
 				</code></pre>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -221,22 +221,22 @@
 		</p>
 		<br>
 		
-		<a class="botonVentanita2" href="#popup3" alt="Pista 1.3.3 Características sensoriales">PISTA 1.3.3</a>
-		<div id="popup3" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 1.3.3 Características sensoriales">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
 		<div class="ventanita">
 			Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
 		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -283,26 +283,26 @@
 		<button type="submit">Enviar</button>
 		</div><br><br>
 		
-		<a class="botonVentanita2" href="#popup4" alt="Pista 1.4.1 Uso del Color">PISTA 1.4.1</a>
-		<div id="popup4" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 1.4.1 Uso del Color">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.1 Uso del Color - Nivel A</h2>
 		<div class="ventanita">
 			Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
 				 un asterisco. El asterisco es de mayor tamaño para que sea realmente perceptible.
 				 <pre><code>#obligatorio{ color: #AD0000; }
 #inputObligatorio{ border: 1px solid #AD0000; }
 #asterisco{ font-size: 1.7em; }
 				</code></pre>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -330,22 +330,22 @@
 			</p>
 			</div><br><br>
 		
-		<a class="botonVentanita2" href="#popup5" alt="Pista 1.4.2 Control de Audio">PISTA 1.4.2</a>
-		<div id="popup5" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup5" alt="Pista 1.4.2 Control de Audio">PISTA</a>
+		<div id="popup5" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.2 Control de Audio - Nivel A</h2>
 		<div class="ventanita">
 			Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
 		 su volumen independientemente del volumen del sistema.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -374,22 +374,22 @@
 			 </ul>
 		</p>
 		
-		<a class="botonVentanita2" href="#popup6" alt="Pista 1.4.3 Contraste (mínimo)">PISTA 1.4.3</a>
-		<div id="popup6" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup6" alt="Pista 1.4.3 Contraste (mínimo)">PISTA</a>
+		<div id="popup6" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h2>
 		<div class="ventanita">
 			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
 				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -414,22 +414,22 @@
 			<a id="internos" href="indexFake.html" target=”_blank”>Enlace a p&aacute;gina preparada que no admite el ser ampliada convenientemente.</a>
 		</p>
 		
-		<a class="botonVentanita2" href="#popup7" alt="Pista 1.4.4 Cambio del tamaño de texto">PISTA 1.4.4</a>
-		<div id="popup7" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup7" alt="Pista 1.4.4 Cambio del tamaño de texto">PISTA</a>
+		<div id="popup7" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.4 Cambio del tamaño de texto - Nivel AA</h2>
 		<div class="ventanita">
 			A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
 		 200% sin p&eacute;rdida de contenido o funcionalidad.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas.
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas.
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -464,27 +464,27 @@
 			Delicioso refres<img src="img/cola2.png" alt="Imagen ejemplo del criterio 1.4.5"></img>
 		</p>
 		
-		<a class="botonVentanita2" href="#popup8" alt="Pista 1.4.5 Imágenes de texto">PISTA 1.4.5</a>
-		<div id="popup8" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup8" alt="Pista 1.4.5 Imágenes de texto">PISTA</a>
+		<div id="popup8" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.5 Im&aacute;genes de texto - Nivel AA</h2>
 		<div class="ventanita">
 			Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
 				 im&aacute;genes de texto.
 				 <pre><code>#cocaCola{
 	font-family: 'fuenteCola';
 	font-size: 2em;}
 				</code></pre>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -495,7 +495,7 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.1 Informaci&oacute;n y relaciones</a>
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.3.1 Informaci&oacute;n y relaciones</a>
 	<div id="Collap" class="collapse">
 			<div>
 				La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto. 
@@ -505,7 +505,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
-<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.2 Secuencia significativa</a>
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.3.2 Secuencia significativa</a>
 	<div id="Collap2" class="collapse">
 			<div>
 				Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.</p>
@@ -514,7 +514,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.3.3 Caracter&iacute;sticas sensoriales</a>
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">1.3.3 Caracter&iacute;sticas sensoriales</a>
 	<div id="Collap3" class="collapse">
 			<div>
 				Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente de las caracter&iacute;sticas sensoriales de los componentes como su forma,
@@ -524,7 +524,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.1 Uso del Color</a>
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">1.4.1 Uso del Color</a>
 	<div id="Collap4" class="collapse">
 			<div>
 				El color no se usa como &uacute;nico medio visual para transmitir la informaci&oacute;n, indicar una acci&oacute;n, solicitar una respuesta o distinguir un elemento visual.</p>
@@ -538,7 +538,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 											
-<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.2 Control de Audio</a>
+<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="button">1.4.2 Control de Audio</a>
 	<div id="Collap5" class="collapse">
 			<div>
 				Si el audio de una p&aacute;gina web suena autom&aacute;ticamente durante m&aacute;s de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo
@@ -548,7 +548,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
-<a href="#Collap6" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.3 Contraste (m&iacute;nimo)</a>
+<a href="#Collap6" class="btn btn-primary" data-toggle="collapse" role="button">1.4.3 Contraste (m&iacute;nimo)</a>
 	<div id="Collap6" class="collapse">
 			<div>
 				Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).
@@ -558,7 +558,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap7" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.4 Cambio del tamaño de texto</a>
+<a href="#Collap7" class="btn btn-primary" data-toggle="collapse" role="button">1.4.4 Cambio del tamaño de texto</a>
 	<div id="Collap7" class="collapse">
 			<div>
 				A excepci&oacute;n de los subt&iacute;tulos y las im&aacute;genes de texto, todo el texto puede ser ajustado sin ayudas t&eacute;cnicas hasta un 200 por ciento sin que se pierdan el contenido
@@ -568,7 +568,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap8" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">1.4.5 Im&aacute;genes de texto</a>
+<a href="#Collap8" class="btn btn-primary" data-toggle="collapse" role="button">1.4.5 Im&aacute;genes de texto</a>
 	<div id="Collap8" class="collapse">
 			<div>
 				Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
@@ -583,7 +583,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>														
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
 
 </div>
 

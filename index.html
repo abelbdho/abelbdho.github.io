@@ -16,7 +16,7 @@
 <body>
 
 		<!-- Saltar -->
-<div id="enlaces" role="navegacion">
+<div id="enlaces" role="navigation">
 <ul id="listaCambiante">
 <li><a href="#menu">Saltar al menú principal</a></li>
 <li><a href="#contenido">Saltar al contenido</a></li>
@@ -37,14 +37,14 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu">
+	<div class="menu" role="menu">
 	<a href="#" id="inicio">Inicio</a>
-	<a id="principio" href="percepA.html">Percepci&oacute;n</a>
+	<a id="principio" href="percepA.html">Perceptible</a>
 	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
 	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
-	<a id="principio" href="operabA.html">Operabilidad</a>
-	<a href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
-	<a href="#">Link 4</a>
+	<a id="principio" href="operabA.html">Operable</a>
+	<a id="submenu" href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
+	<a id="submenu" href="operabA2.html">Navegable</a>
 	<a href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
@@ -86,41 +86,41 @@
 			ese enlace para saltar directamente al contenido y no volver a repetir el &iacute;ndice en caso de que ya lo hayan hecho. Estas etiquetas aparecer&aacute;n junto al criterio/infracci&oacute;n.
 			</p>
 			
-			<a class="botonVentanita" href="#popup1">PISTA</a>
-		<div id="popup1" class="overlay" role="Ventana emergente">
+			<a class="botonVentanita" href="#popup1" role="button">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.1 Saltar Bloques - Nivel A</h2>
 		<div class="ventanita">
 			Se dispone de un mecanismo para saltar bloques de contenido repetidos.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positiva">
-				<span id="flechaBien" role="Marca positiva">&#10003&#10003&#10003 </span>Aqu&iacute; aparecer&aacute; una forma correcta de aplicarlo.<br>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003&#10003&#10003 </span>Aqu&iacute; aparecer&aacute; una forma correcta de aplicarlo.<br>
 				[C&Oacute;DIGO]
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;&#10007;&#10007;</span>Aqu&iacute; aparecer&aacute; una forma incorrecta de aplicarlo.<br>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;&#10007;&#10007;</span>Aqu&iacute; aparecer&aacute; una forma incorrecta de aplicarlo.<br>
 				[C&Oacute;DIGO]
 			</div>
 			<div>
-				<a id="close" href="#" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" id="close" href="#" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
 		</div>&nbsp;
 			
-			<a href="#Collap" class="btn btn-primary" data-toggle="collapse">2.4.1 Saltar Bloques</a>
+			<a role="button" href="#Collap" class="btn btn-primary" data-toggle="collapse">2.4.1 Evitar Bloques</a>
 	<div id="Collap" class="collapse">
 			<div>
-				Se dispone de un mecanismo para saltar bloques de contenido repetidos.
+				Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.
 			</div>
 			<strong><xmp>
-				<div id="enlaces" role="navegacion">
+				<div id="enlaces" role="navigation">
 				<ul id="listaCambiante">
 				<li><a href="#menu">Saltar al menú principal</a></li>
 				<li><a href="#contenido">Saltar al contenido</a></li>
 				</ul></div><br>
 			</xmp></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			<a id="enlacesOscuros" onfocusout="cerrarVentana(this)"  href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			<p>Conforme se navega por la página se encuentran este tipo de referencias a la vez que se informa sobre distintos aspectos de la accesibilidad.</p>
 			<p>

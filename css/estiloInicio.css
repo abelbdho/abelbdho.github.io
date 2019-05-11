@@ -225,6 +225,11 @@ h5{
   font-size: 1.40em;
 }
 
+h6{
+  color: #922F54;
+  font-size: 1.30em;
+}
+
 h1 a {
   color: #000000;
 }
@@ -434,39 +439,23 @@ th, td {
   color: black;
 }
 
-#close{
-	position: relative;
-	bottom: 7px;
-	left: 400px
-}
-
-@media screen and (max-width: 1200px){
-	#close{
-    left: 200px
-  }
-}
-
 @media screen and (max-width: 900px){
 	.popup{
     width: 100%;
-    color: white;
-    bottom: 96px;
   }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px){
   .popup{
     width: 90%;
-    bottom: 96px;
-    color: white;
+    overflow: auto;
+    
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1700px){
   .popup{
     width: 80%;
-    bottom: 96px;
-    color: white;
   }
 }
 
@@ -591,6 +580,14 @@ blink {
       @keyframes blinker {  
         50% { opacity: 0; }
        }
+       
+blink.suave{
+        animation: blinker 0.9s linear infinite;
+        color: black;
+       }
+      @keyframes blinker {  
+        50% { opacity: 0; }
+       }       
 
 blink.woo{
 	animation: none;
@@ -795,4 +792,53 @@ blink.woo{
 #imgCarrusel{
 	width: 1100px;
 	height: 400px;
+}
+
+/*Transcripcion*/
+
+.transcripcion{
+	font-size: 1.5em;
+	color: black;
+}
+
+.divSeparado{
+	border: 1px solid black;
+	padding: 2px;
+	color: black;
+	font-size: 1.9em;
+}
+
+/*VIDEO SIN SUBTITULOS*/
+
+#videoS{
+	position: relative;
+	bottom: 47px;
+}
+
+/*Caja comentario*/
+
+#comentario{
+	width: 300px;
+	height: 200px;
+}
+
+/*Boton cerrar*/
+
+#close{
+	color: white;
+	background-color: black;
+}
+
+/*Segundo form clon en 2.4.3*/
+
+#clon{
+	position: absolute;
+	bottom: 330px;
+	left: 400px;
+}
+
+@media screen and (max-width: 1200px){
+  #clon{
+	position: static;
+  }
 }

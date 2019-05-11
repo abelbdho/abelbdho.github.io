@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-  <title>Operabilidad - REAVAI: Accesibilidad Web</title>
+  <title>Operable - REAVAI: Accesibilidad Web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Abel Jiménez Urbaneja" />
@@ -16,7 +16,7 @@
 <body>
 
 		<!-- Saltar -->
-<div id="enlaces" role="navegacion">
+<div id="enlaces" role="navigation">
 <ul id="listaCambiante">
 <li><a href="#menu">Saltar al menú principal</a></li>
 <li><a href="#contenido">Saltar al contenido</a></li>
@@ -35,14 +35,14 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu">
+	<div class="menu" role="menu">
 	<a href="index.html">Inicio</a>
-	<a id="principio" href="percepA.html" id="inicio">Percepci&oacute;n</a>
+	<a id="principio" href="percepA.html" id="inicio">Perceptible</a>
 	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
 	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
-	<a id="principio" href="#">Operabilidad</a>
+	<a id="principio" href="#">Operable</a>
 	<a id="submenu" href="#" class="active">Accesible por teclado, tiempo sufiente y convulsiones</a>
-	<a id="submenu" href="#">Link 4</a>
+	<a id="submenu" href="operabA2.html">Navegable</a>
 	<a href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
@@ -67,7 +67,7 @@
 	<a href="operabA.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
-	<h2>2. Operabilidad - Segundo Principio</h2>
+	<h2>2. Operable - Segundo Principio</h2>
 	<p>
 		Los componentes de la interfaz de usuario y la navegaci&oacute;n deben ser operables, la interfaz no puede exigir una
 		 interacci&oacute;n al usuario que no puede realizar.
@@ -89,12 +89,19 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
+		<h6>Envia un comentario</h6>
+		
 		<form>
 		Nombre:<br>
 		<input type="text" name="nombre">
 		<br>
 		Apellidos:<br>
 		<input tabIndex="-1" type="text" name="apellidos">
+		<br>
+		Comentario:<br>
+		<textarea name="comentario" id="comentario">En mi opini&oacute;n, el criterio 2.1.1...</textarea>
+		<br>
+		<input type="submit" value="Enviar">
 		</form>
 		
 		<br>
@@ -103,25 +110,25 @@
 		<img onmouseover="accion()" id="imagenFoco" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Ejemplo animación de bombilla">
 		</picture><br><br>
 
-		<a class="botonVentanita2" href="#popup1" alt="Pista 2.1.1 Teclado">PISTA 2.1.1</a>
-		<div id="popup1" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 2.1.1 Teclado">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.1.1 Teclado - Nivel A</h2>
 		<div class="ventanita">
 			A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
 		 de movimientos del usuario (por ejemplo, pinceladas).<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
 				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n.<br>
 				<pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
 &lt;img onmouseover="accion()" src="..."&gt;</code></pre>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -142,45 +149,41 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<a class="btn btn-info" href="#popupX" alt="Botón del ejemplo">EJEMPLO</a>
-		<div id="popupX" class="overlay" role="Ventana emergente">
+		<a role="button" class="btn btn-info" href="#popupX" alt="Botón del ejemplo">EJEMPLO</a>
+		<div id="popupX" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.1.1 Ejemplo</h2>
 		<div class="ventanita" id="M">
-			Comprobamos que se realiza el foco sobre el enlace, despu&eacute;s sobre el bot&oacute;n y as&iacute; en bucle.<br>
-		 <input name="loop" style="opacity:0;" onfocus="loop()">
+			Comprobamos que se realiza el foco sobre el enlace, despu&eacute;s sobre el bot&oacute;n y sale.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi maecenas parturient dui per hac lectus aliquam natoque aenean, fusce libero malesuada vivamus
-				 nunc eleifend ultrices platea iaculis faucibus a sodales nec morbi diam. Cubilia libero imperdiet natoque lectus euismod congue urna et tortor mus nisl,
-				  ultrices orci etiam vulputate velit taciti pretium odio habitasse duis. Quam dictum tempor congue ultrices erat pretium accumsan himenaeos malesuada,
-				   aliquet lectus nulla mattis porttitor ligula justo fermentum pulvinar, tincidunt enim cubilia neque praesent facilisis placerat vivamus.
+				 nunc eleifend ultrices platea iaculis faucibus a sodales nec morbi diam.
 			</p>
 			<div>
-				<a tabIndex="-1" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" tabIndex="-1" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
-			<input style="opacity:0;" onfocus="loop()">
 		</div>
 		</div>
 		</div>
 		
 
-		<a class="botonVentanita2" href="#popup2" alt="Pista 2.1.2 Sin trampas para el foco del teclado">PISTA 2.1.2</a>
-		<div id="popup2" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 2.1.2 Sin trampas para el foco del teclado">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.1.2 Sin trampas para el foco del teclado - Nivel A</h2>
 		<div class="ventanita">
 			No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003</span>El foco est&aacute; capturado en la ventana en la que se encuentra
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>El foco est&aacute; capturado en la ventana en la que se encuentra
 				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n<br>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -234,21 +237,21 @@
 		</script>
 		
 		
-		<a class="botonVentanita2" href="#popup3" alt="Pista 2.2.1 Tiempo ajustable">PISTA 2.2.1</a>
-		<div id="popup3" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 2.2.1 Tiempo ajustable">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.2.1 Tiempo ajustable - Nivel A</h2>
 		<div class="ventanita">
 			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003;</span>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.<br>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.<br>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo sin manera de pararlos.
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo sin manera de pararlos.
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -303,21 +306,21 @@
 
 </div><br>
 		
-		<a class="botonVentanita2" href="#popup4" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA 2.2.2</a>
-		<div id="popup4" class="overlay" role="Ventana emergente">
+		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h2>
 		<div class="ventanita">
 			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003;</span>Tenemos un carrusel de im&aacute;genes que tiene sus correspondientes controles.<br>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Tenemos un carrusel de im&aacute;genes que tiene sus correspondientes controles.<br>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Un carrusel de im&aacute;genes que se mueve autom&aacute;ticamente.
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Un carrusel de im&aacute;genes que se mueve autom&aacute;ticamente.
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -336,27 +339,33 @@
 		 <h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
+		<p>
+		Por seguridad, en este criterio no se ha querido a alcanzar el umbral.
+		</p>
+		
 		<blink id="parpadeo">
 			<picture>
 			<img id="imagenFlash" src="https://www.w3schools.com/js/pic_bulbon.gif">
 			</picture>
 		</blink>
 		
-		<a class="botonVentanita2" href="#popup5" alt="Pista 2.3.1 Umbral de tres destellos o menos">PISTA 2.3.1</a>
-		<div id="popup5" class="overlay" role="Ventana emergente">
+		<button id="botonParpadeo" onclick="pararParpadeo()">Parar</button><br><br>
+		
+		<a role="button" class="botonVentanita2" href="#popup5" alt="Pista 2.3.1 Umbral de tres destellos o menos">PISTA</a>
+		<div id="popup5" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.3.1 Umbral de tres destellos o menos - Nivel A</h2>
 		<div class="ventanita">
 			Las p&aacute;ginas web no contienen nada que destelle m&aacute;s de tres veces en un segundo, o el destello est&aacute; por debajo del umbral de destello general y de destello rojo.<br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="Recuadro positivo">
-				<span id="flechaBien" role="Marca positiva">&#10003;</span>Hay un elemento destelleante pero tenemos la posibilidad de pararlo.<br>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Hay un elemento destelleante pero tenemos la posibilidad de pararlo.<br>
 			</div>
-			<div id="parrafoMalo" role="Recuadro negativo">
-				<span id="flechaMal" role="Marca negativa">&#10007;</span>Hay un elemento que parpadea sin parar y sin posibilidad de deternerlo.
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Hay un elemento que parpadea sin parar y sin posibilidad de deternerlo.
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -367,7 +376,7 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.1 Teclado</a>
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">2.1.1 Teclado</a>
 	<div id="Collap" class="collapse">
 			<div>
 			Toda la funcionalidad del contenido es operable a trav&eacute;s de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsaci&oacute;n individual de las teclas,
@@ -379,7 +388,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
-<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.1.2 Sin trampas para el foco del teclado</a>
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.1.2 Sin trampas para el foco del teclado</a>
 	<div id="Collap2" class="collapse">
 			<div>
 			Si es posible mover el foco a un componente de la p&aacute;gina usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando solo la interfaz de teclado y,
@@ -388,18 +397,18 @@
 			<strong>El foco est&aacute; capturado en la ventana en la que se encuentra
 				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n</strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>		
-						
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.2.1 Tiempo ajustable</a>
+			</div><br><br>	
+			
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">2.2.1 Tiempo ajustable</a>
 	<div id="Collap3" class="collapse">
 			<div>
 			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.</p>
 		    </div>
 			<strong>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.</strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>		
+			</div><br><br>	
 			
-<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.2.2 Poner en pausa, detener, ocultar</a>
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">2.2.2 Poner en pausa, detener, ocultar</a>
 	<div id="Collap4" class="collapse">
 			<div>
 			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.</p>
@@ -408,17 +417,17 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="Desplegable con descripción de criterio">2.3.1 Umbral de tres destellos o menos</a>
+<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="button">2.3.1 Umbral de tres destellos o menos</a>
 	<div id="Collap5" class="collapse">
 			<div>
 			Las p&aacute;ginas web no contienen nada que destelle m&aacute;s de tres veces en un segundo, o el destello est&aacute; por debajo del umbral de destello general y de destello rojo..</p>
 		    </div>
 			<strong>Hay un elemento destelleante pero tenemos la posibilidad de pararlo.</strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>							
-							
-		
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+			</div><br><br>												
+						
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
 
 </div>
 
@@ -457,19 +466,11 @@ var body = document.body,
     });
     
 /*---------------------------------------------------------*/
-	
-	
-/*ATRAPAR FOCUS*/
-function loop(){
-	M.querySelector("input[name='loop']").focus();
-};
-/*-----------------------------------*/
 
 
-function accion(){
-document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulbon.gif';
-setTimeout(function(){ document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulboff.gif'; }, 1000);
-};
+function triggerAlert() {
+  var alertEl = document.querySelector('.alert');
+}
 
 /*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
 
@@ -507,6 +508,12 @@ $(function () {
         pause: "false"
     });
 });
+
+/*PARAR PARPADEO*/
+
+function pararParpadeo(){
+	document.getElementById('parpadeo').className = 'woo';
+	};
 
 </script>
 
