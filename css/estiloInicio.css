@@ -833,12 +833,72 @@ blink.woo{
 
 #clon{
 	position: absolute;
-	bottom: 330px;
 	left: 400px;
+	top: 1350px;
 }
 
 @media screen and (max-width: 1200px){
   #clon{
 	position: static;
   }
+}
+/*Miniatura de foto*/
+
+#miniatura{
+	width: 65px;
+	height: 50px;
+}
+
+/*Menu reducido*/
+
+
+#menuRed {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 320px;
+}
+
+#menuRed li {
+  float: left;
+  border: 1px solid white;
+}
+
+#menuRed li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menuRed li a:hover {
+  background-color: #111;
+}
+
+/*BreadCrumb*/
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }

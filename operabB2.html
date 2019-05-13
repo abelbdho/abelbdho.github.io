@@ -117,7 +117,7 @@
 		<input id="enviarForm" type="submit" value="Enviar">
 		</form>
 
-		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
+		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.1 Evitar Bloques - Nivel A</h2>
@@ -158,8 +158,21 @@
 		
 		<h6>Registro de datos</h6>
 		
-		<p>
 		<form>
+			
+		<div id="clon">
+		Nº de cuenta:<br>
+		<input type="text" name="cuenta" tabindex="2">
+		<br>
+		Aficiones:<br>
+		<textarea name="aficiones" id="comentario" tabindex="4">Di algo...</textarea>
+		<br>
+		Empresa:<br>
+		<input type="text" name="empresa" tabindex="9">
+		<br><br>
+		<input id="enviarForm" type="submit" value="Enviar" tabindex="10">
+		</div>	
+			
 		Nombre:<br>
 		<input type="text" name="nombre" tabindex="1">
 		<br>
@@ -179,22 +192,8 @@
 		<textarea name="comentario" id="comentario" tabindex="8">Di algo...</textarea>
 		<br><br><br>
 		</form>
-		
-		<form id="clon">
-		Nº de cuenta:<br>
-		<input type="text" name="cuenta" tabindex="2">
-		<br>
-		Aficiones:<br>
-		<textarea name="aficiones" id="comentario" tabindex="4">Di algo...</textarea>
-		<br>
-		Empresa:<br>
-		<input type="text" name="empresa" tabindex="9">
-		<br><br>
-		<input id="enviarForm" type="submit" value="Enviar" tabindex="10">
-		</form>
-		</p>
 
-		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 2.4.3 Orden del foco">PISTA</a>
+		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 2.4.3 Orden del foco">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.3 Orden del foco - Nivel A</h2>
@@ -211,6 +210,159 @@
 			</div>
 			<div>
 				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+
+
+	<h4 id="principio3">2.4.4 Prop&oacute;sito de los enlaces (en contexto) - Nivel A</h4>
+	<p>
+		El prop&oacute;sito de cada enlace puede ser determinado con solo el texto del enlace o a trav&eacute;s del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el
+			 prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		<p>
+		<a href="index.html" id="enlacesOscuros">¡Pinche aqu&iacute;!</a>
+		</p>
+		
+		<a href="http://www.sidar.org/#goto_a11yhoy"><img id="miniatura" src="http://www.sidar.org/graf/logo.png" alt=""></img></a><br><br>
+
+		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 2.4.4 Propósito de los enlaces (en contexto)">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.4.4 Prop&oacute;sito de los enlaces (en contexto) - Nivel A</h2>
+		<div class="ventanita">
+			El prop&oacute;sito de cada enlace puede ser determinado con solo el texto del enlace o a trav&eacute;s del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el
+			 prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Los enlaces tienen un texto descriptivo y/o van acompañados de im&aacute;genes para hacer m&aacute;s claro su sentido.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Los enlaces est&aacute;n mal definidos y su entorno no ayuda.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio4">2.4.5 M&uacute;ltiples v&iacute;as - Nivel AA</h4>
+	<p>
+		Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Esta conocida web ejemplifica muchas maneras de romper con la accesibilidad, este criterio inclu&iacute;do.
+		</p>
+		
+		<a href="http://arngren.net/">P&aacute;gina antiaccesibilidad</a>
+
+		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 2.4.5 Múltiples vías">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.4.5 M&uacute;ltiples v&iacute;as - Nivel AA</h2>
+		<div class="ventanita">
+			Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Mostramos algunos de los mejores ejemplos para que el usuario pueda localizarse en una p&aacute;gina web, el me&uacute; y las migas de pan.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Se proporciona un ejemplo de p&aacute;gina que no permite al usuario situarse f&aacute;cilmente.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+
+
+
+
+	<h4 id="principio5">2.4.6 Encabezados y etiquetas - Nivel AA</h4>
+	<p>
+		Los encabezados y etiquetas describen el tema o prop&oacute;sito.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		<h1>Discapacidades</h1>
+		<h2>Discapacidad auditiva</h2>
+		<h3>Categor&iacute;a</h3>
+		<h2>Discapacidad visual</h2>
+		<h3>Tipos</h3>
+		<h2>(...)</h2>
+		</p>
+		
+		<p><em>Los campos obligatorios estar&aacute;n marcados en rojo y est&aacute; condici&oacute;n ser&aacute; indicada en su respectiva etiqueta.</em></p>
+		
+		<form>
+		<span id="obligatorio">Nombre:</span><br>
+		<input type="text" name="nombre">
+		<br>
+		<span id="obligatorio">Nombre 2:</span><br>
+		<input type="text" name="apellidos">
+		<br>
+		<span id="obligatorio">Emilio:</span><br>
+		<input type="text" name="email">
+		<br>
+		Vivienda:<br>
+		<input type="text" name="direccion">
+		<br>
+		Años:<br>
+		<input type="text" name="edad">
+		<br>
+		Como se definir&iacute;a:<br>
+		<textarea name="comentario" id="comentario">Di algo...</textarea>
+		<br>
+		</form>
+
+		<a role="button" class="botonVentanita2" href="#popup5" alt="Pista 2.4.6 Encabezados y etiquetas">PISTA</a>
+		<div id="popup5" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.4.6 Encabezados y etiquetas - Nivel AA</h2>
+		<div class="ventanita">
+			Los encabezados y etiquetas describen el tema o prop&oacute;sito.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Tanto t&iacute;tulos como etiquetas ejemplifican perfectamente el criterio, siendo claros y concisos.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Los t&iacute;tulos y etiquetas escogidos pueden producir confusi&oacute;n en el usuario.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -239,9 +391,37 @@
 			Si se puede navegar secuencialmente por una p&aacute;gina web y la secuencia de navegaci&oacute;n afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen
 		 en un orden que preserva su significado y operabilidad.
 		    </div>
-			<strong>En los elementos se mantiene el orden secuencial indicado.</strong>
+			<strong>En los elementos se mantiene el orden secuencial indicado.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>									
+			</div><br><br>		
+
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">2.4.4 Prop&oacute;sito de los enlaces (en contexto)</a>
+	<div id="Collap3" class="collapse">
+			<div>
+			El prop&oacute;sito de cada enlace puede ser determinado con solo el texto del enlace o a trav&eacute;s del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el
+			 prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.
+		    </div>
+			<strong>Los enlaces tienen un texto descriptivo y/o van acompañados de im&aacute;genes para hacer m&aacute;s claro su sentido.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">2.4.5 M&uacute;ltiples v&iacute;as</a>
+	<div id="Collap4" class="collapse">
+			<div>
+			Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.
+		    </div>
+			<strong>Mostramos algunos de los mejores ejemplos para que el usuario pueda localizarse en una p&aacute;gina web, el me&uacute; y las migas de pan.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="button">2.4.6 Encabezados y etiquetas</a>
+	<div id="Collap5" class="collapse">
+			<div>
+			Los encabezados y etiquetas describen el tema o prop&oacute;sito.
+		    </div>
+			<strong>Tanto t&iacute;tulos como etiquetas ejemplifican perfectamente el criterio, siendo claros y concisos.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>								
 						
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
