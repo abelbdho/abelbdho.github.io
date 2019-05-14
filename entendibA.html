@@ -1,0 +1,255 @@
+<html lang="es">
+<head>
+  <title>Entendible - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <script src="js/shortcuts.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navigation">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu" role="menu">
+	<a href="index.html" id="inicio">Inicio</a>
+	<a id="principio" href="percepA.html">Perceptible</a>
+	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
+	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
+	<a id="principio" href="operabA.html">Operable</a>
+	<a id="submenu" href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
+	<a id="submenu" href="operabA2.html">Navegable</a>
+	<a id="principio" href="#">Entendible</a>
+	<a id="submenu" href="#" class="active">Legible y Predecible</a>
+	<a href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="entendibB.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<h2>3. Entendible - Tercer Principio</h2>
+	<p>
+		La informaci&oacute;n y el uso de la interfaz deben ser inteligibles para el usuario.
+	</p><br>
+	
+	<h3>3.1 Legible</h3>
+	<p>
+		Hacer que los contenidos textuales resulten legibles y comprensibles.
+	</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio1">3.1.1 y 3.1.2 Idioma de la p&aacute;gina y de las partes - Nivel A/Nivel AA</h4>
+	<p>
+		El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software. | El idioma de cada pasaje o frase en el contenido puede ser determinado por software,
+		 excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Esencialmente tenemos un criterio muy sencillo pero a su vez muy incumplido. Est&aacute; p&aacute;gina tiene como idioma por defecto el castellano, en caso de usar
+		 t&eacute;minos en otros idiomas es necesario identificarlos.
+		</p>
+		
+		<p>
+		Si el <em><span lang="de">leitmotiv</span></em> de nuestra </em><span lang="en">web page</span></em> es ser accesible y usable para todos, debemos tener en cuenta muchas cosas. Es extrapolable el t&eacute;rmino
+		culinario <em><span lang="fr">mise en place</span></em>, el colocar adecuadamente cada elemento y ser organizado en la estructuraci&oacute;n y codificaci&oacute;n de una p&aacute;gina web.
+		</p>
+		
+		<p>
+		Queremos redireccionar a una p&aacute;gina en otro idioma, en este caso tambi&eacute;n es necesario etiquetarlo.
+		</p>
+		
+		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" id="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
+
+		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 3.1.1 Idioma de la página y 3.1.2 Idioma de las partes">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.1.1 y 3.1.2 Idioma de la p&aacute;gina y de las partes</h2>
+		<div class="ventanita">
+			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>El idioma predeterminado de la p&aacute;gina es el español y est&aacute; identificado. Adem&aacute;s, se identifican palabras en otros idiomas.
+				<pre><code>&lt;span lang="de">&lt;span lang="en">&lt;span lang="fr"></code></pre>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>No se usan las etiquetas o se usan de manera incorrecta.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio2">3.2.1 Al recibir foco - Nivel A</h4>
+	<p>
+		Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		T&eacute;cnicamente, no va a ocurrir nada ya que no hay saltos o cambios de contextos inesperados.
+		</p>
+		
+		<button onclick="aviso()">Ayuda</button>
+		<br><br>
+
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.2.1 Al recibir foco - Nivel A</h2>
+		<div class="ventanita">
+			Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Nada se activa sin previo aviso, es necesario pinchar en el elemento correspondiente.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Cualquiera de los botones se activan simplemente con el foco.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.1.1 y 3.1.2 Idioma de la p&aacute;gina y de las partes</a>
+	<div id="Collap" class="collapse">
+			<div>
+			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software. | El idioma de cada pasaje o frase en el contenido puede ser determinado por software,
+		 excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
+		    </div>
+			<strong>El idioma predeterminado de la p&aacute;gina es el español y est&aacute; identificado. Adem&aacute;s, se identifican palabras en otros idiomas.
+				<pre><code>&lt;span lang="de">&lt;span lang="en">&lt;span lang="fr"></code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.2.1 Al recibir foco</a>
+	<div id="Collap2" class="collapse">
+			<div>
+			Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.
+		    </div>
+			<strong>Nada se activa sin previo aviso, es necesario pinchar en el elemento correspondiente.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>										
+						
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+	
+/*DOBLE SCROLL*/
+	
+var body = document.body,
+        overlay = document.querySelector('.overlay'),
+        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
+        
+    [].forEach.call(overlayBtts, function(btt) {
+
+      btt.addEventListener('click', function() { 
+         
+         /* Detect the button class name */
+         var overlayOpen = this.className === 'botonVentanita';
+         
+         /* Toggle the aria-hidden state on the overlay and the 
+            no-scroll class on the body */
+         overlay.setAttribute('aria-hidden', !overlayOpen);
+         body.classList.toggle('noscroll', overlayOpen);
+         
+         /* On some mobile browser when the overlay was previously
+            opened and scrolled, if you open it again it doesn't 
+            reset its scrollTop property */
+         overlay.scrollTop = 0;
+
+      }, false);
+
+    });
+    
+/*---------------------------------------------------------*/	
+
+
+
+/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
+
+	function cerrarVentana(boton){
+		boton.click();
+		};
+		
+/*Abrir en foco*/
+
+function aviso(){
+	alert("Técnicamente, no va a ocurrir nada ya que no hay saltos o cambios de contextos inesperados.");
+	};
+
+</script>
+
+</body>
