@@ -1,0 +1,226 @@
+<html lang="es">
+<head>
+  <title>Alternativas textuales, perceptible - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="js/shortcuts.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
+  <script src="js/controlesAD.js"></script>
+  
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navigation">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu" role="menu">
+	<a href="#" id="inicio">Inicio</a>
+	<a id="activo" class="principio" href="1.1A.html">1. Perceptible</a>
+	<a id="activo" href="1.1A.html"><mark>1.1 Alternativas textuales</mark></a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a href="1.4A.html">1.4 Distinguible</a>
+	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a href="2.1A.html">2.1 Accesible por teclado</a>
+	<a href="2.2A.html">2.2 Tiempo suficiente</a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a href="2.4A.html">2.4 Navegable</a>
+	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a href="3.1A.html">3.1 Legible</a>
+	<a href="3.2A.html">3.2 Predecible</a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="1.1B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<h2>1. Perceptible - Primer Principio</h2>
+	<p>
+		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
+		 manera que puedan percibirlos, no pueden ser invisibles a todos sus sentidos.
+	</p><br>
+	
+	<h3>1.1 Alternativas textuales</h3>
+	<p>
+		 Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten,
+		  tales como textos ampliados, braille, voz, s&iacute;mbolos o en un lenguaje m&aacute;s simple.
+	</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio1">1.1.1 Contenido no textual - Nivel A</h4>
+	<p>
+		Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo prop&oacute;sito. Excepciones:
+		</p>
+		
+		<ul>
+			<li><strong>Controles o entrada</strong>: en este caso tienen un nombre describiendo su prop&oacute;sito.</li>
+			<li><strong>Contenido basado en tiempo</strong>: tienen alternativa textual que proporcione al menos una identificaci&oacute;n descriptiva.</li>
+			<li><strong>Test</strong>: test o ejercicios que no deber&iacute;an ser presentados en texto, tienen su alternativa textual identificativa.</li>
+			<li><strong>Sensorial</strong>: para contenido pensados para crear una experiencia sensorial, se proporcionar&aacute; una identificaci&oacute;n
+			 descriptiva.</li>
+			<li><strong>CAPTCHA</strong>: si el prop&oacute; del contenido es asegurar la identidad humana de quien accede a &eacute;l, se proporciona identificaci&oacute;
+			y distintas formas sensoriales de superar el CAPTCHA.</li>
+			<li><strong>Decoraci&oacute;n, formateo y elementos invisibles</strong>: se omiten descripciones para que sean ignorados por la tecnología de asistencia.</li>
+		</ul>	
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		En este primer ejemplo mostramos un logo. En la alternativa se expresa de manera corta y precisa qu&eacute; es.
+		</p>
+		<picture>
+		<img id="logoCriterio" class="contentImage" src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png" alt="Logo World Wide Web Consortium"></img>
+		</picture>
+		
+		<p>
+		En este segundo ejemplo mostramos la imagen de un chico sordo en clase con su profesora. La alternativa sirve para complementar esta informaci&oacute;n.
+		</p>
+		
+		<picture>
+		<img id="imgCriterio" class="contentImage" src="https://amp.thisisinsider.com/images/5865384055b10620008b4aa4-750-563.jpg" alt="Chico con audífono atendiendo a su profesora"></img>
+		</picture>
+		
+		<p>
+		Otro de los ejemplos m&aacute;s comunes se producen cuando se proporcionan unas instrucciones pero se hace en forma de imagen, privando a las personas con problemas de visi&oacute;n de
+		una experiencia similar a la de los dem&aacute;s.
+		</p>
+		
+		<picture>
+		<img id="imgCriterio" class="contentImage" src="https://es.toluna.com//dpolls_images/2018/06/29/afc02cab-419a-4e8a-bc33-3096d5c64456.jpg" alt="Abrefácil, tirar de la anilla"></img>
+		</picture>
+		
+		<p>
+		Es muy com&uacute;n ver errores o descuidos con respecto a las alternativas en im&aacute;genes, siendo un criterio muy simple de aplicar.
+		</p>
+		
+		<p>
+		Finalmente llegamos a otro de los ejemplos m&aacute;s comunes, el de los formatos de archivos. Es necesario proporcionar alternativas en estos casos tambi&eacute;n.
+		</p>
+		
+		<p>
+		<a href="https://eprints.ucm.es/54854/1/decalogo_pdf_accesible.pdf">Descargar Accesibilidad Web, WCAG 2.1 de manera sencilla <img src="https://www.w3.org/WAI/tutorials/img/pdfdocument-680d4d64.png" alt="PDF"></a></a>
+		</p>
+		
+		<a role="button" class="botonVentanita" href="#popup1" alt=" Pista 1.1.1 Contenido no textual">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>1.1.1 Contenido no textual - Nivel A</h2>
+		<div class="ventanita">
+			Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>En este caso, se proporcionan alternativas textuales claras y precisas a la imag&eacute;nes.<br>
+				<pre><code>&lt;img id="logoCriterio" class="contentImage"
+src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
+ alt="Logo World Wide Web Consortium"&gt;</code></pre>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Se proporcionan unas alternativas textuales difusas y poco concretas.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.1.1 Contenido no textual</a>
+	<div id="Collap" class="collapse">
+			<div>
+				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
+			</div>
+			<strong>En este caso, se proporciona una alternativa textual clara y precisa a la imagen. <pre><code>&lt;img id="logoCriterio" class="contentImage"
+src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
+ alt="Logo World Wide Web Consortium"&gt;</code></pre></strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>					
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+/*SHORTCUTS CAMBIAR DE VERSION*/
+
+shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("percepB.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
+	window.open("percepB.html#principio2");	
+	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
+	window.open("percepB.html#principio3");	
+	} else if(ScrollTop > document.getElementById("principio4").offsetTop && ScrollTop < document.getElementById("principio5").offsetTop){
+	window.open("percepB.html#principio4");	
+	} else if(ScrollTop > document.getElementById("principio5").offsetTop){
+	window.open("percepB.html#principio5");	
+	}
+});
+
+
+</script>
+
+</body>

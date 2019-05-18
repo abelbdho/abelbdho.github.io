@@ -46,7 +46,6 @@ a[href^="https://www.w3.org/"]:after {
 }
 
 #internos:after{
-	content: url(http://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png);
 	margin: 0 0 0 5px;
 	color: #0000EB;
 }
@@ -58,7 +57,7 @@ a[href^="https://www.w3.org/"]:after {
   padding: 0;
   width: 210px;
   background-color: #f1f1f1;
-  position: fixed;
+  position: absolute;
   top: 220px;
   left: 252px;
   overflow: auto;
@@ -78,44 +77,49 @@ a[href^="https://www.w3.org/"]:after {
   font-weight: bold;
 }
 
-.menu a.active {
-  font-weight: bold;
-  background-color: #92C3C3;
-  display: list-item; 
-  list-style-type: disc;
-   list-style-position: inside;
-  font-size: 1.52em;
-  color: black;
-}
-
 #inicio {
-  background-color: #595959;
+  background-color: #003366;
   border: 1px solid white;
   font-size: 1.52em;
   color: white;
 }
 
-#principio{
-	background-color: #595959;
-	color: white;
-	border: 1px solid white;
+
+/*INTENTOS*/
+
+#activo::before{
+content: '\00bb';
+color: red;
+font-size: 1.4em;
+font-weight: bold;
 }
 
-#submenu{
-  font-size: 0.89em;
+mark { 
+  background-color: yellow;
+  color: black;
 }
 
+/*#activo::after{
+content: '\00bb';
+color: red;
+font-size: 1.4em;
+}*/
+
+.principio{
+	border: 2px solid black;
+	font-weight: bold;
+}
+
+/*****/
 
 @media screen and (max-width: 1800px) {
   .menu {
   margin: 0;
   padding: 0;
-  width: 210px;--170
-  background-color: #f1f1f1;
+  width: 210px;
   position: fixed;
   top: 300px;
-  left: 7px;--52
-  overflow: auto;
+  left: 7px;
   }
   .menu a {
 	border-radius: 5px;
@@ -420,7 +424,6 @@ th, td {
   padding: 20px;
   background: white;
   color: black;
-  border-radius: 5px;
   width: 30%;
   position: relative;
 }
@@ -446,10 +449,9 @@ th, td {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px){
-  .popup{
+  .overlay .popup{
     width: 90%;
-    overflow: auto;
-    
+    height: 75%;
   }
 }
 
@@ -902,3 +904,16 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+
+/*Formulario cambiar foco*/
+
+
+#formFoco:focus {
+    box-shadow: 0 0 0 2px #000;
+}
+
+#formFoco2:focus {
+    outline: none;
+    box-shadow: none;
+}
+

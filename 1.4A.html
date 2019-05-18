@@ -1,6 +1,6 @@
 <html lang="es">
 <head>
-  <title>Perceptible, segunda parte - REAVAI: Accesibilidad Web</title>
+  <title>Distinguible, perceptible - REAVAI: Accesibilidad Web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Abel Jiménez Urbaneja" />
@@ -12,6 +12,10 @@
   <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
   <script src="js/shortcuts.js"></script>
   <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
+  <script src="js/copiarTexto.js"></script>
+  <script src="js/controlarMusica.js"></script>
 </head>
 
 <body id="body">
@@ -37,16 +41,24 @@
 	<!--MENU VERTICAL-->
 	
 	<div class="menu" role="menu">
-	<a href="index.html" id="inicio">Inicio</a>
-	<a id="principio" href="#">Perceptible</a>
-	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
-	<a id="submenu" href="#" class="active">Adaptable y Distinguible</a>
-	<a id="principio" href="operabA.html">Operable</a>
-	<a href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
-	<a id="submenu" href="operabA2.html">Navegable</a>
-	<a id="principio" href="entendibA.html">Entendible</a>
-	<a id="submenu" href="entendibA.html">Legible y Predecible</a>
-	<a href="aleatorio.html">Aleatorio</a>
+	<a href="#" id="inicio">Inicio</a>
+	<a id="activo" class="principio" href="1.1A.html">1. Perceptible</a>
+	<a href="1.1A.html">1.1 Alternativas textuales</a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a id="activo" href="1.4A.html"><mark>1.4 Distinguible</mark></a>
+	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a href="2.1A.html">2.1 Accesible por teclado</a>
+	<a href="2.2A.html">2.2 Tiempo suficiente</a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a href="2.4A.html">2.4 Navegable</a>
+	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a href="3.1A.html">3.1 Legible</a>
+	<a href="3.2A.html">3.2 Predecible</a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -68,202 +80,13 @@
 	<h2 class="screen-reader-text">Contenido</h2>
 	
 	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="percepB2.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<a href="1.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<h2>1. Perceptible - Primer Principio</h2>
 	<p>
 		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
 		 manera que puedan percibirlos, no pueden ser invisibles a todos sus sentidos.
 		 </p><br>
-	
-	<h3>1.3 Adaptable</h3>
-	<p>
-		 Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposici&oacute;n m&aacute;s simple) sin perder
-		  informaci&oacute;n o estructura.
-	</p><br>
-
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-	<h4 id="principio1">1.3.1 Informaci&oacute;n y relaciones - Nivel A</h4>
-	<p>
-		La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto. 
-		</p>
-		
-		<h2 class="screen-reader-text">Ejemplos</h2>
-		<h5>Ejemplos</h5>
-			
-		<p class="textoEspecial">
-			Cuando queremos enfatizar la importancia de la <strong>accesibilidad web</strong> en esta p&aacute;gina, usamos las etiquetas correctas. Esto facilita
-			la experiencia en la web a personas con <strong>diversidad funcional</strong> o incluso <strong>sin ella</strong>.
-		</p>
-		
-		<p>
-			Otro ejemplo puede darse con respecto al aspecto y la personalizaci&oacute;n de elementos. Las tablas tienen sus propias etiquetas html y se debe hacer un uso apropiado de
-			 estos <em><span lang="en">tags</span></em>.
-		</p>
-		
-		<table>
-			<tr>
-				<th>Discapacidad</th>
-				<th>Condici&oacute;n normal</th>
-			</tr>
-			<tr>
-				<td>Ceguera</td>
-				<td>Situaci&oacute;n nocturna</td>
-			</tr>
-			<tr>
-				<td>Sordera</td>
-				<td>Ambiente ruidoso</td>
-			</tr>
-		</table><br>
-		
-		<p>
-			Es com&uacute;n encontrar t&iacute;tulos en p&aacute;ginas web que realmente no utilizan las etiquetas creadas para ello (son solo aspecto CSS). Mostramos el equivalente a nuestro &lt;h3&gt;.
-		</p>
-		
-		<h3>1. Un t&iacute;tulo con su etiqueta correspondiente</h3>
-		
-		<p>
-		Las caracter&iacute;sticas como el color o tamaño se editan respecto a la etiqueta del t&iacute;tulo.
-		</p><br>
-		
-		
-		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 1.3.1 Información y relaciones">PISTA</a>
-		<div id="popup1" class="overlay" role="complementary">
-		<div class="popup">
-		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
-		<div class="ventanita">
-			Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
-				<pre><code>&lt;strong>accesibilidad web&lt;strong&gt;</code></pre>
-			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
-				<pre><code>&lt;b>accesibilidad web&lt;b&gt;</code></pre>
-			</div>
-			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		
-	
-			<br><br><br><br>
-			
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-	<h4 id="principio2">1.3.2 Secuencia significativa - Nivel A</h4>
-	<p>
-		Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.</p>
-		<p>
-			
-		<h2 class="screen-reader-text">Ejemplos</h2>
-		<h5>Ejemplos</h5>
-			
-			Aqu&iacute; tenemos dos p&aacute;rrafos que guardan una secuencia visualmente, pero que respetan esa secuencia en el c&oacute;digo. De esta manera, para una persona que use, por ejemplo, un lector de pantalla, la informaci&oacute;
-			ser&aacute; presentada en ese mismo orden.
-		</p><br>
-			
-		<p class="textoEspecial" id="textoSecuencia">
-			Para lograr la accesibilidad web hay que ser conscientes de que no todos los usuarios acceden a la Web con los mismos medios t&eacute;cnicos y que no todos los usuarios son capaces de percibir correctamente todos los contenidos publicados
-			 en la Web. Esta idea se resume en los dos principios b&aacute;sicos del diseño web accesible:
-		</p>
-		<p id="textoSecuencia">
-			<ul class="textoEspecial">
-				<li><strong>Crea p&aacute;ginas que se transformen correctamente.</strong></li>
-				<li><strong>Ofrece el contenido de manera comprensible para facilitar la navegaci&oacute;n por el sitio web.</strong></li>
-			</ul>
-		</p>
-		<br>
-		
-		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 1.3.2 Secuencia significativa">PISTA</a>
-		<div id="popup2" class="overlay" role="complementary">
-		<div class="popup">
-		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
-		<div class="ventanita">
-			Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
-			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
-			</div>
-			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		
-	
-			<br><br><br><br>
-			
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-
-	<h4 id="principio3">1.3.3 Caracter&iacute;sticas sensoriales - Nivel A</h4>
-	<p>
-		Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente de las caracter&iacute;sticas sensoriales de los componentes como su forma,
-		 tamaño, ubicaci&oacute;n visual, orientaci&oacute;n o sonido.
-		 </p>
-		 
-		 <h2 class="screen-reader-text">Ejemplos</h2>
-		<h5>Ejemplos</h5>
-		
-		<p>
-			Pulse el bot&oacute;n cuadrado de color azul claro justo debajo, que dice <em>copiar texto</em>, para copiar el contenido dentro del campo de texto que est&aacute; a la derecha de este bot&oacute;n.
-		</p>
-		
-		<button id="botonCopiar" onclick="funcionCopiar()">Copiar texto</button>
-		<input type="text" value="No deben usarse solo colores" id="campoCopiar">
-		<br><br>
-		
-		<p>
-		Aqu&iacute; otro ejemplo que podr&iacute;a ser confuso:
-		</p>
-		
-		<p>
-			<em>Seleccione los tri&aacute;ngulos rect&aacute;ngulos</em>
-		</p>
-		
-		<p>
-			<form>
-		<span>1. Tri&aacute;ngulo verdoso, dos &aacute;ngulos menores de 90 grados.</span><input alt="figura triangular" type="radio" id="radio1"><div class="triangulo1"></div>
-		<span id="invertida">2. Tri&aacute;ngulo gris&aacute;ceo, un &aacute;ngulo de 90 grados <input alt="figura triangular" type="radio" id="radio2"></span><br><div class="triangulo2"></div>
-		<span>3. Tri&aacute;ngulo rosado, un &aacute;ngulo de m&aacute;s de 90 grados.</span><input alt="figura triangular" type="radio" id="radio3"><div class="triangulo3"></div>
-			</form>
-		</p>
-		<br>
-		
-		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 1.3.3 Características sensoriales">PISTA</a>
-		<div id="popup3" class="overlay" role="complementary">
-		<div class="popup">
-		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
-		<div class="ventanita">
-			Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
-		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
-			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
-			</div>
-			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		
-	
-			<br><br><br><br>
-			
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 	
 	<h3>1.3 Distinguible</h3>
 	<p>
@@ -326,7 +149,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -346,10 +169,10 @@
 		 <h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<a href="#CollapC" id="activador" class="btn btn-info" data-toggle="collapse" role="Desplegable de ejemplo del criterio" onclick="playPause()">Bot&oacute;n inofensivo</a>
+		<a href="#CollapC" id="activador" class="btn btn-info" data-toggle="collapse" onclick="playPause()">Bot&oacute;n inofensivo</a>
 	<div id="CollapC" class="collapse"><br>
-			<audio id="nyan" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg"></audio>
-			<a class="btn btn-dark" id="nyan-btn" tabindex="0">Activar/Silenciar</a><br><br>
+			<audio id="cancion" src="https://designshack.net/tutorialexamples/html5-audio-player/media/evidence-song.mp3" preload="metadata" type="audio/mpeg"></audio>
+			<a class="btn btn-dark" id="botonAuto" tabindex="0">Activar/Silenciar</a><br><br>
 			</div><br><br>
 		
 		<a role="button" class="botonVentanita" href="#popup5" alt="Pista 1.4.2 Control de Audio">PISTA</a>
@@ -367,7 +190,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -415,7 +238,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -461,7 +284,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -522,7 +345,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio8" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio8" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -532,35 +355,6 @@
 			<br><br><br><br>
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.3.1 Informaci&oacute;n y relaciones</a>
-	<div id="Collap" class="collapse">
-			<div>
-				La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto. 
-		    </div>
-			<strong>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n. <br>
-			<pre><code>&lt;strong>accesibilidad web&lt;/strong&gt;</code></pre></strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>
-			
-<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.3.2 Secuencia significativa</a>
-	<div id="Collap2" class="collapse">
-			<div>
-				Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.</p>
-		    </div>
-			<strong>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
-			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">1.3.3 Caracter&iacute;sticas sensoriales</a>
-	<div id="Collap3" class="collapse">
-			<div>
-				Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente de las caracter&iacute;sticas sensoriales de los componentes como su forma,
-		      tamaño, ubicaci&oacute;n visual, orientaci&oacute;n o sonido.
-		    </div>
-			<strong>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
 			
 <a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">1.4.1 Uso del Color</a>
 	<div id="Collap4" class="collapse">
@@ -632,131 +426,7 @@
 
 <script>
 	
-/*COPIAR*/
-function funcionCopiar() {
-  var copyText = document.getElementById("campoCopiar");
-  copyText.select();
-  document.execCommand("copy");
-}
-/*-------------------------------------------------------------*/
 
-var body = document.body,
-        overlay = document.querySelector('.overlay'),
-        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
-        
-    [].forEach.call(overlayBtts, function(btt) {
-
-      btt.addEventListener('click', function() { 
-         
-         /* Detect the button class name */
-         var overlayOpen = this.className === 'botonVentanita';
-         
-         /* Toggle the aria-hidden state on the overlay and the 
-            no-scroll class on the body */
-         overlay.setAttribute('aria-hidden', !overlayOpen);
-         body.classList.toggle('noscroll', overlayOpen);
-         
-         /* On some mobile browser when the overlay was previously
-            opened and scrolled, if you open it again it doesn't 
-            reset its scrollTop property */
-         overlay.scrollTop = 0;
-
-      }, false);
-
-    });
-    
-
-/*-------------------------------------------------------------*/    
-    
-   /*Mecanismo de boton automatico*/
-   var nyan = document.getElementById('nyan');
-var nyanBtn = document.getElementById('nyan-btn');
-
-function playPause(song){
-   if (song.paused && song.currentTime >= 0 && !song.ended) {
-      song.play();
-   } else {
-      song.pause();
-   }
-}
-
-function reset(btn, song){
-   if(btn.classList.contains('playing')){
-      btn.classList.toggle('playing');
-   }
-   song.pause();
-   song.currentTime = 0;
-}
-
-function progress(btn, song){
-   setTimeout(function(){
-      var end = song.duration; 
-      var current = song.currentTime;
-      var percent = current/(end/100);
-      //check if song is at the end
-      if(current==end){
-         reset(btn, song);
-      }
-      //set inset box shadow
-      btn.style.boxShadow = "inset " + btn.offsetWidth * (percent/100) + "px 0px 0px 0px rgba(0,0,0,0.125)"
-      //call function again
-      progress(btn, song);     
-   }, 1000);
-}
-
-activador.addEventListener('click', function(){
-	playPause(nyan);
-	});
-
-nyanBtn.addEventListener('click', function(){
-   nyanBtn.classList.toggle('playing');
-   playPause(nyan);
-   progress(nyanBtn, nyan);
-});
-
-
-/*-------------------------------------------------------------*/
-
-
-/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
-
-	function cerrarVentana(boton){
-		boton.click();
-		};
-
-/*SHORTCUTS CAMBIAR DE VERSION*/
-
-shortcut.add("Ctrl+Shift+1",function() {
-	window.open("percepB2.html#principio1");
-});
-
-shortcut.add("Ctrl+Shift+2",function() {
-	window.open("percepB2.html#principio2");
-});
-
-shortcut.add("Ctrl+Shift+3",function() {
-	window.open("percepB2.html#principio3");
-});
-
-shortcut.add("Ctrl+Shift+4",function() {
-	window.open("percepB2.html#principio4");
-});
-
-shortcut.add("Ctrl+Shift+5",function() {
-	window.open("percepB2.html#principio5");
-});
-
-shortcut.add("Ctrl+Shift+6",function() {
-	window.open("percepB2.html#principio6");
-});
-
-shortcut.add("Ctrl+Shift+7",function() {
-	window.open("percepB2.html#principio7");
-});
-
-shortcut.add("Ctrl+Shift+8",function() {
-	window.open("percepB2.html#principio8");
-});
 
 
 </script>

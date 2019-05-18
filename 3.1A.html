@@ -1,0 +1,240 @@
+<html lang="es">
+<head>
+  <title>Legible, entendible - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <script src="js/shortcuts.js"></script>
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
+  <script src="js/avisoNormal.js"></script>
+  <script src="js/dataListCambiar.js"></script>
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navigation">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu" role="menu">
+	<a href="#" id="inicio">Inicio</a>
+	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a href="1.1A.html">1.1 Alternativas textuales</a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a href="1.4A.html">1.4 Distinguible</a>
+	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a href="2.1A.html">2.1 Accesible por teclado</a>
+	<a href="2.2A.html">2.2 Tiempo suficiente</a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a href="2.4A.html">2.4 Navegable</a>
+	<a id="activo" class="principio" href="3.1A.html">3. Entendible</a>
+	<a id="activo" href="3.1A.html"><mark>3.1 Legible</mark></a>
+	<a href="3.2A.html">3.2 Predecible</a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="3.1B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<h2>3. Entendible - Tercer Principio</h2>
+	<p>
+		La informaci&oacute;n y el uso de la interfaz deben ser inteligibles para el usuario.
+	</p><br>
+	
+	<h3>3.1 Legible</h3>
+	<p>
+		Hacer que los contenidos textuales resulten legibles y comprensibles.
+	</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio1">3.1.1 Idioma de la p&aacute;gina - Nivel A</h4>
+	<p>
+		El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Esencialmente tenemos un criterio muy sencillo pero a su vez muy incumplido. Est&aacute; p&aacute;gina tiene como idioma por defecto el castellano, en caso de usar
+		 t&eacute;minos en otros idiomas es necesario identificarlos.
+		</p>
+		
+		<p>
+		Si el <em><span lang="de">leitmotiv</span></em> de nuestra </em><span lang="en">web page</span></em> es ser accesible y usable para todos, debemos tener en cuenta muchas cosas. Es extrapolable el t&eacute;rmino
+		culinario <em><span lang="fr">mise en place</span></em>, el colocar adecuadamente cada elemento y ser organizado en la estructuraci&oacute;n y codificaci&oacute;n de una p&aacute;gina web.
+		</p>
+		
+		<p>
+		Queremos redireccionar a una p&aacute;gina en otro idioma, en este caso tambi&eacute;n es necesario etiquetarlo.
+		</p>
+		
+		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" id="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
+
+		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 3.1.1 Idioma de la página">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.1.1 Idioma de la p&aacute;gina</h2>
+		<div class="ventanita">
+			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>El idioma predeterminado de la p&aacute;gina es el español y est&aacute; identificado.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>No se usa la etiqueta o se usan de manera incorrecta.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+
+	<h4 id="principio2">3.1.2 Idioma de las partes - Nivel AA</h4>
+	<p>
+		El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma
+		 indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Esencialmente tenemos un criterio muy sencillo pero a su vez muy incumplido. Est&aacute; p&aacute;gina tiene como idioma por defecto el castellano, en caso de usar
+		 t&eacute;minos en otros idiomas es necesario identificarlos.
+		</p>
+		
+		<p>
+		Si el <em><span lang="de">leitmotiv</span></em> de nuestra </em><span lang="en">web page</span></em> es ser accesible y usable para todos, debemos tener en cuenta muchas cosas. Es extrapolable el t&eacute;rmino
+		culinario <em><span lang="fr">mise en place</span></em>, el colocar adecuadamente cada elemento y ser organizado en la estructuraci&oacute;n y codificaci&oacute;n de una p&aacute;gina web.
+		</p>
+		
+		<p>
+		Queremos redireccionar a una p&aacute;gina en otro idioma, en este caso tambi&eacute;n es necesario etiquetarlo.
+		</p>
+		
+		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" id="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
+		
+		
+		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" id="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
+
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.1.2 Idioma de las partes">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.1.2 Idioma de las partes</h2>
+		<div class="ventanita">
+			El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma
+		 indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Se identifican palabras en otros idiomas.
+				<pre><code>&lt;span lang="de">&lt;span lang="en">&lt;span lang="fr"></code></pre>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>No se usan las etiquetas o se usan de manera incorrecta.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.1.1 Idioma de la p&aacute;gina</a>
+	<div id="Collap" class="collapse">
+			<div>
+			El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos,
+			 palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
+		    </div>
+			<strong>El idioma predeterminado de la p&aacute;gina es el español y est&aacute; identificado.</strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.1.2 Idioma de las partes</a>
+	<div id="Collap2" class="collapse">
+			<div>
+			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.
+		    </div>
+			<strong>Se identifican palabras en otros idiomas.
+				<pre><code>&lt;span lang="de">&lt;span lang="en">&lt;span lang="fr"></code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>																	
+						
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+
+
+
+</script>
+
+</body>

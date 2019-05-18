@@ -1,0 +1,309 @@
+<html lang="es">
+<head>
+  <title>Predecible inaccesible, entendible - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
+  <script src="js/avisoNormal.js"></script>
+  <script src="js/datalistCambiarMal.js"></script>
+  <script src="js/shortcuts.js"></script>
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navigation">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu" role="menu">
+	<a href="#" id="inicio">Inicio</a>
+	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a href="1.1A.html">1.1 Alternativas textuales</a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a href="1.4A.html">1.4 Distinguible</a>
+	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a href="2.1A.html">2.1 Accesible por teclado</a>
+	<a href="2.2A.html">2.2 Tiempo suficiente</a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a href="2.4A.html">2.4 Navegable</a>
+	<a id="activo" class="principio" href="3.1A.html">3. Entendible</a>
+	<a href="3.1A.html">3.1 Legible</a>
+	<a id="activo" href="3.2A.html"><mark>3.2 Predecible</mark></a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="3.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<h2>3. Entendible - Tercer Principio</h2>
+	<p>
+		La informaci&oacute;n y el uso de la interfaz deben ser inteligibles para el usuario.
+	</p><br>
+	
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+<h3>3.1 Predecible</h3>
+	<p>
+		La p&aacute;gina web opera y se ve de manera predecible.
+	</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio2">3.2.1 Al recibir foco - Nivel A</h4>
+	<p>
+		Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		T&eacute;cnicamente, no va a ocurrir nada ya que no hay saltos o cambios de contextos inesperados. Recargar p&aacute;gina despu&eacute;s de probar o ser&aacute; imposible salir del bucle.
+		</p>
+		
+		<button onfocus="aviso()">Ayuda</button>
+		<br><br>
+
+		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.2.1 Al recibir foco - Nivel A</h2>
+		<div class="ventanita">
+			Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-focus" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Nada se activa sin previo aviso, es necesario pinchar en el elemento correspondiente.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Cualquiera de los botones se activan simplemente con el foco.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+
+	<h4 id="principio3">3.2.2 Al recibir entradas - Nivel A</h4>
+	<p>
+		El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
+		 comportamiento antes de usar el componente.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Aqu&iacute; tienes la elecci&oacute;n, escoger realizar el ficticio formulario en español o en ingl&eacute;s. Al escoger hay un cambio de estado, pero este no conlleva un cambio de contexto.
+		</p>
+		
+		<form>
+		<input type="text" oninput="eleccion()" id="input" list="datalist" />
+		<datalist id="datalist">
+		<option value="Español"></option>
+		<option value="English"></option>
+		</datalist>
+		</form>
+		
+		<div id="targetElement"></div>
+		
+		<script id="Español" type="text/html">
+		<form>
+		Nombre:<br>
+		<input type="text" name="nombre">
+		<br>
+		Apellidos:<br>
+		<input type="text" name="apellidos">
+		<br>
+		Email:<br>
+		<input type="text" name="email">
+		<br>
+		Direcci&oacute;n:<br>
+		<input type="text" name="direccion">
+		<br>
+		Edad:<br>
+		<input type="text" name="edad">
+		<br>
+		Como se definir&iacute;a:<br>
+		<textarea name="comentario" id="comentario">Di algo...</textarea>
+		<br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</form>
+		</script>
+		
+		<script id="English" type="text/html">
+		<form>
+		Name:<br>
+		<input type="text" name="nombre">
+		<br>
+		Surname:<br>
+		<input type="text" name="apellidos">
+		<br>
+		Email:<br>
+		<input type="text" name="email">
+		<br>
+		Address:<br>
+		<input type="text" name="direccion">
+		<br>
+		Age:<br>
+		<input type="text" name="edad">
+		<br>
+		Define yourself:<br>
+		<textarea name="comentario" id="comentario">Say something...</textarea>
+		<br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</form>
+		</script>
+
+		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.2.2 Al recibir entradas - Nivel A</h2>
+		<div class="ventanita">
+			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
+		 comportamiento antes de usar el componente.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>El cambio de estado dle ejemplo conlleva una recarga de la p&aacute;gina.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+
+	<h4 id="principio4">3.2.4 Identificaci&oacute;n coherente - Nivel AA</h4>
+	<p>
+		Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente. 
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<a href="entendibA.html" class="btn btn-success btn-sm" role="button">Accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+
+		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 3.2.4 Identificación coherente">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.2.4 Identificaci&oacute;n coherente - Nivel AA</h2>
+		<div class="ventanita">
+			Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente. <br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Se mantiene la coherencia respecto a las dem&aacute;s p&aacute;ginas.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Se muestra un ejemplo de lo que ser&iacute;a una mala identificaci&oacute;n de un elemento ya existente.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
+			
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">3.2.2 Al recibir entradas</a>
+	<div id="Collap3" class="collapse">
+			<div>
+			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
+		 comportamiento antes de usar el componente.
+		    </div>
+			<strong>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>		
+			
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">3.2.4 Identificaci&oacute;n coherente</a>
+	<div id="Collap4" class="collapse">
+			<div>
+			Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente.
+		    </div>
+			<strong>Se mantiene la coherencia respecto a las dem&aacute;s p&aacute;ginas.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>							
+						
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+		
+
+
+</script>
+
+</body>

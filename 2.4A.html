@@ -1,16 +1,21 @@
 <html lang="es">
 <head>
-  <title>Operable, segunda parte - REAVAI: Accesibilidad Web</title>
+  <title>Navegable, operable - REAVAI: Accesibilidad Web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Abel Jiménez Urbaneja" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <script src="js/shortcuts.js"></script>
   <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
 </head>
 
 <body>
@@ -36,16 +41,24 @@
 	<!--MENU VERTICAL-->
 	
 	<div class="menu" role="menu">
-	<a href="index.html" id="inicio">Inicio</a>
-	<a id="principio" href="percepA.html">Perceptible</a>
-	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
-	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
-	<a id="principio" href="operabA.html">Operable</a>
-	<a id="submenu" href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
-	<a id="submenu" href="#" class="active">Navegable</a>
-	<a id="principio" href="entendibA.html">Entendible</a>
-	<a id="submenu" href="entendibA.html">Legible y Predecible</a>
-	<a href="aleatorio.html">Aleatorio</a>
+	<a href="#" id="inicio">Inicio</a>
+	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a href="1.1A.html">1.1 Alternativas textuales</a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a href="1.4A.html">1.4 Distinguible</a>
+	<a id="activo" class="principio" href="2.1A.html">2. Operable</a>
+	<a href="2.1A.html">2.1 Accesible por teclado</a>
+	<a href="2.2A.html">2.2 Tiempo suficiente</a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a id="activo" href="2.4A.html"><mark>2.4 Navegable</mark></a>
+	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a href="3.1A.html">3.1 Legible</a>
+	<a href="3.2A.html">3.2 Predecible</a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -66,8 +79,8 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="operabA2.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="2.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<h2>2. Operable - Segundo Principio</h2>
 	<p>
@@ -75,12 +88,12 @@
 		 interacci&oacute;n al usuario que no puede realizar.
 	</p><br>
 	
-	<h3>2.1 Accesible por teclado</h3>
+	<h3>2.4 Navegable</h3>
 	<p>
-		Proporcionar acceso a toda la funcionalidad mediante el teclado.
-		</p><br>
+		Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar d&oacute;nde se encuentran.
+	</p><br>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 	<h4 id="principio1">2.4.1 Evitar Bloques - Nivel A</h4>
 	<p>
@@ -90,36 +103,9 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<p>
-		Justo debajo del t&iacute;tulo hay unos enlaces ocultos para saltar contenido, dado que el formulario siguiente se ha rellenado autom&aacute;ticamente. As&iacute;, evitamos tener que pasarlo entero.
-		Es posible comprobarlo usando el tabulador, aunque aparece si se coloca el rat&oacute;n encima.
-		</p>
 		
-		<h6>Registro de datos</h6>
-		
-		<form>
-		Nombre:<br>
-		<input type="text" name="nombre">
-		<br>
-		Apellidos:<br>
-		<input type="text" name="apellidos">
-		<br>
-		Email:<br>
-		<input type="text" name="email">
-		<br>
-		Direcci&oacute;n:<br>
-		<input type="text" name="direccion">
-		<br>
-		Edad:<br>
-		<input type="text" name="edad">
-		<br>
-		Como se definir&iacute;a:<br>
-		<textarea name="comentario" id="comentario">Di algo...</textarea>
-		<br>
-		<input id="enviarForm" type="submit" value="Enviar">
-		</form>
 
-		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
+		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.1 Evitar Bloques - Nivel A</h2>
@@ -137,7 +123,46 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Para pulsar el bot&oacute;n enviar del formulario es necesario pasar a trav&eacute;s de &eacute;l.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio2">2.4.2 Titulado de las p&aacute;ginas - Nivel A</h4>
+	<p>
+		Las p&aacute;ginas web tienen t&iacute;tulos que describen su tem&aacute;tica o prop&oacute;sito.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		En el borde de la pestaña de esta p&aacute;gina es posible observar el t&iacute;tulo de esta. El t&iacute;tulo es descriptivo y la parte que se repite entre p&aacute;ginas est&aacute; colocada al final.
+		Los t&iacute;tulos son muy &uacute;tiles para personas usando tecnolog&iacute;a de asistencia.
+		</p>
+
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 2.4.2 Titulado de las p&aacute;ginas">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.4.2 Titulado de las p&aacute;ginas - Nivel A</h2>
+		<div class="ventanita">
+			Las p&aacute;ginas web tienen t&iacute;tulos que describen su tem&aacute;tica o prop&oacute;sito.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>El t&iacute;tulo de la p&aacute;gina es descriptivo y antepone la parte m&aacute;s concreta a la repetitiva.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina no tiene un t&iacute;tulo correcto.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -158,44 +183,64 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<h6>Registro de datos</h6>
-		
-		<form>
-			
-		<div id="clon">
-		Nº de cuenta:<br>
-		<input type="text" name="cuenta" tabindex="2">
-		<br>
-		Aficiones:<br>
-		<textarea name="aficiones" id="comentario" tabindex="4">Di algo...</textarea>
-		<br>
-		Empresa:<br>
-		<input type="text" name="empresa" tabindex="9">
-		<br><br>
-		<input id="enviarForm" type="submit" value="Enviar" tabindex="10">
-		</div>	
-			
+		<h6>Datos personales</h6>
+		<form action="paginaDestino.html">
 		Nombre:<br>
-		<input type="text" name="nombre" tabindex="1">
-		<br>
+		<input type="text" name="nombre">
+		<br><br>
 		Apellidos:<br>
-		<input type="text" name="apellidos" tabindex="3">
-		<br>
+		<input type="text" name="apellidos">
+		<br><br>
 		Email:<br>
-		<input type="text" name="email" tabindex="5">
-		<br>
-		Direcci&oacute;n:<br>
-		<input type="text" name="direccion" tabindex="6>
-		<br>
+		<input type="text" name="email">
+		<br><br>
 		Edad:<br>
-		<input type="text" name="edad" tabindex="7">
+		<input type="text" name="edad">
+		<br><br>
+		Direcci&oacute;n:<br>
+		<input type="text" name="direccion">
+		<br><br>
+		C&oacute;digo postal:<br>
+		<input type="text" name="cp">
+		<br><br>
+		Sexo:<br>
+		<input type="radio" name="genero" value="hombre"> Hombre<br>
+		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		
+		<div id="clon">
+		<h6>Datos ten&iacute;sticos</h6>	
+			
+		Nivel:<br>
+		<select>
+		<option value="bajo">Bajo</option>
+		<option value="medio">Medio</option>
+		<option value="alto">Alto</option>
+		</select>
+		<br><br>
+		Experiencia (en años):<br>
+		<input type="text" name="experiencia">
+		<br><br>
+		Lateralidad:<br>
+		<select>
+		<option value="d">Diestro</option>
+		<option value="i">Zurdo</option>
+		<option value="di">Ambidiestro</option>
+		</select>
+		<br><br>
+		Golpes a aprender:<br>
+		<input type="checkbox" name="golpes" value="Paralelo"> Paralelo<br>
+		<input type="checkbox" name="golpes" value="Revés" checked> Rev&eacute;s<br>
+		<input type="checkbox" name="golpes" value="Saque"> Saque<br>
+		<input type="checkbox" name="golpes" value="Volea" checked> Volea<br>
+		<br><br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</div>	
+		
 		<br>
-		Como se definir&iacute;a:<br>
-		<textarea name="comentario" id="comentario" tabindex="8">Di algo...</textarea>
-		<br><br><br>
 		</form>
 
-		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 2.4.3 Orden del foco">PISTA</a>
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 2.4.3 Orden del foco">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.3 Orden del foco - Nivel A</h2>
@@ -208,10 +253,9 @@
 			</div>
 			<div id="parrafoMalo" role="complementary">
 				<span id="flechaMal" role="complementary">&#10007;</span>En los elementos el orden est&aacute; mal predefinido.
-				<pre><code></code></pre>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -224,7 +268,6 @@
 
 
 
-
 	<h4 id="principio3">2.4.4 Prop&oacute;sito de los enlaces (en contexto) - Nivel A</h4>
 	<p>
 		El prop&oacute;sito de cada enlace puede ser determinado con solo el texto del enlace o a trav&eacute;s del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el
@@ -233,13 +276,21 @@
 		
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
+		
 		<p>
-		<a href="index.html" id="enlacesOscuros">¡Pinche aqu&iacute;!</a>
+		En este criterio los ejemplos son muy claros en ambos casos, accesible e inaccesible.
+		</p>
+		<p>
+		Por ejemplo, si quieres volver al <a href="index.html" id="enlacesOscuros">inicio</a> de est&aacute; p&aacute;gina puedes hacerlo pinchando en <a href="index.html" id="enlacesOscuros">inicio</a>.
 		</p>
 		
-		<a href="http://www.sidar.org/#goto_a11yhoy"><img id="miniatura" src="http://www.sidar.org/graf/logo.png" alt=""></img></a><br><br>
+		<p>
+		Otro ejemplo podr&iacute;a ser este. Se combinan imagen y texto para formar el enlace. No es necesaria alternativa en la imagen dado que el significado est&aacute; impl&iacute;cito.
+		</p>
+		
+		<a href="http://www.sidar.org/#goto_a11yhoy"><img id="miniatura" src="http://www.sidar.org/graf/logo.png" alt=""></img>Sidar, accesibilidad y adaptabilidad en la red</a><br><br>
 
-		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 2.4.4 Propósito de los enlaces (en contexto)">PISTA</a>
+		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 2.4.4 Propósito de los enlaces (en contexto)">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.4 Prop&oacute;sito de los enlaces (en contexto) - Nivel A</h2>
@@ -254,7 +305,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Los enlaces est&aacute;n mal definidos y su entorno no ayuda.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -266,6 +317,8 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 
+
+
 	<h4 id="principio4">2.4.5 M&uacute;ltiples v&iacute;as - Nivel AA</h4>
 	<p>
 		Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.
@@ -275,12 +328,30 @@
 		<h5>Ejemplos</h5>
 		
 		<p>
-		Esta conocida web ejemplifica muchas maneras de romper con la accesibilidad, este criterio inclu&iacute;do.
+		La forma m&aacute;s pr&aacute;ctica de abordar este criterio es mediante el uso de men&uacute;s o <span lang="en">breadcrumbs</span>.
 		</p>
 		
-		<a href="http://arngren.net/">P&aacute;gina antiaccesibilidad</a>
+		<p>
+		Un men&uacute; ofrece una manera de navegar sin grandes dificultades entre las p&aacute;ginas de un sitio web. Aqu&iacute; un pequeño ejemplo adaptado a la nuestra.
+		</p>
+		
+		<ul id="menuRed">
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="percepA.html">Perceptible</a></li>
+		<li><a href="#">Operable</a></li>
+		</ul><br>
+		
+		<p>
+		Las "migas de pan" son &uacute;tiles para que el usuario sepa situarse dentro de la p&aacute;gina.
+		</p>
+		
+		<ul class="breadcrumb">
+		<li><a id="enlacesOscuros" href="#">Inicio</a></li>
+		<li><a id="enlacesOscuros" href="#">Operable</a></li>
+		<li>Navegable</li>
+		</ul>
 
-		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 2.4.5 Múltiples vías">PISTA</a>
+		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 2.4.5 Múltiples vías">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.5 M&uacute;ltiples v&iacute;as - Nivel AA</h2>
@@ -294,7 +365,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Se proporciona un ejemplo de p&aacute;gina que no permite al usuario situarse f&aacute;cilmente.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -304,7 +375,6 @@
 			<br><br><br><br>
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
 
 
 
@@ -319,44 +389,58 @@
 		<h5>Ejemplos</h5>
 		
 		<p>
+		Un ejemplo relacionado con los t&iacute;tulos ser&iacute;a, respecto a una disposici&oacute;n distinta de una p&aacute;gina de accesibilidad, esta:
+		</p>
+		
+		<p>
 		<h1>Discapacidades</h1>
-		<h2>Discapacidad auditiva</h2>
-		<h3>Categor&iacute;a</h3>
-		<h2>Discapacidad visual</h2>
+		<h2>Audici&oacute;n</h2>
+		<h3>Tipos</h3>
+		<h2>Vista</h2>
 		<h3>Tipos</h3>
 		<h2>(...)</h2>
+		En este caso, no se cae en la redundancia y los t&iacute;tulos son claros y las etiquetas las correctas. Adem&aacute;s, permite al lector predecir la estructura.
+		</p>
+		
+		<p>
+		Otro ejemplo puede ser respecto al etiquetado en formularios. Las etiquetas deben ser claras y concisas, los campos obligatorios deben estar bien identificados.
 		</p>
 		
 		<p><em>Los campos obligatorios estar&aacute;n marcados en rojo y est&aacute; condici&oacute;n ser&aacute; indicada en su respectiva etiqueta.</em></p>
 		
-		<form>
-		<span id="obligatorio">Nombre:</span><br>
-		<input type="text" name="nombre">
-		<br>
-		<span id="obligatorio">Nombre 2:</span><br>
-		<input type="text" name="apellidos">
-		<br>
-		<span id="obligatorio">Emilio:</span><br>
-		<input type="text" name="email">
-		<br>
-		Vivienda:<br>
-		<input type="text" name="direccion">
-		<br>
+		<h6>Datos personales</h6>
+		<form action="paginaDestino.html">
+		<span id="obligatorio">Nombre (obligatorio)</span>:<br>
+		<input id="obligatorio" type="text" name="nombre">
+		<br><br>
+		Nombre 2:<br>
+		<input id="obligatorio" type="text" name="apellidos">
+		<br><br>
+		Emilio:<br>
+		<input id="obligatorio" type="text" name="email">
+		<br><br>
 		Años:<br>
 		<input type="text" name="edad">
-		<br>
-		Como se definir&iacute;a:<br>
-		<textarea name="comentario" id="comentario">Di algo...</textarea>
-		<br>
+		<br><br>
+		Vivienda:<br>
+		<input type="text" name="direccion">
+		<br><br>
+		C&oacute;digo:<br>
+		<input type="text" name="cp">
+		<br><br>
+		Tipo:<br>
+		<input type="radio" name="genero" value="hombre"> Hombre<br>
+		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<input id="enviarForm" type="submit" value="Enviar">
 		</form>
 
-		<a role="button" class="botonVentanita2" href="#popup5" alt="Pista 2.4.6 Encabezados y etiquetas">PISTA</a>
+		<a role="button" class="botonVentanita" href="#popup5" alt="Pista 2.4.6 Encabezados y etiquetas">PISTA</a>
 		<div id="popup5" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.4.6 Encabezados y etiquetas - Nivel AA</h2>
 		<div class="ventanita">
 			Los encabezados y etiquetas describen el tema o prop&oacute;sito.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-visible" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="complementary">
 				<span id="flechaBien" role="complementary">&#10003;</span>Tanto t&iacute;tulos como etiquetas ejemplifican perfectamente el criterio, siendo claros y concisos.
 			</div>
@@ -364,7 +448,73 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Los t&iacute;tulos y etiquetas escogidos pueden producir confusi&oacute;n en el usuario.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+
+	<h4 id="principio6">2.4.7 Foco Visible - Nivel AA</h4>
+	<p>
+		Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cu&aacute;l el indicador del foco del teclado resulta visible.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Al personalizar el indicador de foco, es necesario asegurarse de que sigue cumpliendo los ddem&aacute;s criterios de accesibilidad
+		</p>
+		
+		<h6>Datos personales</h6>
+		<form action="paginaDestino.html">
+		Nombre:<br>
+		<input id="formFoco" type="text" name="nombre">
+		<br><br>
+		Apellidos:<br>
+		<input id="formFoco" type="text" name="apellidos">
+		<br><br>
+		Email:<br>
+		<input id="formFoco" type="text" name="email">
+		<br><br>
+		Edad:<br>
+		<input id="formFoco" type="text" name="edad">
+		<br><br>
+		Direcci&oacute;n:<br>
+		<input id="formFoco" type="text" name="direccion">
+		<br><br>
+		C&oacute;digo postal:<br>
+		<input id="formFoco" type="text" name="cp">
+		<br><br>
+		Sexo:<br>
+		<input id="formFoco" type="radio" name="genero" value="hombre"> Hombre<br>
+		<input id="formFoco" type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<input id="formFoco" id="enviarForm" type="submit" value="Enviar">
+		</form>
+		
+
+		<a role="button" class="botonVentanita" href="#popup5" alt="Pista 2.4.7 Foco Visible">PISTA</a>
+		<div id="popup5" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.4.7 Foco Visible - Nivel AA</h2>
+		<div class="ventanita">
+			Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cu&aacute;l el indicador del foco del teclado resulta visible.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>El indicador de foco est&aacute; personalizado de manera correcta y es visible.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Apenas podemos percibir el indicador de foco.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -385,7 +535,17 @@
 		&lt;li>&lt;a href="#enviarForm">Ir al bot&oacute;n de enviar&lt;/a>&lt;/li>
 		&lt;/ul&gt;</code></pre></strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>	
+			</div><br><br>
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.4.2 Titulado de las p&aacute;ginas</a>
+	<div id="Collap2" class="collapse">
+			<div>
+			En el borde de la pestaña de esta p&aacute;gina es posible observar el t&iacute;tulo de esta. El t&iacute;tulo es descriptivo y la parte que se repite entre p&aacute;ginas est&aacute; colocada al final.
+		Los t&iacute;tulos son muy &uacute;tiles para personas usando tecnolog&iacute;a de asistencia.
+		    </div>
+			<strong>El t&iacute;tulo de la p&aacute;gina es descriptivo y antepone la parte m&aacute;s concreta a la repetitiva.</strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>				
 												
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.4.3 Orden del foco</a>
 	<div id="Collap2" class="collapse">
@@ -423,9 +583,17 @@
 		    </div>
 			<strong>Tanto t&iacute;tulos como etiquetas ejemplifican perfectamente el criterio, siendo claros y concisos.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>								
+			</div><br><br>	
+			
+<a href="#Collap6" class="btn btn-primary" data-toggle="collapse" role="button">2.4.7 Foco Visible</a>
+	<div id="Collap6" class="collapse">
+			<div>
+			Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cu&aacute;l el indicador del foco del teclado resulta visible.
+		    </div>
+			<strong>El indicador de foco est&aacute; personalizado de manera correcta y es visible.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-visible" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>											
 						
-
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
 </div>
@@ -435,42 +603,10 @@
 
 <!-- Fin Contenido -->
 
-<script>
-	
-	/*DOBLE SCROLL*/
-	
-var body = document.body,
-        overlay = document.querySelector('.overlay'),
-        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
-        
-    [].forEach.call(overlayBtts, function(btt) {
+<script>	
 
-      btt.addEventListener('click', function() { 
-         
-         /* Detect the button class name */
-         var overlayOpen = this.className === 'botonVentanita';
-         
-         /* Toggle the aria-hidden state on the overlay and the 
-            no-scroll class on the body */
-         overlay.setAttribute('aria-hidden', !overlayOpen);
-         body.classList.toggle('noscroll', overlayOpen);
-         
-         /* On some mobile browser when the overlay was previously
-            opened and scrolled, if you open it again it doesn't 
-            reset its scrollTop property */
-         overlay.scrollTop = 0;
 
-      }, false);
 
-    });
-    
-/*---------------------------------------------------------*/
-
-/*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
-
-	function cerrarVentana(boton){
-		boton.click();
-		};
 
 </script>
 

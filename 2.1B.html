@@ -1,0 +1,254 @@
+<html lang="es">
+<head>
+  <title>Accesible por teclado inaccesible, operable - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
+  <script src="js/pararParpadeo.js"></script>
+  <script src="js/carruselMinimo.js"></script>
+  <script src="js/noticiasSinPausa.js"></script>
+  <script src="js/shortcuts.js"></script>
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navigation">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu" role="menu">
+	<a href="#" id="inicio">Inicio</a>
+	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a href="1.1A.html">1.1 Alternativas textuales</a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a href="1.4A.html">1.4 Distinguible</a>
+	<a id="activo" class="principio" href="2.1A.html">2. Operable</a>
+	<a id="activo" href="2.1A.html"><mark>2.1 Accesible por teclado</mark></a>
+	<a href="2.2A.html">2.2 Tiempo suficiente</a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a href="2.4A.html">2.4 Navegable</a>
+	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a href="3.1A.html">3.1 Legible</a>
+	<a href="3.2A.html">3.2 Predecible</a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="2.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<h2>2. Operable - Segundo Principio</h2>
+	<p>
+		Los componentes de la interfaz de usuario y la navegaci&oacute;n deben ser operables, la interfaz no puede exigir una
+		 interacci&oacute;n al usuario que no puede realizar.
+	</p><br>
+	
+	<h3>2.1 Accesible por teclado</h3>
+	<p>
+		Proporcionar acceso a toda la funcionalidad mediante el teclado.
+		</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio1">2.1.1 Teclado - Nivel A</h4>
+	<p>
+		Toda la funcionalidad del contenido es operable a trav&eacute;s de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsaci&oacute;n individual de las teclas,
+		 excepto cuando la funci&oacute;n interna requiere de una entrada que depende del trayecto de los movimientos del usuario y no solo de los puntos inicial y final. 
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<h6>Envia un comentario</h6>
+		
+		<form>
+		Nombre:<br>
+		<input type="text" name="nombre">
+		<br>
+		Apellidos:<br>
+		<input tabIndex="-1" type="text" name="apellidos">
+		<br>
+		Comentario:<br>
+		<textarea name="comentario" id="comentario">En mi opini&oacute;n, el criterio 2.1.1...</textarea>
+		<br>
+		<input type="submit" value="Enviar">
+		</form>
+		
+		<br>
+		
+		<picture>
+		<img onmouseover="accion()" id="imagenFoco" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Ejemplo animación de bombilla">
+		</picture><br><br>
+
+		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 2.1.1 Teclado">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.1.1 Teclado - Nivel A</h2>
+		<div class="ventanita">
+			A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
+		 de movimientos del usuario (por ejemplo, pinceladas).<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
+				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n.<br>
+				<pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
+&lt;img onmouseover="accion()" src="..."&gt;</code></pre>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+	<h4 id="principio2">2.1.2 Sin trampas para el foco del teclado - Nivel A</h4>
+	<p>
+		Si es posible mover el foco a un componente de la p&aacute;gina usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando solo la interfaz de teclado y,
+		 si se requiere algo m&aacute;s que las teclas de direcci&oacute;n o de tabulaci&oacute;n, se informa al usuario el m&eacute;todo apropiado para mover el foco.</p>
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<a role="button" class="btn btn-info" href="#popupX" alt="Botón del ejemplo">EJEMPLO</a>
+		<div id="popupX" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.1.1 Ejemplo</h2>
+		<div class="ventanita" id="M">
+			Comprobamos que se realiza el foco sobre el enlace, despu&eacute;s sobre el bot&oacute;n y sale.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi maecenas parturient dui per hac lectus aliquam natoque aenean, fusce libero malesuada vivamus
+				 nunc eleifend ultrices platea iaculis faucibus a sodales nec morbi diam.
+			</p>
+			<div>
+				<a role="button" tabIndex="-1" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+
+		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 2.1.2 Sin trampas para el foco del teclado">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.1.2 Sin trampas para el foco del teclado - Nivel A</h2>
+		<div class="ventanita">
+			No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003</span>El foco est&aacute; capturado en la ventana en la que se encuentra
+				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n<br>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">2.1.1 Teclado</a>
+	<div id="Collap" class="collapse">
+			<div>
+			Toda la funcionalidad del contenido es operable a trav&eacute;s de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsaci&oacute;n individual de las teclas,
+		    excepto cuando la funci&oacute;n interna requiere de una entrada que depende del trayecto de los movimientos del usuario y no solo de los puntos inicial y final. 
+		    </div>
+			<strong>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
+				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n. <pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
+&lt;img onmouseover="accion()" src="..."&gt;</code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.1.2 Sin trampas para el foco del teclado</a>
+	<div id="Collap2" class="collapse">
+			<div>
+			Si es posible mover el foco a un componente de la p&aacute;gina usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando solo la interfaz de teclado y,
+		     si se requiere algo m&aacute;s que las teclas de direcci&oacute;n o de tabulaci&oacute;n, se informa al usuario el m&eacute;todo apropiado para mover el foco.</p>
+		    </div>
+			<strong>El foco est&aacute; capturado en la ventana en la que se encuentra
+				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+
+/*PENDIENTE*/
+
+function triggerAlert() {
+  var alertEl = document.querySelector('.alert');
+}
+</script>
+
+</body>

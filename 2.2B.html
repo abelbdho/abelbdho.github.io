@@ -1,0 +1,277 @@
+<html lang="es">
+<head>
+  <title>Tiempo suficiente inaccesible, operable - REAVAI: Accesibilidad Web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abel Jiménez Urbaneja" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
+  <script src="js/pararParpadeo.js"></script>
+  <script src="js/carruselMinimo.js"></script>
+  <script src="js/noticiasSinPausa.js"></script>
+  <script src="js/shortcuts.js"></script>
+</head>
+
+<body>
+
+		<!-- Saltar -->
+<div id="enlaces" role="navigation">
+<ul id="listaCambiante">
+<li><a href="#menu">Saltar al menú principal</a></li>
+<li><a href="#contenido">Saltar al contenido</a></li>
+</ul></div><br>
+	<!-- Fin Saltar -->
+	
+	<!-- Cabecera -->
+<div id="cabecera">
+	<div id="logo1">
+	<a href="http://abelbdho.github.io"><img id="imagen" src="img/reavaiDef.png" alt="REAVAI logo" /></a>
+	</div>
+<div id="logo2">
+<a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
+</div>
+	<!-- Fin Cabecera -->
+	
+	<!--MENU VERTICAL-->
+	
+	<div class="menu" role="menu">
+	<a href="#" id="inicio">Inicio</a>
+	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a href="1.1A.html">1.1 Alternativas textuales</a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a href="1.4A.html">1.4 Distinguible</a>
+	<a id="activo" class="principio" href="2.1A.html">2. Operable</a>
+	<a href="2.1A.html">2.1 Accesible por teclado</a>
+	<a id="activo" href="2.2A.html"><mark>2.2 Tiempo suficiente</mark></a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a href="2.4A.html">2.4 Navegable</a>
+	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a href="3.1A.html">3.1 Legible</a>
+	<a href="3.2A.html">3.2 Predecible</a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	</div><br>
+	
+	<!--FIN MENU VERTICAL-->
+	
+	<!--SOL-->
+	
+	<picture id="sol">
+	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
+	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	</picture>
+	
+	<!--FIN SOL-->
+	
+	<!-- Contenido -->
+
+<main>
+	
+<div id="contenido">
+	<h2 class="screen-reader-text">Contenido</h2>
+	
+	<a href="2.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<h2>2. Operable - Segundo Principio</h2>
+	<p>
+		Los componentes de la interfaz de usuario y la navegaci&oacute;n deben ser operables, la interfaz no puede exigir una
+		 interacci&oacute;n al usuario que no puede realizar.
+	</p><br>
+	
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<h3>2.2 Tiempo suficiente</h3>
+<p>
+	Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido. Normalmente, un usuario con discapacidad tardar&aacute; m&aacute;s tiempo que la mayor&iacute;a de usuarios para realizar una tarea:
+	pueden necesitar m&aacute;s tiempo para la lectura, puede que deban ajustarse a la velocidad de un software que usen, etc.
+</p><br>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+	<h4 id="principio3">2.2.1 Tiempo ajustable - Nivel A</h4>
+	<p>
+		Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: 
+		 </p>
+		 
+		 <ul>
+			<li><strong>Apagar</strong>: El usuario puede detener el l&iacute;mite de tiempo antes de alcanzar el l&iacute;mite de tiempo.</li>
+			<li><strong>Ajustar</strong>: El usuario puede ajustar el l&iacute;mite de tiempo antes de alcanzar dicho l&iacute;mite en un rango amplio que es, al menos, diez veces mayor al tiempo fijado originalmente.</li>
+			<li><strong>Extender</strong>: Se advierte al usuario antes de que el tiempo expire y se le conceden al menos 20 segundos para extender el l&iacute;mite temporal con una acci&oacute;n simple (por ejemplo, "presione la barra de espacio") y el usuario puede extender ese l&iacute;mite de tiempo al menos diez veces.</li>
+			<li><strong>Excepci&oacute;n de tiempo real</strong>: El l&iacute;mite de tiempo es un requisito que forma parte de un evento en tiempo real (por ejemplo, una subasta) y no resulta posible ofrecer una alternativa al l&iacute;mite de tiempo.</li>
+			<li><strong>Excepci&oacute;n por ser esencial</strong>: El l&iacute;mite de tiempo es esencial y, si se extendiera, invalidar&iacute;a la actividad</li>
+			<li><strong>Excepci&oacute;n de 20 horas</strong>: El l&iacute;mite de tiempo es mayor a 20 horas</li>
+		</ul>	
+		 
+		 <h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<div id="targetElement"></div><br>
+		
+		<script id="blockOfStuff0" type="text/html">
+			<p class="textoEspecial" id="textoTemp1">
+			La Organizaci&oacute;n Mundial de la Salud (OMS) recoge en sus informes un total de 1000 millones de personas con discapacidad. El acceso de estas personas a la tecnolog&iacute;a debe tenerse en cuenta en la construcci&oacute;n de una sociedad igualitaria. (...)
+			<a id="internos" href="https://es.wikipedia.org/wiki/Accesibilidad_web" target=”_blank”>Accesibilidad web, Wikipedia</a>
+			</p>
+		</script>
+		
+		<script id="blockOfStuff1" type="text/html">
+			<p class="textoEspecial" id="textoTemp2">
+			Por <em>accesibilidad web</em> entendemos el conjunto de tecnolog&iacute;as, normas de aplicaci&oacute;n y diseño que facilitan la utilizaci&oacute;n de los sitios Web siguiendo las pautas del <em>diseño para todos</em>. (...)
+			<a id="internos" href="https://www.discapnet.es/areas-tematicas/tecnologia-inclusiva/observatorio-de-accesibilidad-tic/la-accesibilidad-web" target=”_blank”>Accesibilidad web, Discapnet</a>
+		</p>
+		</script>
+		
+		<script id="blockOfStuff2" type="text/html">
+			<p class="textoEspecial" id="textoTemp2">
+			Andaluc&iacute;a Informaci&oacute;n refuerza su apuesta por facilitar el acceso a la informaci&oacute;n. Es por ello que nuestra web se encuentra en continua revisi&oacute;n para desarrollar f&oacute;rmulas que acerquen las noticias a todo tipo de usuarios. (...)
+			<a id="internos" href="https://andaluciainformacion.es/sanlucar/823157/cansado-de-leer-nosotros-leemos-las-noticias-por-ti/" target=”_blank”>¿Cansado de leer? Nosotros leemos las noticias por ti, Andaluc&iacute;a Informaci&oacute;n</a>
+		</p>
+		</script>
+		
+		
+		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 2.2.1 Tiempo ajustable">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.2.1 Tiempo ajustable - Nivel A</h2>
+		<div class="ventanita">
+			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.<br>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo sin manera de pararlos.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+
+	<h4 id="principio4">2.2.2 Poner en pausa, detener, ocultar - Nivel A</h4>
+	<p>
+		Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes:
+		 </p>
+		 
+		 <ul>
+			<li><strong>Movimiento, parpadeo, desplazamiento</strong>: Para toda informaci&oacute;n que se mueve, parpadea o se desplaza, que (1) comienza autom&aacute;ticamente, (2) dura m&aacute;s de cinco segundos y (3) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, a menos que el movimiento, parpadeo o desplazamiento sea parte esencial de una actividad.</li>
+			<li><strong>Actualizaci&oacute;n autom&aacute;tica</strong>: Para toda informaci&oacute;n que se actualiza autom&aacute;ticamente, que (1) se inicia autom&aacute;ticamente y (2) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, o controlar la frecuencia de actualizaci&oacute;n a menos que la actualizaci&oacute;n autom&aacute;tica sea parte esencial de una actividad.</li>
+		</ul>	
+		 
+		 <h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+
+<div id="carrusel" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img id="imgCarrusel" src="https://galernaestudio.com/wp-content/uploads/2016/10/accesibilidad-web.jpg" alt="Dedo pulsando una tecla de teclado en la que pone accesibilidad">
+    </div>
+    <div class="carousel-item">
+      <img id="imgCarrusel" src="https://www.w3.org/WAI/images/WCAG21/small-1024x512@1x.png" alt="W3C WCAG 2.1 Web Content Accesibility Guidelines">
+    </div>
+    <div class="carousel-item">
+      <img id="imgCarrusel" src="https://3.bp.blogspot.com/-QT31kvqYfZ0/Wz0j8DlJDnI/AAAAAAAABLY/mlJJNs-QrA8al1qlmVpnYfq1aN9Y89WPACLcBGAs/s1600/pautas.png" alt="Página de la WCAG y su tabla de contenido">
+    </div>
+  </div>
+
+  <a id="flchCarrusel" class="carousel-control-prev" href="#carrusel" data-slide="prev">
+    <span id="flcCarrusel" alt="flecha carrusel hacia la izquierda">&#8592;</span>
+  </a>
+  <a class="carousel-control-next" href="#carrusel" data-slide="next">
+    <span id="flcCarrusel" alt="flecha carrusel hacia la derecha">&#8594;</span>
+  </a>
+
+</div><br>
+		
+		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h2>
+		<div class="ventanita">
+			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Tenemos un carrusel de im&aacute;genes que tiene sus correspondientes controles.<br>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Un carrusel de im&aacute;genes que se mueve autom&aacute;ticamente.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+
+			
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">2.2.1 Tiempo ajustable</a>
+	<div id="Collap3" class="collapse">
+			<div>
+			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.</p>
+		    </div>
+			<strong>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">2.2.2 Poner en pausa, detener, ocultar</a>
+	<div id="Collap4" class="collapse">
+			<div>
+			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.</p>
+		    </div>
+			<strong>Tenemos un carrusel de im&aacute;genes que tiene sus correspondientes controles.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>													
+						
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
+
+</div>
+
+
+</main>
+
+<!-- Fin Contenido -->
+
+<script>
+
+/*PENDIENTE*/
+
+function triggerAlert() {
+  var alertEl = document.querySelector('.alert');
+}
+</script>
+
+</body>

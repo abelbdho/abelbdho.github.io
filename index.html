@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
+  <script src="js/dobleScroll.js"></script>
+  <script src="js/cerrarTrasTab.js"></script>
 </head>
 
 <body>
@@ -39,15 +41,23 @@
 	
 	<div class="menu" role="menu">
 	<a href="#" id="inicio">Inicio</a>
-	<a id="principio" href="percepA.html">Perceptible</a>
-	<a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes</a>
-	<a id="submenu" href="percepA2.html">Adaptable y Distinguible</a>
-	<a id="principio" href="operabA.html">Operable</a>
-	<a id="submenu" href="operabA.html">Accesible por teclado, tiempo sufiente y convulsiones</a>
-	<a id="submenu" href="operabA2.html">Navegable</a>
-	<a id="principio" href="entendibA.html">Entendible</a>
-	<a id="submenu" href="entendibA.html">Legible y Predecible</a>
-	<a href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a href="1.1A.html">1.1 Alternativas textuales</a>
+	<a href="1.2A.html">1.2 Medios tempodependientes</a>
+	<a href="1.3A.html">1.3 Adaptable</a>
+	<a href="1.4A.html">1.4 Distinguible</a>
+	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a href="2.1A.html">2.1 Accesible por teclado</a>
+	<a href="2.2A.html">2.2 Tiempo suficiente</a>
+	<a href="2.3A.html">2.3 Convulsiones</a>
+	<a href="2.4A.html">2.4 Navegable</a>
+	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a href="3.1A.html">3.1 Legible</a>
+	<a href="3.2A.html">3.2 Predecible</a>
+	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
+	<a class="principio" href="4.1A.html">3. Robusto</a>
+	<a href="4.1A.html">3.1 Compatible</a>
+	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -104,7 +114,7 @@
 				[C&Oacute;DIGO]
 			</div>
 			<div>
-				<a role="button" id="close" href="#" type="button" class="btn btn-dark" role="Cerrar ventana emergente">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -122,7 +132,7 @@
 				<li><a href="#contenido">Saltar al contenido</a></li>
 				</ul></div><br>
 			</xmp></strong>
-			<a id="enlacesOscuros" onfocusout="cerrarVentana(this)"  href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			<p>Conforme se navega por la página se encuentran este tipo de referencias a la vez que se informa sobre distintos aspectos de la accesibilidad.</p>
 			<p>
@@ -134,40 +144,5 @@
 
 <!-- Fin Contenido -->
 
-<script>
-
-var body = document.body,
-        overlay = document.querySelector('.overlay'),
-        overlayBtts = document.querySelectorAll('button[class$="overlay"]');
-        
-    [].forEach.call(overlayBtts, function(btt) {
-
-      btt.addEventListener('click', function() { 
-         
-         /* Detect the button class name */
-         var overlayOpen = this.className === 'botonVentanita';
-         
-         /* Toggle the aria-hidden state on the overlay and the 
-            no-scroll class on the body */
-         overlay.setAttribute('aria-hidden', !overlayOpen);
-         body.classList.toggle('noscroll', overlayOpen);
-         
-         /* On some mobile browser when the overlay was previously
-            opened and scrolled, if you open it again it doesn't 
-            reset its scrollTop property */
-         overlay.scrollTop = 0;
-
-      }, false);
-
-    });
-    
-   
-   /*CERRAR VENTANAS DESPUES DE TAB EL BOTON CERRAR*/
-
-	function cerrarVentana(boton){
-		boton.click();
-		};
-
-</script>
 
 </body>

@@ -54,7 +54,7 @@ a[href^="https://www.w3.org/"]:after {
   background-color: #f1f1f1;
   position: fixed;
   top: 220px;
-  left: 252px;
+  right: 152px;
   overflow: auto;
 }
 
@@ -232,7 +232,7 @@ a:hover, h1 a:hover {
 #sol{
   position: fixed;
   top: 6px;
-  left: 1452px;
+  right: 1452px;
   overflow: auto;
 }
 /*TABLAS*/
