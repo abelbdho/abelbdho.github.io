@@ -16,6 +16,7 @@
   <script src="js/cerrarTrasTab.js"></script>
   <script src="js/copiarTexto.js"></script>
   <script src="js/controlarMusica.js"></script>
+  <script src="js/showPistas.js"></script>
 </head>
 
 <body id="body">
@@ -82,6 +83,8 @@
 	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="1.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
+	<button onclick="showPistas()">Pistas</button><br><br>
+	
 	<h2>1. Perceptible - Primer Principio</h2>
 	<p>
 		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
@@ -95,7 +98,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio4">1.4.1 Uso del Color - Nivel A</h4>
+	<h4 id="principio1">1.4.1 Uso del Color - Nivel A</h4>
 	<p>
 		El color no se usa como &uacute;nico medio visual para transmitir la informaci&oacute;n, indicar una acci&oacute;n, solicitar una respuesta o distinguir un elemento visual.</p>
 		<p>
@@ -106,18 +109,20 @@
 			<em>Los campos con etiqueta y bordes en rojo y marcados con un asterisco son obligatorios.</em>
 		</p>
 		
-		<form>
+		<form action="paginaDestino.html">
 		<span id="obligatorio">Nombre</span><span id="asterisco" alt="Campo obligatorio">*</span>:<br>
 		<input id="inputObligatorio" type="text" name="nombre">
-		<br>
+		<br><br>
 		Apellido:<br>
-		<input type="text" name="apellido">
+		<input type="text" name="apellido"><br><br>
+		<button type="submit">Enviar</button>
 		</form>
 		
 		<p>
 			Otro ejemplo que puede darse en formularios es a la hora de comunicar si un campo ha sido bien introducido o es err&oacute;neo. 
 		</p>
 		
+		<form action="paginaDestino.html">
 		<div id="success">
 		<label id="success" for="username"><strong id="success">OK:</strong> Usuario:</label>
 		<input type="text" name="username" id="username" value="Batman" aria-describedby="userDesc"><span id="success" id="userDesc">✓</span>
@@ -128,10 +133,11 @@
 		</div>
 		<div>
 		<button type="submit">Enviar</button>
+		</form>
 		</div><br><br>
 		
-		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 1.4.1 Uso del Color">PISTA</a>
-		<div id="popup4" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 1.4.1 Uso del Color">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.1 Uso del Color - Nivel A</h2>
 		<div class="ventanita">
@@ -149,7 +155,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -160,7 +166,7 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio5">1.4.2 Control de Audio - Nivel A</h4>
+	<h4 id="principio2">1.4.2 Control de Audio - Nivel A</h4>
 	<p>
 		Si el audio de una p&aacute;gina web suena autom&aacute;ticamente durante m&aacute;s de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo
 		 para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.
@@ -175,8 +181,8 @@
 			<a class="btn btn-dark" id="botonAuto" tabindex="0">Activar/Silenciar</a><br><br>
 			</div><br><br>
 		
-		<a role="button" class="botonVentanita" href="#popup5" alt="Pista 1.4.2 Control de Audio">PISTA</a>
-		<div id="popup5" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 1.4.2 Control de Audio">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.2 Control de Audio - Nivel A</h2>
 		<div class="ventanita">
@@ -190,7 +196,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -202,7 +208,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 
-	<h4 id="principio6">1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h4>
+	<h4 id="principio3">1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h4>
 	<p>
 		Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo, a excepci&oacute;n de:
 		</p>
@@ -223,8 +229,8 @@
 			En este caso, acabamos de usar un color con el m&iacute;nimo contraste de 4.5:1 con el fondo blanco.
 		</p>
 		
-		<a role="button" class="botonVentanita" href="#popup6" alt="Pista 1.4.3 Contraste (mínimo)">PISTA</a>
-		<div id="popup6" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 1.4.3 Contraste (mínimo)">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h2>
 		<div class="ventanita">
@@ -238,7 +244,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -251,7 +257,7 @@
 
 
 
-	<h4 id="principio7">1.4.4 Cambio del tamaño de texto - Nivel AA</h4>
+	<h4 id="principio4">1.4.4 Cambio del tamaño de texto - Nivel AA</h4>
 	<p>
 		A excepci&oacute;n de los subt&iacute;tulos y las im&aacute;genes de texto, todo el texto puede ser ajustado sin ayudas t&eacute;cnicas hasta un 200 por ciento sin que se pierdan el contenido
 		 o la funcionalidad. 
@@ -269,8 +275,8 @@
 			</ul>
 		</p><br>
 		
-		<a role="button" class="botonVentanita" href="#popup7" alt="Pista 1.4.4 Cambio del tamaño de texto">PISTA</a>
-		<div id="popup7" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 1.4.4 Cambio del tamaño de texto">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.4 Cambio del tamaño de texto - Nivel AA</h2>
 		<div class="ventanita">
@@ -284,7 +290,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -296,7 +302,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 
-	<h4 id="principio8">1.4.5 Im&aacute;genes de texto - Nivel AA</h4>
+	<h4 id="principio5">1.4.5 Im&aacute;genes de texto - Nivel AA</h4>
 	<p>
 		Si con las tecnolog&iacute;as que se est&aacute;n utilizando se puede conseguir la presentaci&oacute;n visual deseada, se utiliza texto para transmitir la informaci&oacute;n en vez de im&aacute;genes de texto,
 		 a excepci&oacute;n de estos casos:
@@ -325,8 +331,8 @@
 			Delicioso refres<span id="cocaCola">Co</span> azu<span id="cocaCola">ca</span>rado de <span id="cocaCola">Cola</span>
 		</p>
 		
-		<a role="button" class="botonVentanita" href="#popup8" alt="Pista 1.4.5 Imágenes de texto">PISTA</a>
-		<div id="popup8" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup5" alt="Pista 1.4.5 Imágenes de texto">PISTA</a>
+		<div id="popup5" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.4.5 Im&aacute;genes de texto - Nivel AA</h2>
 		<div class="ventanita">
@@ -345,7 +351,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio8" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -356,8 +362,8 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 			
-<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">1.4.1 Uso del Color</a>
-	<div id="Collap4" class="collapse">
+<a href="#Collap1" class="btn btn-primary" data-toggle="collapse" role="button">1.4.1 Uso del Color</a>
+	<div id="Collap1" class="collapse">
 			<div>
 				El color no se usa como &uacute;nico medio visual para transmitir la informaci&oacute;n, indicar una acci&oacute;n, solicitar una respuesta o distinguir un elemento visual.</p>
 		    </div>
@@ -370,8 +376,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 											
-<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="button">1.4.2 Control de Audio</a>
-	<div id="Collap5" class="collapse">
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.4.2 Control de Audio</a>
+	<div id="Collap2" class="collapse">
 			<div>
 				Si el audio de una p&aacute;gina web suena autom&aacute;ticamente durante m&aacute;s de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo
 		 para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.
@@ -380,8 +386,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
-<a href="#Collap6" class="btn btn-primary" data-toggle="collapse" role="button">1.4.3 Contraste (m&iacute;nimo)</a>
-	<div id="Collap6" class="collapse">
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.4.3 Contraste (m&iacute;nimo)</a>
+	<div id="Collap2" class="collapse">
 			<div>
 				Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).
 			</div>
@@ -390,8 +396,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap7" class="btn btn-primary" data-toggle="collapse" role="button">1.4.4 Cambio del tamaño de texto</a>
-	<div id="Collap7" class="collapse">
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">1.4.4 Cambio del tamaño de texto</a>
+	<div id="Collap3" class="collapse">
 			<div>
 				A excepci&oacute;n de los subt&iacute;tulos y las im&aacute;genes de texto, todo el texto puede ser ajustado sin ayudas t&eacute;cnicas hasta un 200 por ciento sin que se pierdan el contenido
 		        o la funcionalidad. 
@@ -400,8 +406,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap8" class="btn btn-primary" data-toggle="collapse" role="button">1.4.5 Im&aacute;genes de texto</a>
-	<div id="Collap8" class="collapse">
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">1.4.5 Im&aacute;genes de texto</a>
+	<div id="Collap4" class="collapse">
 			<div>
 				Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.

@@ -15,6 +15,7 @@
   <script src="js/dobleScroll.js"></script>
   <script src="js/cerrarTrasTab.js"></script>
   <script src="js/controlesAD.js"></script>
+  <script src="js/showPistas.js"></script>
   
 </head>
 
@@ -82,6 +83,8 @@
 	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="1.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
+	<button onclick="showPistas()">Pistas</button><br><br>
+	
 	<h2>1. Perceptible - Primer Principio</h2>
 	<p>
 		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
@@ -100,7 +103,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h4  id="principio2">1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h4>
+<h4  id="principio1">1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h4>
 	<p>
 		 Para contenido solo audio grabado y contenido solo v&iacute;deo grabado, se cumple lo siguiente, excepto cuando el audio o el v&iacute;deo es un contenido multimedia
 		  alternativo al texto y est&aacute; claramente identificado como tal:
@@ -120,8 +123,8 @@
 		
 		<a id="internos" href="transcripcion1_2_1.html" target=”_blank”>Medio Alternativo</a><br><br>
 		
-		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 1.2.1 Audio único y vídeo único (Pregrabados)">PISTA</a>
-		<div id="popup2" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 1.2.1 Audio único y vídeo único (Pregrabados)">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h2>
 		<div class="ventanita">
@@ -134,7 +137,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Aparece el contenido, audio o v&iacute;deo, sin ning&uacute;n tipo de alternativa textual.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -144,7 +147,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h4 id="principio3">1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h4>
+<h4 id="principio2">1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h4>
 	<p>
 		Se proporcionan subt&iacute;tulos para el contenido de audio grabado dentro de contenido multimedia sincronizado, excepto cuando la presentaci&oacute;n es un contenido multimedia alternativo
 		 al texto y est&aacute; claramente identificado como tal.
@@ -156,8 +159,8 @@
 		<iframe class="iframe" src="https://www.youtube.com/embed/20SHvU2PKsM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<br><br>
 		
-		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 1.2.2 Subtítulos (Pregrabados)">PISTA</a>
-		<div id="popup3" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 1.2.2 Subtítulos (Pregrabados)">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h2>
 		<div class="ventanita">
@@ -170,7 +173,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>No se presentan subt&iacute;tulos de ning&uacute;n tipo en el v&iacute;deo.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -181,7 +184,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<h4 id="principio4">1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h4>
+<h4 id="principio3">1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h4>
 	<p>
 		Se proporciona una alternativa para los medios tempodependientes o una audiodescripci&oacute;n para el contenido de v&iacute;deo grabado en los multimedia sincronizados, excepto cuando ese contenido es un contenido multimedia
 		 alternativo al texto y est&aacute; claramente identificado como tal. 
@@ -197,8 +200,8 @@
 		
 		<a id="internos" href="medioAlternativo1_2_3.html" target=”_blank”>Medio alternativo</a><br><br>
 		
-		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 1.2.3 Audiodescripción o Medio Alternativo (grabado)">PISTA</a>
-		<div id="popup4" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 1.2.3 Audiodescripción o Medio Alternativo (grabado)">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h2>
 		<div class="ventanita">
@@ -212,7 +215,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>No se proporciona ning&uacute;n tipo de alternativa.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -223,7 +226,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<h4 id="principio5">1.2.5 Audiodescripción (grabada) - Nivel AA</h4>
+<h4 id="principio4">1.2.5 Audiodescripción (grabada) - Nivel AA</h4>
 	<p>
 		Se proporciona una audiodescripci&oacute;n para todo el contenido de v&iacute;deo grabado dentro de contenido multimedia sincronizado.
 		</p>
@@ -249,8 +252,8 @@
 			<source src="img/videoAudioDescripcion.mp4" type="video/mp4" />
 		</video><br><br>
 	
-		<a role="button" class="botonVentanita" href="#popup5" alt="Pista 1.2.5 Audiodescripción (grabada)">PISTA</a>
-		<div id="popup5" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 1.2.5 Audiodescripción (grabada)">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>1.2.5 Audiodescripción (grabada) - Nivel AA</h2>
 		<div class="ventanita">
@@ -263,7 +266,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>No se proporciona alternativa para las personas ciegas.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -275,8 +278,8 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.2.1 Audio &uacute;nico y v&iacute;deo</a>
-	<div id="Collap2" class="collapse">
+<a href="#Collap1" class="btn btn-primary" data-toggle="collapse" role="button">1.2.1 Audio &uacute;nico y v&iacute;deo</a>
+	<div id="Collap1" class="collapse">
 			<div>
 				A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe haber alternativa textual.
 			</div>
@@ -284,8 +287,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">1.2.2 Subt&iacute;tulos</a>
-	<div id="Collap3" class="collapse">
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.2.2 Subt&iacute;tulos</a>
+	<div id="Collap2" class="collapse">
 			<div>
 				Se proporcionan subt&iacute;tulos para el contenido de audio grabado dentro de contenido multimedia sincronizado, excepto cuando la presentaci&oacute;n es un contenido multimedia alternativo
 		        al texto y est&aacute; claramente identificado como tal.
@@ -294,8 +297,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
-<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">1.2.3 Audiodescripci&oacute;n o Medio Alternativo</a>
-	<div id="Collap4" class="collapse">
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">1.2.3 Audiodescripci&oacute;n o Medio Alternativo</a>
+	<div id="Collap3" class="collapse">
 			<div>
 				Se proporciona una alternativa para los medios tempodependientes o una audiodescripci&oacute;n para el contenido de v&iacute;deo grabado en los multimedia sincronizados, excepto cuando ese contenido es un contenido multimedia
 		        alternativo al texto y est&aacute; claramente identificado como tal. 
@@ -304,8 +307,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="button">1.2.5 Audiodescripción (grabada)</a>
-	<div id="Collap5" class="collapse">
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">1.2.5 Audiodescripción (grabada)</a>
+	<div id="Collap4" class="collapse">
 			<div>
 				Se proporciona una audiodescripci&oacute;n para todo el contenido de v&iacute;deo grabado dentro de contenido multimedia sincronizado.
 		    </div>

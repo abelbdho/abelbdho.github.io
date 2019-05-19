@@ -16,6 +16,7 @@
   <script src="js/avisoNormal.js"></script>
   <script src="js/datalistCambiarMal.js"></script>
   <script src="js/shortcuts.js"></script>
+  <script src="js/showPistas.js"></script>
 </head>
 
 <body>
@@ -79,8 +80,10 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="3.1B.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="3.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<button onclick="showPistas()">Pistas</button><br><br>
 	
 	<h2>3. Entendible - Tercer Principio</h2>
 	<p>
@@ -102,7 +105,9 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" id="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
+		<p>
+		Criterio oculto. <a href="indexFake.html">P&aacute;gina</a>
+		</p>
 
 		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 3.1.1 Idioma de la p&aacute;gina">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
@@ -141,17 +146,8 @@
 		<h5>Ejemplos</h5>
 		
 		<p>
-		Esencialmente tenemos un criterio muy sencillo pero a su vez muy incumplido. Est&aacute; p&aacute;gina tiene como idioma por defecto el castellano, en caso de usar
-		 t&eacute;minos en otros idiomas es necesario identificarlos.
-		</p>
-		
-		<p>
-		Si el <em><span lang="de">leitmotiv</span></em> de nuestra </em><span lang="en">web page</span></em> es ser accesible y usable para todos, debemos tener en cuenta muchas cosas. Es extrapolable el t&eacute;rmino
-		culinario <em><span lang="fr">mise en place</span></em>, el colocar adecuadamente cada elemento y ser organizado en la estructuraci&oacute;n y codificaci&oacute;n de una p&aacute;gina web.
-		</p>
-		
-		<p>
-		Queremos redireccionar a una p&aacute;gina en otro idioma, en este caso tambi&eacute;n es necesario etiquetarlo.
+		En W3C (<span lang="de">World Wide Web Consortium</span>) se proporcionan dos tipos de traducciones de su p&aacute;gina: <span lang="english"><a id="enlacesOscuros" href="http://www.w3.org/2005/02/TranslationPolicy">Authorized Translations</a></span>
+		o <span lang=""><a id="enlacesOscuros" href="http://www.w3.org/Consortium/Translation/#auth">Unofficial Translations</a></span>.
 		</p>
 		
 		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" id="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
@@ -185,11 +181,21 @@
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.1.1 Idioma de la p&aacute;gina</a>
 	<div id="Collap" class="collapse">
 			<div>
-			El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos,
-			 palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
+			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.
 		    </div>
 			<strong>El idioma predeterminado de la p&aacute;gina es el español y est&aacute; identificado.</strong>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.1.2 Idioma de las partes</a>
+	<div id="Collap2" class="collapse">
+			<div>
+			El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos,
+			 palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
+		    </div>
+			<strong>Se identifican palabras en otros idiomas.
+				<pre><code>&lt;span lang="de">&lt;span lang="en">&lt;span lang="fr"></code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>					
 						
 

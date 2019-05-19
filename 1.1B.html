@@ -14,6 +14,7 @@
   <script src="js/dobleScroll.js"></script>
   <script src="js/cerrarTrasTab.js"></script>
   <script src="js/shortcuts.js"></script>
+  <script src="js/showPistas.js"></script>
 </head>
 
 <body>
@@ -79,6 +80,8 @@
 	
 	<a href="1.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	
+	<button onclick="showPistas()">Pistas</button><br><br>
 	
 	<h2>1. Perceptible - Primer Principio</h2>
 	<p>
@@ -180,26 +183,6 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 <!-- Fin Contenido -->
 
 <script>
-	
-	shortcut.add("Ctrl+Shift+1",function() {
-	window.open("percepA.html#principio1");
-});
-
-shortcut.add("Ctrl+Shift+2",function() {
-	window.open("percepA.html#principio2");
-});
-
-shortcut.add("Ctrl+Shift+3",function() {
-	window.open("percepA.html#principio3");
-});
-
-shortcut.add("Ctrl+Shift+4",function() {
-	window.open("percepA.html#principio4");
-});
-
-shortcut.add("Ctrl+Shift+5",function() {
-	window.open("percepA.html#principio5");
-});
 
 shortcut.add("Ctrl+Shift+9",function() {
 	var ScrollTop = parseInt($(document).scrollTop());

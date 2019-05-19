@@ -17,6 +17,7 @@
   <script src="js/carruselMinimo.js"></script>
   <script src="js/noticiasSinPausa.js"></script>
   <script src="js/shortcuts.js"></script>
+  <script src="js/showPistas.js"></script>
 </head>
 
 <body>
@@ -83,6 +84,8 @@
 	<a href="2.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
+	<button onclick="showPistas()">Pistas</button><br><br>
+	
 	<h2>2. Operable - Segundo Principio</h2>
 	<p>
 		Los componentes de la interfaz de usuario y la navegaci&oacute;n deben ser operables, la interfaz no puede exigir una
@@ -99,7 +102,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio3">2.2.1 Tiempo ajustable - Nivel A</h4>
+	<h4 id="principio1">2.2.1 Tiempo ajustable - Nivel A</h4>
 	<p>
 		Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: 
 		 </p>
@@ -141,7 +144,7 @@
 		
 		
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 2.2.1 Tiempo ajustable">PISTA</a>
-		<div id="popup3" class="overlay" role="complementary">
+		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.2.1 Tiempo ajustable - Nivel A</h2>
 		<div class="ventanita">
@@ -154,7 +157,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo sin manera de pararlos.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -167,7 +170,7 @@
 
 
 
-	<h4 id="principio4">2.2.2 Poner en pausa, detener, ocultar - Nivel A</h4>
+	<h4 id="principio2">2.2.2 Poner en pausa, detener, ocultar - Nivel A</h4>
 	<p>
 		Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes:
 		 </p>
@@ -209,8 +212,8 @@
 
 </div><br>
 		
-		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA</a>
-		<div id="popup4" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h2>
 		<div class="ventanita">
@@ -223,7 +226,7 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Un carrusel de im&aacute;genes que se mueve autom&aacute;ticamente.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -237,8 +240,8 @@
 
 
 			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">2.2.1 Tiempo ajustable</a>
-	<div id="Collap3" class="collapse">
+<a href="#Collap1" class="btn btn-primary" data-toggle="collapse" role="button">2.2.1 Tiempo ajustable</a>
+	<div id="Collap1" class="collapse">
 			<div>
 			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.</p>
 		    </div>
@@ -246,8 +249,8 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
-<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">2.2.2 Poner en pausa, detener, ocultar</a>
-	<div id="Collap4" class="collapse">
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.2.2 Poner en pausa, detener, ocultar</a>
+	<div id="Collap2" class="collapse">
 			<div>
 			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.</p>
 		    </div>

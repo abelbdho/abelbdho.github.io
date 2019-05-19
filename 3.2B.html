@@ -16,6 +16,7 @@
   <script src="js/avisoNormal.js"></script>
   <script src="js/datalistCambiarMal.js"></script>
   <script src="js/shortcuts.js"></script>
+  <script src="js/showPistas.js"></script>
 </head>
 
 <body>
@@ -82,6 +83,8 @@
 	<a href="3.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
+	<button onclick="showPistas()">Pistas</button><br><br>
+	
 	<h2>3. Entendible - Tercer Principio</h2>
 	<p>
 		La informaci&oacute;n y el uso de la interfaz deben ser inteligibles para el usuario.
@@ -94,8 +97,8 @@
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-	<h4 id="principio2">3.2.1 Al recibir foco - Nivel A</h4>
+<div class="A" id="noD">
+	<h4 id="principio1">3.2.1 Al recibir foco - Nivel A</h4>
 	<p>
 		Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.
 		</p>
@@ -107,11 +110,15 @@
 		T&eacute;cnicamente, no va a ocurrir nada ya que no hay saltos o cambios de contextos inesperados. Recargar p&aacute;gina despu&eacute;s de probar o ser&aacute; imposible salir del bucle.
 		</p>
 		
-		<button onfocus="aviso()">Ayuda</button>
-		<br><br>
+		<form name="form">
+		<input type="radio" name="radioC"  value="0" />Ninguna<br>
+		<input type="radio" name="radioC"  value="1" />A<br>
+		<input type="radio" name="radioC"  value="2" />AA<br>
+		<input type="radio" name="radioC"  value="3" />Ambos<br>
+		</form>
 
-		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
-		<div id="popup2" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
+		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>3.2.1 Al recibir foco - Nivel A</h2>
 		<div class="ventanita">
@@ -124,8 +131,9 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Cualquiera de los botones se activan simplemente con el foco.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
+		</div>
 		</div>
 		</div>
 		</div>
@@ -134,10 +142,10 @@
 			<br><br><br><br>
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+<div class="A">
 
 
-
-	<h4 id="principio3">3.2.2 Al recibir entradas - Nivel A</h4>
+	<h4 id="principio2">3.2.2 Al recibir entradas - Nivel A</h4>
 	<p>
 		El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
 		 comportamiento antes de usar el componente.
@@ -145,10 +153,6 @@
 		
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
-		
-		<p>
-		Aqu&iacute; tienes la elecci&oacute;n, escoger realizar el ficticio formulario en español o en ingl&eacute;s. Al escoger hay un cambio de estado, pero este no conlleva un cambio de contexto.
-		</p>
 		
 		<form>
 		<input type="text" oninput="eleccion()" id="input" list="datalist" />
@@ -208,8 +212,8 @@
 		</form>
 		</script>
 
-		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>
-		<div id="popup3" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>3.2.2 Al recibir entradas - Nivel A</h2>
 		<div class="ventanita">
@@ -223,8 +227,50 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>El cambio de estado dle ejemplo conlleva una recarga de la p&aacute;gina.
 			</div>
 			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+<div class="AA">
+
+	<h4 id="principio3">3.2.3 Navegaci&oacute;n coherente - Nivel AA</h4>
+	<p>
+		Los mecanismos de navegaci&oacute;n que se repiten en m&uacute;ltiples páginas web dentro de un conjunto de p&aacute;ginas web aparecen siempre en el mismo orden relativo cada vez que se repiten,
+		 a menos que el cambio sea provocado por el propio usuario.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Criterio oculto. <a href="indexFake.html">P&aacute;gina</a>
+		</p>
+
+		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 3.2.3 Navegaci&oacute;n coherente">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.2.3 Navegaci&oacute;n coherente - Nivel AA</h2>
+		<div class="ventanita">
+			Los mecanismos de navegaci&oacute;n que se repiten en m&uacute;ltiples páginas web dentro de un conjunto de p&aacute;ginas web aparecen siempre en el mismo orden relativo cada vez que se repiten,
+		 a menos que el cambio sea provocado por el propio usuario.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Se mantiene el mismo orden en los elementos, siempre se presentan de la misma manera.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Algunos elementos cambian de posici&oacute;n.
+			</div>
+			<div>
 				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
+		</div>
 		</div>
 		</div>
 		</div>
@@ -232,11 +278,11 @@
 	
 			<br><br><br><br>
 			
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+<div class="AA">
 
-
-	<h4 id="principio4">3.2.4 Identificaci&oacute;n coherente - Nivel AA</h4>
+	<h4 id="principio3">3.2.4 Identificaci&oacute;n coherente - Nivel AA</h4>
 	<p>
 		Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente. 
 		</p>
@@ -244,10 +290,10 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<a href="entendibA.html" class="btn btn-success btn-sm" role="button">Accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+		<a href="3.2A.html" class="btn btn-success btn-sm" role="button">Accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
 
-		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 3.2.4 Identificación coherente">PISTA</a>
-		<div id="popup4" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 3.2.4 Identificación coherente">PISTA</a>
+		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
 		<h2>3.2.4 Identificaci&oacute;n coherente - Nivel AA</h2>
 		<div class="ventanita">
@@ -260,8 +306,9 @@
 				<span id="flechaMal" role="complementary">&#10007;</span>Se muestra un ejemplo de lo que ser&iacute;a una mala identificaci&oacute;n de un elemento ya existente.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
+		</div>
 		</div>
 		</div>
 		</div>
@@ -270,16 +317,38 @@
 			<br><br><br><br>
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
+		
+<div class="final">		
 			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">3.2.2 Al recibir entradas</a>
-	<div id="Collap3" class="collapse">
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.2.2 Al recibir entradas</a>
+	<div id="Collap" class="collapse">
 			<div>
 			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
 		 comportamiento antes de usar el componente.
 		    </div>
 			<strong>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.</strong><br>
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>		
+			</div><br><br>			
+			
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.2.2 Al recibir entradas</a>
+	<div id="Collap2" class="collapse">
+			<div>
+			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
+		 comportamiento antes de usar el componente.
+		    </div>
+			<strong>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
+			
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">3.2.3 Navegaci&oacute;n coherente</a>
+	<div id="Collap3" class="collapse">
+			<div>
+			Los mecanismos de navegaci&oacute;n que se repiten en m&uacute;ltiples páginas web dentro de un conjunto de p&aacute;ginas web aparecen siempre en el mismo orden relativo cada vez que se repiten,
+		 a menos que el cambio sea provocado por el propio usuario.
+		    </div>
+			<strong>Se mantiene el mismo orden en los elementos, siempre se presentan de la misma manera.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>
 			
 <a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">3.2.4 Identificaci&oacute;n coherente</a>
 	<div id="Collap4" class="collapse">
@@ -290,7 +359,7 @@
 			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>							
 						
-
+</div>
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
 </div>
@@ -300,9 +369,68 @@
 
 <!-- Fin Contenido -->
 
-<script>
+<script id="script">
 		
 
+var rad = document.form.radioC
+var documento = document.cloneNode(true);
+for (var i = 0; i < rad.length; i++) {
+    rad[i].addEventListener('change', function() {
+        if(this.value == 0){
+			document.innerHTML = documento.innerHTML;
+			var criterio = document.getElementById("noD");
+			var contenido = document.getElementById("contenido");
+			contenido.innerHTML = "";
+			var div = document.createElement('div');
+			div.innerHTML = criterio.innerHTML;
+			/*contenido.innerHTML += div.outerHTML + "<br>" + documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;*/
+			contenido.innerHTML += documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;
+			
+		}else if(this.value == 1){
+			document.innerHTML = documento.innerHTML;
+			var contenido = document.getElementById("contenido");
+			contenido.innerHTML = "";
+			var div = document.createElement('div');
+			var elementos = documento.getElementsByClassName("A");
+			for(i = 0; i < elementos.length; i++){
+				div.innerHTML = elementos[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			contenido.innerHTML += documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;
+			
+		}else if(this.value == 2){
+			document.innerHTML = documento.innerHTML;
+			var contenido = document.getElementById("contenido");
+			var criterio = document.getElementById("noD");
+			contenido.innerHTML = "";
+			var div = document.createElement('div');
+			/*contenido.innerHTML+= criterio.outerHTML + "<br>";*/
+			var elementos2 = documento.getElementsByClassName("AA");
+			for(i = 0; i < elementos2.length; i++){
+				div.innerHTML = elementos2[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			contenido.innerHTML += documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;
+			
+		}else if(this.value == 3){
+			document.innerHTML = documento.innerHTML;
+			var contenido = document.getElementById("contenido");
+			contenido.innerHTML = "";
+			var div = document.createElement('div');
+			var elementos = documento.getElementsByClassName("A");
+			for(i = 0; i < elementos.length; i++){
+				div.innerHTML = elementos[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			var elementos2 = documento.getElementsByClassName("AA");
+			for(i = 0; i < elementos2.length; i++){
+				div.innerHTML = elementos2[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			contenido.innerHTML += documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;
+		}
+    });
+}
 
 </script>
 
