@@ -83,9 +83,9 @@
 	<h2 class="screen-reader-text">Contenido</h2>
 	
 	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="3.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<a href="3.3B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
-	<button onclick="showPistas()">Pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
 	<h2>3. Entendible - Tercer Principio</h2>
 	<p>
@@ -94,40 +94,138 @@
 	
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-<h3>3.1 Predecible</h3>
+<h3>3.3 Entrada de datos asistida</h3>
 	<p>
-		La p&aacute;gina web opera y se ve de manera predecible.
+		Ayudar a los usuarios a evitar y corregir los errores.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio2">3.2.1 Al recibir foco - Nivel A</h4>
+	<h4 id="principio">3.3.1 Identificaci&oacute;n de errores - Nivel A</h4>
 	<p>
-		Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.
+		Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.
 		</p>
 		
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
 		<p>
-		T&eacute;cnicamente, no va a ocurrir nada ya que no hay saltos o cambios de contextos inesperados.
+		Tenemos varios campos obligatorios. En este caso, si alguno queda sin rellenar, saltar&aacute; un aviso.
 		</p>
 		
-		<button onclick="aviso()">Ayuda</button>
+		<p>
+		<em>Los campos requeridos aparecer&aacute;n en rojo y junto a su etiqueta se señalar&aacute; como obligatorio.</em>
+		</p>
+		
+		<h6>Datos personales</h6>
+		<form action="paginaDestino.html">
+		<span id="obligatorio">Nombre</span> (obligatorio):<br>
+		<input onfocusout="requerido(this, 'aviso0')" type="text" name="nombre"><div id="aviso0"></div>
+		<br>
+		<span id="obligatorio">Apellidos</span> (obligatorio):<br>
+		<input onfocusout="requerido(this, 'aviso1')" type="text" name="apellidos"><div id="aviso1"></div>
+		<br>
+		<span id="obligatorio">Email</span> (obligatorio):<br>
+		<input onfocusout="requerido(this, 'aviso2')" type="text" name="email"><div id="aviso2"></div>
+		<br>
+		Edad:<br>
+		<input type="text" name="edad">
 		<br><br>
+		Direcci&oacute;n:<br>
+		<input type="text" name="direccion">
+		<br><br>
+		C&oacute;digo postal:<br>
+		<input type="text" name="cp">
+		<br><br>
+		Sexo:<br>
+		<input type="radio" name="genero" value="hombre"> Hombre<br>
+		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</form>
+		
+		<script id="blockOfStuff" type="text/html">
+		Campo obligatorio vac&iacute;o.
+		</script>
 
-		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
-		<div id="popup2" class="overlay" role="complementary">
+		<a role="button" class="botonVentanita" href="#popup" alt="Pista 3.3.1 Identificación de errores">PISTA</a>
+		<div id="popup" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.2.1 Al recibir foco - Nivel A</h2>
+		<h2>3.3.1 Identificaci&oacute;n de errores - Nivel A</h2>
 		<div class="ventanita">
-			Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-focus" target=”_blank”>Criterio~WCAG</a>
+			Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Nada se activa sin previo aviso, es necesario pinchar en el elemento correspondiente.
+				<span id="flechaBien" role="complementary">&#10003;</span>Los campos obligatorios existentes quedan marcados si se dejan vac&iacute;os.
 			</div>
 			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Cualquiera de los botones se activan simplemente con el foco.
+				<span id="flechaMal" role="complementary">&#10007;</span>No hay ning&uacute;n aviso si no se rellenan los campos obligatorios.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+
+
+	<h4 id="principio2">3.3.2 Etiquetas o instrucciones - Nivel A</h4>
+	<p>
+		Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
+		 contenido requiere la introducci&oacute;n de datos por parte del usuario.
+		</p>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<p>
+		Los formularios son uno de los elementos en los que m&aacute;s fallos se pueden cometer. Uno de ellos es el de no etiquetar bien campos o indicar mal las instrucciones para rellenarlo.
+		</p>
+		
+		<h6>Datos personales</h6>
+		<form action="paginaDestino.html">
+		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<input type="text" name="nombre">
+		<br><br>
+		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<input type="text" name="apellidos">
+		<br><br>
+		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<input type="text" name="email">
+		<br><br>
+		<label for="edad">Edad</label>:<br>
+		<input type="text" name="edad">
+		<br><br>
+		<label for="direccion">Direcci&oacute;n</label>:<br>
+		<input type="text" name="direccion">
+		<br><br>
+		<label for="cp">C&oacute;digo postal</label>:<br>
+		<input type="text" name="cp">
+		<br><br>
+		<label>Sexo</label>:<br>
+		<input type="radio" name="genero" value="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" name="genero" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</form>
+
+		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.3.2 Etiquetas o instrucciones">PISTA</a>
+		<div id="popup2" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.3.2 Etiquetas o instrucciones - Nivel A</h2>
+		<div class="ventanita">
+			Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
+		 contenido requiere la introducci&oacute;n de datos por parte del usuario.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Los nombres de cada campo de este formulario usan la etiqueta adecuada, que se asocian a sus campos.
+				<pre><code>&lt;label id="obligatorio" for="apellidos">Apellidos&lt;/label></code></pre>
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Los campos no est&aacute;n asociados a sus respectivos nombres.
 			</div>
 			<div>
 				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
@@ -140,93 +238,66 @@
 			<br><br><br><br>
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+		
 
 
-
-	<h4 id="principio3">3.2.2 Al recibir entradas - Nivel A</h4>
+	<h4 id="principio3">3.3.3 Sugerencia ante errores - Nivel AA</h4>
 	<p>
-		El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
-		 comportamiento antes de usar el componente.
+		Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
+		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.
 		</p>
 		
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
 		<p>
-		Aqu&iacute; tienes la elecci&oacute;n, escoger realizar el ficticio formulario en español o en ingl&eacute;s. Al escoger hay un cambio de estado, pero este no conlleva un cambio de contexto.
+		El campo mes tiene una particularidad y si se introduce un dato num&eacute;rico, salta una sugerencia de como hay que introducir los datos.
 		</p>
 		
-		<form>
-		<input type="text" oninput="eleccion()" id="input" list="datalist" />
-		<datalist id="datalist">
-		<option value="Español"></option>
-		<option value="English"></option>
-		</datalist>
-		</form>
+		<p>
+		<em>Escriba el mes con su nombre, no su n&uacute;mero</em>
+		</p>
 		
-		<div id="targetElement"></div>
-		
-		<script id="Español" type="text/html">
-		<form>
-		Nombre:<br>
+		<h6>Datos personales</h6>
+		<form action="paginaDestino.html">
+		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input type="text" name="nombre">
-		<br>
-		Apellidos:<br>
+		<br><br>
+		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
 		<input type="text" name="apellidos">
-		<br>
-		Email:<br>
+		<br><br>
+		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
 		<input type="text" name="email">
+		<br><br>
+		<label for="dia">D&iacute;a de nacimiento</label>:<br>
+		<input type="text" name="dia">
+		<br><br>
+		<label for="mes">Mes de nacimiento</label>:<br>
+		<input onfocusout="formato(this, 'inst0')" type="text" name="mes"><div id="inst0"></div>
 		<br>
-		Direcci&oacute;n:<br>
-		<input type="text" name="direccion">
-		<br>
-		Edad:<br>
-		<input type="text" name="edad">
-		<br>
-		Como se definir&iacute;a:<br>
-		<textarea name="comentario" id="comentario">Di algo...</textarea>
-		<br>
+		<label for="ano">Año de nacimiento</label>:<br>
+		<input type="text" name="ano">
+		<br><br>
 		<input id="enviarForm" type="submit" value="Enviar">
 		</form>
-		</script>
 		
-		<script id="English" type="text/html">
-		<form>
-		Name:<br>
-		<input type="text" name="nombre">
-		<br>
-		Surname:<br>
-		<input type="text" name="apellidos">
-		<br>
-		Email:<br>
-		<input type="text" name="email">
-		<br>
-		Address:<br>
-		<input type="text" name="direccion">
-		<br>
-		Age:<br>
-		<input type="text" name="edad">
-		<br>
-		Define yourself:<br>
-		<textarea name="comentario" id="comentario">Say something...</textarea>
-		<br>
-		<input id="enviarForm" type="submit" value="Enviar">
-		</form>
+		<script id="blockOfStuffX" type="text/html">
+		Por favor, indique el nombre del mes: Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Cotubre, Noviembre o Diciembre.
 		</script>
 
-		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>
+		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 3.3.3 Sugerencia ante errores">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.2.2 Al recibir entradas - Nivel A</h2>
+		<h2>3.3.3 Sugerencia ante errores - Nivel AA</h2>
 		<div class="ventanita">
-			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
-		 comportamiento antes de usar el componente.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
+			Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
+		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.<br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.
+				<span id="flechaBien" role="complementary">&#10003;</span>En el campo mes salta una sugerencia si se introducen los datos mal.
 			</div>
 			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>El cambio de estado dle ejemplo conlleva una recarga de la p&aacute;gina.
+				<span id="flechaMal" role="complementary">&#10007;</span>No aparecen sugerencias y a priori no hay restricciones.
 			</div>
 			<div>
 				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
@@ -238,77 +309,37 @@
 	
 			<br><br><br><br>
 			
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-
-
-	<h4 id="principio4">3.2.4 Identificaci&oacute;n coherente - Nivel AA</h4>
-	<p>
-		Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente. 
-		</p>
-		
-		<h2 class="screen-reader-text">Ejemplos</h2>
-		<h5>Ejemplos</h5>
-		
-		<p>
-		Este criterio es f&aacute;cilmente ejemplificable. Hay que mantener la coherencia entre los elementos con un significado que aparecen en una p&aacute;gina con los que aparecen en las dem&aacute;s.
-		</p>
-		
-		<p>Aqu&iacute; tenemos uno de los botones de versiones usados, que no var&iacute;a en ning&uacute;n aspecto y sigue teniendo el mismo sentido.</p>
-		
-		<a href="entendibB.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span>
-
-		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 3.2.4 Identificación coherente">PISTA</a>
-		<div id="popup4" class="overlay" role="complementary">
-		<div class="popup">
-		<h2>3.2.4 Identificaci&oacute;n coherente - Nivel AA</h2>
-		<div class="ventanita">
-			Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente. <br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Se mantiene la coherencia respecto a las dem&aacute;s p&aacute;ginas.
-			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se muestra un ejemplo de lo que ser&iacute;a una mala identificaci&oacute;n de un elemento ya existente.
-			</div>
-			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
-			</div>
-		</div>
-		</div>
-		</div>
-		
-	
-			<br><br><br><br>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
 			
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
-			
-<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.2.1 Al recibir foco</a>
-	<div id="Collap2" class="collapse">
+<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.3.1 Identificaci&oacute;n de errores</a>
+	<div id="Collap" class="collapse">
 			<div>
-			Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.
+			Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.
 		    </div>
-			<strong>Nada se activa sin previo aviso, es necesario pinchar en el elemento correspondiente.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-focus" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>		
-			
-<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">3.2.2 Al recibir entradas</a>
-	<div id="Collap3" class="collapse">
-			<div>
-			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
-		 comportamiento antes de usar el componente.
-		    </div>
-			<strong>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
+			<strong>Los campos obligatorios existentes quedan marcados si se dejan vac&iacute;os.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
-<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">3.2.4 Identificaci&oacute;n coherente</a>
-	<div id="Collap4" class="collapse">
+<a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.3.2 Etiquetas o instrucciones</a>
+	<div id="Collap2" class="collapse">
 			<div>
-			Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente.
+			Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
+		 contenido requiere la introducci&oacute;n de datos por parte del usuario.
 		    </div>
-			<strong>Se mantiene la coherencia respecto a las dem&aacute;s p&aacute;ginas.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
-			</div><br><br>																
+			<strong>Los nombres de cada campo de este formulario usan la etiqueta adecuada, que se asocian a sus campos.
+			<pre><code>&lt;label id="obligatorio" for="apellidos">Apellidos&lt;/label></code></pre></strong>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>	
+			
+<a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">3.3.3 Sugerencia ante errores</a>
+	<div id="Collap3" class="collapse">
+			<div>
+			Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
+		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.
+		    </div>
+			<strong>En el campo mes salta una sugerencia si se introducen los datos mal.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>																							
 						
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
 
@@ -321,7 +352,25 @@
 
 <script>
 
-
+function requerido(campo, obj) 
+   {
+     if (campo.value.length == 0){
+		var div = document.createElement('div');
+		div.setAttribute('class', 'avisoOblig');
+		div.innerHTML = document.getElementById("blockOfStuff").innerHTML;
+		document.getElementById(obj).appendChild(div);
+	}
+    };
+    
+function formato(campo, obj) 
+   {
+     if (campo.value == parseInt(campo.value, 10)){
+		var div = document.createElement('div');
+		div.setAttribute('class', 'avisoOblig');
+		div.innerHTML = document.getElementById("blockOfStuffX").innerHTML;
+		document.getElementById(obj).appendChild(div);
+	}
+    };    
 
 </script>
 

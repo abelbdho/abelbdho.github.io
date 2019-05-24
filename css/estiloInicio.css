@@ -917,3 +917,9 @@ ul.breadcrumb li a:hover {
     box-shadow: none;
 }
 
+
+/*AVISOS FORM*/
+
+.avisoOblig{
+	color: #AD0000;
+}
