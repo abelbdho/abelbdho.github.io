@@ -43,7 +43,7 @@
 	<!--MENU VERTICAL-->
 	
 	<div class="menu" role="menu">
-	<a href="#" id="inicio">Inicio</a>
+	<a href="index.html" id="inicio">Inicio</a>
 	<a class="principio" href="1.1A.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
@@ -159,33 +159,38 @@
 		<h5>Ejemplos</h5>
 		
 		<p>
-		No se acciona el bot&oacute;n de denvair en el formulario hasta que no se pulsa en &eacute;l.
+		No se acciona el bot&oacute;n de enviar en el formulario hasta que no se pulsa en &eacute;l.
 		</p>
 		
-		<h6>Datos personales</h6>
+		
 		<form action="paginaDestino.html">
-		Nombre:<br>
+			
+		<form action="paginaDestino.html">
+		<fieldset>
+		<legend>Datos personales</legend>
+		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input type="text" name="nombre">
 		<br><br>
-		Apellidos:<br>
+		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
 		<input type="text" name="apellidos">
 		<br><br>
-		Email:<br>
+		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
 		<input type="text" name="email">
 		<br><br>
-		Edad:<br>
+		<label for="edad">Edad</label>:<br>
 		<input type="text" name="edad">
 		<br><br>
-		Direcci&oacute;n:<br>
+		<label for="direccion">Direcci&oacute;n</label>:<br>
 		<input type="text" name="direccion">
 		<br><br>
-		C&oacute;digo postal:<br>
+		<label for="cp">C&oacute;digo postal</label>:<br>
 		<input type="text" name="cp">
 		<br><br>
-		Sexo:<br>
-		<input type="radio" name="genero" value="hombre"> Hombre<br>
-		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<label>Sexo</label>:<br>
+		<input type="radio" name="genero" value="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" name="genero" value="mujer"> <label for="mujer">Mujer</label><br><br>
 		<input id="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form>
 
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>

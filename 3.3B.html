@@ -42,7 +42,7 @@
 	<!--MENU VERTICAL-->
 	
 	<div class="menu" role="menu">
-	<a href="#" id="inicio">Inicio</a>
+	<a href="index.html" id="inicio">Inicio</a>
 	<a class="principio" href="1.1A.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
@@ -110,17 +110,18 @@
 		<em>Los campos requeridos aparecer&aacute;n en rojo y junto a su etiqueta se señalar&aacute; como obligatorio.</em>
 		</p>
 		
-		<h6>Datos personales</h6>
 		<form action="paginaDestino.html">
+		<fieldset>
+		<legend>Datos personales</legend>
 		<span id="obligatorio">Nombre</span> (obligatorio):<br>
-		<input onfocusout="requerido(this, 'aviso0')" type="text" name="nombre">
-		<br><br>
+		<input onfocusout="requerido(this, 'aviso0')" type="text" name="nombre"><div id="aviso0"></div>
+		<br>
 		<span id="obligatorio">Apellidos</span> (obligatorio):<br>
-		<input onfocusout="requerido(this, 'aviso1')" type="text" name="apellidos">
-		<br><br>
+		<input onfocusout="requerido(this, 'aviso1')" type="text" name="apellidos"><div id="aviso1"></div>
+		<br>
 		<span id="obligatorio">Email</span> (obligatorio):<br>
-		<input onfocusout="requerido(this, 'aviso2')" type="text" name="email">
-		<br><br>
+		<input onfocusout="requerido(this, 'aviso2')" type="text" name="email"><div id="aviso2"></div>
+		<br>
 		Edad:<br>
 		<input type="text" name="edad">
 		<br><br>
@@ -134,6 +135,7 @@
 		<input type="radio" name="genero" value="hombre"> Hombre<br>
 		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
 		<input id="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form>
 
 		<a role="button" class="botonVentanita2" href="#popup" alt="Pista 3.3.1 Identificación de errores">PISTA</a>
@@ -175,8 +177,9 @@
 		<em>Los campos requeridos aparecer&aacute;n en rojo y junto a su etiqueta se señalar&aacute; como obligatorio.</em>
 		</p>
 		
-		<h6>Datos personales</h6>
 		<form action="paginaDestino.html">
+		<fieldset>
+		<legend>Datos personales</legend>
 		<span id="obligatorio">Nombre</span> (obligatorio):<br>
 		<input type="text" name="nombre">
 		<br><br>
@@ -199,6 +202,7 @@
 		<input type="radio" name="genero" value="hombre"> Hombre<br>
 		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
 		<input id="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form>
 
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.3.2 Etiquetas o instrucciones">PISTA</a>
@@ -239,12 +243,9 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<p>
-		<em>Escriba el mes con su nombre, no su n&uacute;mero</em>
-		</p>
-		
-		<h6>Datos personales</h6>
 		<form action="paginaDestino.html">
+		<fieldset>
+		<legend>Datos personales</legend>
 		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input type="text" name="nombre">
 		<br><br>
@@ -257,6 +258,9 @@
 		<label for="dia">D&iacute;a de nacimiento</label>:<br>
 		<input type="text" name="dia">
 		<br><br>
+		<p>
+		<em>Escriba el mes con su nombre, no su n&uacute;mero</em>
+		</p>
 		<label for="mes">Mes de nacimiento</label>:<br>
 		<input onfocusout="formato(this, 'inst0')" type="text" name="mes"><div id="inst0"></div>
 		<br>
@@ -264,11 +268,8 @@
 		<input type="text" name="ano">
 		<br><br>
 		<input id="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form>
-		
-		<script id="blockOfStuffX" type="text/html">
-		Por favor, indique el nombre del mes: Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Cotubre, Noviembre o Diciembre.
-		</script>
 
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 3.3.3 Sugerencia ante errores">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
@@ -277,7 +278,7 @@
 		<div class="ventanita">
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
 		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion" target=”_blank”>Criterio~WCAG</a>
 			<div id="parrafoBueno" role="complementary">
 				<span id="flechaBien" role="complementary">&#10003;</span>En el campo mes salta una sugerencia si se introducen los datos mal.
 			</div>
@@ -295,6 +296,77 @@
 			<br><br><br><br>
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+		
+
+
+	<h4 id="principio4">3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h4>
+	<p>
+		Prevenci&oacute;n de errores (legales, financieros, datos): Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o
+		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: 
+		</p>
+		
+		<ul>
+			<li><strong>Reversible</strong>: El env&iacute;o es reversible.</li>
+			<li><strong>Revisado</strong>: Se verifica la informaci&oacute;n para detectar errores en la entrada de datos y se proporciona al usuario una oportunidad de corregirlos.</li>
+			<li><strong>Confirmado</strong>: Se proporciona un mecanismo para revisar, confirmar y corregir la informaci&oacute;n antes de finalizar el env&iacute;o de los datos.</li>
+		</ul>
+		
+		<h2 class="screen-reader-text">Ejemplos</h2>
+		<h5>Ejemplos</h5>
+		
+		<form action="paginaDestino.html" method="POST">
+		<fieldset>
+		<legend>Datos personales</legend>
+		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<input type="text" name="nombre">
+		<br><br>
+		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<input type="text" name="apellidos">
+		<br><br>
+		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<input type="text" name="email">
+		<br><br>
+		<label for="edad">Edad</label>:<br>
+		<input type="text" name="edad">
+		<br><br>
+		<label for="direccion">Direcci&oacute;n</label>:<br>
+		<input type="text" name="direccion">
+		<br><br>
+		<label for="cp">C&oacute;digo postal</label>:<br>
+		<input type="text" name="cp">
+		<br><br>
+		<label>Cuenta bancaria</label>:<br>
+		<input type="text" id="entidad" name="entidad" required  placeholder="entidad" maxlength="4" id="entidad" pattern="[0-9]{4}" title="El campo entidad debe tener 4 dígitos"/><input type="text" id="oficina" name="oficina" required placeholder="oficina" maxlength="4" id="oficina" pattern="[0-9]{4}" title="El campo oficina debe tener 4 dígitos"/>
+		<input type="text" id="dc" name="dc" required placeholder="dc" maxlength="2" id="dc" pattern="[0-9]{2}" title="El campo dígito de control debe tener 2 dígitos"/><input type="text" id="cuenta" name="cuenta" required placeholder="cuenta" maxlength="10" id="cuenta" pattern="[0-9]{10}" title="El campo cuenta debe tener 10 dígitos"/>
+		<input id="enviarForm" type="submit" value="Enviar">
+		</fieldset>
+		</form>
+
+		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos)">PISTA</a>
+		<div id="popup4" class="overlay" role="complementary">
+		<div class="popup">
+		<h2>3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h2>
+		<div class="ventanita">
+			Prevenci&oacute;n de errores (legales, financieros, datos): Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o
+		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: reversible, revisado y confirmado. <br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#help" target=”_blank”>Criterio~WCAG</a>
+			<div id="parrafoBueno" role="complementary">
+				<span id="flechaBien" role="complementary">&#10003;</span>Tras pulsar el bot&oacute;n hay una comprobaci&oacute;n final de los datos y confirmaci&oacute;n, son reversibles.
+			</div>
+			<div id="parrafoMalo" role="complementary">
+				<span id="flechaMal" role="complementary">&#10007;</span>Los datos se env&iacute;n al pulsar el bot&oacute;n la primera vez.
+			</div>
+			<div>
+				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+	
+			<br><br><br><br>
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
 		
 			
 <a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.3.1 Identificaci&oacute;n de errores</a>
@@ -324,7 +396,17 @@
 		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.
 		    </div>
 			<strong>En el campo mes salta una sugerencia si se introducen los datos mal.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion" target=”_blank”>Criterio~WCAG</a>
+			</div><br><br>		
+			
+<a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">3.3.4 Prevenci&oacute;n de errores</a>
+	<div id="Collap4" class="collapse">
+			<div>
+			Prevenci&oacute;n de errores (legales, financieros, datos): Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o
+		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: reversible, revisado y confirmado.
+		    </div>
+			<strong>Tras pulsar el bot&oacute;n hay una comprobaci&oacute;n final de los datos y confirmaci&oacute;n, son reversibles.</strong><br>
+			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#help" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>																			
 						
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				

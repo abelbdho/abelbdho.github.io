@@ -42,7 +42,7 @@
 	<!--MENU VERTICAL-->
 	
 	<div class="menu" role="menu">
-	<a href="#" id="inicio">Inicio</a>
+	<a href="index.html" id="inicio">Inicio</a>
 	<a class="principio" href="1.1A.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
@@ -188,58 +188,62 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<h6>Datos personales</h6>
 		<form action="paginaDestino.html">
-		Nombre:<br>
-		<input type="text" name="nombre">
+		<fieldset>
+			<legend>Datos personales</legend>
+		<label for="nombre">Nombre</label>:<br>
+		<input type="text" id="nombre" name="nombre">
 		<br><br>
-		Apellidos:<br>
-		<input type="text" name="apellidos">
+		<label for="apellidos">Apellidos</label>:<br>
+		<input type="text" id="apellidos" name="apellidos">
 		<br><br>
-		Email:<br>
-		<input type="text" name="email">
+		<label for="email">Email</label>:<br>
+		<input type="text" id="email" name="email">
 		<br><br>
-		Edad:<br>
-		<input type="text" name="edad">
+		<label for="edad">Edad</label>:<br>
+		<input type="text" id="edad" name="edad">
 		<br><br>
-		Direcci&oacute;n:<br>
-		<input type="text" name="direccion">
+		<label for="direccion">Direcci&oacute;n</label>:<br>
+		<input type="text" id="direccion" name="direccion">
 		<br><br>
-		C&oacute;digo postal:<br>
-		<input type="text" name="cp">
+		<label for="cp">C&oacute;digo postal</label>:<br>
+		<input type="text" id="cp" name="cp">
 		<br><br>
-		Sexo:<br>
-		<input type="radio" name="genero" value="hombre"> Hombre<br>
-		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
-		
+		<label>Sexo</label>:<br>
+		<input type="radio" name="genero" id="hombre" value="hombre"><label for="hombre">Hombre</label><br>
+		<input type="radio" name="genero" id="mujer" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		</fieldset>
 		<div id="clon">
-		<h6>Datos ten&iacute;sticos</h6>	
 			
-		Nivel:<br>
+		<fieldset>	
+		<legend>Datos ten&iacute;sticos</legend>
+			
+		<label>Nivel</label>:<br>
 		<select>
 		<option value="bajo">Bajo</option>
 		<option value="medio">Medio</option>
 		<option value="alto">Alto</option>
 		</select>
 		<br><br>
-		Experiencia (en años):<br>
-		<input type="text" name="experiencia">
+		<label for="experiencia">Experiencia</label> (en años):<br>
+		<input type="text" id="experiencia" name="experiencia">
 		<br><br>
-		Lateralidad:<br>
+		<label>Lateralidad</label>:<br>
 		<select>
 		<option value="d">Diestro</option>
 		<option value="i">Zurdo</option>
 		<option value="di">Ambidiestro</option>
 		</select>
 		<br><br>
-		Golpes a aprender:<br>
-		<input type="checkbox" name="golpes" value="Paralelo"> Paralelo<br>
-		<input type="checkbox" name="golpes" value="Revés" checked> Rev&eacute;s<br>
-		<input type="checkbox" name="golpes" value="Saque"> Saque<br>
-		<input type="checkbox" name="golpes" value="Volea" checked> Volea<br>
+		<label for="golpes">Golpes a aprender</label>:<br>
+		<input type="checkbox" name="golpes" id="paralelo" value="Paralelo"> <label for="paralelo">Paralelo</label><br>
+		<input type="checkbox" name="golpes" id="reves" value="Revés" checked> <label for="reves">Rev&eacute;s</label><br>
+		<input type="checkbox" name="golpes" id="saque" value="Saque"> <label for="saque">Saque</label><br>
+		<input type="checkbox" name="golpes" id="volea" value="Volea" checked> <label for="volea">Volea</label><br>
 		<br><br>
 		<input id="enviarForm" type="submit" value="Enviar">
-		</div>	
+		</div>
+		</fieldset>	
 		
 		<br>
 		</form>
@@ -412,30 +416,32 @@
 		
 		<p><em>Los campos obligatorios estar&aacute;n marcados en rojo y est&aacute; condici&oacute;n ser&aacute; indicada en su respectiva etiqueta.</em></p>
 		
-		<h6>Datos personales</h6>
 		<form action="paginaDestino.html">
-		<span id="obligatorio">Nombre (obligatorio)</span>:<br>
-		<input id="obligatorio" type="text" name="nombre">
+		<fieldset>
+		<legend>Datos personales</legend>
+		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<input type="text" id="nombre">
 		<br><br>
-		Nombre 2:<br>
-		<input id="obligatorio" type="text" name="apellidos">
+		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<input type="text" id="apellidos">
 		<br><br>
-		Emilio:<br>
-		<input id="obligatorio" type="text" name="email">
+		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<input type="text" id="email">
 		<br><br>
-		Años:<br>
-		<input type="text" name="edad">
+		<label for="edad">Edad</label>:<br>
+		<input type="text" id="edad">
 		<br><br>
-		Vivienda:<br>
-		<input type="text" name="direccion">
+		<label for="direccion">Direcci&oacute;n</label>:<br>
+		<input type="text" id="direccion">
 		<br><br>
-		C&oacute;digo:<br>
-		<input type="text" name="cp">
+		<label for="cp">C&oacute;digo postal</label>:<br>
+		<input type="text" id="cp">
 		<br><br>
-		Tipo:<br>
-		<input type="radio" name="genero" value="hombre"> Hombre<br>
-		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<label>Sexo</label>:<br>
+		<input type="radio" id="hombre" value="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" id="mujer" value="mujer"> <label for="mujer">Mujer</label><br><br>
 		<input id="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form>
 
 		<a role="button" class="botonVentanita" href="#popup6" alt="Pista 2.4.6 Encabezados y etiquetas">PISTA</a>
@@ -477,30 +483,32 @@
 		Al personalizar el indicador de foco, es necesario asegurarse de que sigue cumpliendo los ddem&aacute;s criterios de accesibilidad
 		</p>
 		
-		<h6>Datos personales</h6>
 		<form action="paginaDestino.html">
-		Nombre:<br>
-		<input id="formFoco" type="text" name="nombre">
+		<fieldset>
+		<legend>Datos personales</legend>
+		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<input class="formFoco" type="text" id="nombre">
 		<br><br>
-		Apellidos:<br>
-		<input id="formFoco" type="text" name="apellidos">
+		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<input class="formFoco" type="text" id="apellidos">
 		<br><br>
-		Email:<br>
-		<input id="formFoco" type="text" name="email">
+		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<input class="formFoco" type="text" id="email">
 		<br><br>
-		Edad:<br>
-		<input id="formFoco" type="text" name="edad">
+		<label for="edad">Edad</label>:<br>
+		<input class="formFoco" type="text" id="edad">
 		<br><br>
-		Direcci&oacute;n:<br>
-		<input id="formFoco" type="text" name="direccion">
+		<label for="direccion">Direcci&oacute;n</label>:<br>
+		<input class="formFoco" type="text" id="direccion">
 		<br><br>
-		C&oacute;digo postal:<br>
-		<input id="formFoco" type="text" name="cp">
+		<label for="cp">C&oacute;digo postal</label>:<br>
+		<input class="formFoco" type="text" id="cp">
 		<br><br>
-		Sexo:<br>
-		<input id="formFoco" type="radio" name="genero" value="hombre"> Hombre<br>
-		<input id="formFoco" type="radio" name="genero" value="mujer"> Mujer<br><br>
-		<input id="formFoco" id="enviarForm" type="submit" value="Enviar">
+		<label>Sexo</label>:<br>
+		<input class="formFoco" type="radio" id="hombre" value="hombre"> <label for="hombre">Hombre</label><br>
+		<input class="formFoco" type="radio" id="mujer" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input class="formFoco" id="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form>
 		
 

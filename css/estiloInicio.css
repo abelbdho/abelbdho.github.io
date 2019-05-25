@@ -106,7 +106,6 @@ font-size: 1.4em;
 }*/
 
 .principio{
-	border: 2px solid black;
 	font-weight: bold;
 }
 
@@ -836,7 +835,7 @@ blink.woo{
 #clon{
 	position: absolute;
 	left: 400px;
-	top: 1350px;
+	top: 1020px;
 }
 
 @media screen and (max-width: 1200px){
@@ -908,11 +907,11 @@ ul.breadcrumb li a:hover {
 /*Formulario cambiar foco*/
 
 
-#formFoco:focus {
+.formFoco:focus {
     box-shadow: 0 0 0 2px #000;
 }
 
-#formFoco2:focus {
+.formFoco2:focus {
     outline: none;
     box-shadow: none;
 }
