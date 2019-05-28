@@ -60,6 +60,7 @@
 	<a id="activo" class="principio" href="4.1A.html">3. Robusto</a>
 	<a id="activo" href="4.1A.html"><mark>3.1 Compatible</mark></a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -80,8 +81,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="3.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="2.1A.html">Operable</a></li>
+		<li>Navegable</li>
+		</ul>
+	
+	<a href="3.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -119,15 +126,15 @@
 		<h2>3.2.1 Al recibir foco - Nivel A</h2>
 		<div class="ventanita">
 			Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-focus" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Nada se activa sin previo aviso, es necesario pinchar en el elemento correspondiente.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-focus" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Nada se activa sin previo aviso, es necesario pinchar en el elemento correspondiente.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Cualquiera de los botones se activan simplemente con el foco.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Cualquiera de los botones se activan simplemente con el foco.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -218,15 +225,15 @@
 		<div class="ventanita">
 			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
 		 comportamiento antes de usar el componente.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>El cambio de estado dle ejemplo conlleva una recarga de la p&aacute;gina.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>El cambio de estado dle ejemplo conlleva una recarga de la p&aacute;gina.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -247,7 +254,7 @@
 		<h2 class="screen-reader-text">Ejemplos</h2>
 		<h5>Ejemplos</h5>
 		
-		<a href="entendibA.html" class="btn btn-success btn-sm" role="button">Accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
+		<a href="entendibA.html" class="btn btn-success btn-sm" role="button">Accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
 
 		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 3.2.4 Identificación coherente">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
@@ -255,15 +262,15 @@
 		<h2>3.2.4 Identificaci&oacute;n coherente - Nivel AA</h2>
 		<div class="ventanita">
 			Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente. <br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Se mantiene la coherencia respecto a las dem&aacute;s p&aacute;ginas.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Se mantiene la coherencia respecto a las dem&aacute;s p&aacute;ginas.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se muestra un ejemplo de lo que ser&iacute;a una mala identificaci&oacute;n de un elemento ya existente.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Se muestra un ejemplo de lo que ser&iacute;a una mala identificaci&oacute;n de un elemento ya existente.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -281,7 +288,7 @@
 		 comportamiento antes de usar el componente.
 		    </div>
 			<strong>En el ejemplo se escoge una opci&oacute;n que produce un cambio de estado, pero no de contexto.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#on-input" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>		
 			
 <a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">3.2.4 Identificaci&oacute;n coherente</a>
@@ -290,7 +297,7 @@
 			Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente.
 		    </div>
 			<strong>Se mantiene la coherencia respecto a las dem&aacute;s p&aacute;ginas.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>							
 						
 

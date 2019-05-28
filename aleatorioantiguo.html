@@ -64,6 +64,12 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="2.1A.html">Operable</a></li>
+		<li>Navegable</li>
+		</ul>
+	
 	<h2>Desaf&iacute;o</h2>
 	<p>
 		En esta p&aacute;gina aparecen distintos ejemplos de situaciones en las que no se han tomado medidas para la accesibilidad. ¿Descubrir&aacute;s estos fallos sin necesidad de recurrir a las pistas?
@@ -101,10 +107,10 @@
 		<h2>1.1.1 Contenido no textual - Nivel A</h2>
 		<div class="ventanita">
 			Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
-			<div id="parrafoBueno">
+			<div class="parrafoBueno">
 				En este caso, la buena pr&aacute;ctica es la de reproducir el contenido textual de la imagen a continuaci&oacute;n de esta.
 			</div>
-			<div id="parrafoMalo">
+			<div class="parrafoMalo">
 				No proporcionar la transcripci&oacute;n del texto de la imagen.
 			</div>
 		</div>
@@ -127,10 +133,10 @@
 		<h2>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h2>
 		<div class="ventanita">
 			A excepci&oacute;n de cuando son alternativas de un texto ya existente, para v&iacute;deos y audios pregrabados debe haber alternativa textual.
-			<div id="parrafoBueno">
+			<div class="parrafoBueno">
 				A continuaci&oacute;m del contenido, audio o v&iacute;deo, aparece su transcripci&oacute;n o pequeña descripci&oacute;n.
 			</div>
-			<div id="parrafoMalo">
+			<div class="parrafoMalo">
 				Aparece el contenido, audio o v&iacute;deo, sin ning&uacute;n tipo de alternativa textual.
 			</div>
 		</div>
@@ -152,10 +158,10 @@
 		<h2>1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h2>
 		<div class="ventanita">
 			Para todo contenido que contenga un componente auditivo se proporcionan subt&iacute;tulos, excepto cuando este contenido sea alternativa a un texto.
-			<div id="parrafoBueno">
+			<div class="parrafoBueno">
 				En el v&iacute;deo hay una opci&oacute;n para habilitar subt&iacute;tulos. Adem&aacute;s, en varios idiomas.
 			</div>
-			<div id="parrafoMalo">
+			<div class="parrafoMalo">
 				No se presentan subt&iacute;tulos de ning&uacute;n tipo en el v&iacute;deo.
 			</div>
 		</div>
@@ -178,11 +184,11 @@
 		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
 		<div class="ventanita">
 			Toda informaci&oacute;n, estructura o relaci&oacute;n expresada a trav&eacute;s de una interfaz, debe poder ser determinada por dispositivos de asistencia.
-			<div id="parrafoBueno">
+			<div class="parrafoBueno">
 				Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
 				<xmp><strong>accesibilidad web</strong></xmp>
 			</div>
-			<div id="parrafoMalo">
+			<div class="parrafoMalo">
 				La etiqueta <xmp><b></xmp> solo tiene significado visual.<br>
 				<xmp><b>accesibilidad web</b></xmp>	
 			</div>
@@ -209,11 +215,11 @@
 		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
 		<div class="ventanita">
 			Si la secuencia en la que est&aacute; presentado el contenido es significativa, los dispositivos de asistencia deben poder seguir esa secuencia.
-			<div id="parrafoBueno">
+			<div class="parrafoBueno">
 				Un buen uso de las etiquetas para t&iacute;tulos, usarlas en orden.<br>
 				<xmp><h1><h2><h3><h4><h5></xmp>
 			</div>
-			<div id="parrafoMalo">
+			<div class="parrafoMalo">
 				No se mantiene el orden en las etiquetas y se usa otra etiqueta que no corresponde a un t&iacute;tulo.<br>
 				<xmp><h1><h5><h5><h3><font><b></xmp>
 			</div>

@@ -58,6 +58,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -78,8 +79,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="1.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="1.1A.html">Perceptible</a></li>
+		<li>Alternativas textuales</li>
+		</ul>
+	
+	<a href="1.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -138,15 +145,15 @@
 		<h2>1.1.1 Contenido no textual - Nivel A</h2>
 		<div class="ventanita">
 			Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>En este caso, se proporciona una alternativa textual clara y precisa a la imagen<br>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>En este caso, se proporciona una alternativa textual clara y precisa a la imagen<br>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se proporciona una alternativa textual difusa y poco concreta.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Se proporciona una alternativa textual difusa y poco concreta.
 			</div>
 			<div>
-				<a onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+				<a onfocusout="cerrarVentana(this)"  href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -170,7 +177,7 @@
 			<strong>En este caso, se proporciona una alternativa textual clara y precisa a la imagen. <pre><code>&lt;img id="logoCriterio" class="contentImage"
 src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
  alt="Logo World Wide Web Consortium"&gt;</code></pre></strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>						
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
@@ -187,17 +194,9 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 shortcut.add("Ctrl+Shift+9",function() {
 	var ScrollTop = parseInt($(document).scrollTop());
 	
-	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
-    window.open("percepA.html#principio1");
-	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
-	window.open("percepA.html#principio2");	
-	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
-	window.open("percepA.html#principio3");	
-	} else if(ScrollTop > document.getElementById("principio4").offsetTop && ScrollTop < document.getElementById("principio5").offsetTop){
-	window.open("percepA.html#principio4");	
-	} else if(ScrollTop > document.getElementById("principio5").offsetTop){
-	window.open("percepA.html#principio5");	
-	}
+	if(ScrollTop > document.getElementById("principio1").offsetTop){
+    window.open("1.1A.html#principio1");
+	} 
 });
 
 </script>

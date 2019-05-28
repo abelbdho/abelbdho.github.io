@@ -60,6 +60,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -80,8 +81,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="3.3A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="3.1A.html">Entendible</a></li>
+		<li>Entrada de datos asistida</li>
+		</ul>
+	
+	<a href="3.3A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -144,15 +151,15 @@
 		<h2>3.3.1 Identificaci&oacute;n de errores - Nivel A</h2>
 		<div class="ventanita">
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Los campos obligatorios existentes quedan marcados si se dejan vac&iacute;os.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Los campos obligatorios existentes quedan marcados si se dejan vac&iacute;os.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>No hay ning&uacute;n aviso si no se rellenan los campos obligatorios.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>No hay ning&uacute;n aviso si no se rellenan los campos obligatorios.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -212,16 +219,16 @@
 		<div class="ventanita">
 			Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
 		 contenido requiere la introducci&oacute;n de datos por parte del usuario.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Los nombres de cada campo de este formulario usan la etiqueta adecuada, que se asocian a sus campos.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Los nombres de cada campo de este formulario usan la etiqueta adecuada, que se asocian a sus campos.
 				<pre><code>&lt;label id="obligatorio" for="apellidos">Apellidos&lt;/label></code></pre></code></pre>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Los campos no est&aacute;n asociados a sus respectivos nombres.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Los campos no est&aacute;n asociados a sus respectivos nombres.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -278,15 +285,15 @@
 		<div class="ventanita">
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
 		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>En el campo mes salta una sugerencia si se introducen los datos mal.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>En el campo mes salta una sugerencia si se introducen los datos mal.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>No aparecen sugerencias y a priori no hay restricciones.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>No aparecen sugerencias y a priori no hay restricciones.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -349,15 +356,15 @@
 		<div class="ventanita">
 			Prevenci&oacute;n de errores (legales, financieros, datos): Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o
 		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: reversible, revisado y confirmado. <br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#help" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Tras pulsar el bot&oacute;n hay una comprobaci&oacute;n final de los datos y confirmaci&oacute;n, son reversibles.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#help" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Tras pulsar el bot&oacute;n hay una comprobaci&oacute;n final de los datos y confirmaci&oacute;n, son reversibles.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Los datos se env&iacute;n al pulsar el bot&oacute;n la primera vez.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Los datos se env&iacute;n al pulsar el bot&oacute;n la primera vez.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -375,7 +382,7 @@
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.
 		    </div>
 			<strong>Los campos obligatorios existentes quedan marcados si se dejan vac&iacute;os.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.3.2 Etiquetas o instrucciones</a>
@@ -386,7 +393,7 @@
 		    </div>
 			<strong>Los nombres de cada campo de este formulario usan la etiqueta adecuada, que se asocian a sus campos.
 			<pre><code>&lt;label id="obligatorio" for="apellidos">Apellidos&lt;/label></code></pre></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>			
 			
 <a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">3.3.3 Sugerencia ante errores</a>
@@ -396,7 +403,7 @@
 		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.
 		    </div>
 			<strong>En el campo mes salta una sugerencia si se introducen los datos mal.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-suggestion" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>		
 			
 <a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">3.3.4 Prevenci&oacute;n de errores</a>
@@ -406,7 +413,7 @@
 		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: reversible, revisado y confirmado.
 		    </div>
 			<strong>Tras pulsar el bot&oacute;n hay una comprobaci&oacute;n final de los datos y confirmaci&oacute;n, son reversibles.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#help" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#help" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>																			
 						
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
@@ -420,7 +427,19 @@
 
 <script>
 		
-
+shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("3.3A.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
+	window.open("3.3A.html#principio2");	
+	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
+	window.open("3.3A.html#principio3");	
+	} else if(ScrollTop > document.getElementById("principio4").offsetTop){
+	window.open("3.3A.html#principio4");	
+	}
+});
 
 </script>
 

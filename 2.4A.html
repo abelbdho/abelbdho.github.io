@@ -60,6 +60,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -80,8 +81,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="2.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="2.1A.html">Operable</a></li>
+		<li>Navegable</li>
+		</ul>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="2.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -116,19 +123,19 @@
 		<h2>2.4.1 Evitar Bloques - Nivel A</h2>
 		<div class="ventanita">
 			Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Tenemos un formulario que se ha rellenado autom&aacute;ticamente. Podemos saltarlo con una opci&oacute;n oculta.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Tenemos un formulario que se ha rellenado autom&aacute;ticamente. Podemos saltarlo con una opci&oacute;n oculta.
 				<pre><code>&lt;div id="enlaces" role="navegation">
 &lt;ul id="listaCambiante">
 &lt;li>&lt;a href="#enviarForm">Ir al bot&oacute;n de enviar&lt;/a>&lt;/li>
 &lt;/ul&gt;</code></pre>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Para pulsar el bot&oacute;n enviar del formulario es necesario pasar a trav&eacute;s de &eacute;l.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Para pulsar el bot&oacute;n enviar del formulario es necesario pasar a trav&eacute;s de &eacute;l.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -159,15 +166,15 @@
 		<h2>2.4.2 Titulado de las p&aacute;ginas - Nivel A</h2>
 		<div class="ventanita">
 			Las p&aacute;ginas web tienen t&iacute;tulos que describen su tem&aacute;tica o prop&oacute;sito.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>El t&iacute;tulo de la p&aacute;gina es descriptivo y antepone la parte m&aacute;s concreta a la repetitiva.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>El t&iacute;tulo de la p&aacute;gina es descriptivo y antepone la parte m&aacute;s concreta a la repetitiva.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina no tiene un t&iacute;tulo correcto.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina no tiene un t&iacute;tulo correcto.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -255,15 +262,15 @@
 		<div class="ventanita">
 			Si se puede navegar secuencialmente por una p&aacute;gina web y la secuencia de navegaci&oacute;n afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen
 		 en un orden que preserva su significado y operabilidad.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>En los elementos se mantiene el orden secuencial indicado.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>En los elementos se mantiene el orden secuencial indicado.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>En los elementos el orden est&aacute; mal predefinido.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>En los elementos el orden est&aacute; mal predefinido.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -289,7 +296,7 @@
 		En este criterio los ejemplos son muy claros en ambos casos, accesible e inaccesible.
 		</p>
 		<p>
-		Por ejemplo, si quieres volver al <a href="index.html" id="enlacesOscuros">inicio de est&aacute; p&aacute;gina</a> puedes hacerlo pinchando.
+		Por ejemplo, si quieres volver al <a href="index.html" class="enlacesOscuros">inicio de est&aacute; p&aacute;gina</a> puedes hacerlo pinchando.
 		</p>
 		
 		<p>
@@ -305,15 +312,15 @@
 		<div class="ventanita">
 			El prop&oacute;sito de cada enlace puede ser determinado con solo el texto del enlace o a trav&eacute;s del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el
 			 prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Los enlaces tienen un texto descriptivo y/o van acompañados de im&aacute;genes para hacer m&aacute;s claro su sentido.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Los enlaces tienen un texto descriptivo y/o van acompañados de im&aacute;genes para hacer m&aacute;s claro su sentido.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Los enlaces est&aacute;n mal definidos y su entorno no ayuda.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Los enlaces est&aacute;n mal definidos y su entorno no ayuda.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -354,8 +361,8 @@
 		</p>
 		
 		<ul class="breadcrumb">
-		<li><a id="enlacesOscuros" href="#">Inicio</a></li>
-		<li><a id="enlacesOscuros" href="#">Operable</a></li>
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="2.1A.html">Operable</a></li>
 		<li>Navegable</li>
 		</ul>
 
@@ -365,15 +372,15 @@
 		<h2>2.4.5 M&uacute;ltiples v&iacute;as - Nivel AA</h2>
 		<div class="ventanita">
 			Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Mostramos algunos de los mejores ejemplos para que el usuario pueda localizarse en una p&aacute;gina web, el me&uacute; y las migas de pan.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Mostramos algunos de los mejores ejemplos para que el usuario pueda localizarse en una p&aacute;gina web, el me&uacute; y las migas de pan.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se proporciona un ejemplo de p&aacute;gina que no permite al usuario situarse f&aacute;cilmente.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Se proporciona un ejemplo de p&aacute;gina que no permite al usuario situarse f&aacute;cilmente.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -450,15 +457,15 @@
 		<h2>2.4.6 Encabezados y etiquetas - Nivel AA</h2>
 		<div class="ventanita">
 			Los encabezados y etiquetas describen el tema o prop&oacute;sito.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-visible" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Tanto t&iacute;tulos como etiquetas ejemplifican perfectamente el criterio, siendo claros y concisos.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-visible" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Tanto t&iacute;tulos como etiquetas ejemplifican perfectamente el criterio, siendo claros y concisos.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Los t&iacute;tulos y etiquetas escogidos pueden producir confusi&oacute;n en el usuario.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Los t&iacute;tulos y etiquetas escogidos pueden producir confusi&oacute;n en el usuario.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio6" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio6" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -518,15 +525,15 @@
 		<h2>2.4.7 Foco Visible - Nivel AA</h2>
 		<div class="ventanita">
 			Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cu&aacute;l el indicador del foco del teclado resulta visible.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>El indicador de foco est&aacute; personalizado de manera correcta y es visible.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>El indicador de foco est&aacute; personalizado de manera correcta y es visible.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Apenas podemos percibir el indicador de foco.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Apenas podemos percibir el indicador de foco.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio7" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio7" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -546,7 +553,7 @@
 		&lt;ul id="listaCambiante">
 		&lt;li>&lt;a href="#enviarForm">Ir al bot&oacute;n de enviar&lt;/a>&lt;/li>
 		&lt;/ul&gt;</code></pre></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.4.2 Titulado de las p&aacute;ginas</a>
@@ -556,7 +563,7 @@
 		Los t&iacute;tulos son muy &uacute;tiles para personas usando tecnolog&iacute;a de asistencia.
 		    </div>
 			<strong>El t&iacute;tulo de la p&aacute;gina es descriptivo y antepone la parte m&aacute;s concreta a la repetitiva.</strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>				
 												
 <a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">2.4.3 Orden del foco</a>
@@ -566,7 +573,7 @@
 		 en un orden que preserva su significado y operabilidad.
 		    </div>
 			<strong>En los elementos se mantiene el orden secuencial indicado.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-order" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>		
 
 <a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">2.4.4 Prop&oacute;sito de los enlaces (en contexto)</a>
@@ -576,7 +583,7 @@
 			 prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.
 		    </div>
 			<strong>Los enlaces tienen un texto descriptivo y/o van acompañados de im&aacute;genes para hacer m&aacute;s claro su sentido.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap5" class="btn btn-primary" data-toggle="collapse" role="button">2.4.5 M&uacute;ltiples v&iacute;as</a>
@@ -585,7 +592,7 @@
 			Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.
 		    </div>
 			<strong>Mostramos algunos de los mejores ejemplos para que el usuario pueda localizarse en una p&aacute;gina web, el me&uacute; y las migas de pan.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap6" class="btn btn-primary" data-toggle="collapse" role="button">2.4.6 Encabezados y etiquetas</a>
@@ -594,7 +601,7 @@
 			Los encabezados y etiquetas describen el tema o prop&oacute;sito.
 		    </div>
 			<strong>Tanto t&iacute;tulos como etiquetas ejemplifican perfectamente el criterio, siendo claros y concisos.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap7" class="btn btn-primary" data-toggle="collapse" role="button">2.4.7 Foco Visible</a>
@@ -603,7 +610,7 @@
 			Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cu&aacute;l el indicador del foco del teclado resulta visible.
 		    </div>
 			<strong>El indicador de foco est&aacute; personalizado de manera correcta y es visible.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-visible" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#focus-visible" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>											
 						
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
@@ -617,8 +624,25 @@
 
 <script>	
 
-
-
+shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("2.4B.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
+	window.open("2.4B.html#principio2");	
+	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
+	window.open("2.4B.html#principio3");	
+	} else if(ScrollTop > document.getElementById("principio4").offsetTop && ScrollTop < document.getElementById("principio5").offsetTop){
+	window.open("2.4B.html#principio4");	
+	} else if(ScrollTop > document.getElementById("principio5").offsetTop && ScrollTop < document.getElementById("principio6").offsetTop){
+	window.open("2.4B.html#principio5");	
+	} else if(ScrollTop > document.getElementById("principio6").offsetTop && ScrollTop < document.getElementById("principio7").offsetTop){
+	window.open("2.4B.html#principio6");	
+	} else if(ScrollTop > document.getElementById("principio7").offsetTop){
+	window.open("2.4B.html#principio7");	
+	}
+});
 
 </script>
 

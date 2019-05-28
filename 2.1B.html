@@ -61,6 +61,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -81,8 +82,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="2.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="2.1A.html">Operable</a></li>
+		<li>Accesible por teclado</li>
+		</ul>
+	
+	<a href="2.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -116,8 +123,8 @@
 		<label for="nombre">Nombre</label>:<br>
 		<input type="text" name="nombre" id="name">
 		<br>
-		<label tabindex="-1" for="apellidos">Apellidos</label>:<br>
-		<input type="text" name="apellidos" id="apellidos">
+		<label for="apellidos">Apellidos</label>:<br>
+		<input tabindex="-1" type="text" name="apellidos" id="apellidos">
 		<br>
 		<label for="comentario">Comentario</label>:<br>
 		<textarea name="comentario" id="comentario"></textarea>
@@ -127,10 +134,6 @@
 		</form>
 		
 		<br>
-		
-		<picture>
-		<img onmouseover="accion()" id="imagenFoco" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Ejemplo animación de bombilla">
-		</picture><br><br>
 
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 2.1.1 Teclado">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
@@ -139,18 +142,18 @@
 		<div class="ventanita">
 			A partir del teclado se podr&aacute; acceder a toda funcionalidad del contenido sin restricciones de tiempo, a excepci&oacute;n de funciones que requieren como entrada el trayecto
 		 de movimientos del usuario (por ejemplo, pinceladas).<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
 				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n.<br>
 				<pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
 &lt;img onmouseover="accion()" src="..."&gt;</code></pre>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>En este caso, ni siquiera es posible realizar el foco sobre la imagen.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -177,13 +180,13 @@
 		<h2>2.1.1 Ejemplo</h2>
 		<div class="ventanita" id="M">
 			Comprobamos que se realiza el foco sobre el enlace, despu&eacute;s sobre el bot&oacute;n y sale.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi maecenas parturient dui per hac lectus aliquam natoque aenean, fusce libero malesuada vivamus
 				 nunc eleifend ultrices platea iaculis faucibus a sodales nec morbi diam.
 			</p>
 			<div>
-				<a role="button" tabIndex="-1" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" tabIndex="-1"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -196,16 +199,16 @@
 		<h2>2.1.2 Sin trampas para el foco del teclado - Nivel A</h2>
 		<div class="ventanita">
 			No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>El foco est&aacute; capturado en la ventana en la que se encuentra
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>El foco est&aacute; capturado en la ventana en la que se encuentra
 				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n<br>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>El foco est&aacute; atrapado dentro de la ventana emergente.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -225,7 +228,7 @@
 			<strong>Adem&aacute;s de la acci&oacute;n al pasar el rat&oacute;n, añadimos un marco para poder realizar foco sobre
 				 la imagen y sobre el marco al realizar ese foco se activa la misma funci&oacute;n que para el rat&oacute;n. <pre><code>&lt;a onfocus="accion()"onclick="this.focus()">
 &lt;img onmouseover="accion()" src="..."&gt;</code></pre></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.1.2 Sin trampas para el foco del teclado</a>
@@ -236,7 +239,7 @@
 		    </div>
 			<strong>El foco est&aacute; capturado en la ventana en la que se encuentra
 				 moment&aacute;neamente pero puede salir situ&aacute;ndose y pulsando un bot&oacute;n</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
@@ -250,11 +253,16 @@
 
 <script>
 
-/*PENDIENTE*/
+shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("2.1A.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop){
+	window.open("2.1A.html#principio2");	
+	}
+});
 
-function triggerAlert() {
-  var alertEl = document.querySelector('.alert');
-}
 </script>
 
 </body>

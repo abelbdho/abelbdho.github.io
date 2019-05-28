@@ -60,6 +60,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -80,8 +81,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="1.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="1.1A.html">Perceptible</a></li>
+		<li>Distinguible</li>
+		</ul>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="1.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -142,20 +149,20 @@
 		<h2>1.4.1 Uso del Color - Nivel A</h2>
 		<div class="ventanita">
 			Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>No solo se usa el color para expresar el requisito del formulario, se da un descripci&oacute;n y se usa
 				 un asterisco. El asterisco es de mayor tamaño para que sea realmente perceptible.
 				 <pre><code>#obligatorio{ color: #AD0000; }
 #inputObligatorio{ border: 1px solid #AD0000; }
 #asterisco{ font-size: 1.7em; }
 				</code></pre>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Se usa simplemente el color para expresar el requisito del formulario.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -188,15 +195,15 @@
 		<div class="ventanita">
 			Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
 		 su volumen independientemente del volumen del sistema.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Tenemos una melod&iacute;a que se activa sin previo aviso y no puede ser pausada.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -235,16 +242,16 @@
 		<h2>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h2>
 		<div class="ventanita">
 			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
-				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
+				<a class="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Se ha escogido un color al azar por debajo del umbral.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -282,15 +289,15 @@
 		<div class="ventanita">
 			A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
 		 200% sin p&eacute;rdida de contenido o funcionalidad.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>La p&aacute;gina de muestra que ofrecemos no admite aumento de texto accesible.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio4" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -338,20 +345,20 @@
 		<div class="ventanita">
 			Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>El uso de CSS nos permite expresar informaci&oacute;n de manera textual y evitar las
 				 im&aacute;genes de texto.
 				 <pre><code>#cocaCola{
 	font-family: 'fuenteCola';
 	font-size: 2em;}
 				</code></pre>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Usamos una imagen que no es ni esencial ni personalizable.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio5" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -373,7 +380,7 @@
 #inputObligatorio{ border: 1px solid #AD0000; }
 #asterisco{ font-size: 1.7em; }
 				</code></pre></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 											
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.4.2 Control de Audio</a>
@@ -383,7 +390,7 @@
 		 para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.
 		 </div>
 			<strong>Tenemos una melod&iacute;a que se activa sin previo aviso y un bot&oacute;n para pausarla.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-control" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.4.3 Contraste (m&iacute;nimo)</a>
@@ -392,8 +399,8 @@
 				Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).
 			</div>
 			<strong>El contraste entre el color del texto y el fondo est&aacute;n comprobados. Fondo: #FFFFFF Texto: #6161FF<br>
-				<a id="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a></strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
+				<a class="enlacesOscuros" href="https://webaim.org/resources/contrastchecker/" target=”_blank”>Test de contraste (WebAim)</a></strong><br>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">1.4.4 Cambio del tamaño de texto</a>
@@ -403,7 +410,7 @@
 		        o la funcionalidad. 
 		    </div>
 			<strong>Nuestra p&aacute;gina web esta adaptada para que se pueda ampliar sin problemas</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#resize-text" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap4" class="btn btn-primary" data-toggle="collapse" role="button">1.4.5 Im&aacute;genes de texto</a>
@@ -418,7 +425,7 @@
 	font-family: 'fuenteCola';
 	font-size: 2em;}
 				</code></pre></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#images-of-text" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>														
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->			
@@ -432,7 +439,19 @@
 
 <script>
 	
-
+shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("1.4B.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
+	window.open("1.4B.html#principio2");	
+	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
+	window.open("1.4B.html#principio3");	
+	} else if(ScrollTop > document.getElementById("principio4").offsetTop){
+	window.open("1.4B.html#principio4");	
+	}
+});
 
 
 </script>

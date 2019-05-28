@@ -63,6 +63,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -83,8 +84,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="2.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="2.1A.html">Operable</a></li>
+		<li>Tiempo suficiente</li>
+		</ul>
+	
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="2.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -158,15 +165,15 @@
 		<h2>2.2.1 Tiempo ajustable - Nivel A</h2>
 		<div class="ventanita">
 			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.<br>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.<br>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo sin manera de pararlos.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo sin manera de pararlos.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -239,15 +246,15 @@
 		<h2>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h2>
 		<div class="ventanita">
 			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Tenemos un carrusel de im&aacute;genes que tiene sus correspondientes controles.<br>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Tenemos un carrusel de im&aacute;genes que tiene sus correspondientes controles.<br>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Un carrusel de im&aacute;genes que se mueve autom&aacute;ticamente.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Un carrusel de im&aacute;genes que se mueve autom&aacute;ticamente.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -266,7 +273,7 @@
 			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.</p>
 		    </div>
 			<strong>En este caso tenemos una serie de enlaces de inter&eacute;s rotando cada cierto tiempo, pero con un bot&oacute;n para pararlo.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">2.2.2 Poner en pausa, detener, ocultar</a>
@@ -275,7 +282,7 @@
 			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.</p>
 		    </div>
 			<strong>Tenemos un carrusel de im&aacute;genes que tiene sus correspondientes controles.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>												
 						
 
@@ -289,52 +296,17 @@
 <!-- Fin Contenido -->
 
 <script>
-
-/*-------------Role ALERT pendiente----------------*/
-
-function triggerAlert() {
-  var alertEl = document.querySelector('.alert');
-  alertEl.addAttribute("role", "alert");
-}
-
-function accion(){
-document.getElementById('imagenFoco').src='https://www.w3schools.com/js/pic_bulbon.gif';
-triggerAlert();
-};
-
-/*Permitir pulsar enter*/
-
-var input = document.getElementById("imageAnchor");
-
-input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   document.getElementById("imagenFoco").click();
-  }
+	
+	shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("2.2B.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop){
+	window.open("2.2B.html#principio2");	
+	}
 });
-
-/*SHORTCUTS CAMBIAR DE VERSION*/
-
-shortcut.add("Ctrl+Shift+1",function() {
-	window.open("operabB.html#principio1");
-});
-
-shortcut.add("Ctrl+Shift+2",function() {
-	window.open("operabB.html#principio2");
-});
-
-shortcut.add("Ctrl+Shift+3",function() {
-	window.open("operabB.html#principio3");
-});
-
-shortcut.add("Ctrl+Shift+4",function() {
-	window.open("operabB.html#principio4");
-});
-
-shortcut.add("Ctrl+Shift+5",function() {
-	window.open("operabB.html#principio5");
-});
-
+	
 </script>
 
 </body>

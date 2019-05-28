@@ -60,6 +60,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -80,8 +81,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="1.3B.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="1.1A.html">Perceptible</a></li>
+		<li>Adaptable</li>
+		</ul>
+	
+	<a href="1.3B.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -132,17 +139,17 @@
 		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
 		<div class="ventanita">
 			Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n.<br>
 				<pre><code>&lt;strong>accesibilidad web&lt;strong&gt;</code></pre>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>La etiqueta &lt;b&gt; solo tienen significado visual.<br>
 				<pre><code>&lt;b>accesibilidad web&lt;b&gt;</code></pre>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -179,12 +186,12 @@
 		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
 		<div class="ventanita">
 			Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Visualmente el texto sigue una secuencia, pero el c&oacute;digo est&aacute; invertido.<br>
 				<pre><code>#textoSecuencia2{
 	position: relative;
 	top: 100px;
@@ -197,7 +204,7 @@
 				</code></pre>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -247,15 +254,15 @@
 		<div class="ventanita">
 			Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
 		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003</span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003</span>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>Se indican solamente posici&oacute;n y forma.<br>
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio3" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -275,7 +282,7 @@
 		    </div>
 			<strong>Las etiquetas no solo deben tener significado visual, sino sem&aacute;ntico tambi&eacute;n. <br>
 			<pre><code>&lt;strong>accesibilidad web&lt;/strong&gt;</code></pre></strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">1.3.2 Secuencia significativa</a>
@@ -284,7 +291,7 @@
 				Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.</p>
 		    </div>
 			<strong>El orden de los p&aacute;rrafos es el mismo tanto en el c&oacute;digo como visualmente.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap3" class="btn btn-primary" data-toggle="collapse" role="button">1.3.3 Caracter&iacute;sticas sensoriales</a>
@@ -294,7 +301,7 @@
 		      tamaño, ubicaci&oacute;n visual, orientaci&oacute;n o sonido.
 		    </div>
 			<strong>Se indica claramente la posici&oacute;n del bot&oacute;n, su color, su forma y el texto que contiene.</strong><br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#sensory-characteristics" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>														
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
@@ -308,7 +315,17 @@
 
 <script>
 
-
+shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("1.3A.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
+	window.open("1.3A.html#principio2");	
+	} else if(ScrollTop > document.getElementById("principio3").offsetTop){
+	window.open("1.3A.html#principio3");	
+	}
+});
 
 </script>
 

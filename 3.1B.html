@@ -60,6 +60,7 @@
 	<a class="principio" href="4.1A.html">3. Robusto</a>
 	<a href="4.1A.html">3.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
+	<a class="principio" href="discapacidad.html">Discapacidad</a>
 	</div><br>
 	
 	<!--FIN MENU VERTICAL-->
@@ -80,8 +81,14 @@
 <div id="contenido">
 	<h2 class="screen-reader-text">Contenido</h2>
 	
-	<a href="3.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span id="flechaBien" role="Marca positiva">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span id="flechaMal" role="Marca negativa">&#10007;</span><br><br>
+	<ul class="breadcrumb">
+		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
+		<li><a class="enlacesOscuros" href="3.1A.html">Entendible</a></li>
+		<li>Legible</li>
+		</ul>
+	
+	<a href="3.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="Marca positiva">&#10003;</span>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="Marca negativa">&#10007;</span><br><br>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
@@ -115,15 +122,15 @@
 		<h2>3.1.1 Idioma de la p&aacute;gina - Nivel A</h2>
 		<div class="ventanita">
 			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>La etiqueta lang señala el idioma en cada una de las p&aacute;ginas.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>La etiqueta lang señala el idioma en cada una de las p&aacute;ginas.
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>No se usa la etiqueta o se usan de manera incorrecta.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>No se usa la etiqueta o se usan de manera incorrecta.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio1" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -146,11 +153,11 @@
 		<h5>Ejemplos</h5>
 		
 		<p>
-		En W3C (<span lang="de">World Wide Web Consortium</span>) se proporcionan dos tipos de traducciones de su p&aacute;gina: <span lang="english"><a id="enlacesOscuros" href="http://www.w3.org/2005/02/TranslationPolicy">Authorized Translations</a></span>
-		o <span lang=""><a id="enlacesOscuros" href="http://www.w3.org/Consortium/Translation/#auth">Unofficial Translations</a></span>.
+		En W3C (<span lang="de">World Wide Web Consortium</span>) se proporcionan dos tipos de traducciones de su p&aacute;gina: <span lang="english"><a class="enlacesOscuros" href="http://www.w3.org/2005/02/TranslationPolicy">Authorized Translations</a></span>
+		o <span lang=""><a class="enlacesOscuros" href="http://www.w3.org/Consortium/Translation/#auth">Unofficial Translations</a></span>.
 		</p>
 		
-		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" id="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
+		<span lang="en"><a href="https://www.w3.org/WAI/WCAG21/quickref/" class="enlacesOscuros">How to Meet WCAG 2 (Quick Reference)</a></span><br><br>
 
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.1.2 Idioma de las partes">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
@@ -159,16 +166,16 @@
 		<div class="ventanita">
 			El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma
 		 indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.<br>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts" target=”_blank”>Criterio~WCAG</a>
-			<div id="parrafoBueno" role="complementary">
-				<span id="flechaBien" role="complementary">&#10003;</span>Se identifican palabras en otros idiomas.
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts" target=”_blank”>Criterio~WCAG</a>
+			<div class="parrafoBueno" role="complementary">
+				<span class="flechaBien" role="complementary">&#10003;</span>Se identifican palabras en otros idiomas.
 				<pre><code>&lt;span lang="de">&lt;span lang="en">&lt;span lang="fr"></code></pre>
 			</div>
-			<div id="parrafoMalo" role="complementary">
-				<span id="flechaMal" role="complementary">&#10007;</span>No se usan las etiquetas o se usan de manera incorrecta.
+			<div class="parrafoMalo" role="complementary">
+				<span class="flechaMal" role="complementary">&#10007;</span>No se usan las etiquetas o se usan de manera incorrecta.
 			</div>
 			<div>
-				<a role="button" onfocusout="cerrarVentana(this)" id="close" href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
+				<a role="button" onfocusout="cerrarVentana(this)"  href="#principio2" type="button" class="btn btn-dark">Cerrar</a>
 			</div>
 		</div>
 		</div>
@@ -184,7 +191,7 @@
 			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.
 		    </div>
 			<strong>El idioma predeterminado de la p&aacute;gina es el español y est&aacute; identificado.</strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>	
 			
 <a href="#Collap2" class="btn btn-primary" data-toggle="collapse" role="button">3.1.2 Idioma de las partes</a>
@@ -195,7 +202,7 @@
 		    </div>
 			<strong>Se identifican palabras en otros idiomas.
 				<pre><code>&lt;span lang="de">&lt;span lang="en">&lt;span lang="fr"></code></pre></strong>
-			<a id="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts" target=”_blank”>Criterio~WCAG</a>
+			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-parts" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>					
 						
 
@@ -211,6 +218,15 @@
 <script>
 		
 
+shortcut.add("Ctrl+Shift+9",function() {
+	var ScrollTop = parseInt($(document).scrollTop());
+	
+	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
+    window.open("3.1A.html#principio1");
+	} else if(ScrollTop > document.getElementById("principio2").offsetTop){
+	window.open("3.1A.html#principio2");	
+	}
+});
 
 </script>
 

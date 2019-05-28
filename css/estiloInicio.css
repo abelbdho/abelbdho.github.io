@@ -2,10 +2,6 @@
 * {
   color: #003366;
   font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
-  -- Especificaciones del criterio 1.4.12 Text Spacing
-  --line-height: 1.5;
-  --letter-spacing: 1.92px;
-  --word-spacing: 1px;
 }
 
 html {
@@ -98,12 +94,6 @@ mark {
   background-color: yellow;
   color: black;
 }
-
-/*#activo::after{
-content: '\00bb';
-color: red;
-font-size: 1.4em;
-}*/
 
 .principio{
 	font-weight: bold;
@@ -492,14 +482,14 @@ th, td {
   text-decoration: none;
 }
 
-#parrafoBueno{
+.parrafoBueno{
 	background-color: #D9F4C3;
 	color:black;
 	padding: 10px;
     margin: 10px;
 }
 
-#parrafoMalo{
+.parrafoMalo{
 	background-color:#F4AEAE;
 	color:black;
 	padding: 10px;
@@ -600,19 +590,19 @@ blink.woo{
 
 /*Enlaces oscuros de los desplegables*/
 
-#enlacesOscuros{
+.enlacesOscuros{
 	color: #0000EB;
 }
 
 /*Indicativo bien*/
 
-#flechaBien{
+.flechaBien{
 	color: #005C00;
 	font-weight: bold;
 	font-size: 1.5em;
 }
 
-#flechaMal{
+.flechaMal{
 	color: #AD0000;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -659,14 +649,6 @@ blink.woo{
 
 #asterisco{
 	font-size: 1.7em;
-}
-
-/*Boton inofensivo*/
-
-#nyan-btn{
-	position: relative;
-	left: 10px;
-	color:white;
 }
 
 /*FUENTE de TEXTO*/
@@ -823,12 +805,6 @@ blink.woo{
 	height: 200px;
 }
 
-/*Boton cerrar*/
-
-#close{
-	color: white;
-	background-color: black;
-}
 
 /*Segundo form clon en 2.4.3*/
 
