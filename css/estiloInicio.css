@@ -37,7 +37,7 @@ a[href^="https://www.w3.org/"]:after {
 	margin: 0 0 0 5px;
 }
 
-#internos:after{
+.internos:after{
 	margin: 0 0 0 5px;
 	color: #0000EB;
 }
