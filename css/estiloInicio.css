@@ -18,11 +18,7 @@ body {
   margin-right: auto;
 }
 
-/* CABECERA */  
-#cabecera img {
-  border: 0px;
-  vertical-align: middle;
-}
+/* CABECERA */ 
 
 .screen-reader-text {
   position: absolute;
@@ -83,7 +79,7 @@ a[href^="https://www.w3.org/"]:after {
 
 /*INTENTOS*/
 
-#activo::before{
+.activo::before{
 content: '\00bb';
 color: red;
 font-size: 1.4em;
@@ -242,7 +238,7 @@ a:hover, h1 a:hover {
 
 /*IMAGENES*/
 
-#imagen {
+.imagen {
 	width: 100%;
 }
 
@@ -274,7 +270,7 @@ a:hover, h1 a:hover {
 #logo2{
 	position: relative;
 	left: 680px;
-	bottom: 130px;
+	bottom: 230px;
 	width: 25%;
 	height: 25%;
 }
@@ -284,7 +280,7 @@ a:hover, h1 a:hover {
 	text-align: center;
     float: none;
     left: 518px;
-    bottom: 98px;
+    bottom: 88px;
 	}
 }
 
@@ -297,9 +293,9 @@ a:hover, h1 a:hover {
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1800px) {
 	#logo1{
-	bottom: 82px;
+	bottom: -80px;
 	}
 }
 
