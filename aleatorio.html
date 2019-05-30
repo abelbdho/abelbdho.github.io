@@ -86,13 +86,11 @@
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
 	
-	<form name="form" onsubmit="clasificar()">
 		<input type="radio" name="radioC"  value="0" id="r1" />Operable<br>
 		<input type="radio" name="radioC"  value="1" id="r2" />A<br>
 		<input type="radio" name="radioC"  value="2" id="r3" />AA<br>
 		<input type="radio" name="radioC"  value="3" id="r4" />Ambos<br>
-		<input type="submit" value="Enviar">
-		</form>
+		<input type="button" onclick="clasificar()" value="Enviar">
 		
 		
 		<h2>Test</h2><br>
@@ -156,7 +154,7 @@ function clasificar(){
 	
 	for (var i = 0; i < rad.length; i++) {
         if(document.getElementById("r1").checked == true){
-			document.getElementById("targetElement2").style.display = 'none';
+			document.getElementById("blockOfStuff2").style.display = 'none'; /*.hidden = true    .style.display = 'none' */
 			
 		}else if(document.getElementById("r2").checked == true){
 			document.innerHTML = documento.innerHTML;
