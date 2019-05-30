@@ -79,7 +79,7 @@ a[href^="https://www.w3.org/"]:after {
 
 /*INTENTOS*/
 
-.activo::before{
+#activo::before{
 content: '\00bb';
 color: red;
 font-size: 1.4em;
