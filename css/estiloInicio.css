@@ -253,6 +253,8 @@ a:hover, h1 a:hover {
 	max-width: 100%;
 	padding: 40px;
 	margin: auto;
+	width: 400px;
+	height: 480px;
 }
 
 
@@ -611,11 +613,6 @@ blink.woo{
 #logoCriterio{
 	width: 100px;
 	height: 180px;
-}
-
-#imgCriterio{
-	width: 400px;
-	height: 480px;
 }
 
 #textoSecuencia2{

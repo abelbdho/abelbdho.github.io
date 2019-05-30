@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
   <script src="js/dobleScroll.js"></script>
   <script src="js/cerrarTrasTab.js"></script>
+  <script src="js/aleatoriedad.js"></script>
   <script src="js/showPistas.js"></script>
 </head>
 
@@ -33,7 +34,7 @@
 	</div>
 <div id="logo2">
 <a href="http://www.uma.es/"><img id="imagen" src="img/uma.png" alt="Universidad de Málaga logo" /></a>
-</div>
+</div></div>
 <!--<h1><a href="#">REAVAI: Accesibilidad Web</a></h1>-->
 </div>
 	<!-- Fin Cabecera -->
@@ -68,7 +69,7 @@
 	
 	<picture id="sol">
 	<source media="(min-width: 465px)" srcset="img/solFeliz.png">
-	<img class="contentImage" src="img/solFeliz.png" alt=""></img>
+	<img class="contentImage" src="img/solFeliz.png" alt="">
 	</picture>
 	
 	<!--FIN SOL-->
@@ -84,10 +85,145 @@
 		</ul>
 	
 	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	
+	<form name="form" onsubmit="clasificar()">
+		<input type="radio" name="radioC"  value="0" id="r1" />Operable<br>
+		<input type="radio" name="radioC"  value="1" id="r2" />A<br>
+		<input type="radio" name="radioC"  value="2" id="r3" />AA<br>
+		<input type="radio" name="radioC"  value="3" id="r4" />Ambos<br>
+		<input type="submit" value="Enviar">
+		</form>
+		
+		
+		<h2>Test</h2><br>
+		
+	<div id="contenedor">
+
+	<div id="targetElement0"><h3>1</h3><br></div><br>
+	
+	<div id="targetElement1"><h3>2</h3><br></div><br>
+	
+	<div id="targetElement2"><h3>3</h3><br></div><br>
+	
+	<div id="targetElement3"><h3>4</h3><br></div><br>
+	
+	<div id="targetElement4"><h3>5</h3><br></div><br>
+	
+	</div>
 		
 </div>
 
 <!-- Fin Contenido -->
 
+<script id="blockOfStuff0" type="text/html">
+		<p class="operable">
+		asd
+		</p>
+	</script>
+
+	<script id="blockOfStuff2" type="text/html">
+		<p class="operable">
+		g
+		</p>
+	</script>
+
+	<script id="blockOfStuff3" type="text/html">
+		<p class="operable">
+		f
+		</p>
+	</script>
+	
+	<script id="blockOfStuff4" type="text/html">
+		<p class="entendible">
+		d
+		</p>
+	</script>
+	
+	<script id="blockOfStuff1" type="text/html">
+		<p class="perceptible">
+		asddsfff
+		</p>
+	</script>
+
+<script>
+
+
+/*Clasficar criterios bien*/
+
+function clasificar(){
+	var rad = document.form.radioC
+	var documento = document.cloneNode(true);
+	
+	for (var i = 0; i < rad.length; i++) {
+        if(document.getElementById("r1").checked == true){
+			document.getElementById("targetElement2").style.display = 'none';
+			
+		}else if(document.getElementById("r2").checked == true){
+			document.innerHTML = documento.innerHTML;
+			var contenido = document.getElementById("contenido");
+			contenido.innerHTML = "";
+			var div = document.createElement('div');
+			var elementos = documento.getElementsByClassName("A");
+			for(i = 0; i < elementos.length; i++){
+				div.innerHTML = elementos[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			contenido.innerHTML += documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;
+			
+		}else if(document.getElementById("r3").checked == true){
+			document.innerHTML = documento.innerHTML;
+			var contenido = document.getElementById("contenido");
+			var criterio = document.getElementById("noD");
+			contenido.innerHTML = "";
+			var div = document.createElement('div');
+			var elementos2 = documento.getElementsByClassName("AA");
+			for(i = 0; i < elementos2.length; i++){
+				div.innerHTML = elementos2[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			contenido.innerHTML += documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;
+			
+		}else if(document.getElementById("r4").checked == true){
+			document.innerHTML = documento.innerHTML;
+			var contenido = document.getElementById("contenido");
+			contenido.innerHTML = "";
+			var div = document.createElement('div');
+			var elementos = documento.getElementsByClassName("A");
+			for(i = 0; i < elementos.length; i++){
+				div.innerHTML = elementos[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			var elementos2 = documento.getElementsByClassName("AA");
+			for(i = 0; i < elementos2.length; i++){
+				div.innerHTML = elementos2[i].innerHTML;
+				contenido.innerHTML+= div.outerHTML + "<br>";
+			}
+			contenido.innerHTML += documento.getElementsByClassName("final")[0].outerHTML + documento.getElementById("script").outerHTML;
+		}
+}
+	
+	};
+	
+	function getRandom()
+		{
+			return (Math.floor(Math.random()*5))
+		}
+		
+		var array = [];
+		for(i = 0; i < 5; i++){
+		var div = document.createElement('div');
+		div.setAttribute('class', 'bloquesAleatorios');
+		var numeroRandom = getRandom();
+		while(array.includes(numeroRandom)){
+			numeroRandom = getRandom();
+		}
+		array.push(numeroRandom);
+		div.innerHTML = document.getElementById("blockOfStuff" + numeroRandom).innerHTML;
+		document.getElementById("targetElement" + i).appendChild(div);
+	}
+
+
+
+</script>
 
 </body>
