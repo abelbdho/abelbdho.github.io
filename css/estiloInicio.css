@@ -102,7 +102,7 @@ mark {
   margin: 0;
   padding: 0;
   width: 210px;
-  position: fixed;
+  position: absolute;
   top: 300px;
   left: 7px;
   }
@@ -249,8 +249,8 @@ a:hover, h1 a:hover {
 	max-width: 100%;
 	padding: 40px;
 	margin: auto;
-	width: 400px;
-	height: 480px;
+	--width: 400px;
+	--height: 480px;
 }
 
 
@@ -413,6 +413,7 @@ th, td {
   color: black;
   width: 30%;
   position: relative;
+  z-index:99999;
 }
 
 .popup h2 {
@@ -426,7 +427,7 @@ th, td {
 
 .popup .ventanita {
   overflow: auto;
-  color: black;
+  color: black;z-index:99999;
 }
 
 @media screen and (max-width: 900px){
@@ -890,4 +891,10 @@ ul.breadcrumb li a:hover {
 
 .avisoOblig{
 	color: #AD0000;
+}
+
+/*Separadores*/
+
+.my-auto{
+	background-color: black;
 }

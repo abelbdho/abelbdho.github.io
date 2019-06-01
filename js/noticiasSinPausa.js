@@ -6,9 +6,9 @@ function bucle() {
   timer = setInterval(function(){
 	  
 	   var div = document.createElement('div');
-		div.innerHTML = document.getElementById("blockOfStuff" + cont).innerHTML;
-		document.getElementById("targetElement").innerHTML = "";
-		document.getElementById("targetElement").appendChild(div);
+		div.innerHTML = document.getElementById("bloque" + cont).innerHTML;
+		document.getElementById("target").innerHTML = "";
+		document.getElementById("target").appendChild(div);
 		cont++;
 		if(cont==3){
 			cont = 0;
