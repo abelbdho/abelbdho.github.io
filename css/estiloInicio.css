@@ -550,9 +550,6 @@ th, td {
 	color: #D6D6FF;
 }
 
-.contrasteEj2{
-	color: #000000;
-}
 
 /*LISTA CAMBIANTE FALSA*/
 
@@ -654,7 +651,7 @@ blink.woo{
   src: url('../font/LOKICOLA.ttf') format('truetype');
 }
 
-#cocaCola{
+.cocaCola{
 	font-family: 'fuenteCola';
 	font-size: 2em;
 }

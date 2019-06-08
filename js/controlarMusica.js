@@ -12,9 +12,6 @@ function playPause(song){
 }
 
 function reset(btn, song){
-   if(btn.classList.contains('playing')){
-      btn.classList.toggle('playing');
-   }
    song.pause();
    song.currentTime = 0;
 }
@@ -23,7 +20,6 @@ function progress(btn, song){
    setTimeout(function(){
       var end = song.duration; 
       var current = song.currentTime;
-      var percent = current/(end/100);
       
       if(current==end){
          reset(btn, song);
@@ -38,7 +34,6 @@ activador.addEventListener('click', function(){
 	});
 
 botonAuto.addEventListener('click', function(){
-   botonAuto.classList.toggle('playing');
    playPause(cancion);
    progress(botonAuto, cancion);
 });
