@@ -163,27 +163,27 @@
 		<fieldset>
 		<legend>Datos personales</legend>
 		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
-		<input type="text" name="nombre">
+		<input type="text" id="nombre">
 		<br><br>
 		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
-		<input type="text" name="apellidos">
+		<input type="text" id="apellidos">
 		<br><br>
 		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
-		<input type="text" name="email">
+		<input type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" name="edad">
+		<input type="text" id="edad">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" name="direccion">
+		<input type="text" id="direccion">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" name="cp">
+		<input type="text" id="cp">
 		<br><br>
 		<label>Sexo</label>:<br>
-		<input onfocusout="activarBoton(enviarForm)" type="radio" name="genero" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input onfocusout="activarBoton(enviarForm)" type="radio" name="genero" value="mujer"> <label for="mujer">Mujer</label><br><br>
-		<input id="enviarForm" type="submit" value="Enviar">
+		<input onfocusout="activarBoton(enviarForm)" type="radio" id="genero" value="hombre"> <label for="hombre">Hombre</label><br>
+		<input onfocusout="activarBoton(enviarForm)" type="radio" id="genero" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
 
