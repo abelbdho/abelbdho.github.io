@@ -50,7 +50,7 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<nav class="menu" role="menu">
+	<nav class="menu" role="navigation">
 	<a href="index.html" id="inicio">Inicio</a>
 	<a class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
@@ -539,8 +539,8 @@
 	<script id="blockOfStuff8" class="perceptible" type="text/html">
 		<div id="principio8">
 		<form action="paginaDestino.html">
-		<span id="obligatorio">Nombre</span>:<br>
-		<input id="inputObligatorio" type="text" name="nombre">
+		<span class="obligatorio">Nombre</span>:<br>
+		<input class="inputObligatorio" type="text" name="nombre">
 		<br><br>
 		Apellido:<br>
 		<input type="text" name="apellido"><br><br>
@@ -783,21 +783,21 @@
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img id="imgCarrusel" src="https://galernaestudio.com/wp-content/uploads/2016/10/accesibilidad-web.jpg" alt="Dedo pulsando una tecla de teclado en la que pone accesibilidad">
+      <img class="imgCarrusel" src="https://galernaestudio.com/wp-content/uploads/2016/10/accesibilidad-web.jpg" alt="Dedo pulsando una tecla de teclado en la que pone accesibilidad">
     </div>
     <div class="carousel-item">
-      <img id="imgCarrusel" src="https://www.w3.org/WAI/images/WCAG21/small-1024x512@1x.png" alt="W3C WCAG 2.1 Web Content Accesibility Guidelines">
+      <img class="imgCarrusel" src="https://www.w3.org/WAI/images/WCAG21/small-1024x512@1x.png" alt="W3C WCAG 2.1 Web Content Accesibility Guidelines">
     </div>
     <div class="carousel-item">
-      <img id="imgCarrusel" src="https://3.bp.blogspot.com/-QT31kvqYfZ0/Wz0j8DlJDnI/AAAAAAAABLY/mlJJNs-QrA8al1qlmVpnYfq1aN9Y89WPACLcBGAs/s1600/pautas.png" alt="Página de la WCAG y su tabla de contenido">
+      <img class="imgCarrusel" src="https://3.bp.blogspot.com/-QT31kvqYfZ0/Wz0j8DlJDnI/AAAAAAAABLY/mlJJNs-QrA8al1qlmVpnYfq1aN9Y89WPACLcBGAs/s1600/pautas.png" alt="Página de la WCAG y su tabla de contenido">
     </div>
   </div>
 
   <a id="flchCarrusel" class="carousel-control-prev" href="#carrusel" data-slide="prev">
-    <span id="flcCarrusel" alt="flecha carrusel hacia la izquierda">&#8592;</span>
+    <span class="flcCarrusel" alt="flecha carrusel hacia la izquierda">&#8592;</span>
   </a>
   <a class="carousel-control-next" href="#carrusel" data-slide="next">
-    <span id="flcCarrusel" alt="flecha carrusel hacia la derecha">&#8594;</span>
+    <span class="flcCarrusel" alt="flecha carrusel hacia la derecha">&#8594;</span>
   </a>
 
 </div><br>
@@ -1078,13 +1078,13 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input type="text" id="nombre">
 		<br><br>
-		<label id="obligatorio" for="apellidos">Nombre 2</label> (obligatorio):<br>
+		<label class="obligatorio" for="apellidos">Nombre 2</label> (obligatorio):<br>
 		<input type="text" id="apellidos">
 		<br><br>
-		<label id="obligatorio" for="email">Emilio</label> (obligatorio):<br>
+		<label class="obligatorio" for="email">Emilio</label> (obligatorio):<br>
 		<input type="text" id="email">
 		<br><br>
 		<label for="edad">Años</label>:<br>
@@ -1130,13 +1130,13 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input class="formFoco2" type="text" id="nombre">
 		<br><br>
-		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
 		<input class="formFoco2" type="text" id="apellidos">
 		<br><br>
-		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
 		<input class="formFoco2" type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
@@ -1250,13 +1250,13 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<span id="obligatorio">Nombre</span> (obligatorio):<br>
+		<span class="obligatorio">Nombre</span> (obligatorio):<br>
 		<input onfocusout="requerido(this, 'aviso0')" type="text" name="nombre"><div id="aviso0"></div>
 		<br>
-		<span id="obligatorio">Apellidos</span> (obligatorio):<br>
+		<span class="obligatorio">Apellidos</span> (obligatorio):<br>
 		<input onfocusout="requerido(this, 'aviso1')" type="text" name="apellidos"><div id="aviso1"></div>
 		<br>
-		<span id="obligatorio">Email</span> (obligatorio):<br>
+		<span class="obligatorio">Email</span> (obligatorio):<br>
 		<input onfocusout="requerido(this, 'aviso2')" type="text" name="email"><div id="aviso2"></div>
 		<br>
 		Edad:<br>
@@ -1302,13 +1302,13 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input type="text" name="nombre">
 		<br><br>
-		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
 		<input type="text" name="apellidos">
 		<br><br>
-		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
 		<input type="text" name="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
@@ -1417,13 +1417,13 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<span id="obligatorio">Nombre</span> (obligatorio):<br>
+		<span class="obligatorio">Nombre</span> (obligatorio):<br>
 		<input type="text" name="nombre">
 		<br><br>
-		<span id="obligatorio">Apellidos</span> (obligatorio):<br>
+		<span class="obligatorio">Apellidos</span> (obligatorio):<br>
 		<input type="text" name="apellidos">
 		<br><br>
-		<span id="obligatorio">Email</span> (obligatorio):<br>
+		<span class="obligatorio">Email</span> (obligatorio):<br>
 		<input type="text" name="email">
 		<br><br>
 		Edad:<br>
@@ -1452,7 +1452,7 @@
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#labels-or-instructions" target=”_blank”>Criterio~WCAG</a>
 			<div class="parrafoBueno" role="complementary">
 				<span class="flechaBien" role="complementary">&#10003;</span>Los nombres de cada campo de este formulario usan la etiqueta adecuada, que se asocian a sus campos.
-				<pre><code>&lt;label id="obligatorio" for="apellidos">Apellidos&lt;/label></code></pre></code></pre>
+				<pre><code>&lt;label class="obligatorio" for="apellidos">Apellidos&lt;/label></code></pre></code></pre>
 			</div>
 			<div class="parrafoMalo" role="complementary">
 				<span class="flechaMal" role="complementary">&#10007;</span>Los campos no est&aacute;n asociados a sus respectivos nombres.
@@ -1471,13 +1471,13 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input type="text" name="nombre">
 		<br><br>
-		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
 		<input type="text" name="apellidos">
 		<br><br>
-		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
 		<input type="text" name="email">
 		<br><br>
 		<label for="dia">D&iacute;a de nacimiento</label>:<br>
@@ -1524,13 +1524,13 @@
 		<form action="paginaDestino.html" method="POST">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<label id="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
 		<input type="text" name="nombre">
 		<br><br>
-		<label id="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
 		<input type="text" name="apellidos">
 		<br><br>
-		<label id="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
 		<input type="text" name="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>

@@ -634,11 +634,11 @@ blink.woo{
 	background-color: #AFFFFF;
 }
 
-#obligatorio{
+.obligatorio{
 	color: #AD0000;
 }
 
-#inputObligatorio{
+.inputObligatorio{
 	border: 1px solid #AD0000;
 }
 
@@ -755,19 +755,19 @@ blink.woo{
 
 /*CARRUSEL*/
 
-#flcCarrusel{
+.flcCarrusel{
 	color: black;
 	font-size: 6em;
 	font-weight: bold;
 }
 
-#carouselButtons {
+.carouselButtons {
     margin-left: 200px;
     position: absolute;
     bottom: 0px;
 }
 
-#imgCarrusel{
+.imgCarrusel{
 	width: 1100px;
 	height: 400px;
 }
