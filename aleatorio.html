@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="es">
 <head>
-  <title>Inicio - REAVAI: Accesibilidad Web</title>
+  <title>Aleatoria - REAVAI: Accesibilidad Web</title>
   <meta charset="utf-8">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,27 +50,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a href="1.4A.html">1.4 Distinguible</a>
-	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a href="2.2A.html">2.2 Tiempo suficiente</a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a class="principio" href="entendible.html">3. Entendible</a>
 	<a href="3.1A.html">3.1 Legible</a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
-	<a class="principio" href="4.1A.html">4. Robusto</a>
+	<a class="principio" href="robusto.html">4. Robusto</a>
 	<a href="4.1A.html">4.1 Compatible</a>
 	<a id="activo" class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -86,25 +86,27 @@
 	<!-- Contenido -->
 
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
+	
 	
 	<ul class="breadcrumb">
 		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
 		<li>Aleatorio</li>
 		</ul>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
 	
+	<fieldset>
 	<form name="form" onsubmit="clasificar()">
-		<input type="radio" name="radioC"  value="0" id="r1" />Perceptible<br>
-		<input type="radio" name="radioC"  value="1" id="r2" />Operable<br>
-		<input type="radio" name="radioC"  value="2" id="r3" />Entendible<br>
-		<input type="radio" name="radioC"  value="3" id="r4" />Robusto<br>
-		<input type="radio" name="radioC"  value="4" id="r5" />Todos<br>
+		<input type="radio" name="radioC"  value="0" id="r1" /><label for="r1">Perceptible</label><br>
+		<input type="radio" name="radioC"  value="1" id="r2" /><label for="r2">Operable</label><br>
+		<input type="radio" name="radioC"  value="2" id="r3" /><label for="r3">Entendible</label><br>
+		<input type="radio" name="radioC"  value="3" id="r4" /><label for="r4">Robusto</label><br>
+		<input type="radio" name="radioC"  value="4" id="r5" /><label for="r5">Todos</label></label><br>
 		<input type="button" onclick="clasificar()" value="Enviar">
-	</form><br>
+	</form>
+	</fieldset><br>
 		
-		<h2>Test</h2><br>
+		<h1>Test</h1><br>
 		
 		<p>
 		En este apartado podr&aacute;s probarte a ti mismo. Existen criterios normales y los ocultos, que tendr&aacute;s que investigar t&uacute;
@@ -116,139 +118,139 @@
 		
 	<div id="contenedor">
 
-	<div id="targetElement0"><h3>1</h3><br></div><br>
+	<div id="targetElement0"><h2>1</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>	
-	<div id="targetElement1"><h3>2</h3><br></div><br>
+	<div id="targetElement1"><h2>2</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement2"><h3>3</h3><br></div><br>
+	<div id="targetElement2"><h2>3</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement3"><h3>4</h3><br></div><br>
+	<div id="targetElement3"><h2>4</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement4"><h3>5</h3><br></div><br>
+	<div id="targetElement4"><h2>5</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement5"><h3>6</h3><br></div><br>
+	<div id="targetElement5"><h2>6</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement6"><h3>7</h3><br></div><br>
+	<div id="targetElement6"><h2>7</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement7"><h3>8</h3><br></div><br>
+	<div id="targetElement7"><h2>8</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement8"><h3>9</h3><br></div><br>
+	<div id="targetElement8"><h2>9</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement9"><h3>10</h3><br></div><br>
+	<div id="targetElement9"><h2>10</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement10"><h3>11</h3><br></div><br>
+	<div id="targetElement10"><h2>11</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement11"><h3>12</h3><br></div><br>
+	<div id="targetElement11"><h2>12</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement12"><h3>13</h3><br></div><br>
+	<div id="targetElement12"><h2>13</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement13"><h3>14</h3><br></div><br>
+	<div id="targetElement13"><h2>14</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement14"><h3>15</h3><br></div><br>
+	<div id="targetElement14"><h2>15</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement15"><h3>16</h3><br></div><br>
+	<div id="targetElement15"><h2>16</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement16"><h3>17</h3><br></div><br>
+	<div id="targetElement16"><h2>17</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement17"><h3>18</h3><br></div><br>
+	<div id="targetElement17"><h2>18</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement18"><h3>19</h3><br></div><br>
+	<div id="targetElement18"><h2>19</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement19"><h3>20</h3><br></div><br>
+	<div id="targetElement19"><h2>20</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement20"><h3>21</h3><br></div><br>
+	<div id="targetElement20"><h2>21</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement21"><h3>22</h3><br></div><br>
+	<div id="targetElement21"><h2>22</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement22"><h3>23</h3><br></div><br>
+	<div id="targetElement22"><h2>23</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement23"><h3>24</h3><br></div><br>
+	<div id="targetElement23"><h2>24</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement24"><h3>25</h3><br></div><br>
+	<div id="targetElement24"><h2>25</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement25"><h3>26</h3><br></div><br>
+	<div id="targetElement25"><h2>26</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement26"><h3>27</h3><br></div><br>
+	<div id="targetElement26"><h2>27</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement27"><h3>28</h3><br></div><br>
+	<div id="targetElement27"><h2>28</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement28"><h3>29</h3><br></div><br>
+	<div id="targetElement28"><h2>29</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement29"><h3>30</h3><br></div><br>
+	<div id="targetElement29"><h2>30</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement30"><h3>31</h3><br></div><br>
+	<div id="targetElement30"><h2>31</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement31"><h3>32</h3><br></div><br>
+	<div id="targetElement31"><h2>32</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement32"><h3>33</h3><br></div><br>
+	<div id="targetElement32"><h2>33</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
-	<div id="targetElement33"><h3>34</h3><br></div><br>
+	<div id="targetElement33"><h2>34</h2><br></div><br>
 	<div class="d-flex">
   <hr class="my-auto flex-grow-1">
 	</div><br><br>
@@ -281,7 +283,7 @@
 		<a role="button" class="botonVentanita2" href="#popup0" alt="Pista 1.1.1 Contenido no textual">PISTA</a>
 		<div id="popup0" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.1.1 Contenido no textual - Nivel A</h2>
+		<h1>1.1.1 Contenido no textual - Nivel A</h1>
 		<div class="ventanita">
 			Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#non-text-content" target=”_blank”>Criterio~WCAG</a>
@@ -308,7 +310,7 @@
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 1.2.1 Audio único y vídeo único (Pregrabados)">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h2>
+		<h1>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h1>
 		<div class="ventanita">
 			La informaci&oacute;n transmitida mediante contenido de solo audio grabado y de solo vídeo grabado debe ser accesible para todos los usuarios.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -335,7 +337,7 @@
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 1.2.2 Subtítulos (Pregrabados)">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h2>
+		<h1>1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h1>
 		<div class="ventanita">
 			Las personas sordas o con deficiencias auditivas deben poder observar presentaciones multimedia sincronizadas.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -362,7 +364,7 @@
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 1.2.3 Audiodescripción o Medio Alternativo (grabado)">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h2>
+		<h1>1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h1>
 		<div class="ventanita">
 			La informaci&oacute;n de las presentaciones multimedia sincronizadas debe ser accesible para las personas ciegas o con problemas de visi&oacute;n.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -391,7 +393,7 @@
 		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 1.2.5 Audiodescripción (grabada)">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.5 Audiodescripción (grabada) - Nivel AA</h2>
+		<h1>1.2.5 Audiodescripción (grabada) - Nivel AA</h1>
 		<div class="ventanita">
 			Proporcionar a las personas ciegas o con dificultades visuales acceso a la informaci&oacute;n visual de una presentaci&oacute;n multimedia sincronizada.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -434,7 +436,7 @@
 		<a role="button" class="botonVentanita2" href="#popup5" alt="Pista 1.3.1 Información y relaciones">PISTA</a>
 		<div id="popup5" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h2>
+		<h1>1.3.1 Informaci&oacute;n y relaciones - Nivel A</h1>
 		<div class="ventanita">
 			Asegurar que la informaci&oacute;n y las relaciones impl&iacute;citas en el formato visual o auditivo se mantengan cuando cambie el formato de la presentaci&oacute;n.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships" target=”_blank”>Criterio~WCAG</a>
@@ -472,7 +474,7 @@
 		<a role="button" class="botonVentanita2" href="#popup6" alt="Pista 1.3.2 Secuencia significativa">PISTA</a>
 		<div id="popup6" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
+		<h1>1.3.2 Secuencia significativa - Nivel A</h1>
 		<div class="ventanita">
 			Permitir que las aplicaciones de usuario puedan proporcionar una presentaci&oacute;n alternativa del contenido preservando el orden de lectura necesario para entender su significado.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence" target=”_blank”>Criterio~WCAG</a>
@@ -511,24 +513,10 @@
 		<input type="text" value="No deben usarse solo colores" id="campoCopiar">
 		<br><br>
 		
-		<p>
-			<em>Seleccione los tri&aacute;ngulos rect&aacute;ngulos</em>
-		</p>
-		
-		<p>
-			<form action="paginaDestino.html">
-		<input alt="figura triangular" type="radio" id="radio1"><div class="triangulo1"></div><br>
-		<input alt="figura triangular" type="radio" id="radio2"><div class="triangulo2"></div>
-		<input alt="figura triangular" type="radio" id="radio3"><div class="triangulo3"></div><br>
-		<input id="enviarForm" type="submit" value="Enviar">
-			</form>
-		</p>
-		<br>
-		
 		<a role="button" class="botonVentanita2" href="#popup7" alt="Pista 1.3.3 Características sensoriales">PISTA</a>
 		<div id="popup7" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.3.2 Secuencia significativa - Nivel A</h2>
+		<h1>1.3.2 Secuencia significativa - Nivel A</h1>
 		<div class="ventanita">
 			Asegurar que todos los usuarios puedan entender las instrucciones dadas para usar al contenido, incluso cuando no se puedan percibir las formas y el tamaño, o apreciar
 		 la ubicaci&oacute;n en el espacio o la orientaci&oacute;n del contenido.<br>
@@ -576,7 +564,7 @@
 		<a role="button" class="botonVentanita2" href="#popup8" alt="Pista 1.4.1 Uso del Color">PISTA</a>
 		<div id="popup8" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.1 Uso del Color - Nivel A</h2>
+		<h1>1.4.1 Uso del Color - Nivel A</h1>
 		<div class="ventanita">
 			Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
@@ -613,7 +601,7 @@
 		<a role="button" class="botonVentanita2" href="#popup9" alt="Pista 1.4.2 Control de Audio">PISTA</a>
 		<div id="popup9" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.2 Control de Audio - Nivel A</h2>
+		<h1>1.4.2 Control de Audio - Nivel A</h1>
 		<div class="ventanita">
 			Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
 		 su volumen independientemente del volumen del sistema.<br>
@@ -637,17 +625,17 @@
 		<div id="principio10">
 		<p>
 			<ul>
-			<li id="contrasteEj1Mal">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
-			<li id="contrasteEj1Mal">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
+			<li class="contrasteEj1Mal">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
+			<li class="contrasteEj1Mal">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
 			 no se requiere constraste.</li>
-			<li id="contrasteEj1Mal">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
+			<li class="contrasteEj1Mal">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
 			 </ul>
 		</p>
 		
 		<a role="button" class="botonVentanita2" href="#popup10" alt="Pista 1.4.3 Contraste (mínimo)">PISTA</a>
 		<div id="popup10" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h2>
+		<h1>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h1>
 		<div class="ventanita">
 			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
@@ -676,7 +664,7 @@
 		<a role="button" class="botonVentanita2" href="#popup11" alt="Pista 1.4.4 Cambio del tamaño de texto">PISTA</a>
 		<div id="popup11" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.4 Cambio del tamaño de texto - Nivel AA</h2>
+		<h1>1.4.4 Cambio del tamaño de texto - Nivel AA</h1>
 		<div class="ventanita">
 			A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
 		 200% sin p&eacute;rdida de contenido o funcionalidad.<br>
@@ -714,7 +702,7 @@
 		<a role="button" class="botonVentanita2" href="#popup12" alt="Pista 1.4.5 Imágenes de texto">PISTA</a>
 		<div id="popup12" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.5 Im&aacute;genes de texto - Nivel AA</h2>
+		<h1>1.4.5 Im&aacute;genes de texto - Nivel AA</h1>
 		<div class="ventanita">
 			Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.<br>
@@ -744,7 +732,7 @@
 		<a role="button" class="btn btn-info" href="#popupX" alt="Botón del ejemplo">EJEMPLO</a>
 		<div id="popupX" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.1.1 Ejemplo</h2>
+		<h1>2.1.1 Ejemplo</h1>
 		<div class="ventanita" id="M">
 			Comprobamos que se realiza el foco sobre el enlace, despu&eacute;s sobre el bot&oacute;n y sale.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
@@ -763,7 +751,7 @@
 		<a role="button" class="botonVentanita2" href="#popup13" alt="Pista 2.1.2 Sin trampas para el foco del teclado">PISTA</a>
 		<div id="popup13" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.1.2 Sin trampas para el foco del teclado - Nivel A</h2>
+		<h1>2.1.2 Sin trampas para el foco del teclado - Nivel A</h1>
 		<div class="ventanita">
 			No atrapar el foco del teclado en niguna secci&oacute;n de contenido de la p&aacute;gina.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard-no-exception" target=”_blank”>Criterio~WCAG</a>
@@ -817,7 +805,7 @@
 		<a role="button" class="botonVentanita2" href="#popup14" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA</a>
 		<div id="popup14" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h2>
+		<h1>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h1>
 		<div class="ventanita">
 			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
@@ -853,7 +841,7 @@
 		<a role="button" class="botonVentanita2" href="#popup15" alt="Pista 2.3.1 Umbral de tres destellos o menos">PISTA</a>
 		<div id="popup15" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.3.1 Umbral de tres destellos o menos - Nivel A</h2>
+		<h1>2.3.1 Umbral de tres destellos o menos - Nivel A</h1>
 		<div class="ventanita">
 			Las p&aacute;ginas web no contienen nada que destelle m&aacute;s de tres veces en un segundo, o el destello est&aacute; por debajo del umbral de destello general y de destello rojo.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold" target=”_blank”>Criterio~WCAG</a>
@@ -881,7 +869,7 @@
 		<a role="button" class="botonVentanita2" href="#popup16" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
 		<div id="popup16" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.1 Evitar Bloques - Nivel A</h2>
+		<h1>2.4.1 Evitar Bloques - Nivel A</h1>
 		<div class="ventanita">
 			Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
@@ -913,7 +901,7 @@
 		<a role="button" class="botonVentanita2" href="#popup17" alt="Pista 2.4.2 Titulado de las p&aacute;ginas">PISTA</a>
 		<div id="popup17" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.2 Titulado de las p&aacute;ginas - Nivel A</h2>
+		<h1>2.4.2 Titulado de las p&aacute;ginas - Nivel A</h1>
 		<div class="ventanita">
 			Las p&aacute;ginas web tienen t&iacute;tulos que describen su tem&aacute;tica o prop&oacute;sito.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled" target=”_blank”>Criterio~WCAG</a>
@@ -995,7 +983,7 @@
 		<a role="button" class="botonVentanita2" href="#popup18" alt="Pista 2.4.3 Orden del foco">PISTA</a>
 		<div id="popup18" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.3 Orden del foco - Nivel A</h2>
+		<h1>2.4.3 Orden del foco - Nivel A</h1>
 		<div class="ventanita">
 			Si se puede navegar secuencialmente por una p&aacute;gina web y la secuencia de navegaci&oacute;n afecta su significado o su operación, los componentes que pueden recibir el foco lo hacen
 		 en un orden que preserva su significado y operabilidad.<br>
@@ -1027,7 +1015,7 @@
 		<a role="button" class="botonVentanita2" href="#popup19" alt="Pista 2.4.4 Propósito de los enlaces (en contexto)">PISTA</a>
 		<div id="popup19" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.4 Prop&oacute;sito de los enlaces (en contexto) - Nivel A</h2>
+		<h1>2.4.4 Prop&oacute;sito de los enlaces (en contexto) - Nivel A</h1>
 		<div class="ventanita">
 			El prop&oacute;sito de cada enlace puede ser determinado con solo el texto del enlace o a trav&eacute;s del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el
 			 prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.<br>
@@ -1055,7 +1043,7 @@
 		<a role="button" class="botonVentanita2" href="#popup20" alt="Pista 2.4.5 Múltiples vías">PISTA</a>
 		<div id="popup20" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.5 M&uacute;ltiples v&iacute;as - Nivel AA</h2>
+		<h1>2.4.5 M&uacute;ltiples v&iacute;as - Nivel AA</h1>
 		<div class="ventanita">
 			Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways" target=”_blank”>Criterio~WCAG</a>
@@ -1078,11 +1066,11 @@
 		<div id="principio21">
 		<p>
 		<h1>WCAG</h1>
-		<h2>Principio Perceptible</h2>
-		<h3>Pauta Alternativas textuales</h3>
-		<h2>Principio Operable</h2>
-		<h3>Pauta Accesible por teclado</h3>
-		<h2>(...)</h2>
+		<h1>Principio Perceptible</h1>
+		<h2>Pauta Alternativas textuales</h2>
+		<h1>Principio Operable</h1>
+		<h2>Pauta Accesible por teclado</h2>
+		<h1>(...)</h1>
 		</p>
 		
 		<p><em>Los campos obligatorios estar&aacute;n marcados en rojo y est&aacute; condici&oacute;n ser&aacute; indicada en su respectiva etiqueta.</em></p>
@@ -1118,7 +1106,7 @@
 		<a role="button" class="botonVentanita2" href="#popup21" alt="Pista 2.4.6 Encabezados y etiquetas">PISTA</a>
 		<div id="popup21" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.6 Encabezados y etiquetas - Nivel AA</h2>
+		<h1>2.4.6 Encabezados y etiquetas - Nivel AA</h1>
 		<div class="ventanita">
 			Los encabezados y etiquetas describen el tema o prop&oacute;sito.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
@@ -1171,7 +1159,7 @@
 		<a role="button" class="botonVentanita2" href="#popup22" alt="Pista 2.4.7 Foco Visible">PISTA</a>
 		<div id="popup22" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.7 Foco Visible - Nivel AA</h2>
+		<h1>2.4.7 Foco Visible - Nivel AA</h1>
 		<div class="ventanita">
 			Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cu&aacute;l el indicador del foco del teclado resulta visible.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels" target=”_blank”>Criterio~WCAG</a>
@@ -1204,7 +1192,7 @@
 		<a role="button" class="botonVentanita2" href="#popup23" alt="Pista 3.1.2 Idioma de las partes">PISTA</a>
 		<div id="popup23" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.1.2 Idioma de las partes - Nivel AA</h2>
+		<h1>3.1.2 Idioma de las partes - Nivel AA</h1>
 		<div class="ventanita">
 			El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma
 		 indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.<br>
@@ -1234,7 +1222,7 @@
 		<a role="button" class="botonVentanita2" href="#popup24" alt="Pista 3.1.1 Idioma de la p&aacute;gina">PISTA</a>
 		<div id="popup24" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.1.1 Idioma de la p&aacute;gina - Nivel A</h2>
+		<h1>3.1.1 Idioma de la p&aacute;gina - Nivel A</h1>
 		<div class="ventanita">
 			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
@@ -1290,7 +1278,7 @@
 		<a role="button" class="botonVentanita2" href="#popup25" alt="Pista 3.3.1 Identificación de errores">PISTA</a>
 		<div id="popup25" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.1 Identificaci&oacute;n de errores - Nivel A</h2>
+		<h1>3.3.1 Identificaci&oacute;n de errores - Nivel A</h1>
 		<div class="ventanita">
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
@@ -1342,7 +1330,7 @@
 		<a role="button" class="botonVentanita2" href="#popup26" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>
 		<div id="popup26" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.2.2 Al recibir entradas - Nivel A</h2>
+		<h1>3.2.2 Al recibir entradas - Nivel A</h1>
 		<div class="ventanita">
 			El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese
 		 comportamiento antes de usar el componente.<br>
@@ -1372,7 +1360,7 @@
 		<a role="button" class="botonVentanita2" href="#popup27" alt="Pista 3.2.3 Navegaci&oacute;n coherente">PISTA</a>
 		<div id="popup27" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.2.3 Navegaci&oacute;n coherente - Nivel AA</h2>
+		<h1>3.2.3 Navegaci&oacute;n coherente - Nivel AA</h1>
 		<div class="ventanita">
 			Los mecanismos de navegaci&oacute;n que se repiten en m&uacute;ltiples páginas web dentro de un conjunto de p&aacute;ginas web aparecen siempre en el mismo orden relativo cada vez que se repiten,
 		 a menos que el cambio sea provocado por el propio usuario.<br>
@@ -1400,7 +1388,7 @@
 		<a role="button" class="botonVentanita2" href="#popup28" alt="Pista 3.2.4 Identificación coherente">PISTA</a>
 		<div id="popup28" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.2.4 Identificaci&oacute;n coherente - Nivel AA</h2>
+		<h1>3.2.4 Identificaci&oacute;n coherente - Nivel AA</h1>
 		<div class="ventanita">
 			Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente. <br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification" target=”_blank”>Criterio~WCAG</a>
@@ -1457,7 +1445,7 @@
 		<a role="button" class="botonVentanita2" href="#popup29" alt="Pista 3.3.2 Etiquetas o instrucciones">PISTA</a>
 		<div id="popup29" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.2 Etiquetas o instrucciones - Nivel A</h2>
+		<h1>3.3.2 Etiquetas o instrucciones - Nivel A</h1>
 		<div class="ventanita">
 			Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
 		 contenido requiere la introducci&oacute;n de datos por parte del usuario.<br>
@@ -1511,7 +1499,7 @@
 		<a role="button" class="botonVentanita2" href="#popup30" alt="Pista 3.3.3 Sugerencia ante errores">PISTA</a>
 		<div id="popup30" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.3 Sugerencia ante errores - Nivel AA</h2>
+		<h1>3.3.3 Sugerencia ante errores - Nivel AA</h1>
 		<div class="ventanita">
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
 		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.<br>
@@ -1564,7 +1552,7 @@
 		<a role="button" class="botonVentanita2" href="#popup31" alt="Pista 3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos)">PISTA</a>
 		<div id="popup31" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h2>
+		<h1>3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h1>
 		<div class="ventanita">
 			Prevenci&oacute;n de errores (legales, financieros, datos): Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o
 		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: reversible, revisado y confirmado. <br>
@@ -1586,6 +1574,12 @@
 	
 	<script id="blockOfStuff32" class="robusto" type="text/html">
 		<div id="principio32">
+		
+		<pre><code>
+&lt;a id="submenu" href="percepA.html">Alternativas textuales y Medios tempodependientes&lt;/a>
+&lt;a id="submenu" href="percepA2.html">Adaptable y Distinguible&lt;/a>
+		</code></pre>
+		
 		<p>
 		Criterio oculto. <a href="indexFake.html">P&aacute;gina</a>
 		</p>
@@ -1593,7 +1587,7 @@
 		<a role="button" class="botonVentanita2" href="#popup32" alt="Pista 4.1.1 Procesamiento">PISTA</a>
 		<div id="popup32" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>4.1.1 Procesamiento - Nivel A</h2>
+		<h1>4.1.1 Procesamiento - Nivel A</h1>
 		<div class="ventanita">
 			En los contenidos implementados mediante el uso de lenguajes de marcas, los elementos tienen las etiquetas de apertura y cierre completas; los elementos est&aacute;n anidados de acuerdo a sus
 		 especificaciones; los elementos no contienen atributos duplicados y los ID son &uacute;nicos, excepto cuando las especificaciones permitan estas caracter&iacute;sticas.<br>
@@ -1615,6 +1609,11 @@
 	
 	<script id="blockOfStuff33" class="robusto" type="text/html">
 		<div id="principio33">
+		
+		<pre><code>
+&lt;div id="popup1" class="overlay" role="Ventana emergente">
+		</code></pre>
+		
 		<p>
 		Criterio oculto. <a href="indexFake.html">P&aacute;gina</a>
 		</p>
@@ -1622,7 +1621,7 @@
 		<a role="button" class="botonVentanita2" href="#popup33" alt="Pista 4.1.2 Nombre, función, valor">PISTA</a>
 		<div id="popup33" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>4.1.2 Nombre, funci&oacute;n, valor - Nivel A</h2>
+		<h1>4.1.2 Nombre, funci&oacute;n, valor - Nivel A</h1>
 		<div class="ventanita">
 			Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la funci&oacute;n pueden ser
 		 determinados por software; los estados, propiedades y valores que pueden ser asignados por el usuario pueden ser especificados por software; y los cambios en estos elementos se encuentran disponibles

@@ -42,27 +42,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a href="1.4A.html">1.4 Distinguible</a>
-	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a href="2.2A.html">2.2 Tiempo suficiente</a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a id="activo" class="principio" href="3.1A.html">3. Entendible</a>
+	<a id="activo" class="principio" href="entendible.html">3. Entendible</a>
 	<a href="3.1A.html">3.1 Legible</a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a id="activo" href="3.3A.html"><mark>3.3 Entrada de datos asistida</mark></a>
-	<a class="principio" href="4.1A.html">4. Robusto</a>
+	<a class="principio" href="robusto.html">4. Robusto</a>
 	<a href="4.1A.html">4.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -80,39 +80,39 @@
 <main>
 	
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
+	
 	
 	<ul class="breadcrumb">
 		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
-		<li><a class="enlacesOscuros" href="3.1A.html">Entendible</a></li>
+		<li><a class="enlacesOscuros" href="entendible.html">Entendible</a></li>
 		<li>Entrada de datos asistida</li>
 		</ul>
 	
-	<a href="3.3A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="complementary">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="complementary">&#10007;</span><br><br>
+	<a href="3.3A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
 	
-	<h2>3. Entendible - Tercer Principio</h2>
+	<h1>3. Entendible - Tercer Principio</h1>
 	<p>
 		La informaci&oacute;n y el uso de la interfaz deben ser inteligibles para el usuario.
 	</p><br>
 	
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-<h3>3.3 Entrada de datos asistida</h3>
+<h2>3.3 Entrada de datos asistida</h2>
 	<p>
 		Ayudar a los usuarios a evitar y corregir los errores.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio">3.3.1 Identificaci&oacute;n de errores - Nivel A</h4>
+	<h3 id="principio1">3.3.1 Identificaci&oacute;n de errores - Nivel A</h3>
 	<p>
 		Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<p>
 		<em>Los campos requeridos aparecer&aacute;n en rojo y junto a su etiqueta se señalar&aacute; como obligatorio.</em>
@@ -149,7 +149,7 @@
 		<a role="button" class="botonVentanita2" href="#popup" alt="Pista 3.3.1 Identificación de errores">PISTA</a>
 		<div id="popup" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.1 Identificaci&oacute;n de errores - Nivel A</h2>
+		<h1>3.3.1 Identificaci&oacute;n de errores - Nivel A</h1>
 		<div class="ventanita">
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#error-identification" target=”_blank”>Criterio~WCAG</a>
@@ -172,14 +172,14 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->				
 
 
-	<h4 id="principio2">3.3.2 Etiquetas o instrucciones - Nivel A</h4>
+	<h3 id="principio2">3.3.2 Etiquetas o instrucciones - Nivel A</h3>
 	<p>
 		Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
 		 contenido requiere la introducci&oacute;n de datos por parte del usuario.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<p>
 		<em>Los campos requeridos aparecer&aacute;n en rojo y junto a su etiqueta se señalar&aacute; como obligatorio.</em>
@@ -216,7 +216,7 @@
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.3.2 Etiquetas o instrucciones">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.2 Etiquetas o instrucciones - Nivel A</h2>
+		<h1>3.3.2 Etiquetas o instrucciones - Nivel A</h1>
 		<div class="ventanita">
 			Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
 		 contenido requiere la introducci&oacute;n de datos por parte del usuario.<br>
@@ -242,14 +242,14 @@
 		
 
 
-	<h4 id="principio3">3.3.3 Sugerencia ante errores - Nivel AA</h4>
+	<h3 id="principio3">3.3.3 Sugerencia ante errores - Nivel AA</h3>
 	<p>
 		Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
 		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<form action="paginaDestino.html">
 		<fieldset>
@@ -282,7 +282,7 @@
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 3.3.3 Sugerencia ante errores">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.3 Sugerencia ante errores - Nivel AA</h2>
+		<h1>3.3.3 Sugerencia ante errores - Nivel AA</h1>
 		<div class="ventanita">
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario,
 		 a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.<br>
@@ -307,7 +307,7 @@
 		
 
 
-	<h4 id="principio4">3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h4>
+	<h3 id="principio4">3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h3>
 	<p>
 		Prevenci&oacute;n de errores (legales, financieros, datos): Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o
 		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: 
@@ -319,8 +319,8 @@
 			<li><strong>Confirmado</strong>: Se proporciona un mecanismo para revisar, confirmar y corregir la informaci&oacute;n antes de finalizar el env&iacute;o de los datos.</li>
 		</ul>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<form action="paginaDestino.html">
 		<fieldset>
@@ -353,7 +353,7 @@
 		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos)">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h2>
+		<h1>3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos) - Nivel AA</h1>
 		<div class="ventanita">
 			Prevenci&oacute;n de errores (legales, financieros, datos): Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o
 		 eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos: reversible, revisado y confirmado. <br>
@@ -432,13 +432,13 @@ shortcut.add("Ctrl+Shift+9",function() {
 	var ScrollTop = parseInt($(document).scrollTop());
 	
 	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
-    window.open("3.3A.html#principio1");
+    window.location.href = "3.3A.html#principio1";
 	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
-	window.open("3.3A.html#principio2");	
+	window.location.href = "3.3A.html#principio2";	
 	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
-	window.open("3.3A.html#principio3");	
+	window.location.href = "3.3A.html#principio3";	
 	} else if(ScrollTop > document.getElementById("principio4").offsetTop){
-	window.open("3.3A.html#principio4");	
+	window.location.href = "3.3A.html#principio4";	
 	}
 });
 

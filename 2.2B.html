@@ -43,27 +43,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a href="1.4A.html">1.4 Distinguible</a>
-	<a id="activo" class="principio" href="2.1A.html">2. Operable</a>
+	<a id="activo" class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a id="activo" href="2.2A.html"><mark>2.2 Tiempo suficiente</mark></a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a class="principio" href="entendible.html">3. Entendible</a>
 	<a href="3.1A.html">3.1 Legible</a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
-	<a class="principio" href="4.1A.html">4. Robusto</a>
+	<a class="principio" href="robusto.html">4. Robusto</a>
 	<a href="4.1A.html">4.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -81,20 +81,20 @@
 <main>
 	
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
+	
 	
 	<ul class="breadcrumb">
 		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
-		<li><a class="enlacesOscuros" href="2.1A.html">Operable</a></li>
+		<li><a class="enlacesOscuros" href="operable.html">Operable</a></li>
 		<li>Tiempo suficiente</li>
 		</ul>
 	
-	<a href="2.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="complementary">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="complementary">&#10007;</span><br><br>
+	<a href="2.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
 	
-	<h2>2. Operable - Segundo Principio</h2>
+	<h1>2. Operable - Segundo Principio</h1>
 	<p>
 		Los componentes de la interfaz de usuario y la navegaci&oacute;n deben ser operables, la interfaz no puede exigir una
 		 interacci&oacute;n al usuario que no puede realizar.
@@ -102,7 +102,7 @@
 	
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h3>2.2 Tiempo suficiente</h3>
+<h2>2.2 Tiempo suficiente</h2>
 <p>
 	Proporcionar a los usuarios el tiempo suficiente para leer y usar el contenido. Normalmente, un usuario con discapacidad tardar&aacute; m&aacute;s tiempo que la mayor&iacute;a de usuarios para realizar una tarea:
 	pueden necesitar m&aacute;s tiempo para la lectura, puede que deban ajustarse a la velocidad de un software que usen, etc.
@@ -110,7 +110,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio1">2.2.1 Tiempo ajustable - Nivel A</h4>
+	<h3 id="principio1">2.2.1 Tiempo ajustable - Nivel A</h3>
 	<p>
 		Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: 
 		 </p>
@@ -124,8 +124,8 @@
 			<li><strong>Excepci&oacute;n de 20 horas</strong>: El l&iacute;mite de tiempo es mayor a 20 horas</li>
 		</ul>	
 		 
-		 <h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		 
+		<h4>Ejemplos</h4>
 		
 		<div id="target"></div><br>
 		
@@ -154,7 +154,7 @@
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 2.2.1 Tiempo ajustable">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.2.1 Tiempo ajustable - Nivel A</h2>
+		<h1>2.2.1 Tiempo ajustable - Nivel A</h1>
 		<div class="ventanita">
 			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable" target=”_blank”>Criterio~WCAG</a>
@@ -178,7 +178,7 @@
 
 
 
-	<h4 id="principio2">2.2.2 Poner en pausa, detener, ocultar - Nivel A</h4>
+	<h3 id="principio2">2.2.2 Poner en pausa, detener, ocultar - Nivel A</h3>
 	<p>
 		Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes:
 		 </p>
@@ -188,8 +188,8 @@
 			<li><strong>Actualizaci&oacute;n autom&aacute;tica</strong>: Para toda informaci&oacute;n que se actualiza autom&aacute;ticamente, que (1) se inicia autom&aacute;ticamente y (2) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, o controlar la frecuencia de actualizaci&oacute;n a menos que la actualizaci&oacute;n autom&aacute;tica sea parte esencial de una actividad.</li>
 		</ul>	
 		 
-		 <h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		 
+		<h4>Ejemplos</h4>
 
 <div id="carrusel" class="carousel slide" data-ride="carousel">
 
@@ -223,7 +223,7 @@
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h2>
+		<h1>2.2.2 Poner en pausa, detener, ocultar - Nivel A</h1>
 		<div class="ventanita">
 			Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes: movimiento, parpadeo, desplazamiento y actualizaci&oacute;n autom&aacute;tica.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide" target=”_blank”>Criterio~WCAG</a>
@@ -282,9 +282,9 @@
 	var ScrollTop = parseInt($(document).scrollTop());
 	
 	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
-    window.open("2.2A.html#principio1");
+    window.location.href = "2.2A.html#principio1";
 	} else if(ScrollTop > document.getElementById("principio2").offsetTop){
-	window.open("2.2A.html#principio2");	
+	window.location.href = "2.2A.html#principio2";	
 	}
 });
 	

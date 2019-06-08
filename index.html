@@ -39,27 +39,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="#" id="inicio">Inicio</a>
-	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a href="1.4A.html">1.4 Distinguible</a>
-	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a href="2.2A.html">2.2 Tiempo suficiente</a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a class="principio" href="entendible.html">3. Entendible</a>
 	<a href="3.1A.html">3.1 Legible</a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
-	<a class="principio" href="4.1A.html">4. Robusto</a>
+	<a class="principio" href="robusto.html">4. Robusto</a>
 	<a href="4.1A.html">4.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -75,9 +75,9 @@
 	<!-- Contenido -->
 
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
 	
-<h2>¿Qué es la accesibilidad web?</h2>
+	
+<h1>¿Qué es la accesibilidad web?</h1>
 
 <p>
 	La <strong>accesibilidad</strong> web tiene como objetivo lograr que las p&aacute;ginas web sean utilizables por el m&aacute;ximo número de personas, independientemente de sus conocimientos o capacidades personales,
@@ -87,13 +87,13 @@
 	   De hecho, la Web ofrece oportunidades sin precedentes a las personas con discapacidad, si bien, la falta de accesibilidad les crear&aacute; graves barreras que impedir&aacute;n su uso.
 </p> <br>
 
-<h2>Objetivo de esta web</h2>
+<h1>Objetivo de esta web</h1>
 		<p>
 			El objetivo de este proyecto es el desarrollo de un <strong>recurso web multi-p&aacute;gina</strong> que ofrezca <strong>dos versiones</strong> distintas para cada una de ellas: la <strong>inaccesible</strong> y la <strong>accesible</strong> correspondiente,
 			 <strong>de acuerdo</strong> con las <strong>Pautas de Accesibilidad del Contenido Web</strong> del W3C.
 		</p><br>
 
-<h3>Ejemplo</h3>
+<h2>Ejemplo</h2>
 		<p>
 			<p>Aqu&iacute; se muestra como ejemplo dos de las etiquetas que pueden aparecer más adelante. En este caso, hace referencia a la barra de navegación que encabeza el contenido de la p&aacute;gina,
 			oculta, desde la cual se puede saltar al menú o contenido. Mediante este primer elemento las personas con dificultades visuales que usen un lector web pueden usar
@@ -103,7 +103,7 @@
 			<a class="botonVentanita" href="#popup1" role="button">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>2.4.1 Saltar Bloques - Nivel A</h2>
+		<h1>2.4.1 Saltar Bloques - Nivel A</h1>
 		<div class="ventanita">
 			Se dispone de un mecanismo para saltar bloques de contenido repetidos.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
@@ -127,16 +127,17 @@
 			<div>
 				Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.
 			</div>
-			<strong><xmp>
-				<div id="enlaces" role="navigation">
-				<ul id="listaCambiante">
-				<li><a href="#menu">Saltar al menú principal</a></li>
-				<li><a href="#contenido">Saltar al contenido</a></li>
-				</ul></div><br>
-			</xmp></strong>
+			<strong><pre><code>
+				&lt;div id="enlaces" role="navigation">
+				&lt;ul id="listaCambiante">
+				&lt;li>&lt;a href="#menu">Saltar al menú principal</a></li>
+				&lt;li>&lt;a href="#contenido">Saltar al contenido</a></li>
+				&lt;/ul>&gt;/div><br>
+			</code></pre></strong>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks" target=”_blank”>Criterio~WCAG</a>
 			</div><br><br>
 			<p>Conforme se navega por la página se encuentran este tipo de referencias a la vez que se informa sobre distintos aspectos de la accesibilidad.</p>
+			<p>Est&aacute; habilitado el acceso por teclado <strong>Ctrl+Shift+9</strong> para, en cada principio, pasar a su versión accesible/inaccesible.</p>
 			<p>
 				<strong>Se recomienda encarecidamente a los curiosos comprobar los m&eacute;todos m&aacute;s complejos, que no sean mostrados directamente, en el c&oacute;digo. Normalmente, puede ser accedido usando click derecho en la p&aacute;gina, buscando c&oacute;digo fuente.</strong>
 			</p>

@@ -42,27 +42,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a href="1.4A.html">1.4 Distinguible</a>
-	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a href="2.2A.html">2.2 Tiempo suficiente</a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a id="activo" class="principio" href="3.1A.html">3. Entendible</a>
+	<a id="activo" class="principio" href="entendible.html">3. Entendible</a>
 	<a id="activo" href="3.1A.html"><mark>3.1 Legible</mark></a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
-	<a class="principio" href="4.1A.html">4. Robusto</a>
+	<a class="principio" href="robusto.html">4. Robusto</a>
 	<a href="4.1A.html">4.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -80,38 +80,38 @@
 <main>
 	
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
+	
 	
 	<ul class="breadcrumb">
 		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
-		<li><a class="enlacesOscuros" href="3.1A.html">Entendible</a></li>
+		<li><a class="enlacesOscuros" href="entendible.html">Entendible</a></li>
 		<li>Legible</li>
 		</ul>
 	
-	<a href="3.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="complementary">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="complementary">&#10007;</span><br><br>
+	<a href="3.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
 	
-	<h2>3. Entendible - Tercer Principio</h2>
+	<h1>3. Entendible - Tercer Principio</h1>
 	<p>
 		La informaci&oacute;n y el uso de la interfaz deben ser inteligibles para el usuario.
 	</p><br>
 	
-	<h3>3.1 Legible</h3>
+	<h2>3.1 Legible</h2>
 	<p>
 		Hacer que los contenidos textuales resulten legibles y comprensibles.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-	<h4 id="principio1">3.1.1 Idioma de la p&aacute;gina - Nivel A</h4>
+	<h3 id="principio1">3.1.1 Idioma de la p&aacute;gina - Nivel A</h3>
 	<p>
 		El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<p>
 		Criterio oculto. <a href="indexFake.html">P&aacute;gina</a>
@@ -120,7 +120,7 @@
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 3.1.1 Idioma de la p&aacute;gina">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.1.1 Idioma de la p&aacute;gina - Nivel A</h2>
+		<h1>3.1.1 Idioma de la p&aacute;gina - Nivel A</h1>
 		<div class="ventanita">
 			El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#language-of-page" target=”_blank”>Criterio~WCAG</a>
@@ -144,14 +144,14 @@
 
 
 
-	<h4 id="principio2">3.1.2 Idioma de las partes - Nivel AA</h4>
+	<h3 id="principio2">3.1.2 Idioma de las partes - Nivel AA</h3>
 	<p>
 		El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma
 		 indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<p>
 		En W3C (<span lang="de">World Wide Web Consortium</span>) se proporcionan dos tipos de traducciones de su p&aacute;gina: <span lang="english"><a class="enlacesOscuros" href="http://www.w3.org/2005/02/TranslationPolicy">Authorized Translations</a></span>
@@ -163,7 +163,7 @@
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.1.2 Idioma de las partes">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>3.1.2 Idioma de las partes - Nivel AA</h2>
+		<h1>3.1.2 Idioma de las partes - Nivel AA</h1>
 		<div class="ventanita">
 			El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma
 		 indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.<br>
@@ -223,9 +223,9 @@ shortcut.add("Ctrl+Shift+9",function() {
 	var ScrollTop = parseInt($(document).scrollTop());
 	
 	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
-    window.open("3.1A.html#principio1");
+    window.location.href = "3.1A.html#principio1";
 	} else if(ScrollTop > document.getElementById("principio2").offsetTop){
-	window.open("3.1A.html#principio2");	
+	window.location.href = "3.1A.html#principio2";	
 	}
 });
 

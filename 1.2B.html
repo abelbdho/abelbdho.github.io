@@ -39,27 +39,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a id="activo" class="principio" href="1.1A.html">1. Perceptible</a>
+	<a id="activo" class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a id="activo" href="1.2A.html"><mark>1.2 Medios tempodependientes</mark></a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a href="1.4A.html">1.4 Distinguible</a>
-	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a href="2.2A.html">2.2 Tiempo suficiente</a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a class="principio" href="entendible.html">3. Entendible</a>
 	<a href="3.1A.html">3.1 Legible</a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
-	<a class="principio" href="4.1A.html">4. Robusto</a>
+	<a class="principio" href="robusto.html">4. Robusto</a>
 	<a href="4.1A.html">4.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -77,27 +77,27 @@
 <main>
 	
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
+	
 	
 	<ul class="breadcrumb">
 		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
-		<li><a class="enlacesOscuros" href="1.1A.html">Perceptible</a></li>
+		<li><a class="enlacesOscuros" href="perceptible.html">Perceptible</a></li>
 		<li>Medios tempodependientes</li>
 		</ul>
 	
-	<a href="1.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="complementary">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="complementary">&#10007;</span><br><br>
+	<a href="1.2A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
 	
-	<h2>1. Perceptible - Primer Principio</h2>
+	<h1>1. Perceptible - Primer Principio</h1>
 	<p>
 		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
 		 manera que puedan percibirlos, no pueden ser invisibles a todos sus sentidos.
 		</p><br>
 	
 
-<h3>1.2 Medios tempodependientes</h3>
+<h2>1.2 Medios tempodependientes</h2>
 <p>
 	El prop&oacute;sito de esta pauta es proporcionar acceso a los multimedios tempodependientes y sincronizados. Esto incluye a medios que son:
 	<ul>
@@ -110,7 +110,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h4  id="principio1">1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h4>
+<h3  id="principio1">1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h3>
 	<p>
 		 Para contenido solo audio grabado y contenido solo v&iacute;deo grabado, se cumple lo siguiente, excepto cuando el audio o el v&iacute;deo es un contenido multimedia
 		  alternativo al texto y est&aacute; claramente identificado como tal:
@@ -120,8 +120,8 @@
 		<li><strong>Solo v&iacute;deo grabado</strong>: se proporciona una alternativa para los medios tempodependientes o se proporciona una pista sonora que presenta informaci&oacute;n equivalente al contenido del medio de solo v&iacute;deo grabado.</li>
 		</ul></p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		  
 		
 		<video width="500" height="300" controls><source class="contentImage" src="img/buscarW3S.mp4" alt="Video ejemplo del criterio 1.2.1" type="video/mp4"></video><br><br>
@@ -129,7 +129,7 @@
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 1.2.1 Audio único y vídeo único (Pregrabados)">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h2>
+		<h1>1.2.1 Audio &uacute;nico y v&iacute;deo &uacute;nico (Pregrabados) - Nivel A</h1>
 		<div class="ventanita">
 			La informaci&oacute;n transmitida mediante contenido de solo audio grabado y de solo vídeo grabado debe ser accesible para todos los usuarios.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-only-and-video-only-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -150,14 +150,14 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h4 id="principio2">1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h4>
+<h3 id="principio2">1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h3>
 	<p>
 		Se proporcionan subt&iacute;tulos para el contenido de audio grabado dentro de contenido multimedia sincronizado, excepto cuando la presentaci&oacute;n es un contenido multimedia alternativo
 		 al texto y est&aacute; claramente identificado como tal.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 			
 		<iframe class="iframe" src="https://player.vimeo.com/video/100071875" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<br><br>
@@ -165,7 +165,7 @@
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 1.2.2 Subtítulos (Pregrabados)">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h2>
+		<h1>1.2.2 Subt&iacute;tulos (Pregrabados) - Nivel A</h1>
 		<div class="ventanita">
 			Las personas sordas o con deficiencias auditivas deben poder observar presentaciones multimedia sincronizadas.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -189,14 +189,14 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<h4 id="principio3">1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h4>
+<h3 id="principio3">1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h3>
 	<p>
 		Se proporciona una alternativa para los medios tempodependientes o una audiodescripci&oacute;n para el contenido de v&iacute;deo grabado en los multimedia sincronizados, excepto cuando ese contenido es un contenido multimedia
 		 alternativo al texto y est&aacute; claramente identificado como tal. 
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<iframe class="iframe" src="https://www.youtube.com/embed/hufMi9LZX2I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<br><br>
@@ -204,7 +204,7 @@
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 1.2.3 Audiodescripción o Medio Alternativo (grabado)">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h2>
+		<h1>1.2.3 Audiodescripci&oacute;n o Medio Alternativo (grabado) - Nivel A</h1>
 		<div class="ventanita">
 			La informaci&oacute;n de las presentaciones multimedia sincronizadas debe ser accesible para las personas ciegas o con problemas de visi&oacute;n.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -227,13 +227,13 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-<h4 id="principio4">1.2.5 Audiodescripción (grabada) - Nivel AA</h4>
+<h3 id="principio4">1.2.5 Audiodescripción (grabada) - Nivel AA</h3>
 	<p>
 		Se proporciona una audiodescripci&oacute;n para todo el contenido de v&iacute;deo grabado dentro de contenido multimedia sincronizado.
 		</p>
 	
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 	
 		<video class="iframe" id="videoS" controls>
 			<source src="img/videoAudioDescripcion.mp4" type="video/mp4" />
@@ -242,7 +242,7 @@
 		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 1.2.5 Audiodescripción (grabada)">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.2.5 Audiodescripción (grabada) - Nivel AA</h2>
+		<h1>1.2.5 Audiodescripción (grabada) - Nivel AA</h1>
 		<div class="ventanita">
 			Proporcionar a las personas ciegas o con dificultades visuales acceso a la informaci&oacute;n visual de una presentaci&oacute;n multimedia sincronizada.
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#audio-description-prerecorded" target=”_blank”>Criterio~WCAG</a>
@@ -316,13 +316,13 @@ shortcut.add("Ctrl+Shift+9",function() {
 	var ScrollTop = parseInt($(document).scrollTop());
 	
 	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
-    window.open("1.2A.html#principio1");
+    window.location.href = "1.2A.html#principio1";
 	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
-	window.open("1.2A.html#principio2");	
+	window.location.href = "1.2A.html#principio2";	
 	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
-	window.open("1.2A.html#principio3");	
+	window.location.href = "1.2A.html#principio3";	
 	} else if(ScrollTop > document.getElementById("principio4").offsetTop){
-	window.open("1.2A.html#principio4");	
+	window.location.href = "1.2A.html#principio4";	
 	}
 });
 

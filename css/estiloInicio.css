@@ -76,9 +76,6 @@ a[href^="https://www.w3.org/"]:after {
   color: white;
 }
 
-
-/*INTENTOS*/
-
 #activo::before{
 content: '\00bb';
 color: red;
@@ -118,6 +115,7 @@ mark {
 
 @media screen and (max-width: 1600px) {
   .menu {
+    text-align : justify;
     width: 100%;
     height: auto;
     position: relative;
@@ -125,7 +123,7 @@ mark {
 	left: 0px;
   }
   .menu a {
-    text-align: center;
+    text-align: justify;
     float: none;}
 }
 /**/
@@ -293,6 +291,12 @@ a:hover, h1 a:hover {
 	}
 }
 
+@media screen and (max-width: 1000px) {
+	#logo2{
+	display: none;
+	}
+}
+
 @media screen and (max-width: 1800px) {
 	#logo1{
 	bottom: -80px;
@@ -315,11 +319,6 @@ a:hover, h1 a:hover {
 	}
 }
 
-@media screen and (max-width: 1000px) {
-	#logo2{
-	display: none;
-	}
-}
 
 
 /*SOL*/
@@ -391,6 +390,7 @@ th, td {
 [aria-hidden="false"] { display: block; }
 
 /*AAAAAAAAAAAAAAAAA*/
+
 .overlay {
   position: fixed;
   top: 0;
@@ -427,7 +427,8 @@ th, td {
 
 .popup .ventanita {
   overflow: auto;
-  color: black;z-index:99999;
+  color: black;
+  z-index:99999;
 }
 
 @media screen and (max-width: 900px){
@@ -495,6 +496,18 @@ th, td {
     margin: 10px;
 }
 
+.flechaBien{
+	color: #005C00;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.flechaMal{
+	color: #AD0000;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 /*YOUTUBE VIDEO*/
 
 .iframe{
@@ -529,15 +542,15 @@ th, td {
 
 /*Texto de Contraste*/
 
-#contrasteEj1{
+.contrasteEj1{
 	color: #6161FF;
 }
 
-#contrasteEj1Mal{
+.contrasteEj1Mal{
 	color: #D6D6FF;
 }
 
-#contrasteEj2{
+.contrasteEj2{
 	color: #000000;
 }
 
@@ -594,18 +607,6 @@ blink.woo{
 }
 
 /*Indicativo bien*/
-
-.flechaBien{
-	color: #005C00;
-	font-weight: bold;
-	font-size: 1.5em;
-}
-
-.flechaMal{
-	color: #AD0000;
-	font-weight: bold;
-	font-size: 1.5em;
-}
 
 #logoCriterio{
 	width: 100px;
@@ -733,10 +734,10 @@ blink.woo{
 
 /*FORMULARIO 1.4.1*/
 
-#error{
+.error{
  color: #900000; 
  }
-#success{
+.success{
  color: #007a00; 
  }
 #error input{

@@ -45,27 +45,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a class="principio" href="1.1A.html">1. Perceptible</a>
+	<a class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a href="1.4A.html">1.4 Distinguible</a>
-	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a href="2.2A.html">2.2 Tiempo suficiente</a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a class="principio" href="entendible.html">3. Entendible</a>
 	<a href="3.1A.html">3.1 Legible</a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
-	<a  id="activo" class="principio" href="4.1A.html">4. Robusto</a>
+	<a  id="activo" class="principio" href="robusto.html">4. Robusto</a>
 	<a  id="activo" href="4.1A.html"><mark>4.1 Compatible</mark></a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -83,41 +83,41 @@
 <main>
 	
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
+	
 	
 	<ul class="breadcrumb">
 		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
-		<li><a class="enlacesOscuros" href="3.1A.html">Robusto</a></li>
+		<li><a class="enlacesOscuros" href="robusto.html">Robusto</a></li>
 		<li>Compatible</li>
 		</ul>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible</a><span class="flechaBien" role="complementary">&#10003;</span>
-	<a href="4.1B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible</a><span class="flechaMal" role="complementary">&#10007;</span><br><br>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="4.1B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
 	
-	<h2>4. Robusto - Tercer Principio</h2>
+	<h1>4. Robusto - Tercer Principio</h1>
 	<p>
 		El contenido debe ser lo suficientemente robusto como para poder ser interpretado por una gran variedad de agentes, incluidas tecnolog&iacute;as de asistencia.
 	</p><br>
 	
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
-<h3>4.1 Compatible</h3>
+<h2>4.1 Compatible</h2>
 	<p>
 		Maximizar la compatibilidad con las aplicaciones de usuario actuales y futuras, incluyendo las ayudas t&eacute;cnicas.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio">4.1.1 Procesamiento - Nivel A</h4>
+	<h3 id="principio1">4.1.1 Procesamiento - Nivel A</h3>
 	<p>
 		En los contenidos implementados mediante el uso de lenguajes de marcas, los elementos tienen las etiquetas de apertura y cierre completas; los elementos est&aacute;n anidados de acuerdo a sus
 		 especificaciones; los elementos no contienen atributos duplicados y los ID son &uacute;nicos, excepto cuando las especificaciones permitan estas caracter&iacute;sticas.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<p>
 		A excepci&oacute;n de un par de casos exigidos por la especificaci&oacute;n, nuestra p&aacute;gina cumple con la apertura y cierre de etiquetas y la unicidad de los IDs.
@@ -131,7 +131,7 @@
 		<a role="button" class="botonVentanita" href="#popup" alt="Pista 4.1.1 Procesamiento">PISTA</a>
 		<div id="popup" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>4.1.1 Procesamiento - Nivel A</h2>
+		<h1>4.1.1 Procesamiento - Nivel A</h1>
 		<div class="ventanita">
 			En los contenidos implementados mediante el uso de lenguajes de marcas, los elementos tienen las etiquetas de apertura y cierre completas; los elementos est&aacute;n anidados de acuerdo a sus
 		 especificaciones; los elementos no contienen atributos duplicados y los ID son &uacute;nicos, excepto cuando las especificaciones permitan estas caracter&iacute;sticas.<br>
@@ -155,15 +155,15 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 
-	<h4 id="principio2">4.1.2 Nombre, funci&oacute;n, valor - Nivel A</h4>
+	<h3 id="principio2">4.1.2 Nombre, funci&oacute;n, valor - Nivel A</h3>
 	<p>
 		Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la funci&oacute;n pueden ser
 		 determinados por software; los estados, propiedades y valores que pueden ser asignados por el usuario pueden ser especificados por software; y los cambios en estos elementos se encuentran disponibles
 		  para su consulta por las aplicaciones de usuario, incluyendo las ayudas t&eacute;cnicas.
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<p>
 		En nuestra página, cada elemento tiene su etiqueta correspondiente: botones, en formularios, etc. Un ejemplo contrario bien aplicado puede ser el de los enlaces reconvertidos a botones, en los que se especifica su role.
@@ -176,7 +176,7 @@
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 4.1.2 Nombre, función, valor">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>4.1.2 Nombre, funci&oacute;n, valor - Nivel A</h2>
+		<h1>4.1.2 Nombre, funci&oacute;n, valor - Nivel A</h1>
 		<div class="ventanita">
 			Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la funci&oacute;n pueden ser
 		 determinados por software; los estados, propiedades y valores que pueden ser asignados por el usuario pueden ser especificados por software; y los cambios en estos elementos se encuentran disponibles
@@ -236,13 +236,9 @@ shortcut.add("Ctrl+Shift+9",function() {
 	var ScrollTop = parseInt($(document).scrollTop());
 	
 	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
-    window.open("3.3B.html#principio1");
+    window.location.href = "4.1B.html#principio1";
 	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
-	window.open("3.3B.html#principio2");	
-	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
-	window.open("3.3B.html#principio3");	
-	} else if(ScrollTop > document.getElementById("principio4").offsetTop){
-	window.open("3.3B.html#principio4");	
+	window.location.href = "4.1B.html#principio2";	
 	}
 });
 

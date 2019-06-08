@@ -42,27 +42,27 @@
 	
 	<!--MENU VERTICAL-->
 	
-	<div class="menu" role="menu">
+	<nav class="menu" role="menu">
 	<a href="index.html" id="inicio">Inicio</a>
-	<a id="activo" class="principio" href="1.1A.html">1. Perceptible</a>
+	<a id="activo" class="principio" href="perceptible.html">1. Perceptible</a>
 	<a href="1.1A.html">1.1 Alternativas textuales</a>
 	<a href="1.2A.html">1.2 Medios tempodependientes</a>
 	<a href="1.3A.html">1.3 Adaptable</a>
 	<a id="activo" href="1.4A.html"><mark>1.4 Distinguible</mark></a>
-	<a class="principio" href="2.1A.html">2. Operable</a>
+	<a class="principio" href="operable.html">2. Operable</a>
 	<a href="2.1A.html">2.1 Accesible por teclado</a>
 	<a href="2.2A.html">2.2 Tiempo suficiente</a>
 	<a href="2.3A.html">2.3 Convulsiones</a>
 	<a href="2.4A.html">2.4 Navegable</a>
-	<a class="principio" href="3.1A.html">3. Entendible</a>
+	<a class="principio" href="entendible.html">3. Entendible</a>
 	<a href="3.1A.html">3.1 Legible</a>
 	<a href="3.2A.html">3.2 Predecible</a>
 	<a href="3.3A.html">3.3 Entrada de datos asistida</a>
-	<a class="principio" href="4.1A.html">4. Robusto</a>
+	<a class="principio" href="robusto.html">4. Robusto</a>
 	<a href="4.1A.html">4.1 Compatible</a>
 	<a class="principio" href="aleatorio.html">Aleatorio</a>
 	<a class="principio" href="discapacidad.html">Discapacidad</a>
-	</div><br>
+	</nav><br>
 	
 	<!--FIN MENU VERTICAL-->
 	
@@ -80,39 +80,39 @@
 <main>
 	
 <div id="contenido">
-	<h2 class="screen-reader-text">Contenido</h2>
+	
 	
 	<ul class="breadcrumb">
 		<li><a class="enlacesOscuros" href="index.html">Inicio</a></li>
-		<li><a class="enlacesOscuros" href="1.1A.html">Perceptible</a></li>
+		<li><a class="enlacesOscuros" href="perceptible.html">Perceptible</a></li>
 		<li>Distinguible</li>
 		</ul>
 	
-	<a href="1.4A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible</a><span class="flechaBien" role="complementary">&#10003;</span>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible</a><span class="flechaMal" role="complementary">&#10007;</span><br><br>
+	<a href="1.4A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br>
+	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
 	
-	<h2>1. Perceptible - Primer Principio</h2>
+	<h1>1. Perceptible - Primer Principio</h1>
 	<p>
 		La informaci&oacute;n y todo componente presentado en la interfaz de la web deben ser presentados a los usuarios de
 		 manera que puedan percibirlos, no pueden ser invisibles a todos sus sentidos.
 		</p><br>
 	
-	<h3>1.3 Distinguible</h3>
+	<h2>1.4 Distinguible</h2>
 	<p>
 		Facilitar a los usuarios ver y o&iacute;r el contenido, incluyendo la separaci&oacute;n entre el primer plano y el fondo.
 	</p><br>
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio1">1.4.1 Uso del Color - Nivel A</h4>
+	<h3 id="principio1">1.4.1 Uso del Color - Nivel A</h3>
 	<p>
 		El color no se usa como &uacute;nico medio visual para transmitir la informaci&oacute;n, indicar una acci&oacute;n, solicitar una respuesta o distinguir un elemento visual.</p>
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<form action="paginaDestino.html">
 		<span id="obligatorio">Nombre</span>:<br>
@@ -126,11 +126,11 @@
 		<div>
 		<form action="paginaDestino.html">
 		<label for="username"><strong>OK:</strong> Usuario:</label>
-		<input type="text" name="username" id="username" value="Batman" aria-describedby="userDesc"><span>✓</span>
+		<input type="text" name="username" id="username" value="Batman"><span>✓</span>
 		</div>
 		<div>
 		<label for="expire"><strong>Error: </strong>Fecha de expiraci&oacute;n:</label>
-		<input type="text" name="expire" id="expire" value="03.2021" aria-describedby="expDesc"><span>Usar el formato MM/YYYY.</span>
+		<input type="text" name="expire" id="expire" value="03.2021"><span>Usar el formato MM/YYYY.</span>
 		</div>
 		<div>
 		<button type="submit">Enviar</button>
@@ -140,7 +140,7 @@
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 1.4.1 Uso del Color">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.1 Uso del Color - Nivel A</h2>
+		<h1>1.4.1 Uso del Color - Nivel A</h1>
 		<div class="ventanita">
 			Para contenido cuyo significado este dado por su color, presentar alternativas para expresar el sentido de estos colores.<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#use-of-color" target=”_blank”>Criterio~WCAG</a>
@@ -167,14 +167,14 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-	<h4 id="principio2">1.4.2 Control de Audio - Nivel A</h4>
+	<h3 id="principio2">1.4.2 Control de Audio - Nivel A</h3>
 	<p>
 		Si el audio de una p&aacute;gina web suena autom&aacute;ticamente durante m&aacute;s de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo
 		 para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.
 		 </p>
 		 
-		 <h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		 
+		<h4>Ejemplos</h4>
 		
 		<a href="#CollapC" id="activador" class="btn btn-info" data-toggle="collapse" onclick="playPause()">Bot&oacute;n inofensivo</a>
 	<div id="CollapC" class="collapse"><br>
@@ -187,7 +187,7 @@
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 1.4.2 Control de Audio">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.2 Control de Audio - Nivel A</h2>
+		<h1>1.4.2 Control de Audio - Nivel A</h1>
 		<div class="ventanita">
 			Si cualquier audio en la p&aacute;gina de m&aacute;s de tres segundos comienza a sonar autom&aacute;ticamente, se debe poder desactivar o pausar. Alternativamente se debe poder controlar
 		 su volumen independientemente del volumen del sistema.<br>
@@ -211,27 +211,27 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
 
 
-	<h4 id="principio3">1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h4>
+	<h3 id="principio3">1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h3>
 	<p>
 		Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo, a excepci&oacute;n de:
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<p>
 			<ul>
-			<li id="contrasteEj1Mal">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
-			<li id="contrasteEj1Mal">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
+			<li class="contrasteEj1Mal">Texto grande: el contraste se reduce a 3:1 para textos de mayor tamaño.</li>
+			<li class="contrasteEj1Mal">Casual: para partes inactivas de la interfaz, decoraci&oacute;n, partes de una imagen con otro significado o no visibles
 			 no se requiere constraste.</li>
-			<li id="contrasteEj1Mal">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
+			<li class="contrasteEj1Mal">Logotipos: si el texto es parte de un logo o marca, no hay constraste m&iacute;nimo.</li>
 			 </ul>
 		</p>
 		
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 1.4.3 Contraste (mínimo)">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h2>
+		<h1>1.4.3 Contraste (m&iacute;nimo) - Nivel AA</h1>
 		<div class="ventanita">
 			Todo texto debe mantener un ratio de contraste de m&iacute;nimo 4.5:1 con el fondo (con excepciones: texto grande, casual o logotipos).<br>
 			<a class="enlacesOscuros" href="https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum" target=”_blank”>Criterio~WCAG</a>
@@ -255,14 +255,14 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 
-	<h4 id="principio4">1.4.4 Cambio del tamaño de texto - Nivel AA</h4>
+	<h3 id="principio4">1.4.4 Cambio del tamaño de texto - Nivel AA</h3>
 	<p>
 		A excepci&oacute;n de los subt&iacute;tulos y las im&aacute;genes de texto, todo el texto puede ser ajustado sin ayudas t&eacute;cnicas hasta un 200 por ciento sin que se pierdan el contenido
 		 o la funcionalidad. 
 		 </p>
 		 
-		 <h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		 
+		<h4>Ejemplos</h4>
 		 
 		<p>
 			Criterio oculto. <a class="internos" href="indexFake.html" target=”_blank”>P&aacute;gina</a>
@@ -271,7 +271,7 @@
 		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 1.4.4 Cambio del tamaño de texto">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.4 Cambio del tamaño de texto - Nivel AA</h2>
+		<h1>1.4.4 Cambio del tamaño de texto - Nivel AA</h1>
 		<div class="ventanita">
 			A excepci&oacute;n de subt&iacute;tulos e im&aacute;genes de texto, se debe poder modificar el tamaño del texto sin tecnolog&iacute;as de asistencia hasta un
 		 200% sin p&eacute;rdida de contenido o funcionalidad.<br>
@@ -296,14 +296,14 @@
 	
 
 
-	<h4 id="principio5">1.4.5 Im&aacute;genes de texto - Nivel AA</h4>
+	<h3 id="principio5">1.4.5 Im&aacute;genes de texto - Nivel AA</h3>
 	<p>
 		Si con las tecnolog&iacute;as que se est&aacute;n utilizando se puede conseguir la presentaci&oacute;n visual deseada, se utiliza texto para transmitir la informaci&oacute;n en vez de im&aacute;genes de texto,
 		 a excepci&oacute;n de estos casos:
 		</p>
 		
-		<h5 class="screen-reader-text">Ejemplos</h5>
-		<h5>Ejemplos</h5>
+		
+		<h4>Ejemplos</h4>
 		
 		<picture>
 		<img class="contentImage" src="img/criterio1_4_5.png" alt="Imagen ejemplo del criterio 1.4.5">
@@ -321,7 +321,7 @@
 		<a role="button" class="botonVentanita2" href="#popup5" alt="Pista 1.4.5 Imágenes de texto">PISTA</a>
 		<div id="popup5" class="overlay" role="complementary">
 		<div class="popup">
-		<h2>1.4.5 Im&aacute;genes de texto - Nivel AA</h2>
+		<h1>1.4.5 Im&aacute;genes de texto - Nivel AA</h1>
 		<div class="ventanita">
 			Siempre que la tecnolog&iacute;a usada sea capaz de lograr una presentaci&oacute;n visual espec&iacute;fica, se usar&aacute; texto para expresar informaci&oacute;n
 		 en lugar de im&aacute;genes, a excepci&oacute;n de: im&aacute;genes de texto esenciales o personalizables.<br>
@@ -423,13 +423,13 @@
 	var ScrollTop = parseInt($(document).scrollTop());
 	
 	if(ScrollTop > document.getElementById("principio1").offsetTop && ScrollTop < document.getElementById("principio2").offsetTop){
-    window.open("1.4A.html#principio1");
+    window.location.href = "1.4A.html#principio1";
 	} else if(ScrollTop > document.getElementById("principio2").offsetTop && ScrollTop < document.getElementById("principio3").offsetTop){
-	window.open("1.4A.html#principio2");	
+	window.location.href = "1.4A.html#principio2";	
 	} else if(ScrollTop > document.getElementById("principio3").offsetTop && ScrollTop < document.getElementById("principio4").offsetTop){
-	window.open("1.4A.html#principio3");	
+	window.location.href = "1.4A.html#principio3";	
 	} else if(ScrollTop > document.getElementById("principio4").offsetTop){
-	window.open("1.4A.html#principio4");	
+	window.location.href = "1.4A.html#principio4";	
 	}
 });
 
