@@ -181,9 +181,9 @@
 		<input type="text" id="cp">
 		<br><br>
 		<label>Sexo</label>:<br>
-		<input onfocusout="activarBoton(enviarForm)" type="radio" id="genero" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input onfocusout="activarBoton(enviarForm)" type="radio" id="genero" value="mujer"> <label for="mujer">Mujer</label><br><br>
-		<input class="enviarForm" type="submit" value="Enviar">
+		<input type="radio" id="genero" value="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" id="genero2" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input onfocus="activarBoton(this)" class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
 
@@ -359,6 +359,7 @@ shortcut.add("Ctrl+Shift+9",function() {
 	window.location.href = "3.2A.html#principio4";	
 	}
 });
+
 
 </script>
 

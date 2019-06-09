@@ -17,6 +17,10 @@ function bucle() {
 	   }, 2000);
 };
 
+window.onload = function start(){
+    bucle();
+}
+
 function pararBucle(){
 	if(cont == 0 || cont == 1 || cont == 2 || cont == 3){
 		clearInterval(timer);
@@ -27,6 +31,4 @@ function pararBucle(){
 	}
 	};
 	
-window.onload = function start(){
-    bucle();
-}
+
