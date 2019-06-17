@@ -15,7 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="js/dobleScroll.js"></script>
+  
   <script src="js/cerrarTrasTab.js"></script>
   <script src="js/avisoNormal.js"></script>
   <script src="js/dataListCambiar.js"></script>
@@ -129,27 +129,27 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<span class="obligatorio">Nombre</span> (obligatorio):<br>
-		<input required onfocusout="requerido(this, 'aviso0')" type="text" name="nombre">
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<input required type="text" name="nombre">
 		<br><br>
-		<span class="obligatorio">Apellidos</span> (obligatorio):<br>
-		<input required onfocusout="requerido(this, 'aviso1')" type="text" name="apellidos">
+		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<input required type="text" name="apellidos">
 		<br><br>
-		<span class="obligatorio">Email</span> (obligatorio):<br>
-		<input required onfocusout="requerido(this, 'aviso2')" type="text" name="email">
+		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<input required type="text" name="email">
 		<br><br>
-		Edad:<br>
+		<label for="edad">Edad</label>:<br>
 		<input type="text" name="edad">
 		<br><br>
-		Direcci&oacute;n:<br>
+		<label for="direccion">Direcci&oacute;n</label>:<br>
 		<input type="text" name="direccion">
 		<br><br>
-		C&oacute;digo postal:<br>
+		<label for="cp">C&oacute;digo postal</label>:<br>
 		<input type="text" name="cp">
 		<br><br>
-		Sexo:<br>
-		<input type="radio" name="genero" value="hombre"> Hombre<br>
-		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<label>Sexo</label>:<br>
+		<input type="radio"   id="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio"   id="mujer"> <label for="mujer">Mujer</label><br><br>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
@@ -182,7 +182,7 @@
 
 	<h3 id="principio2">3.3.2 Etiquetas o instrucciones - Nivel A</h3>
 	<p>
-		Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.Se proporcionan etiquetas o instrucciones cuando el
+		Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario. Se proporcionan etiquetas o instrucciones cuando el
 		 contenido requiere la introducci&oacute;n de datos por parte del usuario.
 		</p>
 		
@@ -215,8 +215,8 @@
 		<input type="text" name="cp">
 		<br><br>
 		<label>Sexo</label>:<br>
-		<input type="radio" name="genero" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input type="radio" name="genero" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input type="radio"   id="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio"   id="mujer"> <label for="mujer">Mujer</label><br><br>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
-  <script src="js/dobleScroll.js"></script>
+  
   <script src="js/cerrarTrasTab.js"></script>
   <script src="js/avisoNormal.js"></script>
   <script src="js/shortcuts.js"></script>
@@ -115,11 +115,32 @@
 		
 		<h4>Ejemplos</h4>
 		
-		<form name="form">
-		<input type="radio" name="radioC"  value="0" />Ninguna<br>
-		<input type="radio" name="radioC"  value="1" />A<br>
-		<input type="radio" name="radioC"  value="2" />AA<br>
-		<input type="radio" name="radioC"  value="3" />Ambos<br>
+		<form action="paginaDestino.html">
+		<fieldset>
+		<legend>Datos personales</legend>
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<input type="text" id="nombre">
+		<br><br>
+		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<input type="text" id="apellidos">
+		<br><br>
+		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<input type="text" id="email">
+		<br><br>
+		<label for="edad">Edad</label>:<br>
+		<input type="text" id="edad">
+		<br><br>
+		<label for="direccion">Direcci&oacute;n</label>:<br>
+		<input type="text" id="direccion">
+		<br><br>
+		<label for="cp">C&oacute;digo postal</label>:<br>
+		<input type="text" id="cp">
+		<br><br>
+		<label>Sexo</label>:<br>
+		<input type="radio" id="genero" id="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" id="genero2" id="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input onfocus="activarBoton(this)" class="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form><br>
 
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
@@ -159,32 +180,11 @@
 		
 		<h4>Ejemplos</h4>
 		
-		<form action="paginaDestino.html">
-		<fieldset>
-		<legend>Datos personales</legend>
-		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
-		<input type="text" id="nombre">
-		<br><br>
-		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
-		<input type="text" id="apellidos">
-		<br><br>
-		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
-		<input type="text" id="email">
-		<br><br>
-		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad">
-		<br><br>
-		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" id="direccion">
-		<br><br>
-		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" id="cp">
-		<br><br>
-		<label>Sexo</label>:<br>
-		<input type="radio" id="genero" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input type="radio" id="genero2" value="mujer"> <label for="mujer">Mujer</label><br><br>
-		<input onfocus="activarBoton(this)" class="enviarForm" type="submit" value="Enviar">
-		</fieldset>
+		<form name="form">
+		<input type="radio" name="radioC"  value="0" />Ninguna<br>
+		<input type="radio" name="radioC"  value="1" />A<br>
+		<input type="radio" name="radioC"  value="2" />AA<br>
+		<input type="radio" name="radioC"  value="3" />Ambos<br>
 		</form><br>
 
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>

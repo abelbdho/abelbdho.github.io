@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="img/miniatura.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" media="all" href="css/estiloInicio.css" title="Normal" />
-  <script src="js/dobleScroll.js"></script>
+  
   <script src="js/cerrarTrasTab.js"></script>
   <script src="js/aleatoriedad.js"></script>
   <script src="js/showPistas.js"></script>
@@ -944,8 +944,8 @@
 		<input tabindex="7" type="text" id="cp" name="cp">
 		<br><br>
 		<label>Sexo</label>:<br>
-		<input type="radio" name="genero" id="hombre" value="hombre"><label for="hombre">Hombre</label><br>
-		<input type="radio" name="genero" id="mujer" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input type="radio"   id="hombre" id="hombre"><label for="hombre">Hombre</label><br>
+		<input type="radio"   id="mujer" id="mujer"> <label for="mujer">Mujer</label><br><br>
 		</fieldset>
 		
 		<div>
@@ -1097,8 +1097,8 @@
 		<input type="text" id="cp">
 		<br><br>
 		<label>Sexo</label>:<br>
-		<input type="radio" id="hombre" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input type="radio" id="mujer" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" id="mujer" id="mujer"> <label for="mujer">Mujer</label><br><br>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
@@ -1149,8 +1149,8 @@
 		<input class="formFoco2" type="text" id="cp">
 		<br><br>
 		<label>Sexo</label>:<br>
-		<input class="formFoco2" type="radio" id="hombre" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input class="formFoco2" type="radio" id="mujer" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input class="formFoco2" type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
+		<input class="formFoco2" type="radio" id="mujer" id="mujer"> <label for="mujer">Mujer</label><br><br>
 		<input class="formFoco2" class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
@@ -1269,8 +1269,8 @@
 		<input type="text" name="cp">
 		<br><br>
 		Sexo:<br>
-		<input type="radio" name="genero" value="hombre"> Hombre<br>
-		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<input type="radio"   id="hombre"> Hombre<br>
+		<input type="radio"   id="mujer"> Mujer<br><br>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
@@ -1321,8 +1321,8 @@
 		<input type="text" id="cp">
 		<br><br>
 		<label>Sexo</label>:<br>
-		<input type="radio" id="genero" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input type="radio" id="genero2" value="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input type="radio" id="genero" id="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" id="genero2" id="mujer"> <label for="mujer">Mujer</label><br><br>
 		<input onfocus="activarBoton(this)" class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
@@ -1436,8 +1436,8 @@
 		<input type="text" name="cp">
 		<br><br>
 		Sexo:<br>
-		<input type="radio" name="genero" value="hombre"> Hombre<br>
-		<input type="radio" name="genero" value="mujer"> Mujer<br><br>
+		<input type="radio"   id="hombre"> Hombre<br>
+		<input type="radio"   id="mujer"> Mujer<br><br>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
@@ -1656,10 +1656,10 @@ function clasificar(){
 			
 			for(var j = 0; j < 34; j++){
 				if(document.getElementById("targetElement"+j).className != "perceptible"){
-			document.getElementById("targetElement"+j).hidden = true /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = true 
 		}
 				if(document.getElementById("targetElement"+j).className == "perceptible"){
-			document.getElementById("targetElement"+j).hidden = false /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = false 
 		}
 		}
 			
@@ -1667,10 +1667,10 @@ function clasificar(){
 			
 			for(var j = 0; j < 34; j++){
 				if(document.getElementById("targetElement"+j).className != "operable"){
-			document.getElementById("targetElement"+j).hidden = true /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = true 
 		}
 				if(document.getElementById("targetElement"+j).className == "operable"){
-			document.getElementById("targetElement"+j).hidden = false /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = false 
 		}
 		}
 			
@@ -1678,10 +1678,10 @@ function clasificar(){
 			
 			for(var j = 0; j < 34; j++){
 				if(document.getElementById("targetElement"+j).className != "entendible"){
-			document.getElementById("targetElement"+j).hidden = true /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = true 
 		}
 				if(document.getElementById("targetElement"+j).className == "entendible"){
-			document.getElementById("targetElement"+j).hidden = false /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = false 
 		}
 		}
 			
@@ -1689,17 +1689,17 @@ function clasificar(){
 			
 			for(var j = 0; j < 34; j++){
 				if(document.getElementById("targetElement"+j).className != "robusto"){
-			document.getElementById("targetElement"+j).hidden = true /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = true 
 		}
 				if(document.getElementById("targetElement"+j).className == "robusto"){
-			document.getElementById("targetElement"+j).hidden = false /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = false 
 		}
 		}
 			
 		}else if(document.getElementById("r5").checked == true){
 			
 			for(var j = 0; j < 34; j++){
-			document.getElementById("targetElement"+j).hidden = false; /*.hidden = true    .style.display = 'none' */
+			document.getElementById("targetElement"+j).hidden = false;
 		}
 			
 		}

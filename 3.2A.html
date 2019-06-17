@@ -15,7 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="js/dobleScroll.js"></script>
+  
   <script src="js/cerrarTrasTab.js"></script>
   <script src="js/avisoNormal.js"></script>
   <script src="js/showPistas.js"></script>
@@ -119,15 +119,38 @@
 		<h4>Ejemplos</h4>
 		
 		<p>
-		Podemos escoger el nivel de los criterios a ver.
+		No se acciona el bot&oacute;n de enviar en el formulario hasta que no se pulsa en &eacute;l.
 		</p>
 		
-		<form name="form" onsubmit="clasificar()">
-		<input type="radio" name="radioC"  value="0" id="r1" />Ninguna<br>
-		<input type="radio" name="radioC"  value="1" id="r2" />A<br>
-		<input type="radio" name="radioC"  value="2" id="r3" />AA<br>
-		<input type="radio" name="radioC"  value="3" id="r4" />Ambos<br>
-		<input type="submit" value="Enviar">
+		
+		<form action="paginaDestino.html">
+			
+		<form action="paginaDestino.html">
+		<fieldset>
+		<legend>Datos personales</legend>
+		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
+		<input type="text" id="nombre">
+		<br><br>
+		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
+		<input type="text" id="apellidos">
+		<br><br>
+		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
+		<input type="text" id="email">
+		<br><br>
+		<label for="edad">Edad</label>:<br>
+		<input type="text" id="edad">
+		<br><br>
+		<label for="direccion">Direcci&oacute;n</label>:<br>
+		<input type="text" id="direccion">
+		<br><br>
+		<label for="cp">C&oacute;digo postal</label>:<br>
+		<input type="text" id="cp">
+		<br><br>
+		<label>Sexo</label>:<br>
+		<input type="radio" id="genero" id="hombre"> <label for="hombre">Hombre</label><br>
+		<input type="radio" id="genero" id="mujer"> <label for="mujer">Mujer</label><br><br>
+		<input class="enviarForm" type="submit" value="Enviar">
+		</fieldset>
 		</form><br>
 
 		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
@@ -168,38 +191,15 @@
 		<h4>Ejemplos</h4>
 		
 		<p>
-		No se acciona el bot&oacute;n de enviar en el formulario hasta que no se pulsa en &eacute;l.
+		Podemos escoger el nivel de los criterios a ver.
 		</p>
 		
-		
-		<form action="paginaDestino.html">
-			
-		<form action="paginaDestino.html">
-		<fieldset>
-		<legend>Datos personales</legend>
-		<label class="obligatorio" for="nombre">Nombre</label> (obligatorio):<br>
-		<input type="text" id="nombre">
-		<br><br>
-		<label class="obligatorio" for="apellidos">Apellidos</label> (obligatorio):<br>
-		<input type="text" id="apellidos">
-		<br><br>
-		<label class="obligatorio" for="email">Email</label> (obligatorio):<br>
-		<input type="text" id="email">
-		<br><br>
-		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad">
-		<br><br>
-		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" id="direccion">
-		<br><br>
-		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" id="cp">
-		<br><br>
-		<label>Sexo</label>:<br>
-		<input type="radio" id="genero" value="hombre"> <label for="hombre">Hombre</label><br>
-		<input type="radio" id="genero" value="mujer"> <label for="mujer">Mujer</label><br><br>
-		<input class="enviarForm" type="submit" value="Enviar">
-		</fieldset>
+		<form name="form" onsubmit="clasificar()">
+		<input type="radio" name="radioC"  value="0" id="r1" />Ninguna<br>
+		<input type="radio" name="radioC"  value="1" id="r2" />A<br>
+		<input type="radio" name="radioC"  value="2" id="r3" />AA<br>
+		<input type="radio" name="radioC"  value="3" id="r4" />Ambos<br>
+		<input type="submit" value="Enviar">
 		</form><br>
 
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>
