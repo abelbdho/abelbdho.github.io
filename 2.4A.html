@@ -87,10 +87,10 @@
 		<li>Navegable</li>
 		</ul>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien2">&#10003;</span></a>
 	<a href="2.4B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>2. Operable - Segundo Principio</h1>
 	<p>
@@ -116,7 +116,9 @@
 		<p>
 		Nuestra p&aacute;gina cuenta con un mecanismo para saltar bloques. Es tan simple como interactuar con la p&aacute;gina con el tabulador y comprobarlo.
 		</p>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
@@ -159,7 +161,9 @@
 		En el borde de la pestaña de esta p&aacute;gina es posible observar el t&iacute;tulo de esta. El t&iacute;tulo es descriptivo y la parte que se repite entre p&aacute;ginas est&aacute; colocada al final.
 		Los t&iacute;tulos son muy &uacute;tiles para personas usando tecnolog&iacute;a de asistencia.
 		</p>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 2.4.2 Titulado de las p&aacute;ginas">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
@@ -208,13 +212,13 @@
 		<input type="text" id="email" name="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad" name="edad">
+		<input type="text" id="edad" name="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" id="direccion" name="direccion">
+		<input type="text" id="direccion" name="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" id="cp" name="cp">
+		<input type="text" id="cp" name="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio"   id="hombre" id="hombre"><label for="hombre">Hombre</label><br>
@@ -233,7 +237,7 @@
 		</select>
 		<br><br>
 		<label for="experiencia">Experiencia</label> (en años):<br>
-		<input type="text" id="experiencia" name="experiencia">
+		<input type="text" id="experiencia" name="experiencia" size="3">
 		<br><br>
 		<label>Lateralidad</label>:<br>
 		<select>
@@ -254,7 +258,9 @@
 		
 		<br>
 		</form>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 2.4.3 Orden del foco">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
@@ -298,13 +304,17 @@
 		<p>
 		Por ejemplo, si quieres volver al <a href="index.html" class="enlacesOscuros">inicio de est&aacute; p&aacute;gina</a> puedes hacerlo pinchando.
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 		Otro ejemplo podr&iacute;a ser este. Se combinan imagen y texto para formar el enlace. No es necesaria alternativa en la imagen dado que el significado est&aacute; impl&iacute;cito.
 		</p>
 		
 		<a href="http://www.sidar.org/#goto_a11yhoy"><img id="miniatura" src="http://www.sidar.org/graf/logo.png" alt="">Sidar, accesibilidad y adaptabilidad en la red</a><br><br>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 2.4.4 Propósito de los enlaces (en contexto)">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
@@ -355,7 +365,9 @@
 		<li><a href="percepA.html">Perceptible</a></li>
 		<li><a href="#">Operable</a></li>
 		</ul><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 		Las "migas de pan" son &uacute;tiles para que el usuario sepa situarse dentro de la p&aacute;gina.
 		</p>
@@ -365,7 +377,9 @@
 		<li><a class="enlacesOscuros" href="operable.html">Operable</a></li>
 		<li>Navegable</li>
 		</ul>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup5" alt="Pista 2.4.5 Múltiples vías">PISTA</a>
 		<div id="popup5" class="overlay" role="complementary">
 		<div class="popup">
@@ -416,7 +430,9 @@
 		<h2>(...)</h2>
 		En este caso, no se cae en la redundancia y los t&iacute;tulos son claros.
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 		Otro ejemplo puede ser respecto al etiquetado en formularios. Las etiquetas deben ser claras y concisas, los campos obligatorios deben estar bien identificados.
 		</p>
@@ -436,13 +452,13 @@
 		<input type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad">
+		<input type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" id="direccion">
+		<input type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" id="cp">
+		<input type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -450,7 +466,9 @@
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup6" alt="Pista 2.4.6 Encabezados y etiquetas">PISTA</a>
 		<div id="popup6" class="overlay" role="complementary">
 		<div class="popup">
@@ -503,13 +521,13 @@
 		<input class="formFoco" type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input class="formFoco" type="text" id="edad">
+		<input class="formFoco" type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input class="formFoco" type="text" id="direccion">
+		<input class="formFoco" type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input class="formFoco" type="text" id="cp">
+		<input class="formFoco" type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input class="formFoco" type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -518,6 +536,9 @@
 		</fieldset>
 		</form><br>
 		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 
 		<a role="button" class="botonVentanita" href="#popup7" alt="Pista 2.4.7 Foco Visible">PISTA</a>
 		<div id="popup7" class="overlay" role="complementary">
@@ -544,7 +565,7 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">2.4.1 Evitar Bloques</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">2.4.1 Evitar Bloques</a>
 	<div id="Collap" class="collapse">
 			<div>
 			Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.

@@ -93,7 +93,7 @@
 		<li>Aleatorio</li>
 		</ul>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<fieldset>
 	<form name="form" onsubmit="clasificar()">
@@ -935,13 +935,13 @@
 		<input tabindex="3" type="text" id="email" name="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad" name="edad">
+		<input type="text" id="edad" name="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input tabindex="5" type="text" id="direccion" name="direccion">
+		<input tabindex="5" type="text" id="direccion" name="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input tabindex="7" type="text" id="cp" name="cp">
+		<input tabindex="7" type="text" id="cp" name="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio"   id="hombre" id="hombre"><label for="hombre">Hombre</label><br>
@@ -959,7 +959,7 @@
 		</select>
 		<br><br>
 		<label for="experiencia">Experiencia</label> (en años):<br>
-		<input  tabindex="4" type="text" id="experiencia" name="experiencia">
+		<input  tabindex="4" type="text" id="experiencia" name="experiencia" size="3">
 		<br><br>
 		<label>Lateralidad</label>:<br>
 		<select  tabindex="6">
@@ -1088,13 +1088,13 @@
 		<input type="text" id="email">
 		<br><br>
 		<label for="edad">Años</label>:<br>
-		<input type="text" id="edad">
+		<input type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Vivienda</label>:<br>
-		<input type="text" id="direccion">
+		<input type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo</label>:<br>
-		<input type="text" id="cp">
+		<input type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -1140,13 +1140,13 @@
 		<input class="formFoco2" type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input class="formFoco2" type="text" id="edad">
+		<input class="formFoco2" type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input class="formFoco2" type="text" id="direccion">
+		<input class="formFoco2" type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input class="formFoco2" type="text" id="cp">
+		<input class="formFoco2" type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input class="formFoco2" type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -1260,13 +1260,13 @@
 		<input onfocusout="requerido(this, 'aviso2')" type="text" name="email"><div id="aviso2"></div>
 		<br>
 		Edad:<br>
-		<input type="text" name="edad">
+		<input type="text" name="edad" size="3">
 		<br><br>
 		Direcci&oacute;n:<br>
-		<input type="text" name="direccion">
+		<input type="text" name="direccion" size="30">
 		<br><br>
 		C&oacute;digo postal:<br>
-		<input type="text" name="cp">
+		<input type="text" name="cp" size="6">
 		<br><br>
 		Sexo:<br>
 		<input type="radio"   id="hombre"> Hombre<br>
@@ -1312,13 +1312,13 @@
 		<input type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad">
+		<input type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" id="direccion">
+		<input type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" id="cp">
+		<input type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio" id="genero" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -1427,13 +1427,13 @@
 		<input type="text" name="email">
 		<br><br>
 		Edad:<br>
-		<input type="text" name="edad">
+		<input type="text" name="edad" size="3">
 		<br><br>
 		Direcci&oacute;n:<br>
-		<input type="text" name="direccion">
+		<input type="text" name="direccion" size="30">
 		<br><br>
 		C&oacute;digo postal:<br>
-		<input type="text" name="cp">
+		<input type="text" name="cp" size="6">
 		<br><br>
 		Sexo:<br>
 		<input type="radio"   id="hombre"> Hombre<br>
@@ -1481,16 +1481,16 @@
 		<input type="text" name="email">
 		<br><br>
 		<label for="dia">D&iacute;a de nacimiento</label>:<br>
-		<input type="text" name="dia">
+		<input type="text" name="dia" size="3">
 		<br><br>
 		<p>
 		<em>Escriba el mes con su nombre, no su n&uacute;mero</em>
 		</p>
 		<label for="mes">Mes de nacimiento</label>:<br>
-		<input onfocusout="formato(this, 'inst0')" type="text" name="mes"><div id="inst0"></div>
+		<input onfocusout="formato(this, 'inst0')" type="text" name="mes" size="3"><div id="inst0"></div>
 		<br>
 		<label for="ano">Año de nacimiento</label>:<br>
-		<input type="text" name="ano">
+		<input type="text" name="ano" size="3">
 		<br><br>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
@@ -1534,13 +1534,13 @@
 		<input type="text" name="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" name="edad">
+		<input type="text" name="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" name="direccion">
+		<input type="text" name="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" name="cp">
+		<input type="text" name="cp" size="6">
 		<br><br>
 		<label>Cuenta bancaria</label>:<br>
 		<input type="text" id="entidad" name="entidad" required  placeholder="entidad" maxlength="4" id="entidad" pattern="[0-9]{4}" title="El campo entidad debe tener 4 dígitos"/><input type="text" id="oficina" name="oficina" required placeholder="oficina" maxlength="4" id="oficina" pattern="[0-9]{4}" title="El campo oficina debe tener 4 dígitos"/>

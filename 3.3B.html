@@ -89,9 +89,9 @@
 		</ul>
 	
 	<a href="3.3A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal2">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>3. Entendible - Tercer Principio</h1>
 	<p>
@@ -131,13 +131,13 @@
 		<input onfocusout="requerido(this, 'aviso2')" type="text" name="email"><div id="aviso2"></div>
 		<br>
 		Edad:<br>
-		<input type="text" name="edad">
+		<input type="text" name="edad" size="3">
 		<br><br>
 		Direcci&oacute;n:<br>
-		<input type="text" name="direccion">
+		<input type="text" name="direccion" size="30">
 		<br><br>
 		C&oacute;digo postal:<br>
-		<input type="text" name="cp">
+		<input type="text" name="cp" size="6">
 		<br><br>
 		Sexo:<br>
 		<input type="radio"   id="hombre"> Hombre<br>
@@ -145,7 +145,9 @@
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup" alt="Pista 3.3.1 Identificación de errores">PISTA</a>
 		<div id="popup" class="overlay" role="complementary">
 		<div class="popup">
@@ -198,13 +200,13 @@
 		<input type="text" name="email">
 		<br><br>
 		Edad:<br>
-		<input type="text" name="edad">
+		<input type="text" name="edad" size="3">
 		<br><br>
 		Direcci&oacute;n:<br>
-		<input type="text" name="direccion">
+		<input type="text" name="direccion" size="30">
 		<br><br>
 		C&oacute;digo postal:<br>
-		<input type="text" name="cp">
+		<input type="text" name="cp" size="6">
 		<br><br>
 		Sexo:<br>
 		<input type="radio"   id="hombre"> Hombre<br>
@@ -212,7 +214,9 @@
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 3.3.2 Etiquetas o instrucciones">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
@@ -264,21 +268,23 @@
 		<input type="text" name="email">
 		<br><br>
 		<label for="dia">D&iacute;a de nacimiento</label>:<br>
-		<input type="text" name="dia">
+		<input type="text" name="dia" size="3">
 		<br><br>
-		<p>
+		<label for="mes">Mes de nacimiento</label>:<br>
+		<input aria-describedby="descrip" onfocusout="formato(this, 'inst0')" type="text" name="mes" size="3"><div id="inst0"></div>
+		<p id="descrip">
 		<em>Escriba el mes con su nombre, no su n&uacute;mero</em>
 		</p>
-		<label for="mes">Mes de nacimiento</label>:<br>
-		<input onfocusout="formato(this, 'inst0')" type="text" name="mes"><div id="inst0"></div>
 		<br>
 		<label for="ano">Año de nacimiento</label>:<br>
-		<input type="text" name="ano">
+		<input type="text" name="ano" size="3">
 		<br><br>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 3.3.3 Sugerencia ante errores">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
@@ -335,21 +341,23 @@
 		<input type="text" name="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" name="edad">
+		<input type="text" name="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" name="direccion">
+		<input type="text" name="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" name="cp">
+		<input type="text" name="cp" size="6">
 		<br><br>
 		<label>Cuenta bancaria</label>:<br>
-		<input type="text" id="entidad" name="entidad" required  placeholder="entidad" maxlength="4" id="entidad" pattern="[0-9]{4}" title="El campo entidad debe tener 4 dígitos"/><input type="text" id="oficina" name="oficina" required placeholder="oficina" maxlength="4" id="oficina" pattern="[0-9]{4}" title="El campo oficina debe tener 4 dígitos"/>
-		<input type="text" id="dc" name="dc" required placeholder="dc" maxlength="2" id="dc" pattern="[0-9]{2}" title="El campo dígito de control debe tener 2 dígitos"/><input type="text" id="cuenta" name="cuenta" required placeholder="cuenta" maxlength="10" id="cuenta" pattern="[0-9]{10}" title="El campo cuenta debe tener 10 dígitos"/>
+		<label for="entidad">Entidad:</label><input size="4" type="text" id="entidad" name="entidad" required maxlength="4" id="entidad" pattern="[0-9]{4}" title="El campo entidad debe tener 4 dígitos"/><label for="oficina">Oficina:</label><input size="4" type="text" id="oficina" name="oficina" required maxlength="4" id="oficina" pattern="[0-9]{4}" title="El campo oficina debe tener 4 dígitos"/>
+		<label for="dc">DC:</label><input size="2" type="text" id="dc" name="dc" required maxlength="2" id="dc" pattern="[0-9]{2}" title="El campo dígito de control debe tener 2 dígitos"/><label for="cuenta">Cuenta:</label><input size="10" type="text" id="cuenta" name="cuenta" required maxlength="10" id="cuenta" pattern="[0-9]{10}" title="El campo cuenta debe tener 10 dígitos"/>
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 3.3.4 Prevenci&oacute;n de errores (legales, financieros, datos)">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
@@ -377,7 +385,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->		
 		
 			
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.3.1 Identificaci&oacute;n de errores</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.3.1 Identificaci&oacute;n de errores</a>
 	<div id="Collap" class="collapse">
 			<div>
 			Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.

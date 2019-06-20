@@ -87,9 +87,9 @@
 		</ul>
 	
 	<a href="2.4A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal2">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>2. Operable - Segundo Principio</h1>
 	<p>
@@ -115,7 +115,9 @@
 		<p>
 		Criterio oculto. <a href="indexFake.html">P&aacute;gina</a>
 		</p>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 2.4.1 Evitar Bloques">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
@@ -157,7 +159,9 @@
 		<p>
 		Criterio oculto. <a href="indexFake.html">P&aacute;gina</a>
 		</p>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 2.4.2 Titulado de las p&aacute;ginas">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
@@ -206,13 +210,13 @@
 		<input tabindex="3" type="text" id="email" name="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad" name="edad">
+		<input type="text" id="edad" name="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input tabindex="5" type="text" id="direccion" name="direccion">
+		<input tabindex="5" type="text" id="direccion" name="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input tabindex="7" type="text" id="cp" name="cp">
+		<input tabindex="7" type="text" id="cp" name="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio"   id="hombre" id="hombre"><label for="hombre">Hombre</label><br>
@@ -230,7 +234,7 @@
 		</select>
 		<br><br>
 		<label for="experiencia">Experiencia</label> (en años):<br>
-		<input  tabindex="4" type="text" id="experiencia" name="experiencia">
+		<input  tabindex="4" type="text" id="experiencia" name="experiencia" size="3">
 		<br><br>
 		<label>Lateralidad</label>:<br>
 		<select  tabindex="6">
@@ -250,7 +254,9 @@
 		</fieldset>
 		<br>
 		</form>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 2.4.3 Orden del foco">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
@@ -292,9 +298,13 @@
 		<p>
 		<a href="index.html" class="enlacesOscuros">¡Pinche aqu&iacute;!</a>
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a href="http://www.sidar.org/#goto_a11yhoy"><img id="miniatura" src="http://www.sidar.org/graf/logo.png" alt=""></a><br><br>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup4" alt="Pista 2.4.4 Propósito de los enlaces (en contexto)">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
@@ -335,6 +345,10 @@
 		</p>
 		
 		<a href="http://arngren.net/">P&aacute;gina antiaccesibilidad</a>
+		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 
 		<a role="button" class="botonVentanita2" href="#popup5" alt="Pista 2.4.5 Múltiples vías">PISTA</a>
 		<div id="popup5" class="overlay" role="complementary">
@@ -377,7 +391,9 @@
 		<h3>Pauta Accesible por teclado</h3>
 		<h2>(...)</h2>
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p><em>Los campos obligatorios estar&aacute;n marcados en rojo y est&aacute; condici&oacute;n ser&aacute; indicada en su respectiva etiqueta.</em></p>
 		
 		<form action="paginaDestino.html">
@@ -393,13 +409,13 @@
 		<input type="text" id="email">
 		<br><br>
 		<label for="edad">Años</label>:<br>
-		<input type="text" id="edad">
+		<input type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Vivienda</label>:<br>
-		<input type="text" id="direccion">
+		<input type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo</label>:<br>
-		<input type="text" id="cp">
+		<input type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -407,7 +423,9 @@
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup6" alt="Pista 2.4.6 Encabezados y etiquetas">PISTA</a>
 		<div id="popup6" class="overlay" role="complementary">
 		<div class="popup">
@@ -456,13 +474,13 @@
 		<input class="formFoco2" type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input class="formFoco2" type="text" id="edad">
+		<input class="formFoco2" type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input class="formFoco2" type="text" id="direccion">
+		<input class="formFoco2" type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input class="formFoco2" type="text" id="cp">
+		<input class="formFoco2" type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input class="formFoco2" type="radio" id="hombre" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -470,7 +488,9 @@
 		<input class="formFoco2" class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 
 		<a role="button" class="botonVentanita2" href="#popup7" alt="Pista 2.4.7 Foco Visible">PISTA</a>
 		<div id="popup7" class="overlay" role="complementary">
@@ -497,7 +517,7 @@
 			
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">2.4.1 Evitar Bloques</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">2.4.1 Evitar Bloques</a>
 	<div id="Collap" class="collapse">
 			<div>
 			Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.

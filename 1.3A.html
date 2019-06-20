@@ -87,10 +87,10 @@
 		<li>Adaptable</li>
 		</ul>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien2">&#10003;</span></a>
 	<a href="1.3B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>1. Perceptible - Primer Principio</h1>
 	<p>
@@ -118,7 +118,9 @@
 			Cuando queremos enfatizar la importancia de la <strong>accesibilidad web</strong> en esta p&aacute;gina, usamos las etiquetas correctas. Esto facilita
 			la experiencia en la web a personas con <strong>diversidad funcional</strong> o incluso <strong>sin ella</strong>.
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 			Otro ejemplo puede darse con respecto al aspecto y la personalizaci&oacute;n de elementos. Las tablas tienen sus propias etiquetas html y se debe hacer un uso apropiado de
 			 estos <em><span lang="en">tags</span></em>.
@@ -138,9 +140,11 @@
 				<td>Ambiente ruidoso</td>
 			</tr>
 		</table><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
-			Es com&uacute;n encontrar t&iacute;tulos en p&aacute;ginas web que realmente no utilizan las etiquetas creadas para ello (son solo aspecto CSS). Mostramos el equivalente a nuestro &lt;h3&gt;.
+			Es com&uacute;n encontrar t&iacute;tulos en p&aacute;ginas web que realmente no utilizan las etiquetas creadas para ello (son solo aspecto CSS). Mostramos el equivalente a nuestro <code>&lt;h3&gt;</code>.
 		</p>
 		
 		<h2>1. Un t&iacute;tulo con su etiqueta correspondiente</h2>
@@ -149,6 +153,9 @@
 		Las caracter&iacute;sticas como el color o tamaño se editan respecto a la etiqueta del t&iacute;tulo.
 		</p><br>
 		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		
 		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 1.3.1 Información y relaciones">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
@@ -185,7 +192,7 @@
 		
 		<h4>Ejemplos</h4>
 			
-			Aqu&iacute; tenemos dos p&aacute;rrafos que guardan una secuencia visualmente, pero que respetan esa secuencia en el c&oacute;digo. De esta manera, para una persona que use, por ejemplo, un lector de pantalla, la informaci&oacute;
+			Aqu&iacute; tenemos dos p&aacute;rrafos que guardan una secuencia visualmente, pero que respetan esa secuencia en el c&oacute;digo. De esta manera, para una persona que use, por ejemplo, un lector de pantalla, la informaci&oacute;n
 			ser&aacute; presentada en ese mismo orden.
 		</p><br>
 			
@@ -200,7 +207,9 @@
 			</ul>
 		</p>
 		<br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 1.3.2 Secuencia significativa">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
@@ -237,13 +246,15 @@
 		<h4>Ejemplos</h4>
 		
 		<p>
-			Pulse el bot&oacute;n cuadrado de color azul claro justo debajo, que dice <em>copiar texto</em>, para copiar el contenido dentro del campo de texto que est&aacute; a la derecha de este bot&oacute;n.
+			Pulse el bot&oacute;n cuadrado de color azul claro justo debajo, que dice <em>copiar texto</em>, para copiar el contenido dentro del campo de texto.
 		</p>
 		
 		<button id="botonCopiar" onclick="funcionCopiar()">Copiar texto</button>
-		<input type="text" value="No deben usarse solo colores" id="campoCopiar">
+		<label for="campoCopiar">Campo a copiar:</label><input type="text" value="No usar color solo" id="campoCopiar">
 		<br><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		
 		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 1.3.3 Características sensoriales">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
@@ -271,7 +282,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.3.1 Informaci&oacute;n y relaciones</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.3.1 Informaci&oacute;n y relaciones</a>
 	<div id="Collap" class="collapse">
 			<div>
 				La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto. 

@@ -90,10 +90,10 @@
 		<li>Predecible</li>
 		</ul>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien2">&#10003;</span></a>
 	<a href="3.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>3. Entendible - Tercer Principio</h1>
 	<p>
@@ -138,13 +138,13 @@
 		<input type="text" id="email">
 		<br><br>
 		<label for="edad">Edad</label>:<br>
-		<input type="text" id="edad">
+		<input type="text" id="edad" size="3">
 		<br><br>
 		<label for="direccion">Direcci&oacute;n</label>:<br>
-		<input type="text" id="direccion">
+		<input type="text" id="direccion" size="30">
 		<br><br>
 		<label for="cp">C&oacute;digo postal</label>:<br>
-		<input type="text" id="cp">
+		<input type="text" id="cp" size="6">
 		<br><br>
 		<label>Sexo</label>:<br>
 		<input type="radio" id="genero" id="hombre"> <label for="hombre">Hombre</label><br>
@@ -152,7 +152,9 @@
 		<input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
-
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 3.2.1 Al recibir foco">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
@@ -201,7 +203,9 @@
 		<input type="radio" name="radioC"  value="3" id="r4" />Ambos<br>
 		<input type="submit" value="Enviar">
 		</form><br>
-
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 3.2.2 Al recibir entradas">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
@@ -243,7 +247,9 @@
 		<p>
 		En esta p&aacute;gina es f&aacute;cilmente observable que los elementos aparecen siempre en un mismo orden y de manera repetida.
 		</p>
-
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup3" alt="Pista 3.2.3 Navegaci&oacute;n coherente">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
@@ -286,8 +292,10 @@
 		
 		<p>Aqu&iacute; tenemos uno de los botones de versiones usados, que no var&iacute;a en ning&uacute;n aspecto y sigue teniendo el mismo sentido.</p>
 		
-		<a href="3.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a>
-
+		<a href="3.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
+<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup4" alt="Pista 3.2.4 Identificación coherente">PISTA</a>
 		<div id="popup4" class="overlay" role="complementary">
 		<div class="popup">
@@ -315,7 +323,7 @@
 
 <div class="final">			
 			
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.2.1 Al recibir foco</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">3.2.1 Al recibir foco</a>
 	<div id="Collap" class="collapse">
 			<div>
 			Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.

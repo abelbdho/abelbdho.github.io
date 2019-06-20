@@ -90,10 +90,10 @@
 		<li>Tiempo suficiente</li>
 		</ul>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien2">&#10003;</span></a>
 	<a href="2.2B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>2. Operable - Segundo Principio</h1>
 	<p>
@@ -156,9 +156,11 @@
 		</p>
 		</script>
 		
-		<a onclick="pararBucle()" class="btn btn-dark" id="botonBucle" tabindex="0" alt="Boton para parar el bucle">Activar/Desactivar</a>
+		<a onclick="pararBucle()" class="btn btn-dark" id="botonBucle" tabindex="0" alt="Boton para parar el bucle">Activar/Desactivar</a><br><br>
 		
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup1" alt="Pista 2.2.1 Tiempo ajustable">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
@@ -239,7 +241,9 @@
   </a>
 
 </div><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup2" alt="Pista 2.2.2 Poner en pausa, detener, ocultar">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
@@ -267,7 +271,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
 			
-<a href="#Collap1" class="btn btn-primary" data-toggle="collapse" role="button">2.2.1 Tiempo ajustable</a>
+<h3>Resumen</h3>	<a href="#Collap1" class="btn btn-primary" data-toggle="collapse" role="button">2.2.1 Tiempo ajustable</a>
 	<div id="Collap1" class="collapse">
 			<div>
 			Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos: apagar, ajustar, extender, excepci&oacute;n de tiempo real, excepci&oacute;n por ser esencial y excepci&oacute;n de 20 horas.</p>

@@ -87,10 +87,10 @@
 		<li>Alternativas textuales</li>
 		</ul>
 	
-	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
+	<a href="#" class="btn btn-success btn-sm" role="button" id="seleccionadoAccesible">Versi&oacute;n accesible<span class="flechaBien2">&#10003;</span></a>
 	<a href="1.1B.html" class="btn btn-danger btn-sm" role="button">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
 	
-	<button id="botonOcultar" onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="botonOcultar"id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>1. Perceptible - Primer Principio</h1>
 	<p>
@@ -117,7 +117,7 @@
 			<li><strong>Test</strong>: test o ejercicios que no deber&iacute;an ser presentados en texto, tienen su alternativa textual identificativa.</li>
 			<li><strong>Sensorial</strong>: para contenido pensados para crear una experiencia sensorial, se proporcionar&aacute; una identificaci&oacute;n
 			 descriptiva.</li>
-			<li><strong>CAPTCHA</strong>: si el prop&oacute; del contenido es asegurar la identidad humana de quien accede a &eacute;l, se proporciona identificaci&oacute;
+			<li><strong>CAPTCHA</strong>: si el prop&oacute;sito del contenido es asegurar la identidad humana de quien accede a &eacute;l, se proporciona identificaci&oacute;n
 			y distintas formas sensoriales de superar el CAPTCHA.</li>
 			<li><strong>Decoraci&oacute;n, formateo y elementos invisibles</strong>: se omiten descripciones para que sean ignorados por la tecnología de asistencia.</li>
 		</ul>	
@@ -131,7 +131,9 @@
 		<picture>
 		<img id="logoCriterio" class="contentImage" src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png" alt="Logo World Wide Web Consortium">
 		</picture>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 		En este segundo ejemplo mostramos la imagen de un chico sordo en clase con su profesora. La alternativa sirve para complementar esta informaci&oacute;n.
 		</p>
@@ -139,7 +141,9 @@
 		<picture>
 		<img  class="contentImage" src="https://amp.thisisinsider.com/images/5865384055b10620008b4aa4-750-563.jpg" alt="Chico con audífono atendiendo a su profesora">
 		</picture>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 		Otro de los ejemplos m&aacute;s comunes se producen cuando se proporcionan unas instrucciones pero se hace en forma de imagen, privando a las personas con problemas de visi&oacute;n de
 		una experiencia similar a la de los dem&aacute;s.
@@ -152,7 +156,9 @@
 		<p>
 		Es muy com&uacute;n ver errores o descuidos con respecto a las alternativas en im&aacute;genes, siendo un criterio muy simple de aplicar.
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 		Finalmente llegamos a otro de los ejemplos m&aacute;s comunes, el de los formatos de archivos. Es necesario proporcionar alternativas en estos casos tambi&eacute;n.
 		</p>
@@ -160,7 +166,9 @@
 		<p>
 		<a href="https://eprints.ucm.es/54854/1/decalogo_pdf_accesible.pdf">Descargar Decálogo para crear un PDF accesible, Universidad Complutense de Madrid <img src="https://www.w3.org/WAI/tutorials/img/pdfdocument-680d4d64.png" alt="PDF"></a>
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita" href="#popup1" alt=" Pista 1.1.1 Contenido no textual">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
@@ -191,7 +199,7 @@ src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png"
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.1.1 Contenido no textual</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.1.1 Contenido no textual</a>
 	<div id="Collap" class="collapse">
 			<div>
 				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.
@@ -218,7 +226,7 @@ shortcut.add("Ctrl+Shift+9",function() {
 	var ScrollTop = parseInt($(document).scrollTop());
 	
 	if(ScrollTop > document.getElementById("principio1").offsetTop){
-    window.location.href = "1.1B.html#principio1");
+    window.location.href = "1.1B.html#principio1";
 	} 
 });
 

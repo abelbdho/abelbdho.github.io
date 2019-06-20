@@ -500,6 +500,18 @@ th, td {
 	font-size: 1.5em;
 }
 
+.flechaBien2{
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.flechaMal2{
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 /*YOUTUBE VIDEO*/
 
 .iframe{
@@ -814,12 +826,8 @@ ul.breadcrumb li+li:before {
   color: black;
   content: "/\00a0";
 }
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
 ul.breadcrumb li a:hover {
-  color: #01447e;
+  color: #0000EB;
   text-decoration: underline;
 }
 
@@ -847,3 +855,4 @@ ul.breadcrumb li a:hover {
 .my-auto{
 	background-color: black;
 }
+

@@ -86,9 +86,9 @@
 		</ul>
 	
 	<a href="1.1A.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal2">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>1. Perceptible - Primer Principio</h1>
 	<p>
@@ -115,7 +115,7 @@
 			<li><strong>Test</strong>: test o ejercicios que no deber&iacute;an ser presentados en texto, tienen su alternativa textual identificativa.</li>
 			<li><strong>Sensorial</strong>: para contenido pensados para crear una experiencia sensorial, se proporcionar&aacute; una identificaci&oacute;n
 			 descriptiva</li>
-			<li><strong>CAPTCHA</strong>: si el prop&oacute; del contenido es asegurar la identidad humana de quien accede a &eacute;l, se proporciona identificaci&oacute;
+			<li><strong>CAPTCHA</strong>: si el prop&oacute;sito del contenido es asegurar la identidad humana de quien accede a &eacute;l, se proporciona identificaci&oacute;n
 			y distintas formas sensoriales de superar el CAPTCHA.</li>
 			<li><strong>Decoraci&oacute;n, formateo y elementos invisibles</strong>: se omiten descripciones para que sean ignorados por la tecnología de asistencia.</li>
 		</ul>
@@ -126,19 +126,27 @@
 		<picture>
 		<img id="logoCriterio" class="contentImage" src="https://www.w3.org/WAI/WCAG21/quickref/img/w3c.png" alt="Logotipo">
 		</picture>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<picture>
 		<img  class="contentImage" src="https://amp.thisisinsider.com/images/5865384055b10620008b4aa4-750-563.jpg" alt="Chico y profesora en clase">
 		</picture>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<picture>
 		<img  class="contentImage" src="https://es.toluna.com//dpolls_images/2018/06/29/afc02cab-419a-4e8a-bc33-3096d5c64456.jpg" alt="Abrefácil">
 		</picture>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<p>
 		<a href="https://eprints.ucm.es/54854/1/decalogo_pdf_accesible.pdf">Descargar Decálogo para crear un PDF accesible, Universidad Complutense de Madrid <img src="https://www.w3.org/WAI/tutorials/img/pdfdocument-680d4d64.png" alt=""></a>
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 1.1.1 Contenido no textual">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
@@ -169,7 +177,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.1.1 Contenido no textual</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.1.1 Contenido no textual</a>
 	<div id="Collap" class="collapse">
 			<div>
 				Proporcionar una alternativa textual corta al contenido no textual que tenga el mismo propósito y presente la misma informaci&oacute;n.

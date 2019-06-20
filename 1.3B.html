@@ -88,9 +88,9 @@
 		</ul>
 	
 	<a href="1.3B.html" class="btn btn-success btn-sm" role="button">Versi&oacute;n accesible<span class="flechaBien">&#10003;</span></a>
-	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal">&#10007;</span></a><br><br>
+	<a href="#" class="btn btn-danger btn-sm" role="button" id="seleccionadoInaccesible">Versi&oacute;n inaccesible<span class="flechaMal2">&#10007;</span></a><br><br>
 	
-	<button onclick="showPistas()">Mostrar pistas/Ocultar pistas</button><br><br><br><br>
+	<button id="btnMostrar" onclick="showPistas()">Ocultar pistas</button><br><br><br><br>
 	
 	<h1>1. Perceptible - Primer Principio</h1>
 	<p>
@@ -118,7 +118,9 @@
 			Cuando queremos enfatizar la importancia de la <b>accesibilidad web</b> en esta p&aacute;gina, usamos las etiquetas correctas. Esto facilita
 			la experiencia en la web a personas con <b>diversidad funcional</b> o incluso <b>sin ella</b>.
 		</p>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<ul>
 		<li id="tablaFalsaT">Discapacidad</li>
 		<li id="tablaFalsaT">Condici&oacute;n normal</li>
@@ -129,10 +131,14 @@
 		<li id="tablaFalsa">Sordera</li>
 		<li id="tablaFalsa">Ambiente ruidoso</li>
 		</ul><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<span id="tituloFalso">1. Esto parece un t&iacute;tulo</span>
 		<br><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup1" alt="Pista 1.3.1 Información y relaciones">PISTA</a>
 		<div id="popup1" class="overlay" role="complementary">
 		<div class="popup">
@@ -179,7 +185,9 @@
 			 en la Web. Esta idea se resume en los dos principios b&aacute;sicos del diseño web accesible:
 		</p>
 		<br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup2" alt="Pista 1.3.2 Secuencia significativa">PISTA</a>
 		<div id="popup2" class="overlay" role="complementary">
 		<div class="popup">
@@ -230,9 +238,11 @@
 		</p>
 		
 		<button id="botonCopiar" onclick="funcionCopiar()">&nbsp;&nbsp;&nbsp;</button>
-		<input type="text" value="No deben usarse solo colores" id="campoCopiar">
+		<input type="text" value="No usar color solo" id="campoCopiar">
 		<br><br>
-		
+		<div class="d-flex">
+		<hr class="my-auto flex-grow-1">
+		</div><br><br>
 		<a role="button" class="botonVentanita2" href="#popup3" alt="Pista 1.3.3 Características sensoriales">PISTA</a>
 		<div id="popup3" class="overlay" role="complementary">
 		<div class="popup">
@@ -261,7 +271,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->	
 
-<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.3.1 Informaci&oacute;n y relaciones</a>
+<h3>Resumen</h3>	<a href="#Collap" class="btn btn-primary" data-toggle="collapse" role="button">1.3.1 Informaci&oacute;n y relaciones</a>
 	<div id="Collap" class="collapse">
 			<div>
 				La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto. 
