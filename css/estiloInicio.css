@@ -628,11 +628,11 @@ blink.woo{
 }
 
 .obligatorio{
-	color: #AD0000;
+	color: #750000;
 }
 
 .inputObligatorio{
-	border: 1px solid #AD0000;
+	border: 1px solid #750000;
 }
 
 #asterisco{
@@ -856,3 +856,14 @@ ul.breadcrumb li a:hover {
 	background-color: black;
 }
 
+/*BOTON PISTA*/
+
+#btnMostrar{
+	background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;}
+
+#btnMostrar:hover{
+	background-color: #005875;
+  color: white;
+}

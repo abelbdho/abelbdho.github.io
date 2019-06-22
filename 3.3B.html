@@ -121,10 +121,10 @@
 		<form action="paginaDestino.html">
 		<fieldset>
 		<legend>Datos personales</legend>
-		<span class="obligatorio">Nombre</span> (obligatorio):<br>
+		<span>Nombre</span> :<br>
 		<input onfocusout="requerido(this, 'aviso0')" type="text" name="nombre"><div id="aviso0"></div>
 		<br>
-		<span class="obligatorio">Apellidos</span> (obligatorio):<br>
+		<span>Apellidos</span>:<br>
 		<input onfocusout="requerido(this, 'aviso1')" type="text" name="apellidos"><div id="aviso1"></div>
 		<br>
 		<span class="obligatorio">Email</span> (obligatorio):<br>
@@ -271,7 +271,7 @@
 		<input type="text" name="dia" size="3">
 		<br><br>
 		<label for="mes">Mes de nacimiento</label>:<br>
-		<input aria-describedby="descrip" onfocusout="formato(this, 'inst0')" type="text" name="mes" size="3"><div id="inst0"></div>
+		<input aria-describedby="descrip" onfocusout="formato(this, 'inst0')" type="text" name="mes" size="8"><div id="inst0"></div>
 		<p id="descrip">
 		<em>Escriba el mes con su nombre, no su n&uacute;mero</em>
 		</p>
@@ -352,7 +352,7 @@
 		<label>Cuenta bancaria</label>:<br>
 		<label for="entidad">Entidad:</label><input size="4" type="text" id="entidad" name="entidad" required maxlength="4" id="entidad" pattern="[0-9]{4}" title="El campo entidad debe tener 4 dígitos"/><label for="oficina">Oficina:</label><input size="4" type="text" id="oficina" name="oficina" required maxlength="4" id="oficina" pattern="[0-9]{4}" title="El campo oficina debe tener 4 dígitos"/>
 		<label for="dc">DC:</label><input size="2" type="text" id="dc" name="dc" required maxlength="2" id="dc" pattern="[0-9]{2}" title="El campo dígito de control debe tener 2 dígitos"/><label for="cuenta">Cuenta:</label><input size="10" type="text" id="cuenta" name="cuenta" required maxlength="10" id="cuenta" pattern="[0-9]{10}" title="El campo cuenta debe tener 10 dígitos"/>
-		<input class="enviarForm" type="submit" value="Enviar">
+		<br><input class="enviarForm" type="submit" value="Enviar">
 		</fieldset>
 		</form><br>
 <div class="d-flex">
